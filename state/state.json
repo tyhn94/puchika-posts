@@ -11,17 +11,23 @@
       "permalink": "https://www.instagram.com/p/DeJmFuzm7yT/",
       "type": "carousel",
       "at": "2026-10-06T10:42:09.777Z"
+    },
+    "m-hype": {
+      "mediaId": "18093747131657732",
+      "permalink": "https://www.instagram.com/reel/DeKxfRZCHql/",
+      "type": "reel",
+      "at": "2026-10-06T21:41:16.534Z"
     }
   },
   "failed": {},
   "days": {
-    "2026-10-06": 2
+    "2026-10-06": 3
   },
   "notified": {},
   "firstRun": "2026-10-06T09:18:43.623Z",
   "refreshTriedAt": "2026-10-06T09:18:43.623Z",
   "refreshedAt": "2026-10-06T09:18:43.623Z",
   "tokenExpiresAt": "2026-12-05T08:16:17.623Z",
-  "insightsAt": "2026-10-06T10:42:09.777Z",
+  "insightsAt": "2026-10-06T21:41:16.534Z",
   "setupFails": 0
 }

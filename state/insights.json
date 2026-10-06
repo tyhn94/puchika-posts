@@ -14,12 +14,12 @@
       "permalink": "https://www.instagram.com/reel/DeJcnimCjEe/",
       "likes": 0,
       "comments": 0,
-      "reach": 6,
+      "reach": 13,
       "saved": 0,
       "shares": 0,
-      "views": 9,
+      "views": 15,
       "total_interactions": 0,
-      "ig_reels_avg_watch_time": 21845
+      "ig_reels_avg_watch_time": 17186
     },
     "d02-meet": {
       "id": "d02-meet",
@@ -33,7 +33,21 @@
       "shares": 0,
       "views": 0,
       "total_interactions": 0
+    },
+    "m-hype": {
+      "id": "m-hype",
+      "at": "2026-10-06T21:41:16.534Z",
+      "type": "reel",
+      "permalink": "https://www.instagram.com/reel/DeKxfRZCHql/",
+      "likes": 0,
+      "comments": 0,
+      "reach": 0,
+      "saved": 0,
+      "shares": 0,
+      "views": 0,
+      "total_interactions": 0,
+      "ig_reels_avg_watch_time": 0
     }
   },
-  "updatedAt": "2026-10-06T10:42:09.777Z"
+  "updatedAt": "2026-10-06T21:41:16.534Z"
 }
