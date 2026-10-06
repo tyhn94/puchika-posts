@@ -1,9 +1,13 @@
 {
   "ok": true,
-  "at": "2026-10-06T09:24:13.448Z",
-  "mode": "check",
+  "at": "2026-10-06T10:42:09.777Z",
+  "mode": "post-now",
   "problems": [],
   "account": "puchikafriends",
-  "next": "d02-meet",
-  "remaining": 6
+  "posted": {
+    "id": "d02-meet",
+    "mediaId": "18144260122580394",
+    "permalink": "https://www.instagram.com/p/DeJmFuzm7yT/"
+  },
+  "remaining": 61
 }

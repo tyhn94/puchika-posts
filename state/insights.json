@@ -14,13 +14,26 @@
       "permalink": "https://www.instagram.com/reel/DeJcnimCjEe/",
       "likes": 0,
       "comments": 0,
+      "reach": 6,
+      "saved": 0,
+      "shares": 0,
+      "views": 9,
+      "total_interactions": 0,
+      "ig_reels_avg_watch_time": 21845
+    },
+    "d02-meet": {
+      "id": "d02-meet",
+      "at": "2026-10-06T10:42:09.777Z",
+      "type": "carousel",
+      "permalink": "https://www.instagram.com/p/DeJmFuzm7yT/",
+      "likes": 0,
+      "comments": 0,
       "reach": 0,
       "saved": 0,
       "shares": 0,
       "views": 0,
-      "total_interactions": 0,
-      "ig_reels_avg_watch_time": 0
+      "total_interactions": 0
     }
   },
-  "updatedAt": "2026-10-06T09:24:13.448Z"
+  "updatedAt": "2026-10-06T10:42:09.777Z"
 }
