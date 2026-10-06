@@ -109,10 +109,12 @@ class SetupError extends Error {}
 const mediaUrl = f => BASE + f.split('/').map(encodeURIComponent).join('/');
 async function reachable(f){
   const u = mediaUrl(f);
-  let ok = false;
-  try { ok = (await fetch(u, {method: 'HEAD'})).ok; } catch {}
-  if(!ok) throw new SetupError('The file is not on the web yet: ' + u);
-  return u;
+  // freshly drawn pictures take a minute or two to reach the web
+  for(let i = 0; i < (process.env.FAST ? 1 : 8); i++){
+    try { if((await fetch(u, {method: 'HEAD'})).ok) return u; } catch {}
+    if(i < 7 && !process.env.FAST) await sleep(20);
+  }
+  throw new SetupError('The file is not on the web yet: ' + u);
 }
 
 async function publish(item, uid){
@@ -143,6 +145,7 @@ async function publish(item, uid){
 
 /* ---------- the queue ---------- */
 const broken = new Set();   // items that can't be posted as they are; skipped, not retried
+const notReady = new Set(); // items whose pictures aren't drawn yet
 function checkQueue(){
   const seen = new Set(), bad = [];
   const mark = (it, msg) => { bad.push(msg); if(it && it.id) broken.add(it.id); };
@@ -152,12 +155,16 @@ function checkQueue(){
     if(!['image', 'carousel', 'reel'].includes(it.type)) mark(it, it.id + ': unknown type ' + it.type);
     if(!Array.isArray(it.media) || !it.media.length){ mark(it, it.id + ': no media'); continue; }
     if(it.type === 'carousel' && (it.media.length < 2 || it.media.length > 10)) mark(it, it.id + ': a carousel needs 2-10 images');
-    for(const f of [...it.media, ...(it.cover ? [it.cover] : [])]) if(!fs.existsSync(file(f))) mark(it, it.id + ': missing file ' + f);
+    const gone = [...it.media, ...(it.cover ? [it.cover] : [])].filter(f => !fs.existsSync(file(f)));
+    if(gone.length && it.draw) notReady.add(it.id);          // drawn on GitHub shortly before its turn
+    else gone.forEach(f => mark(it, it.id + ': missing file ' + f));
     if((it.caption || '').length > 2200) mark(it, it.id + ': caption too long');
   }
   return bad;
 }
-const remaining = () => (queue.posts || []).filter(it => !state.posted[it.id] && !broken.has(it.id) && !(state.failed[it.id] && state.failed[it.id].gaveUp));
+const remaining = () => (queue.posts || []).filter(it => !state.posted[it.id] && !broken.has(it.id) && !(state.failed[it.id] && state.failed[it.id].gaveUp) && !(it.date && it.date < dayKey(NOW)));
+// an item with a date (a holiday post) goes out on that day only; the others keep their order
+function nextItem(){ const rem = remaining().filter(it => !notReady.has(it.id)), today = dayKey(NOW); return rem.find(it => it.date === today) || rem.find(it => !it.date) || null; }
 function due(){
   const today = dayKey(NOW), hour = NOW.getUTCHours();
   const slots = settings.timesUTC.filter(h => hour >= h).length;
@@ -219,12 +226,15 @@ async function main(){
   log('account', me.username, 'followers', me.followers_count);
   await refreshToken(false);
 
+  // the next post should have been drawn by now
+  const first = remaining().find(it => !it.date);
+  if(first && notReady.has(first.id) && MODE === 'auto' && due()) await notify('draw', 'Bir gönderi çizilemedi', `"${first.id}" gönderisinin resimleri hazır değil; sıradakine geçiliyor. Actions sekmesinde kırmızı bir çalışma varsa Claude'a göster.`);
   if(MODE === 'check'){
-    const next = remaining()[0];
+    const next = nextItem();
     if(next) await reachable(next.media[0]);
     status.next = next ? next.id : null;
   } else if(MODE === 'post-now' || due()){
-    const item = remaining()[0];
+    const item = nextItem();
     if(item){
       log('posting', item.id, item.type);
       try {
@@ -245,6 +255,7 @@ async function main(){
       }
     }
   }
+  state.setupFails = 0;
   const left = remaining().length;
   status.remaining = left;
   if(left === 0) await notify('empty', 'İçerik bitti', 'Sıradaki gönderi kalmadı. Claude\'dan yeni içerik paketini isteyip GitHub\'a yükle.');
@@ -258,7 +269,7 @@ catch(e){
   status.ok = false; status.problems.push(e.message);
   log('PROBLEM:', e.message);
   if(e instanceof IgError && e.auth) await notify('token', 'Instagram bağlantısı yenilenmeli', TOKEN_HELP + '\n\nHata: ' + e.message);
-  else if(e instanceof SetupError) await notify('setup', 'Kurulumda bir eksik var', e.message + '\n\nGitHub → Settings → Pages: "Deploy from a branch", branch **main**, klasör **/ (root)** seçili olmalı.');
+  else if(e instanceof SetupError && (state.setupFails = (state.setupFails || 0) + 1) >= 3) await notify('setup', 'Kurulumda bir eksik var', e.message + '\n\nGitHub → Settings → Pages: "Deploy from a branch", branch **main**, klasör **/ (root)** seçili olmalı.');
   if(MODE !== 'auto') exitCode = 1;     // a manual run shows a red cross; hourly runs stay quiet and use issues
 }
 writeJson('state/state.json', state);
