@@ -1,9 +1,11 @@
 {
   "settings": {
     "timesUTC": [
-      15
+      13,
+      18,
+      23
     ],
-    "lowWarn": 3
+    "lowWarn": 6
   },
   "posts": [
     {
@@ -25,16 +27,56 @@
         "media/d02-meet/4.jpg",
         "media/d02-meet/5.jpg"
       ],
-      "caption": "Hi! We’re Puchi & Chika ♡\n\nPuchi is the sunny one: she notices every tiny win.\nChika is the cozy one: she thinks she did nothing today. (She did.)\n\nWe’ll be here every day with a little story about little wins.\nWho are you more like? ☀ or ☾\n\n#puchika #puchiandchika #pixelart #kawaiiart #littlewins"
+      "caption": "Hi! We’re Puchi & Chika ♡\n\nPuchi is the sunny one: she notices every tiny win.\nChika is the cozy one: she thinks she did nothing today. (She did.)\n\nWe’ll be here every day with a little story about little wins.\nWho are you more like? ☀ or ☾\n\n#puchika #puchiandchika #pixelart #kawaiiart #littlewins",
+      "draw": true
     },
     {
-      "id": "d03-ep2",
+      "id": "m-nobody-water",
       "type": "reel",
       "media": [
-        "media/d03-ep2/reel.mp4"
+        "media/m-nobody-water/reel.mp4"
       ],
-      "cover": "media/d03-ep2/cover.jpg",
-      "caption": "When the to-do list looks like a mountain, don’t climb the whole thing.\nJust pick the tiniest step. Then the next one ♡\n\nPuchi & Chika · Episode 2: The To-Do Mountain\n\nWhat’s one tiny thing on your list today? We’ll cheer for you ↓\n\n#puchika #littlewins #productivity #pixelart #gentlereminder"
+      "cover": "media/m-nobody-water/cover.jpg",
+      "caption": "Drink one glass of water around Puchi and she throws you a parade 💧🎉\n\nTag someone who needs a hydration queen ↓\n\n#puchika #drinkwater #relatable #pixelart #littlewins",
+      "draw": true
+    },
+    {
+      "id": "a-affirm-1",
+      "type": "image",
+      "media": [
+        "media/a-affirm-1/1.jpg"
+      ],
+      "caption": "Both true. Order matters. 😴\n\nWhich affirmation do you need today: Puchi’s or Chika’s? ↓\n\n#affirmations #puchika #relatable #memes #pixelart",
+      "draw": true
+    },
+    {
+      "id": "g-stack",
+      "type": "reel",
+      "media": [
+        "media/g-stack/reel.mp4"
+      ],
+      "cover": "media/g-stack/cover.jpg",
+      "caption": "Cute game. Hardcore game. 🧱\nPuchi is on try #47 and she is fine. She is FINE.\n\nWhat’s the most you’ve ever retried a game? ↓\n\n#indiegame #cozygames #gamer #puchika #pixelart",
+      "draw": true
+    },
+    {
+      "id": "w-chika-wins",
+      "type": "image",
+      "media": [
+        "media/w-chika-wins/1.jpg"
+      ],
+      "caption": "Chika’s wins today ✓✓✓✓\nPuchi says these don’t count. Chika disagrees.\n\nWhat’s your slightly evil win today? ↓\n\n#puchika #littlewins #memes #relatable #darkcute",
+      "draw": true
+    },
+    {
+      "id": "m-heist",
+      "type": "reel",
+      "media": [
+        "media/m-heist/reel.mp4"
+      ],
+      "cover": "media/m-heist/cover.jpg",
+      "caption": "The Great Cake Heist of 2:13 AM 🍰🕶\nNo witnesses. Just crumbs.\n\nShe will never admit it ↓\n\n#puchika #heist #memes #pixelart #kawaii",
+      "draw": true
     },
     {
       "id": "d04-tinywins",
@@ -49,7 +91,66 @@
         "media/d04-tinywins/7.jpg",
         "media/d04-tinywins/8.jpg"
       ],
-      "caption": "Not every win has to be big. These all count:\n\n1. You got out of bed\n2. You drank a glass of water\n3. You stepped outside\n4. You replied to that message\n5. You ate a real meal\n6. You rested\n\nSave this for a hard day ♡ Which one did you do today?\n\n#littlewins #smallwins #selfcare #gentlereminder #puchika"
+      "caption": "Not every win has to be big. These all count:\n\n1. You got out of bed\n2. You drank a glass of water\n3. You stepped outside\n4. You replied to that message\n5. You ate a real meal\n6. You rested\n\nSave this for a hard day ♡ Which one did you do today?\n\n#littlewins #smallwins #selfcare #gentlereminder #puchika",
+      "draw": true
+    },
+    {
+      "id": "d03-ep2",
+      "type": "reel",
+      "media": [
+        "media/d03-ep2/reel.mp4"
+      ],
+      "cover": "media/d03-ep2/cover.jpg",
+      "caption": "When the to-do list looks like a mountain, don’t climb the whole thing.\nJust pick the tiniest step. Then the next one ♡\n\nPuchi & Chika · Episode 2: The To-Do Mountain\n\nWhat’s one tiny thing on your list today? We’ll cheer for you ↓\n\n#puchika #littlewins #productivity #pixelart #gentlereminder",
+      "draw": true
+    },
+    {
+      "id": "m-buttons",
+      "type": "image",
+      "media": [
+        "media/m-buttons/1.jpg"
+      ],
+      "caption": "A daily struggle. 😅\nPress one in the comments ↓ (we know which one)\n\n#puchika #twobuttons #memes #procrastination #relatable",
+      "draw": true
+    },
+    {
+      "id": "m-pov-11pm",
+      "type": "reel",
+      "media": [
+        "media/m-pov-11pm/reel.mp4"
+      ],
+      "cover": "media/m-pov-11pm/cover.jpg",
+      "caption": "Every. Single. Night. 📱\n“Just one more video” is a lie we all tell.\n\nTag the Chika in your life ↓\n\n#puchika #relatable #nightowl #pixelart #memes",
+      "draw": true
+    },
+    {
+      "id": "d06-whoareyou",
+      "type": "image",
+      "media": [
+        "media/d06-whoareyou/1.jpg"
+      ],
+      "caption": "Be honest ↓\n\n☀ Puchi: up early, ready to go, already celebrating\n☾ Chika: five more minutes... and a cup of tea first\n\nComment P or C!\n\n#puchika #puchiandchika #kawaii #pixelart #cozy",
+      "draw": true
+    },
+    {
+      "id": "m-tones",
+      "type": "reel",
+      "media": [
+        "media/m-tones/reel.mp4"
+      ],
+      "cover": "media/m-tones/cover.jpg",
+      "caption": "“Good job” but make it 4 different vibes 😂\nWhich one do you hear in your head today? ↓\n\n#puchika #supportivedisappointed #memes #pixelart #relatable",
+      "draw": true
+    },
+    {
+      "id": "m-kinda-chic",
+      "type": "carousel",
+      "media": [
+        "media/m-kinda-chic/1.jpg",
+        "media/m-kinda-chic/2.jpg"
+      ],
+      "caption": "Kinda chic to count all of these as wins ✨\nSwipe for Chika’s version →\n\nAdd yours: “kinda chic to...” ↓\n\n#kindachic #puchika #littlewins #memes #relatable",
+      "draw": true
     },
     {
       "id": "d05-ep3",
@@ -58,15 +159,81 @@
         "media/d05-ep3/reel.mp4"
       ],
       "cover": "media/d05-ep3/cover.jpg",
-      "caption": "Rainy day = cancelled plans?\nOr: one warm cup of tea and one page of a book ☔\nRest is a win too ♡\n\nPuchi & Chika · Episode 3: Rainy Day Plans\n\nHow do you spend a rainy day? ↓\n\n#puchika #rainyday #cozyvibes #pixelart #littlewins"
+      "caption": "Rainy day = cancelled plans?\nOr: one warm cup of tea and one page of a book ☔\nRest is a win too ♡\n\nPuchi & Chika · Episode 3: Rainy Day Plans\n\nHow do you spend a rainy day? ↓\n\n#puchika #rainyday #cozyvibes #pixelart #littlewins",
+      "draw": true
     },
     {
-      "id": "d06-whoareyou",
+      "id": "a-affirm-2",
       "type": "image",
       "media": [
-        "media/d06-whoareyou/1.jpg"
+        "media/a-affirm-2/1.jpg"
       ],
-      "caption": "Be honest ↓\n\n☀ Puchi: up early, ready to go, already celebrating\n☾ Chika: five more minutes... and a cup of tea first\n\nComment P or C!\n\n#puchika #puchiandchika #kawaii #pixelart #cozy"
+      "caption": "Self-belief comes in many forms. 🛏\n\nTag someone who needs both ↓\n\n#affirmations #puchika #relatable #memes #pixelart",
+      "draw": true
+    },
+    {
+      "id": "m-nihilist",
+      "type": "reel",
+      "media": [
+        "media/m-nihilist/reel.mp4"
+      ],
+      "cover": "media/m-nihilist/cover.jpg",
+      "caption": "Some days you just walk toward the mountains. 🏔\nChika has chosen peace.\n\nBe honest: are you Puchi or Chika today? ↓\n\n#nihilistpenguin #puchika #memes #relatable #pixelart",
+      "draw": true
+    },
+    {
+      "id": "m-same-picture",
+      "type": "image",
+      "media": [
+        "media/m-same-picture/1.jpg"
+      ],
+      "caption": "Corporate says there’s a difference. Chika disagrees. 🛋\n\nResting or procrastinating: what are you doing right now? ↓\n\n#puchika #memes #relatable #procrastination #pixelart",
+      "draw": true
+    },
+    {
+      "id": "g-balloon",
+      "type": "reel",
+      "media": [
+        "media/g-balloon/reel.mp4"
+      ],
+      "cover": "media/g-balloon/cover.jpg",
+      "caption": "It’s a balloon. With a smiley face. How hard can it be? 🎈\n(Very.)\n\nComment your best score excuse ↓\n\n#indiegame #cozygames #ragequit #puchika #pixelart",
+      "draw": true
+    },
+    {
+      "id": "d09-places",
+      "type": "carousel",
+      "media": [
+        "media/d09-places/1.jpg",
+        "media/d09-places/2.jpg",
+        "media/d09-places/3.jpg",
+        "media/d09-places/4.jpg",
+        "media/d09-places/5.jpg",
+        "media/d09-places/6.jpg",
+        "media/d09-places/7.jpg",
+        "media/d09-places/8.jpg"
+      ],
+      "caption": "Where would you take a cozy nap? Pick one ↓\n\n1. A sunny beach\n2. A snowy hill\n3. Under the cherry trees\n4. A sleepy city night\n5. A firefly forest\n6. Up in the clouds\n\nComment your number!\n\n#puchika #pixelart #cozyvibes #kawaiiart #pixelartist",
+      "draw": true
+    },
+    {
+      "id": "s-song-water",
+      "type": "reel",
+      "media": [
+        "media/s-song-water/reel.mp4"
+      ],
+      "cover": "media/s-song-water/cover.jpg",
+      "caption": "Today’s song of the day 🎶 Sing along, then go drink a glass of water.\n\nComment “sip” when you did ↓\n\n#puchika #drinkwater #cute #pixelart #littlewins",
+      "draw": true
+    },
+    {
+      "id": "m-started",
+      "type": "image",
+      "media": [
+        "media/m-started/1.jpg"
+      ],
+      "caption": "5 minutes is a state of mind. ⏰\n\nWhat’s your longest “5 minute rest”? ↓\n\n#puchika #howitstarted #memes #relatable #pixelart",
+      "draw": true
     },
     {
       "id": "d07-ep4",
@@ -75,7 +242,434 @@
         "media/d07-ep4/reel.mp4"
       ],
       "cover": "media/d07-ep4/cover.jpg",
-      "caption": "Some days are just bad. Nothing goes right.\nBut you made it to tonight, and that counts ♡\n\nPuchi & Chika · Episode 4: The Bad Day\n\nIf today was a hard one: you did enough. Tomorrow is a new page.\n\n#puchika #gentlereminder #selfcompassion #littlewins #pixelart"
+      "caption": "Some days are just bad. Nothing goes right.\nBut you made it to tonight, and that counts ♡\n\nPuchi & Chika · Episode 4: The Bad Day\n\nIf today was a hard one: you did enough. Tomorrow is a new page.\n\n#puchika #gentlereminder #selfcompassion #littlewins #pixelart",
+      "draw": true
+    },
+    {
+      "id": "q-quote-1",
+      "type": "image",
+      "media": [
+        "media/q-quote-1/1.jpg"
+      ],
+      "caption": "Small steps are still steps ✿\n\nSave this for the days that feel slow.\n\n#quotes #littlewins #gentlereminder #puchika #motivation",
+      "draw": true
+    },
+    {
+      "id": "m-evil-onemore",
+      "type": "reel",
+      "media": [
+        "media/m-evil-onemore/reel.mp4"
+      ],
+      "cover": "media/m-evil-onemore/cover.jpg",
+      "caption": "Chika has a limit. You just found it. ⚡\n\nTag the friend who says “just one more thing” ↓\n\n#puchika #memes #relatable #pixelart #boundaries",
+      "draw": true
+    },
+    {
+      "id": "a-affirm-3",
+      "type": "image",
+      "media": [
+        "media/a-affirm-3/1.jpg"
+      ],
+      "caption": "Fresh starts AND cancelled plans. Balance. ✨\n\nWhich one are you choosing today? ↓\n\n#affirmations #puchika #introvert #memes #pixelart",
+      "draw": true
+    },
+    {
+      "id": "f-pyoko",
+      "type": "reel",
+      "media": [
+        "media/f-pyoko/reel.mp4"
+      ],
+      "cover": "media/f-pyoko/cover.jpg",
+      "caption": "Meet Pyoko 🐰 She hops everywhere and gives the best hugs.\n\nWho should hatch next? Mikan the kitty, Piyo the chick, Mugi the bear or Ame the frog? ↓\n\n#puchika #kawaii #pixelart #virtualpet #cute",
+      "draw": true
+    },
+    {
+      "id": "d19-friends",
+      "type": "carousel",
+      "media": [
+        "media/d19-friends/1.jpg",
+        "media/d19-friends/2.jpg",
+        "media/d19-friends/3.jpg",
+        "media/d19-friends/4.jpg",
+        "media/d19-friends/5.jpg",
+        "media/d19-friends/6.jpg",
+        "media/d19-friends/7.jpg"
+      ],
+      "caption": "Puchi & Chika have some friends who want to say hi ♡\n\nPyoko the bunny, Mikan the kitty, Piyo the chick, Mugi the bear and Ame the frog.\n\nWho should visit Puchi first? Vote in the comments ↓\n\n#puchika #kawaiiart #pixelart #cutecharacters #virtualpet",
+      "draw": true
+    },
+    {
+      "id": "d08-ep5",
+      "type": "reel",
+      "media": [
+        "media/d08-ep5/reel.mp4"
+      ],
+      "cover": "media/d08-ep5/cover.jpg",
+      "caption": "Hydration, but make it a competition 💧\nChika says she wasn’t trying. Chika won.\n\nPuchi & Chika · Episode 5: The Water Race\n\nGo drink a glass of water right now, then comment “done” ↓\n\n#puchika #littlewins #drinkwater #pixelart #cozy",
+      "draw": true
+    },
+    {
+      "id": "m-expect",
+      "type": "image",
+      "media": [
+        "media/m-expect/1.jpg"
+      ],
+      "caption": "The plan was perfect. The execution was... a nap. 😴\n\nHow did your weekend actually go? ↓\n\n#puchika #expectationvsreality #memes #relatable #pixelart",
+      "draw": true
+    },
+    {
+      "id": "g-bonk",
+      "type": "reel",
+      "media": [
+        "media/g-bonk/reel.mp4"
+      ],
+      "cover": "media/g-bonk/cover.jpg",
+      "caption": "The undefeated champion... was defeated in 4 seconds. 🔨\n\nWould you beat Chika? ↓\n\n#indiegame #cozygames #gamer #puchika #memes",
+      "draw": true
+    },
+    {
+      "id": "d11-nexttiny",
+      "type": "image",
+      "media": [
+        "media/d11-nexttiny/1.jpg"
+      ],
+      "caption": "You don’t have to do it all today.\nJust the next tiny thing ♡\n\nWhat’s your next tiny thing? ↓\n\n#gentlereminder #littlewins #selfcare #puchika #pixelart",
+      "draw": true
+    },
+    {
+      "id": "m-tellme",
+      "type": "reel",
+      "media": [
+        "media/m-tellme/reel.mp4"
+      ],
+      "cover": "media/m-tellme/cover.jpg",
+      "caption": "Your turn: tell me you’re a Chika without telling me you’re a Chika ↓\n\n#puchika #tellmewithouttellingme #relatable #memes #pixelart",
+      "draw": true
+    },
+    {
+      "id": "p-thisorthat",
+      "type": "carousel",
+      "media": [
+        "media/p-thisorthat/1.jpg",
+        "media/p-thisorthat/2.jpg",
+        "media/p-thisorthat/3.jpg",
+        "media/p-thisorthat/4.jpg",
+        "media/p-thisorthat/5.jpg"
+      ],
+      "caption": "This or that: are you more Puchi ☀ or more Chika ☾?\n\nCount your answers and comment your score ↓\n\n#thisorthat #puchika #personalitytest #pixelart #kawaii",
+      "draw": true
+    },
+    {
+      "id": "d10-ep6",
+      "type": "reel",
+      "media": [
+        "media/d10-ep6/reel.mp4"
+      ],
+      "cover": "media/d10-ep6/cover.jpg",
+      "caption": "Someone watered Puchi’s flowers... and it definitely wasn’t Chika. (It was Chika.)\nTiny kind things count the most ♡\n\nPuchi & Chika · Episode 6: Chika’s Secret\n\nDid you do something kind this week? Even tiny ↓\n\n#puchika #littlewins #kindness #pixelart #webcomic",
+      "draw": true
+    },
+    {
+      "id": "a-affirm-4",
+      "type": "image",
+      "media": [
+        "media/a-affirm-4/1.jpg"
+      ],
+      "caption": "Growth is growth. Even sideways. 🌱\n\nWhat’s one way you grew this month? ↓\n\n#affirmations #puchika #growth #memes #pixelart",
+      "draw": true
+    },
+    {
+      "id": "w-puchi",
+      "type": "reel",
+      "media": [
+        "media/w-puchi/reel.mp4"
+      ],
+      "cover": "media/w-puchi/cover.jpg",
+      "caption": "A little Puchi for your lock screen 🌸\nPause, screenshot, done ♡\n\nWant a Chika one too? ↓\n\n#puchika #wallpaper #lockscreen #pixelart #kawaii",
+      "draw": true
+    },
+    {
+      "id": "d13-ep7",
+      "type": "carousel",
+      "media": [
+        "media/d13-ep7/1.jpg",
+        "media/d13-ep7/2.jpg",
+        "media/d13-ep7/3.jpg",
+        "media/d13-ep7/4.jpg",
+        "media/d13-ep7/5.jpg",
+        "media/d13-ep7/6.jpg",
+        "media/d13-ep7/7.jpg"
+      ],
+      "caption": "Five more minutes... turned into two hours 😴\nBut getting up is getting up. Any time counts ♡\n\nPuchi & Chika · Episode 7: Five More Minutes (swipe →)\n\nWhat time did you get up today? No judging ↓\n\n#puchika #webcomic #pixelcomic #littlewins #relatable",
+      "draw": true
+    },
+    {
+      "id": "m-gratitude",
+      "type": "reel",
+      "media": [
+        "media/m-gratitude/reel.mp4"
+      ],
+      "cover": "media/m-gratitude/cover.jpg",
+      "caption": "Both are valid. One is just... cozier. 🛌\n\nWhat’s on your gratitude list today? ↓\n\n#puchika #gratitude #memes #relatable #pixelart",
+      "draw": true
+    },
+    {
+      "id": "d15-weather",
+      "type": "image",
+      "media": [
+        "media/d15-weather/1.jpg"
+      ],
+      "caption": "Quick check-in: how’s your inner weather today?\n\n☀ sunny\n☁ cloudy\n☂ rainy\n\nAll weather is okay here ♡ Comment one ↓\n\n#puchika #checkin #gentlereminder #pixelart #littlewins",
+      "draw": true
+    },
+    {
+      "id": "d12-grow",
+      "type": "reel",
+      "media": [
+        "media/d12-grow/reel.mp4"
+      ],
+      "cover": "media/d12-grow/cover.jpg",
+      "caption": "From a tiny seed to a big bloom, one little win at a time ♡\n\nDay 1: a seed\nDay 3: two wins\nDay 7: drank water\nDay 14: went outside\nDay 21: rested\nDay 30: look at us!\n\nWhat helped you grow this week? ↓\n\n#puchika #littlewins #growth #pixelart #virtualpet",
+      "draw": true
+    },
+    {
+      "id": "q-quote-2",
+      "type": "image",
+      "media": [
+        "media/q-quote-2/1.jpg"
+      ],
+      "caption": "Chika, being wise for once ☾\nRest isn’t a reward. It’s a need.\n\nSend this to someone who needs a break.\n\n#quotes #rest #gentlereminder #puchika #selfcare",
+      "draw": true
+    },
+    {
+      "id": "m-giant",
+      "type": "reel",
+      "media": [
+        "media/m-giant/reel.mp4"
+      ],
+      "cover": "media/m-giant/cover.jpg",
+      "caption": "Growth is beautiful. Also, sometimes, in the way. 🌱\n\nWhat little win are you proud of this week? ↓\n\n#puchika #littlewins #growth #memes #pixelart",
+      "draw": true
+    },
+    {
+      "id": "d17-tired",
+      "type": "carousel",
+      "media": [
+        "media/d17-tired/1.jpg",
+        "media/d17-tired/2.jpg",
+        "media/d17-tired/3.jpg",
+        "media/d17-tired/4.jpg",
+        "media/d17-tired/5.jpg",
+        "media/d17-tired/6.jpg",
+        "media/d17-tired/7.jpg"
+      ],
+      "caption": "Tired days still have wins:\n\n1. You took a shower\n2. You put on comfy clothes\n3. You opened a window\n4. You ate something warm\n5. You went to bed early\n\nSave this for the next tired day ♡\n\n#littlewins #selfcare #gentlereminder #puchika #tired",
+      "draw": true
+    },
+    {
+      "id": "d14-ep8",
+      "type": "reel",
+      "media": [
+        "media/d14-ep8/reel.mp4"
+      ],
+      "cover": "media/d14-ep8/cover.jpg",
+      "caption": "A tiny walk to the cherry tree and back 🌸\nFive minutes outside can change a whole day.\n\nPuchi & Chika · Episode 8: The Tiny Walk\n\nWhen did you last step outside? ↓\n\n#puchika #littlewins #sakura #pixelart #selfcare",
+      "draw": true
+    },
+    {
+      "id": "d-devlog",
+      "type": "carousel",
+      "media": [
+        "media/d-devlog/1.jpg",
+        "media/d-devlog/2.jpg",
+        "media/d-devlog/3.jpg",
+        "media/d-devlog/4.jpg",
+        "media/d-devlog/5.jpg"
+      ],
+      "caption": "A little peek behind the scenes ✿\nEvery picture is 64×36 pixels and every sound is made with code. The Puchika app is almost ready!\n\nWhat should Puchi do next? Your idea might end up in the app ↓\n\n#devlog #indiedev #pixelart #gamedev #puchika",
+      "draw": true
+    },
+    {
+      "id": "a-fireflies",
+      "type": "reel",
+      "media": [
+        "media/a-fireflies/reel.mp4"
+      ],
+      "cover": "media/a-fireflies/cover.jpg",
+      "caption": "A little firefly break ✨\nBreathe in... breathe out.\n\nSave this for a busy day ♡\n\n#puchika #calm #cozyvibes #pixelart #breathe",
+      "draw": true
+    },
+    {
+      "id": "d21-rest",
+      "type": "image",
+      "media": [
+        "media/d21-rest/1.jpg"
+      ],
+      "caption": "Rest is part of the work.\nYou’re allowed to stop for today ♡\n\nSend this to someone who needs to hear it.\n\n#gentlereminder #rest #selfcare #puchika #pixelart",
+      "draw": true
+    },
+    {
+      "id": "d16-rainynight",
+      "type": "reel",
+      "media": [
+        "media/d16-rainynight/reel.mp4"
+      ],
+      "cover": "media/d16-rainynight/cover.jpg",
+      "caption": "Rain on the window, tea on the side, two sleepy friends ☔\nTake a slow breath with them ♡\n\nSave this for when you need a calm moment.\n\n#puchika #cozyvibes #rainyday #pixelart #calm",
+      "draw": true
+    },
+    {
+      "id": "d23-ep12",
+      "type": "carousel",
+      "media": [
+        "media/d23-ep12/1.jpg",
+        "media/d23-ep12/2.jpg",
+        "media/d23-ep12/3.jpg",
+        "media/d23-ep12/4.jpg",
+        "media/d23-ep12/5.jpg",
+        "media/d23-ep12/6.jpg"
+      ],
+      "caption": "Breaking news: snacks are food. Cake especially 🍰\n\nPuchi & Chika · Episode 12: Snack Time (swipe →)\n\nWhat did you eat today? Snacks count ♡\n\n#puchika #webcomic #pixelcomic #littlewins #kawaii",
+      "draw": true
+    },
+    {
+      "id": "d18-ep9",
+      "type": "reel",
+      "media": [
+        "media/d18-ep9/reel.mp4"
+      ],
+      "cover": "media/d18-ep9/cover.jpg",
+      "caption": "When the whole room feels like too much, pick up just 5 things.\nThat’s it. That’s the trick ♡\n\nPuchi & Chika · Episode 9: The Messy Room\n\nTry it right now and comment “done” ↓\n\n#puchika #littlewins #cleaningmotivation #pixelart #tinyhabits",
+      "draw": true
+    },
+    {
+      "id": "d25-count",
+      "type": "image",
+      "media": [
+        "media/d25-count/1.jpg"
+      ],
+      "caption": "How many little wins did you have today?\nDrank water? +1. Got up? +1. Made it here? +1 ♡\n\nComment your number ↓ We’ll cheer for every one.\n\n#puchika #littlewins #smallwins #pixelart #motivation",
+      "draw": true
+    },
+    {
+      "id": "d22-ep11",
+      "type": "reel",
+      "media": [
+        "media/d22-ep11/reel.mp4"
+      ],
+      "cover": "media/d22-ep11/cover.jpg",
+      "caption": "Saying something nice about yourself is hard. Start tiny.\n“I make good tea” totally counts ♡\n\nPuchi & Chika · Episode 11: One Nice Thing\n\nYour turn: one nice thing about you ↓ We’ll read every one.\n\n#puchika #selfkindness #littlewins #pixelart #webcomic",
+      "draw": true
+    },
+    {
+      "id": "w-chika",
+      "type": "reel",
+      "media": [
+        "media/w-chika/reel.mp4"
+      ],
+      "cover": "media/w-chika/cover.jpg",
+      "caption": "Chika for your lock screen, as promised ☾\nPause, screenshot, done ♡\n\n#puchika #wallpaper #lockscreen #pixelart #darkcute",
+      "draw": true
+    },
+    {
+      "id": "d24-ep13",
+      "type": "reel",
+      "media": [
+        "media/d24-ep13/reel.mp4"
+      ],
+      "cover": "media/d24-ep13/cover.jpg",
+      "caption": "Every little light out there is someone’s tiny win ✨\nBrushed your teeth? That’s yours.\n\nPuchi & Chika · Episode 13: Little Stars\n\nWhat’s your little light today? ↓\n\n#puchika #littlewins #cozyvibes #pixelart #nightsky",
+      "draw": true
+    },
+    {
+      "id": "d20-ep10",
+      "type": "reel",
+      "media": [
+        "media/d20-ep10/reel.mp4"
+      ],
+      "cover": "media/d20-ep10/cover.jpg",
+      "caption": "Even the sunny ones get cloudy days ☁\nYou don’t have to be cheerful all the time.\n\nPuchi & Chika · Episode 10: Puchi’s Cloudy Day\n\nWho’s your Chika? Tag them ↓\n\n#puchika #friendship #gentlereminder #pixelart #littlewins",
+      "draw": true
+    },
+    {
+      "id": "d29-ep15",
+      "type": "reel",
+      "media": [
+        "media/d29-ep15/reel.mp4"
+      ],
+      "cover": "media/d29-ep15/cover.jpg",
+      "caption": "“Today was fine, I guess.”\nThen: warm tea, a pink sky, a good friend. Three wins ♡\n\nPuchi & Chika · Episode 15: Three Good Things\n\nYour turn: 3 good things from today ↓\n\n#puchika #gratitude #littlewins #pixelart #threegoodthings",
+      "draw": true
+    },
+    {
+      "id": "d30-month",
+      "type": "carousel",
+      "media": [
+        "media/d30-month/1.jpg",
+        "media/d30-month/2.jpg",
+        "media/d30-month/3.jpg",
+        "media/d30-month/4.jpg"
+      ],
+      "caption": "One month of Puchi & Chika ♡\n30 little stories, and so many tiny wins in the comments.\n\nThank you for growing with us. The Puchika app is coming soon ✿\n\nWhat was your favorite win this month? ↓\n\n#puchika #littlewins #pixelart #thankyou #kawaiiart",
+      "draw": true
+    },
+    {
+      "id": "m-sax-sunday",
+      "type": "reel",
+      "media": [
+        "media/m-sax-sunday/reel.mp4"
+      ],
+      "cover": "media/m-sax-sunday/cover.jpg",
+      "caption": "The Sunday scaries arrive at exactly 8 PM 🎷\n\nWho else just remembered? ↓\n\n#sundayscaries #puchika #relatable #memes #pixelart",
+      "date": "2026-10-11",
+      "draw": true
+    },
+    {
+      "id": "m-grr-mondays",
+      "type": "image",
+      "media": [
+        "media/m-grr-mondays/1.jpg"
+      ],
+      "caption": "Grr. Mondays. 🌧\nShow us your Monday face ↓\n\n#grrmondays #mondaymood #puchika #memes #pixelart",
+      "date": "2026-10-12",
+      "draw": true
+    },
+    {
+      "id": "d27-sunday",
+      "type": "carousel",
+      "media": [
+        "media/d27-sunday/1.jpg",
+        "media/d27-sunday/2.jpg",
+        "media/d27-sunday/3.jpg",
+        "media/d27-sunday/4.jpg",
+        "media/d27-sunday/5.jpg",
+        "media/d27-sunday/6.jpg",
+        "media/d27-sunday/7.jpg"
+      ],
+      "caption": "A tiny Sunday reset (no big cleaning day needed):\n\n1. Change your sheets\n2. Plan one fun thing\n3. Tidy one small spot\n4. Text someone you miss\n5. Go to bed a little early\n\nWhich one will you do today? Save for next Sunday ♡\n\n#sundayreset #littlewins #selfcare #puchika #pixelart",
+      "date": "2026-10-25",
+      "draw": true
+    },
+    {
+      "id": "d28-newweek",
+      "type": "image",
+      "media": [
+        "media/d28-newweek/1.jpg"
+      ],
+      "caption": "New week. No need to have it all figured out.\nOne tiny step at a time ♡\n\nWhat’s your first tiny step this week? ↓\n\n#mondaymotivation #littlewins #gentlereminder #puchika #pixelart",
+      "date": "2026-10-26",
+      "draw": true
+    },
+    {
+      "id": "d26-halloween",
+      "type": "reel",
+      "media": [
+        "media/d26-halloween/reel.mp4"
+      ],
+      "cover": "media/d26-halloween/cover.jpg",
+      "caption": "Dark nights are less spooky with a friend and a pumpkin lantern 🎃\nBeing a little brave counts as a win ♡\n\nPuchi & Chika · Episode 14: A Spooky Night\n\nAre you dressing up this year? ↓\n\n#puchika #halloween #pixelart #cozyhalloween #kawaii",
+      "date": "2026-10-31",
+      "draw": true
     }
   ]
 }
