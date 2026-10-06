@@ -1,0 +1,20 @@
+{
+  "posted": {
+    "d01-ep1": {
+      "mediaId": "17932912119142008",
+      "permalink": "https://www.instagram.com/reel/DeJcnimCjEe/",
+      "type": "reel",
+      "at": "2026-10-06T09:18:43.623Z"
+    }
+  },
+  "failed": {},
+  "days": {
+    "2026-10-06": 1
+  },
+  "notified": {},
+  "firstRun": "2026-10-06T09:18:43.623Z",
+  "refreshTriedAt": "2026-10-06T09:18:43.623Z",
+  "refreshedAt": "2026-10-06T09:18:43.623Z",
+  "tokenExpiresAt": "2026-12-05T08:16:17.623Z",
+  "insightsAt": "2026-10-06T09:18:43.623Z"
+}
