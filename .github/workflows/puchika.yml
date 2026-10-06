@@ -3,6 +3,8 @@ name: Puchika
 on:
   schedule:
     - cron: '23 * * * *'
+  push:
+    paths: ['gen/posts.js']
   workflow_dispatch:
     inputs:
       mode:
@@ -22,10 +24,30 @@ concurrency:
 jobs:
   run:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
-      - name: Puchika bot
+      - name: Plan
+        id: plan
+        run: node bot/render.mjs plan
+      - name: Get the drawing tools
+        if: steps.plan.outputs.need == '1'
+        run: |
+          npm install --no-save --no-audit --no-fund playwright@1
+          npx playwright install --with-deps chromium
+          sudo apt-get install -y ffmpeg
+      - name: Draw the next posts
+        if: steps.plan.outputs.need == '1'
+        run: node bot/render.mjs draw ${{ steps.plan.outputs.ids }}
+      - name: Put the drawings online
+        if: always()
+        run: |
+          git config user.name "puchika-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add queue.json media
+          git diff --cached --quiet || (git commit -m "bot: drawings" && git pull --rebase && git push)
+      - name: Post
+        if: github.event_name != 'push'
         run: node bot/post.mjs
         env:
           IG_TOKEN: ${{ secrets.IG_TOKEN }}
@@ -34,7 +56,5 @@ jobs:
       - name: Save state
         if: always()
         run: |
-          git config user.name "puchika-bot"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           mkdir -p state && git add state
           git diff --cached --quiet || (git commit -m "bot: state" && git pull --rebase && git push)
