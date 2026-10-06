@@ -1,0 +1,81 @@
+{
+  "settings": {
+    "timesUTC": [
+      15
+    ],
+    "lowWarn": 3
+  },
+  "posts": [
+    {
+      "id": "d01-ep1",
+      "type": "reel",
+      "media": [
+        "media/d01-ep1/reel.mp4"
+      ],
+      "cover": "media/d01-ep1/cover.jpg",
+      "caption": "Some days it feels like you did nothing at all.\nBut you woke up. You drank some water. You ate something.\nThat’s three wins already ♡\n\nPuchi & Chika · Episode 1: The Smallest Win\n\nWhat’s your little win today? Tell us in the comments ↓\n\n#puchika #littlewins #smallwins #pixelart #cozy"
+    },
+    {
+      "id": "d02-meet",
+      "type": "carousel",
+      "media": [
+        "media/d02-meet/1.jpg",
+        "media/d02-meet/2.jpg",
+        "media/d02-meet/3.jpg",
+        "media/d02-meet/4.jpg",
+        "media/d02-meet/5.jpg"
+      ],
+      "caption": "Hi! We’re Puchi & Chika ♡\n\nPuchi is the sunny one: she notices every tiny win.\nChika is the cozy one: she thinks she did nothing today. (She did.)\n\nWe’ll be here every day with a little story about little wins.\nWho are you more like? ☀ or ☾\n\n#puchika #puchiandchika #pixelart #kawaiiart #littlewins"
+    },
+    {
+      "id": "d03-ep2",
+      "type": "reel",
+      "media": [
+        "media/d03-ep2/reel.mp4"
+      ],
+      "cover": "media/d03-ep2/cover.jpg",
+      "caption": "When the to-do list looks like a mountain, don’t climb the whole thing.\nJust pick the tiniest step. Then the next one ♡\n\nPuchi & Chika · Episode 2: The To-Do Mountain\n\nWhat’s one tiny thing on your list today? We’ll cheer for you ↓\n\n#puchika #littlewins #productivity #pixelart #gentlereminder"
+    },
+    {
+      "id": "d04-tinywins",
+      "type": "carousel",
+      "media": [
+        "media/d04-tinywins/1.jpg",
+        "media/d04-tinywins/2.jpg",
+        "media/d04-tinywins/3.jpg",
+        "media/d04-tinywins/4.jpg",
+        "media/d04-tinywins/5.jpg",
+        "media/d04-tinywins/6.jpg",
+        "media/d04-tinywins/7.jpg",
+        "media/d04-tinywins/8.jpg"
+      ],
+      "caption": "Not every win has to be big. These all count:\n\n1. You got out of bed\n2. You drank a glass of water\n3. You stepped outside\n4. You replied to that message\n5. You ate a real meal\n6. You rested\n\nSave this for a hard day ♡ Which one did you do today?\n\n#littlewins #smallwins #selfcare #gentlereminder #puchika"
+    },
+    {
+      "id": "d05-ep3",
+      "type": "reel",
+      "media": [
+        "media/d05-ep3/reel.mp4"
+      ],
+      "cover": "media/d05-ep3/cover.jpg",
+      "caption": "Rainy day = cancelled plans?\nOr: one warm cup of tea and one page of a book ☔\nRest is a win too ♡\n\nPuchi & Chika · Episode 3: Rainy Day Plans\n\nHow do you spend a rainy day? ↓\n\n#puchika #rainyday #cozyvibes #pixelart #littlewins"
+    },
+    {
+      "id": "d06-whoareyou",
+      "type": "image",
+      "media": [
+        "media/d06-whoareyou/1.jpg"
+      ],
+      "caption": "Be honest ↓\n\n☀ Puchi: up early, ready to go, already celebrating\n☾ Chika: five more minutes... and a cup of tea first\n\nComment P or C!\n\n#puchika #puchiandchika #kawaii #pixelart #cozy"
+    },
+    {
+      "id": "d07-ep4",
+      "type": "reel",
+      "media": [
+        "media/d07-ep4/reel.mp4"
+      ],
+      "cover": "media/d07-ep4/cover.jpg",
+      "caption": "Some days are just bad. Nothing goes right.\nBut you made it to tonight, and that counts ♡\n\nPuchi & Chika · Episode 4: The Bad Day\n\nIf today was a hard one: you did enough. Tomorrow is a new page.\n\n#puchika #gentlereminder #selfcompassion #littlewins #pixelart"
+    }
+  ]
+}
