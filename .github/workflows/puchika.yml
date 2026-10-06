@@ -27,6 +27,8 @@ jobs:
     timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
       - name: Plan
         id: plan
         run: node bot/render.mjs plan
@@ -45,7 +47,10 @@ jobs:
           git config user.name "puchika-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add queue.json media
-          git diff --cached --quiet || (git commit -m "bot: drawings" && git pull --rebase && git push)
+          if ! git diff --cached --quiet; then
+            git commit -m "bot: drawings"
+            for i in 1 2 3; do git pull --rebase -X theirs origin main && git push origin main && break; git rebase --abort 2>/dev/null; sleep 5; done
+          fi
       - name: Post
         if: github.event_name != 'push'
         run: node bot/post.mjs
@@ -56,5 +61,9 @@ jobs:
       - name: Save state
         if: always()
         run: |
+          git rebase --abort 2>/dev/null || true
           mkdir -p state && git add state
-          git diff --cached --quiet || (git commit -m "bot: state" && git pull --rebase && git push)
+          if ! git diff --cached --quiet; then
+            git commit -m "bot: state"
+            for i in 1 2 3; do git pull --rebase -X theirs origin main && git push origin main && break; git rebase --abort 2>/dev/null; sleep 5; done
+          fi
