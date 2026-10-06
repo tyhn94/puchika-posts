@@ -165,11 +165,22 @@ function checkQueue(){
 const remaining = () => (queue.posts || []).filter(it => !state.posted[it.id] && !broken.has(it.id) && !(state.failed[it.id] && state.failed[it.id].gaveUp) && !(it.date && it.date < dayKey(NOW)));
 // an item with a date (a holiday post) goes out on that day only; the others keep their order
 function nextItem(){ const rem = remaining().filter(it => !notReady.has(it.id)), today = dayKey(NOW); return rem.find(it => it.date === today) || rem.find(it => !it.date) || null; }
+// the posting hours for a day: settings.ramp grows the number of posts over time ([{from: 'YYYY-MM-DD', timesUTC}]),
+// and the brake (after Instagram restricts the account) drops to a few posts a day for a while
+function hoursFor(day){
+  if(state.brakeUntil && day <= state.brakeUntil.slice(0, 10)) return settings.brakeTimesUTC || [13, 18, 23];
+  const steps = (settings.ramp || []).filter(r => r.from <= day).sort((a, b) => a.from < b.from ? -1 : 1);
+  return steps.length ? steps[steps.length - 1].timesUTC : settings.timesUTC;
+}
+const lastPostAt = () => Math.max(0, ...Object.values(state.posted).map(p => Date.parse(p.at) || 0));
 function due(){
   const today = dayKey(NOW), hour = NOW.getUTCHours();
-  const slots = settings.timesUTC.filter(h => hour >= h).length;
+  const slots = hoursFor(today).filter(h => hour >= h).length;
+  if(NOW - lastPostAt() < (settings.minGapMinutes || 40) * 60e3) return false;   // never two posts in a row
   return (state.days[today] || 0) < slots;
 }
+// Instagram restricting the account ("action blocked", spam checks): slow down for a few days and tell İdil
+const restricted = e => e instanceof IgError && (e.code === 368 || /block|restrict|spam|suspicious|community guidelines/i.test(e.message));
 
 /* ---------- telling İdil (a GitHub issue; GitHub emails her) ---------- */
 async function notify(key, title, body){
@@ -245,6 +256,11 @@ async function main(){
         status.posted = {id: item.id, ...r};
         log('posted', item.id, r.permalink);
       } catch(e){
+        if(restricted(e)){
+          state.brakeUntil = new Date(+NOW + 3 * DAY).toISOString();
+          await notify('brake', 'Instagram paylaşımı kısıtladı, bot yavaşladı', `Instagram bir paylaşımı engelledi, bu yüzden bot 3 gün boyunca günde 3 paylaşıma indi (${state.brakeUntil.slice(0, 10)} tarihine kadar). Sonra kendiliğinden normale döner.\n\nInstagram uygulamasında Ayarlar → Hesap durumu (Account status) sayfasına bakıp Claude'a göster.\n\nHata: ${e.message}`);
+          throw e;
+        }
         if(e instanceof SetupError || (e instanceof IgError && (e.auth || e.busy))) throw e;
         const f = state.failed[item.id] = {n: ((state.failed[item.id] || {}).n || 0) + 1, last: e.message};
         status.problems.push(item.id + ': ' + e.message);
@@ -258,6 +274,8 @@ async function main(){
   state.setupFails = 0;
   const left = remaining().length;
   status.remaining = left;
+  status.perDay = hoursFor(dayKey(NOW)).length;
+  if(state.brakeUntil) status.brakeUntil = state.brakeUntil;
   if(left === 0) await notify('empty', 'İçerik bitti', 'Sıradaki gönderi kalmadı. Claude\'dan yeni içerik paketini isteyip GitHub\'a yükle.');
   else if(left <= settings.lowWarn) await notify('low', `${left} gönderi kaldı`, `Sırada ${left} gönderi kaldı. Claude\'dan yeni içerik paketini isteme zamanı.`);
   try { await insights(uid, me); } catch(e){ log('insights skipped:', e.message); }
