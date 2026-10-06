@@ -2,7 +2,7 @@ name: Puchika
 
 on:
   schedule:
-    - cron: '23 * * * *'
+    - cron: '23,53 * * * *'
   push:
     paths: ['gen/posts.js']
   workflow_dispatch:
@@ -46,7 +46,7 @@ jobs:
         run: |
           git config user.name "puchika-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add queue.json media
+          git add -A queue.json media
           if ! git diff --cached --quiet; then
             git commit -m "bot: drawings"
             for i in 1 2 3; do git pull --rebase -X theirs origin main && git push origin main && break; git rebase --abort 2>/dev/null; sleep 5; done
@@ -66,4 +66,18 @@ jobs:
           if ! git diff --cached --quiet; then
             git commit -m "bot: state"
             for i in 1 2 3; do git pull --rebase -X theirs origin main && git push origin main && break; git rebase --abort 2>/dev/null; sleep 5; done
+          fi
+      - name: Keep the repo small
+        # once a day: if the repo (with its history of old videos) has grown big, start a fresh history with the same files
+        if: always() && github.event_name == 'schedule'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          [ "$(date -u +%H)" = "03" ] || exit 0
+          size=$(gh api repos/${{ github.repository }} --jq .size)
+          echo "repo size: ${size} KB"
+          if [ "$size" -gt 400000 ]; then
+            git pull --rebase -X theirs origin main || true
+            fresh=$(git commit-tree "HEAD^{tree}" -m "fresh start: history trimmed to keep the repo small")
+            git push -f origin "$fresh:refs/heads/main"
           fi
