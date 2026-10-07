@@ -4,6 +4,11 @@
       "date": "2026-10-06",
       "followers": 0,
       "posts": 2
+    },
+    {
+      "date": "2026-10-07",
+      "followers": 2,
+      "posts": 7
     }
   ],
   "posts": {
@@ -12,20 +17,75 @@
       "at": "2026-10-06T09:18:43.623Z",
       "type": "reel",
       "permalink": "https://www.instagram.com/reel/DeJcnimCjEe/",
-      "likes": 0,
+      "likes": 1,
       "comments": 0,
-      "reach": 13,
+      "reach": 26,
       "saved": 0,
       "shares": 0,
-      "views": 15,
-      "total_interactions": 0,
-      "ig_reels_avg_watch_time": 17186
+      "views": 31,
+      "total_interactions": 1,
+      "ig_reels_avg_watch_time": 25024
     },
     "d02-meet": {
       "id": "d02-meet",
       "at": "2026-10-06T10:42:09.777Z",
       "type": "carousel",
       "permalink": "https://www.instagram.com/p/DeJmFuzm7yT/",
+      "likes": 1,
+      "comments": 0,
+      "reach": 2,
+      "saved": 0,
+      "shares": 0,
+      "views": 7,
+      "total_interactions": 1
+    },
+    "m-hype": {
+      "id": "m-hype",
+      "at": "2026-10-06T21:41:16.534Z",
+      "type": "reel",
+      "permalink": "https://www.instagram.com/reel/DeKxfRZCHql/",
+      "likes": 1,
+      "comments": 0,
+      "reach": 6,
+      "saved": 0,
+      "shares": 0,
+      "views": 8,
+      "total_interactions": 1,
+      "ig_reels_avg_watch_time": 38266
+    },
+    "app-sprout": {
+      "id": "app-sprout",
+      "at": "2026-10-07T07:19:44.912Z",
+      "type": "reel",
+      "permalink": "https://www.instagram.com/reel/DeLzs4Zilgr/",
+      "likes": 1,
+      "comments": 0,
+      "reach": 12,
+      "saved": 0,
+      "shares": 0,
+      "views": 14,
+      "total_interactions": 1,
+      "ig_reels_avg_watch_time": 22324
+    },
+    "m-nap": {
+      "id": "m-nap",
+      "at": "2026-10-07T14:38:28.729Z",
+      "type": "reel",
+      "permalink": "https://www.instagram.com/reel/DeMl5TulHMA/",
+      "likes": 1,
+      "comments": 0,
+      "reach": 24,
+      "saved": 0,
+      "shares": 0,
+      "views": 26,
+      "total_interactions": 1,
+      "ig_reels_avg_watch_time": 9462
+    },
+    "c-howitworks": {
+      "id": "c-howitworks",
+      "at": "2026-10-07T20:25:47.023Z",
+      "type": "carousel",
+      "permalink": "https://www.instagram.com/p/DeNNtF-I0kY/",
       "likes": 0,
       "comments": 0,
       "reach": 0,
@@ -33,21 +93,7 @@
       "shares": 0,
       "views": 0,
       "total_interactions": 0
-    },
-    "m-hype": {
-      "id": "m-hype",
-      "at": "2026-10-06T21:41:16.534Z",
-      "type": "reel",
-      "permalink": "https://www.instagram.com/reel/DeKxfRZCHql/",
-      "likes": 0,
-      "comments": 0,
-      "reach": 0,
-      "saved": 0,
-      "shares": 0,
-      "views": 0,
-      "total_interactions": 0,
-      "ig_reels_avg_watch_time": 0
     }
   },
-  "updatedAt": "2026-10-06T21:41:16.534Z"
+  "updatedAt": "2026-10-07T20:25:47.023Z"
 }

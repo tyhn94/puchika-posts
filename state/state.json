@@ -29,18 +29,24 @@
       "permalink": "https://www.instagram.com/reel/DeMl5TulHMA/",
       "type": "reel",
       "at": "2026-10-07T14:38:28.729Z"
+    },
+    "c-howitworks": {
+      "mediaId": "17923676964428572",
+      "permalink": "https://www.instagram.com/p/DeNNtF-I0kY/",
+      "type": "carousel",
+      "at": "2026-10-07T20:25:47.023Z"
     }
   },
   "failed": {},
   "days": {
     "2026-10-06": 3,
-    "2026-10-07": 2
+    "2026-10-07": 3
   },
   "notified": {},
   "firstRun": "2026-10-06T09:18:43.623Z",
   "refreshTriedAt": "2026-10-06T09:18:43.623Z",
   "refreshedAt": "2026-10-06T09:18:43.623Z",
   "tokenExpiresAt": "2026-12-05T08:16:17.623Z",
-  "insightsAt": "2026-10-06T21:41:16.534Z",
+  "insightsAt": "2026-10-07T20:25:47.023Z",
   "setupFails": 0
 }
