@@ -47,19 +47,25 @@
       "permalink": "https://www.instagram.com/p/DePEvLIkUcR/",
       "type": "image",
       "at": "2026-10-08T13:46:29.888Z"
+    },
+    "m-brain-3am": {
+      "mediaId": "18098140001350273",
+      "permalink": "https://www.instagram.com/reel/DePscdiFZWD/",
+      "type": "reel",
+      "at": "2026-10-08T19:32:28.045Z"
     }
   },
   "failed": {},
   "days": {
     "2026-10-06": 3,
     "2026-10-07": 3,
-    "2026-10-08": 2
+    "2026-10-08": 3
   },
   "notified": {},
   "firstRun": "2026-10-06T09:18:43.623Z",
   "refreshTriedAt": "2026-10-06T09:18:43.623Z",
   "refreshedAt": "2026-10-06T09:18:43.623Z",
   "tokenExpiresAt": "2026-12-05T08:16:17.623Z",
-  "insightsAt": "2026-10-07T20:25:47.023Z",
+  "insightsAt": "2026-10-08T19:32:28.045Z",
   "setupFails": 0
 }
