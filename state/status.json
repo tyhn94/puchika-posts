@@ -1,9 +1,14 @@
 {
   "ok": true,
-  "at": "2026-10-08T00:17:11.177Z",
+  "at": "2026-10-08T06:19:25.638Z",
   "mode": "auto",
   "problems": [],
   "account": "puchikafriends",
-  "remaining": 103,
+  "posted": {
+    "id": "m-nobody-water",
+    "mediaId": "18217478281349516",
+    "permalink": "https://www.instagram.com/reel/DeORnLbjRAR/"
+  },
+  "remaining": 102,
   "perDay": 6
 }

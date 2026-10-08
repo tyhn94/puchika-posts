@@ -35,12 +35,19 @@
       "permalink": "https://www.instagram.com/p/DeNNtF-I0kY/",
       "type": "carousel",
       "at": "2026-10-07T20:25:47.023Z"
+    },
+    "m-nobody-water": {
+      "mediaId": "18217478281349516",
+      "permalink": "https://www.instagram.com/reel/DeORnLbjRAR/",
+      "type": "reel",
+      "at": "2026-10-08T06:19:25.638Z"
     }
   },
   "failed": {},
   "days": {
     "2026-10-06": 3,
-    "2026-10-07": 3
+    "2026-10-07": 3,
+    "2026-10-08": 1
   },
   "notified": {},
   "firstRun": "2026-10-06T09:18:43.623Z",
