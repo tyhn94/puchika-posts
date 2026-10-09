@@ -59,6 +59,12 @@
       "permalink": "https://www.instagram.com/reel/DeQ2rYOErmK/",
       "type": "reel",
       "at": "2026-10-09T06:22:05.173Z"
+    },
+    "app-water": {
+      "mediaId": "17865108063693340",
+      "permalink": "https://www.instagram.com/reel/DeRn8LRgZDk/",
+      "type": "reel",
+      "at": "2026-10-09T13:32:32.189Z"
     }
   },
   "failed": {},
@@ -66,7 +72,7 @@
     "2026-10-06": 3,
     "2026-10-07": 3,
     "2026-10-08": 3,
-    "2026-10-09": 1
+    "2026-10-09": 2
   },
   "notified": {},
   "firstRun": "2026-10-06T09:18:43.623Z",
