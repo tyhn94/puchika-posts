@@ -53,13 +53,20 @@
       "permalink": "https://www.instagram.com/reel/DePscdiFZWD/",
       "type": "reel",
       "at": "2026-10-08T19:32:28.045Z"
+    },
+    "s-friday-1": {
+      "mediaId": "18383802142225722",
+      "permalink": "https://www.instagram.com/reel/DeQ2rYOErmK/",
+      "type": "reel",
+      "at": "2026-10-09T06:22:05.173Z"
     }
   },
   "failed": {},
   "days": {
     "2026-10-06": 3,
     "2026-10-07": 3,
-    "2026-10-08": 3
+    "2026-10-08": 3,
+    "2026-10-09": 1
   },
   "notified": {},
   "firstRun": "2026-10-06T09:18:43.623Z",
