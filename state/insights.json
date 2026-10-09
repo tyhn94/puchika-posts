@@ -14,6 +14,11 @@
       "date": "2026-10-08",
       "followers": 2,
       "posts": 10
+    },
+    {
+      "date": "2026-10-09",
+      "followers": 2,
+      "posts": 13
     }
   ],
   "posts": {
@@ -27,9 +32,9 @@
       "reach": 27,
       "saved": 0,
       "shares": 0,
-      "views": 32,
+      "views": 37,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 22537
+      "ig_reels_avg_watch_time": 21600
     },
     "d02-meet": {
       "id": "d02-meet",
@@ -54,9 +59,9 @@
       "reach": 20,
       "saved": 0,
       "shares": 0,
-      "views": 10,
+      "views": 15,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 20034
+      "ig_reels_avg_watch_time": 18782
     },
     "app-sprout": {
       "id": "app-sprout",
@@ -68,9 +73,9 @@
       "reach": 17,
       "saved": 0,
       "shares": 0,
-      "views": 14,
+      "views": 19,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 17109
+      "ig_reels_avg_watch_time": 16166
     },
     "m-nap": {
       "id": "m-nap",
@@ -82,9 +87,9 @@
       "reach": 33,
       "saved": 0,
       "shares": 0,
-      "views": 33,
+      "views": 38,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 7781
+      "ig_reels_avg_watch_time": 7807
     },
     "c-howitworks": {
       "id": "c-howitworks",
@@ -106,12 +111,12 @@
       "permalink": "https://www.instagram.com/reel/DeORnLbjRAR/",
       "likes": 0,
       "comments": 0,
-      "reach": 21,
+      "reach": 30,
       "saved": 0,
       "shares": 0,
-      "views": 25,
+      "views": 38,
       "total_interactions": 0,
-      "ig_reels_avg_watch_time": 3472
+      "ig_reels_avg_watch_time": 3948
     },
     "a-affirm-1": {
       "id": "a-affirm-1",
@@ -131,6 +136,48 @@
       "at": "2026-10-08T19:32:28.045Z",
       "type": "reel",
       "permalink": "https://www.instagram.com/reel/DePscdiFZWD/",
+      "likes": 4,
+      "comments": 0,
+      "reach": 106,
+      "saved": 0,
+      "shares": 0,
+      "views": 132,
+      "total_interactions": 4,
+      "ig_reels_avg_watch_time": 6264
+    },
+    "s-friday-1": {
+      "id": "s-friday-1",
+      "at": "2026-10-09T06:22:05.173Z",
+      "type": "reel",
+      "permalink": "https://www.instagram.com/reel/DeQ2rYOErmK/",
+      "likes": 0,
+      "comments": 0,
+      "reach": 57,
+      "saved": 0,
+      "shares": 0,
+      "views": 67,
+      "total_interactions": 0,
+      "ig_reels_avg_watch_time": 4770
+    },
+    "app-water": {
+      "id": "app-water",
+      "at": "2026-10-09T13:32:32.189Z",
+      "type": "reel",
+      "permalink": "https://www.instagram.com/reel/DeRn8LRgZDk/",
+      "likes": 0,
+      "comments": 0,
+      "reach": 125,
+      "saved": 0,
+      "shares": 0,
+      "views": 146,
+      "total_interactions": 0,
+      "ig_reels_avg_watch_time": 1814
+    },
+    "g-stack": {
+      "id": "g-stack",
+      "at": "2026-10-09T19:05:28.859Z",
+      "type": "reel",
+      "permalink": "https://www.instagram.com/reel/DeSOJUbDW0_/",
       "likes": 0,
       "comments": 0,
       "reach": 0,
@@ -141,5 +188,5 @@
       "ig_reels_avg_watch_time": 0
     }
   },
-  "updatedAt": "2026-10-08T19:32:28.045Z"
+  "updatedAt": "2026-10-09T19:05:28.859Z"
 }

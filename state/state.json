@@ -65,6 +65,12 @@
       "permalink": "https://www.instagram.com/reel/DeRn8LRgZDk/",
       "type": "reel",
       "at": "2026-10-09T13:32:32.189Z"
+    },
+    "g-stack": {
+      "mediaId": "17976513924020594",
+      "permalink": "https://www.instagram.com/reel/DeSOJUbDW0_/",
+      "type": "reel",
+      "at": "2026-10-09T19:05:28.859Z"
     }
   },
   "failed": {},
@@ -72,13 +78,13 @@
     "2026-10-06": 3,
     "2026-10-07": 3,
     "2026-10-08": 3,
-    "2026-10-09": 2
+    "2026-10-09": 3
   },
   "notified": {},
   "firstRun": "2026-10-06T09:18:43.623Z",
   "refreshTriedAt": "2026-10-06T09:18:43.623Z",
   "refreshedAt": "2026-10-06T09:18:43.623Z",
   "tokenExpiresAt": "2026-12-05T08:16:17.623Z",
-  "insightsAt": "2026-10-08T19:32:28.045Z",
+  "insightsAt": "2026-10-09T19:05:28.859Z",
   "setupFails": 0
 }
