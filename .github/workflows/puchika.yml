@@ -81,3 +81,5 @@ jobs:
             fresh=$(git commit-tree "HEAD^{tree}" -m "fresh start: history trimmed to keep the repo small")
             git push -f origin "$fresh:refs/heads/main"
           fi
+          # the anime voices: Open JTalk (HTS voice "Mei") reshaped with WORLD
+          pip install --break-system-packages --quiet numpy pyworld pyopenjtalk-plus
