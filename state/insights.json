@@ -19,6 +19,11 @@
       "date": "2026-10-09",
       "followers": 2,
       "posts": 13
+    },
+    {
+      "date": "2026-10-10",
+      "followers": 2,
+      "posts": 17
     }
   ],
   "posts": {
@@ -34,7 +39,7 @@
       "shares": 0,
       "views": 37,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 21600
+      "ig_reels_avg_watch_time": 21251
     },
     "d02-meet": {
       "id": "d02-meet",
@@ -61,7 +66,7 @@
       "shares": 0,
       "views": 15,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 18782
+      "ig_reels_avg_watch_time": 18350
     },
     "app-sprout": {
       "id": "app-sprout",
@@ -75,7 +80,7 @@
       "shares": 0,
       "views": 19,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 16166
+      "ig_reels_avg_watch_time": 15719
     },
     "m-nap": {
       "id": "m-nap",
@@ -143,7 +148,7 @@
       "shares": 0,
       "views": 132,
       "total_interactions": 4,
-      "ig_reels_avg_watch_time": 6264
+      "ig_reels_avg_watch_time": 6195
     },
     "s-friday-1": {
       "id": "s-friday-1",
@@ -152,12 +157,12 @@
       "permalink": "https://www.instagram.com/reel/DeQ2rYOErmK/",
       "likes": 0,
       "comments": 0,
-      "reach": 57,
+      "reach": 64,
       "saved": 0,
       "shares": 0,
-      "views": 67,
+      "views": 74,
       "total_interactions": 0,
-      "ig_reels_avg_watch_time": 4770
+      "ig_reels_avg_watch_time": 4347
     },
     "app-water": {
       "id": "app-water",
@@ -166,18 +171,59 @@
       "permalink": "https://www.instagram.com/reel/DeRn8LRgZDk/",
       "likes": 0,
       "comments": 0,
-      "reach": 125,
+      "reach": 130,
       "saved": 0,
       "shares": 0,
-      "views": 146,
+      "views": 155,
       "total_interactions": 0,
-      "ig_reels_avg_watch_time": 1814
+      "ig_reels_avg_watch_time": 1811
     },
     "g-stack": {
       "id": "g-stack",
       "at": "2026-10-09T19:05:28.859Z",
       "type": "reel",
       "permalink": "https://www.instagram.com/reel/DeSOJUbDW0_/",
+      "likes": 1,
+      "comments": 0,
+      "reach": 129,
+      "saved": 0,
+      "shares": 0,
+      "views": 142,
+      "total_interactions": 1,
+      "ig_reels_avg_watch_time": 3146
+    },
+    "w-chika-wins": {
+      "id": "w-chika-wins",
+      "at": "2026-10-09T23:21:34.481Z",
+      "type": "image",
+      "permalink": "https://www.instagram.com/p/DeSrWFJj570/",
+      "likes": 0,
+      "comments": 0,
+      "reach": 1,
+      "saved": 0,
+      "shares": 0,
+      "views": 3,
+      "total_interactions": 0
+    },
+    "m-gym": {
+      "id": "m-gym",
+      "at": "2026-10-10T09:06:57.676Z",
+      "type": "reel",
+      "permalink": "https://www.instagram.com/reel/DeTuVzGDNEN/",
+      "likes": 1,
+      "comments": 0,
+      "reach": 29,
+      "saved": 0,
+      "shares": 0,
+      "views": 36,
+      "total_interactions": 1,
+      "ig_reels_avg_watch_time": 3854
+    },
+    "a02-water": {
+      "id": "a02-water",
+      "at": "2026-10-10T10:48:34.482Z",
+      "type": "reel",
+      "permalink": "https://www.instagram.com/reel/DeT6HeJgAKI/",
       "likes": 0,
       "comments": 0,
       "reach": 0,
@@ -188,5 +234,5 @@
       "ig_reels_avg_watch_time": 0
     }
   },
-  "updatedAt": "2026-10-09T19:05:28.859Z"
+  "updatedAt": "2026-10-10T10:48:34.482Z"
 }
