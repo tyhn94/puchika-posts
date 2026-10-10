@@ -39,7 +39,7 @@ jobs:
           npx playwright install --with-deps chromium
           sudo apt-get install -y ffmpeg
           # the anime voices: Open JTalk (HTS voice "Mei") reshaped with WORLD
-          pip install --break-system-packages --quiet numpy pyworld pyopenjtalk-plus
+          python3 -m pip install --break-system-packages numpy pyworld pyopenjtalk-plus
       - name: Draw the next posts
         if: steps.plan.outputs.need == '1'
         run: node bot/render.mjs draw ${{ steps.plan.outputs.ids }}
