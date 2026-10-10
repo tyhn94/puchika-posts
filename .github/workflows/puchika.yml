@@ -38,6 +38,8 @@ jobs:
           npm install --no-save --no-audit --no-fund playwright@1
           npx playwright install --with-deps chromium
           sudo apt-get install -y ffmpeg
+          # the anime voices: Open JTalk (HTS voice "Mei") reshaped with WORLD
+          pip install --break-system-packages --quiet numpy pyworld pyopenjtalk-plus
       - name: Draw the next posts
         if: steps.plan.outputs.need == '1'
         run: node bot/render.mjs draw ${{ steps.plan.outputs.ids }}
@@ -81,5 +83,3 @@ jobs:
             fresh=$(git commit-tree "HEAD^{tree}" -m "fresh start: history trimmed to keep the repo small")
             git push -f origin "$fresh:refs/heads/main"
           fi
-          # the anime voices: Open JTalk (HTS voice "Mei") reshaped with WORLD
-          pip install --break-system-packages --quiet numpy pyworld pyopenjtalk-plus
