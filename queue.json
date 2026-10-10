@@ -1,1197 +1,205 @@
 {
   "settings": {
     "timesUTC": [
-      13,
-      18,
-      23
+      10,
+      17
     ],
-    "lowWarn": 12,
+    "lowWarn": 6,
     "minGapMinutes": 40,
     "brakeTimesUTC": [
-      13,
-      18,
-      23
+      17
     ],
-    "ramp": [
-      {
-        "from": "2026-10-06",
-        "timesUTC": [
-          6,
-          10,
-          13,
-          16,
-          19,
-          22
-        ]
-      },
-      {
-        "from": "2026-10-13",
-        "timesUTC": [
-          5,
-          8,
-          11,
-          13,
-          15,
-          17,
-          19,
-          22
-        ]
-      },
-      {
-        "from": "2026-10-20",
-        "timesUTC": [
-          4,
-          6,
-          8,
-          10,
-          12,
-          14,
-          16,
-          18,
-          20,
-          22
-        ]
-      }
-    ]
+    "ramp": []
   },
   "posts": [
     {
-      "id": "d01-ep1",
+      "id": "a02-water",
       "type": "reel",
       "media": [
-        "media/d01-ep1/reel.mp4"
+        "media/a02-water/reel.mp4"
       ],
-      "cover": "media/d01-ep1/cover.jpg",
-      "caption": "Some days it feels like you did nothing at all.\nBut you woke up. You drank some water. You ate something.\nThat’s three wins already ♡\n\nPuchi & Chika · Episode 1: The Smallest Win\n\nWhat’s your little win today? Tell us in the comments ↓\n\n🌱 Puchika is FREE: grow your own Puchi with your tiny daily wins. Link in bio!\n\n#puchika #littlewins #smallwins #pixelart #cozy"
-    },
-    {
-      "id": "d02-meet",
-      "type": "carousel",
-      "media": [
-        "media/d02-meet/1.jpg",
-        "media/d02-meet/2.jpg",
-        "media/d02-meet/3.jpg",
-        "media/d02-meet/4.jpg",
-        "media/d02-meet/5.jpg"
-      ],
-      "caption": "Hi! We’re Puchi & Chika ♡\n\nPuchi is the sunny one: she notices every tiny win.\nChika is the cozy one: she thinks she did nothing today. (She did.)\n\nWe’ll be here every day with a little story about little wins.\nWho are you more like? ☀ or ☾\n\n💗 Want your own Puchi? The app is FREE, link in bio.\n\n#puchika #puchiandchika #pixelart #kawaiiart #littlewins",
-      "draw": true
-    },
-    {
-      "id": "m-hype",
-      "type": "reel",
-      "media": [
-        "media/m-hype/reel.mp4"
-      ],
-      "cover": "media/m-hype/cover.jpg",
-      "caption": "Everyone deserves a Puchi in their corner 🧦🎉\nPut on socks? Huge. Parade-worthy.\n\nSend this to the friend who hypes you up like this ♡\n\n✨ Play Puchika for FREE, right in your browser: link in bio.\n\n#puchika #wholesome #littlewins #bestfriend #pixelart",
-      "draw": true
-    },
-    {
-      "id": "app-sprout",
-      "type": "reel",
-      "media": [
-        "media/app-sprout/reel.mp4"
-      ],
-      "cover": "media/app-sprout/cover.jpg",
-      "caption": "This is how it starts: a tiny seed 🌱\nWoke up, drank water, cooked a meal. Three little wins, and Puchi sprouts.\n\nWhat would your first 3 wins be today?\n\n🎀 Your tiny wins deserve a cute pet. Puchika is FREE, link in bio.\n\n#puchika #virtualpet #littlewins #habittracker #cozygames",
-      "draw": true
-    },
-    {
-      "id": "m-nap",
-      "type": "reel",
-      "media": [
-        "media/m-nap/reel.mp4"
-      ],
-      "cover": "media/m-nap/cover.jpg",
-      "caption": "“Just 20 minutes” they said 😴\nThe nap always wins.\n\nWhat’s your longest accidental nap?\n\n🌸 Adopt a Puchi for FREE: link in bio.\n\n#puchika #relatable #naptime #memes #pixelart",
-      "draw": true
-    },
-    {
-      "id": "c-howitworks",
-      "type": "carousel",
-      "media": [
-        "media/c-howitworks/1.jpg",
-        "media/c-howitworks/2.jpg",
-        "media/c-howitworks/3.jpg",
-        "media/c-howitworks/4.jpg",
-        "media/c-howitworks/5.jpg",
-        "media/c-howitworks/6.jpg"
-      ],
-      "caption": "New here? This is Puchika ✿\nA little-wins tracker with a pixel pet that grows with you.\n\n1. Tap your little wins\n2. Your Puchi grows\n3. Play, feed, cuddle\n4. Unlock friends and places\n\nWhat would your first win be?\n\n☀ Track tiny wins, grow a pixel pet. 100% FREE, link in bio.\n\n#puchika #habittracker #virtualpet #selfcare #cozygames",
-      "draw": true
-    },
-    {
-      "id": "m-nobody-water",
-      "type": "reel",
-      "media": [
-        "media/m-nobody-water/reel.mp4"
-      ],
-      "cover": "media/m-nobody-water/cover.jpg",
-      "caption": "Drink one glass of water around Puchi and she throws you a parade 💧🎉\n\nWho in your life needs a hydration queen like this?\n\n🌱 Puchika is FREE: grow your own Puchi with your tiny daily wins. Link in bio!\n\n#puchika #drinkwater #relatable #pixelart #littlewins",
-      "draw": true
-    },
-    {
-      "id": "a-affirm-1",
-      "type": "image",
-      "media": [
-        "media/a-affirm-1/1.jpg"
-      ],
-      "caption": "Both true. Order matters. 😴\n\nWhich affirmation do you need today: Puchi’s or Chika’s? ↓\n\n💗 Want your own Puchi? The app is FREE, link in bio.\n\n#affirmations #puchika #relatable #memes #pixelart",
-      "draw": true
-    },
-    {
-      "id": "m-brain-3am",
-      "type": "reel",
-      "media": [
-        "media/m-brain-3am/reel.mp4"
-      ],
-      "cover": "media/m-brain-3am/cover.jpg",
-      "caption": "The 3 AM brain has no mercy 🌙\nIt’s been 12 years and it still remembers.\n\nWhat does your brain bring up at 3 AM?\n\n✨ Play Puchika for FREE, right in your browser: link in bio.\n\n#relatable #puchika #overthinking #memes #pixelart",
-      "draw": true
-    },
-    {
-      "id": "app-water",
-      "type": "reel",
-      "media": [
-        "media/app-water/reel.mp4"
-      ],
-      "cover": "media/app-water/cover.jpg",
-      "caption": "Three glasses of water = one very proud Puchi 💧💧💧\n\nHow many glasses have you had today? Be honest ↓\n\n🎀 Your tiny wins deserve a cute pet. Puchika is FREE, link in bio.\n\n#puchika #drinkwater #habittracker #selfcare #cute",
-      "draw": true
-    },
-    {
-      "id": "g-stack",
-      "type": "reel",
-      "media": [
-        "media/g-stack/reel.mp4"
-      ],
-      "cover": "media/g-stack/cover.jpg",
-      "caption": "Cute game. Hardcore game. 🧱\nPuchi is on try #47 and she is fine. She is FINE.\n\nWhat’s the most you’ve ever retried a game? ↓\n\n🌸 Adopt a Puchi for FREE: link in bio.\n\n#indiegame #cozygames #gamer #puchika #pixelart",
-      "draw": true
-    },
-    {
-      "id": "w-chika-wins",
-      "type": "image",
-      "media": [
-        "media/w-chika-wins/1.jpg"
-      ],
-      "caption": "Chika’s wins today ✓✓✓✓\nPuchi says these don’t count. Chika disagrees.\n\nWhat’s your slightly evil win today? ↓\n\n☀ Track tiny wins, grow a pixel pet. 100% FREE, link in bio.\n\n#puchika #littlewins #memes #relatable #darkcute",
-      "draw": true
-    },
-    {
-      "id": "m-gym",
-      "type": "reel",
-      "media": [
-        "media/m-gym/reel.mp4"
-      ],
-      "cover": "media/m-gym/cover.jpg",
-      "caption": "Mentally, she lifted 100 kg 💪\nThe thought counts. Right?\n\nHave you ever gone to the gym “mentally”?\n\n🌱 Puchika is FREE: grow your own Puchi with your tiny daily wins. Link in bio!\n\n#puchika #gymmemes #relatable #memes #pixelart",
-      "draw": true
-    },
-    {
-      "id": "d04-tinywins",
-      "type": "carousel",
-      "media": [
-        "media/d04-tinywins/1.jpg",
-        "media/d04-tinywins/2.jpg",
-        "media/d04-tinywins/3.jpg",
-        "media/d04-tinywins/4.jpg",
-        "media/d04-tinywins/5.jpg",
-        "media/d04-tinywins/6.jpg",
-        "media/d04-tinywins/7.jpg",
-        "media/d04-tinywins/8.jpg"
-      ],
-      "caption": "Not every win has to be big. These all count:\n\n1. You got out of bed\n2. You drank a glass of water\n3. You stepped outside\n4. You replied to that message\n5. You ate a real meal\n6. You rested\n\nSave this for a hard day ♡ Which one did you do today?\n\n💗 Want your own Puchi? The app is FREE, link in bio.\n\n#littlewins #smallwins #selfcare #gentlereminder #puchika",
-      "draw": true
-    },
-    {
-      "id": "m-heist",
-      "type": "reel",
-      "media": [
-        "media/m-heist/reel.mp4"
-      ],
-      "cover": "media/m-heist/cover.jpg",
-      "caption": "The Great Cake Heist of 2:13 AM 🍰🕶\nNo witnesses. Just crumbs.\n\nShe will never admit it ↓\n\n✨ Play Puchika for FREE, right in your browser: link in bio.\n\n#puchika #heist #memes #pixelart #kawaii",
-      "draw": true
-    },
-    {
-      "id": "app-fullday",
-      "type": "reel",
-      "media": [
-        "media/app-fullday/reel.mp4"
-      ],
-      "cover": "media/app-fullday/cover.jpg",
-      "caption": "A perfect day looks like this 🎉\n(It doesn’t have to. One win is enough. But this is fun.)\n\nWhich win is the hardest for you every day?\n\n🎀 Your tiny wins deserve a cute pet. Puchika is FREE, link in bio.\n\n#puchika #productivity #habittracker #littlewins #cozygames",
-      "draw": true
-    },
-    {
-      "id": "m-procrast",
-      "type": "reel",
-      "media": [
-        "media/m-procrast/reel.mp4"
-      ],
-      "cover": "media/m-procrast/cover.jpg",
-      "caption": "The rules are the rules ⏰\nIf you miss the exact minute, you have to wait for the next hour.\n\nWhat time are you “starting” today?\n\n🌸 Adopt a Puchi for FREE: link in bio.\n\n#procrastination #puchika #relatable #memes #pixelart",
-      "draw": true
-    },
-    {
-      "id": "m-buttons",
-      "type": "image",
-      "media": [
-        "media/m-buttons/1.jpg"
-      ],
-      "caption": "A daily struggle. 😅\nWhich button do you press? (We know which one.)\n\n☀ Track tiny wins, grow a pixel pet. 100% FREE, link in bio.\n\n#puchika #twobuttons #memes #procrastination #relatable",
-      "draw": true
-    },
-    {
-      "id": "d03-ep2",
-      "type": "reel",
-      "media": [
-        "media/d03-ep2/reel.mp4"
-      ],
-      "cover": "media/d03-ep2/cover.jpg",
-      "caption": "When the to-do list looks like a mountain, don’t climb the whole thing.\nJust pick the tiniest step. Then the next one ♡\n\nPuchi & Chika · Episode 2: The To-Do Mountain\n\nWhat’s one tiny thing on your list today? We’ll cheer for you ↓\n\n🌱 Puchika is FREE: grow your own Puchi with your tiny daily wins. Link in bio!\n\n#puchika #littlewins #productivity #pixelart #gentlereminder",
-      "draw": true
-    },
-    {
-      "id": "d06-whoareyou",
-      "type": "image",
-      "media": [
-        "media/d06-whoareyou/1.jpg"
-      ],
-      "caption": "Be honest ↓\n\n☀ Puchi: up early, ready to go, already celebrating\n☾ Chika: five more minutes... and a cup of tea first\n\nComment P or C!\n\n💗 Want your own Puchi? The app is FREE, link in bio.\n\n#puchika #puchiandchika #kawaii #pixelart #cozy",
-      "draw": true
-    },
-    {
-      "id": "m-unread",
-      "type": "reel",
-      "media": [
-        "media/m-unread/reel.mp4"
-      ],
-      "cover": "media/m-unread/cover.jpg",
-      "caption": "Replying is a whole energy we don’t have today 📱\n(3-5 business days is a reasonable timeline.)\n\nHow many unread messages do you have right now?\n\n✨ Play Puchika for FREE, right in your browser: link in bio.\n\n#relatable #puchika #introvert #memes #pixelart",
-      "draw": true
-    },
-    {
-      "id": "app-evolve",
-      "type": "reel",
-      "media": [
-        "media/app-evolve/reel.mp4"
-      ],
-      "cover": "media/app-evolve/cover.jpg",
-      "caption": "Every win counts toward the next stage ✿\nSeed, sprout, sapling, bud... how far can you grow yours?\n\nWhat stage would you be today, honestly?\n\n🎀 Your tiny wins deserve a cute pet. Puchika is FREE, link in bio.\n\n#puchika #virtualpet #tamagotchi #pixelart #littlewins",
-      "draw": true
-    },
-    {
-      "id": "m-pov-11pm",
-      "type": "reel",
-      "media": [
-        "media/m-pov-11pm/reel.mp4"
-      ],
-      "cover": "media/m-pov-11pm/cover.jpg",
-      "caption": "Every. Single. Night. 📱\n“Just one more video” is a lie we all tell.\n\nWho’s the Chika in your life? 🌙\n\n🌸 Adopt a Puchi for FREE: link in bio.\n\n#puchika #relatable #nightowl #pixelart #memes",
-      "draw": true
-    },
-    {
-      "id": "m-kinda-chic",
-      "type": "carousel",
-      "media": [
-        "media/m-kinda-chic/1.jpg",
-        "media/m-kinda-chic/2.jpg"
-      ],
-      "caption": "Kinda chic to count all of these as wins ✨\nSwipe for Chika’s version →\n\nAdd yours: “kinda chic to...” ↓\n\n☀ Track tiny wins, grow a pixel pet. 100% FREE, link in bio.\n\n#kindachic #puchika #littlewins #memes #relatable",
-      "draw": true
-    },
-    {
-      "id": "m-tones",
-      "type": "reel",
-      "media": [
-        "media/m-tones/reel.mp4"
-      ],
-      "cover": "media/m-tones/cover.jpg",
-      "caption": "“Good job” but make it 4 different vibes 😂\nWhich one do you hear in your head today? ↓\n\n🌱 Puchika is FREE: grow your own Puchi with your tiny daily wins. Link in bio!\n\n#puchika #supportivedisappointed #memes #pixelart #relatable",
-      "draw": true
-    },
-    {
-      "id": "a-affirm-2",
-      "type": "image",
-      "media": [
-        "media/a-affirm-2/1.jpg"
-      ],
-      "caption": "Self-belief comes in many forms. 🛏\n\nWhich one do you need today? ☀ or ☾\n\n💗 Want your own Puchi? The app is FREE, link in bio.\n\n#affirmations #puchika #relatable #memes #pixelart",
-      "draw": true
-    },
-    {
-      "id": "m-compliment",
-      "type": "reel",
-      "media": [
-        "media/m-compliment/reel.mp4"
-      ],
-      "cover": "media/m-compliment/cover.jpg",
-      "caption": "“Not bad” is the highest honour Chika gives 🖤\nWe’ll take it.\n\nWhat’s the nicest thing a friend said to you lately?\n\n✨ Play Puchika for FREE, right in your browser: link in bio.\n\n#puchika #friendship #wholesome #memes #darkcute",
-      "draw": true
-    },
-    {
-      "id": "app-talk",
-      "type": "reel",
-      "media": [
-        "media/app-talk/reel.mp4"
-      ],
-      "cover": "media/app-talk/cover.jpg",
-      "caption": "Bad day? Puchi listens 🌱\nIt’s not a person or an AI, just a little friend made of pixels who always says something kind.\n\nWhat would you tell Puchi today?\n\n🎀 Your tiny wins deserve a cute pet. Puchika is FREE, link in bio.\n\n#puchika #cozygames #selfcare #virtualpet #kawaii",
-      "draw": true
-    },
-    {
-      "id": "d05-ep3",
-      "type": "reel",
-      "media": [
-        "media/d05-ep3/reel.mp4"
-      ],
-      "cover": "media/d05-ep3/cover.jpg",
-      "caption": "Rainy day = cancelled plans?\nOr: one warm cup of tea and one page of a book ☔\nRest is a win too ♡\n\nPuchi & Chika · Episode 3: Rainy Day Plans\n\nHow do you spend a rainy day? ↓\n\n🌸 Adopt a Puchi for FREE: link in bio.\n\n#puchika #rainyday #cozyvibes #pixelart #littlewins",
-      "draw": true
-    },
-    {
-      "id": "m-same-picture",
-      "type": "image",
-      "media": [
-        "media/m-same-picture/1.jpg"
-      ],
-      "caption": "Corporate says there’s a difference. Chika disagrees. 🛋\n\nResting or procrastinating: what are you doing right now? ↓\n\n☀ Track tiny wins, grow a pixel pet. 100% FREE, link in bio.\n\n#puchika #memes #relatable #procrastination #pixelart",
-      "draw": true
-    },
-    {
-      "id": "m-coffee",
-      "type": "reel",
-      "media": [
-        "media/m-coffee/reel.mp4"
-      ],
-      "cover": "media/m-coffee/cover.jpg",
-      "caption": "One sip and she has a 5-year plan ☕⚡\n\nAre you a before-coffee Chika right now?\n\n🌱 Puchika is FREE: grow your own Puchi with your tiny daily wins. Link in bio!\n\n#coffee #puchika #morningmood #memes #pixelart",
-      "draw": true
-    },
-    {
-      "id": "d09-places",
-      "type": "carousel",
-      "media": [
-        "media/d09-places/1.jpg",
-        "media/d09-places/2.jpg",
-        "media/d09-places/3.jpg",
-        "media/d09-places/4.jpg",
-        "media/d09-places/5.jpg",
-        "media/d09-places/6.jpg",
-        "media/d09-places/7.jpg",
-        "media/d09-places/8.jpg"
-      ],
-      "caption": "Where would you take a cozy nap? Pick one ↓\n\n1. A sunny beach\n2. A snowy hill\n3. Under the cherry trees\n4. A sleepy city night\n5. A firefly forest\n6. Up in the clouds\n\nComment your number!\n\n💗 Want your own Puchi? The app is FREE, link in bio.\n\n#puchika #pixelart #cozyvibes #kawaiiart #pixelartist",
-      "draw": true
-    },
-    {
-      "id": "m-nihilist",
-      "type": "reel",
-      "media": [
-        "media/m-nihilist/reel.mp4"
-      ],
-      "cover": "media/m-nihilist/cover.jpg",
-      "caption": "Some days you just walk toward the mountains. 🏔\nChika has chosen peace.\n\nBe honest: are you Puchi or Chika today? ↓\n\n✨ Play Puchika for FREE, right in your browser: link in bio.\n\n#nihilistpenguin #puchika #memes #relatable #pixelart",
-      "draw": true
-    },
-    {
-      "id": "app-notebook",
-      "type": "reel",
-      "media": [
-        "media/app-notebook/reel.mp4"
-      ],
-      "cover": "media/app-notebook/cover.jpg",
-      "caption": "A tiny diary for tiny wins 📓\nOne line a day. No pressure. Only you can see it.\n\nWhat would your one line be today?\n\n🎀 Your tiny wins deserve a cute pet. Puchika is FREE, link in bio.\n\n#puchika #journaling #cozyjournal #selfcare #littlewins",
-      "draw": true
-    },
-    {
-      "id": "m-plant",
-      "type": "reel",
-      "media": [
-        "media/m-plant/reel.mp4"
-      ],
-      "cover": "media/m-plant/cover.jpg",
-      "caption": "Honestly? Water + sunlight fixes more than we think 🌱☀\n\nHave you had your water and sunlight today?\n\n🌸 Adopt a Puchi for FREE: link in bio.\n\n#puchika #selfcare #plantmom #cute #pixelart",
-      "draw": true
-    },
-    {
-      "id": "m-started",
-      "type": "image",
-      "media": [
-        "media/m-started/1.jpg"
-      ],
-      "caption": "5 minutes is a state of mind. ⏰\n\nWhat’s your longest “5 minute rest”? ↓\n\n☀ Track tiny wins, grow a pixel pet. 100% FREE, link in bio.\n\n#puchika #howitstarted #memes #relatable #pixelart",
-      "draw": true
-    },
-    {
-      "id": "g-balloon",
-      "type": "reel",
-      "media": [
-        "media/g-balloon/reel.mp4"
-      ],
-      "cover": "media/g-balloon/cover.jpg",
-      "caption": "It’s a balloon. With a smiley face. How hard can it be? 🎈\n(Very.)\n\nComment your best score excuse ↓\n\n🌱 Puchika is FREE: grow your own Puchi with your tiny daily wins. Link in bio!\n\n#indiegame #cozygames #ragequit #puchika #pixelart",
-      "draw": true
-    },
-    {
-      "id": "q-quote-1",
-      "type": "image",
-      "media": [
-        "media/q-quote-1/1.jpg"
-      ],
-      "caption": "Small steps are still steps ✿\n\nSave this for the days that feel slow.\n\n💗 Want your own Puchi? The app is FREE, link in bio.\n\n#quotes #littlewins #gentlereminder #puchika #motivation",
-      "draw": true
-    },
-    {
-      "id": "m-hide",
-      "type": "reel",
-      "media": [
-        "media/m-hide/reel.mp4"
-      ],
-      "cover": "media/m-hide/cover.jpg",
-      "caption": "If they can’t see you, the laundry doesn’t exist 🧺👀\n\nWhat are you hiding from today?\n\n✨ Play Puchika for FREE, right in your browser: link in bio.\n\n#relatable #puchika #memes #adulting #pixelart",
-      "draw": true
-    },
-    {
-      "id": "app-todo",
-      "type": "reel",
-      "media": [
-        "media/app-todo/reel.mp4"
-      ],
-      "cover": "media/app-todo/cover.jpg",
-      "caption": "Small list. Small steps. Big feelings when you check one off ✓\n\nWhat’s the first thing on your list today?\n\n🎀 Your tiny wins deserve a cute pet. Puchika is FREE, link in bio.\n\n#puchika #todolist #productivity #adhdtools #cozy",
-      "draw": true
-    },
-    {
-      "id": "s-song-water",
-      "type": "reel",
-      "media": [
-        "media/s-song-water/reel.mp4"
-      ],
-      "cover": "media/s-song-water/cover.jpg",
-      "caption": "Today’s song of the day 🎶 Sing along, then go drink a glass of water.\n\nDid you drink some? 💧\n\n🌸 Adopt a Puchi for FREE: link in bio.\n\n#puchika #drinkwater #cute #pixelart #littlewins",
-      "draw": true
-    },
-    {
-      "id": "a-affirm-3",
-      "type": "image",
-      "media": [
-        "media/a-affirm-3/1.jpg"
-      ],
-      "caption": "Fresh starts AND cancelled plans. Balance. ✨\n\nWhich one are you choosing today? ↓\n\n☀ Track tiny wins, grow a pixel pet. 100% FREE, link in bio.\n\n#affirmations #puchika #introvert #memes #pixelart",
-      "draw": true
-    },
-    {
-      "id": "m-weekend",
-      "type": "reel",
-      "media": [
-        "media/m-weekend/reel.mp4"
-      ],
-      "cover": "media/m-weekend/cover.jpg",
-      "caption": "Plans: 14. Plans done: sleep 😴\n(Rest is a win. We don’t make the rules.)\n\nWhat are your plans this weekend, really?\n\n🌱 Puchika is FREE: grow your own Puchi with your tiny daily wins. Link in bio!\n\n#weekend #puchika #relatable #memes #pixelart",
-      "draw": true
-    },
-    {
-      "id": "d19-friends",
-      "type": "carousel",
-      "media": [
-        "media/d19-friends/1.jpg",
-        "media/d19-friends/2.jpg",
-        "media/d19-friends/3.jpg",
-        "media/d19-friends/4.jpg",
-        "media/d19-friends/5.jpg",
-        "media/d19-friends/6.jpg",
-        "media/d19-friends/7.jpg"
-      ],
-      "caption": "Puchi & Chika have some friends who want to say hi ♡\n\nPyoko the bunny, Mikan the kitty, Piyo the chick, Mugi the bear and Ame the frog.\n\nWho should visit Puchi first? Vote in the comments ↓\n\n💗 Want your own Puchi? The app is FREE, link in bio.\n\n#puchika #kawaiiart #pixelart #cutecharacters #virtualpet",
-      "draw": true
-    },
-    {
-      "id": "d07-ep4",
-      "type": "reel",
-      "media": [
-        "media/d07-ep4/reel.mp4"
-      ],
-      "cover": "media/d07-ep4/cover.jpg",
-      "caption": "Some days are just bad. Nothing goes right.\nBut you made it to tonight, and that counts ♡\n\nPuchi & Chika · Episode 4: The Bad Day\n\nIf today was a hard one: you did enough. Tomorrow is a new page.\n\n✨ Play Puchika for FREE, right in your browser: link in bio.\n\n#puchika #gentlereminder #selfcompassion #littlewins #pixelart",
-      "draw": true
-    },
-    {
-      "id": "app-themes",
-      "type": "reel",
-      "media": [
-        "media/app-themes/reel.mp4"
-      ],
-      "cover": "media/app-themes/cover.jpg",
-      "caption": "Four flavours, one Puchi 🍓🍵🫧☕\nWhich one are you picking?\n\n🎀 Your tiny wins deserve a cute pet. Puchika is FREE, link in bio.\n\n#puchika #aesthetic #kawaii #cozygames #pastel",
-      "draw": true
-    },
-    {
-      "id": "m-evil-plan",
-      "type": "reel",
-      "media": [
-        "media/m-evil-plan/reel.mp4"
-      ],
-      "cover": "media/m-evil-plan/cover.jpg",
-      "caption": "Evil? Or just good boundaries? 🖤\nYou don’t have to give 110% every Monday.\n\nWhat’s your Monday energy?\n\n🌸 Adopt a Puchi for FREE: link in bio.\n\n#puchika #mondaymood #boundaries #memes #darkcute",
-      "draw": true
-    },
-    {
-      "id": "m-expect",
-      "type": "image",
-      "media": [
-        "media/m-expect/1.jpg"
-      ],
-      "caption": "The plan was perfect. The execution was... a nap. 😴\n\nHow did your weekend actually go? ↓\n\n☀ Track tiny wins, grow a pixel pet. 100% FREE, link in bio.\n\n#puchika #expectationvsreality #memes #relatable #pixelart",
-      "draw": true
-    },
-    {
-      "id": "m-evil-onemore",
-      "type": "reel",
-      "media": [
-        "media/m-evil-onemore/reel.mp4"
-      ],
-      "cover": "media/m-evil-onemore/cover.jpg",
-      "caption": "Chika has a limit. You just found it. ⚡\n\nDo you have a friend who always says “just one more thing”?\n\n🌱 Puchika is FREE: grow your own Puchi with your tiny daily wins. Link in bio!\n\n#puchika #memes #relatable #pixelart #boundaries",
-      "draw": true
-    },
-    {
-      "id": "d11-nexttiny",
-      "type": "image",
-      "media": [
-        "media/d11-nexttiny/1.jpg"
-      ],
-      "caption": "You don’t have to do it all today.\nJust the next tiny thing ♡\n\nWhat’s your next tiny thing? ↓\n\n💗 Want your own Puchi? The app is FREE, link in bio.\n\n#gentlereminder #littlewins #selfcare #puchika #pixelart",
-      "draw": true
-    },
-    {
-      "id": "g-jump",
-      "type": "reel",
-      "media": [
-        "media/g-jump/reel.mp4"
-      ],
-      "cover": "media/g-jump/cover.jpg",
-      "caption": "It looks so innocent 🌵\nThere are 8 mini-games on Puchi’s little screen. They are all like this.\n\nWhat’s your record?\n\n✨ Play Puchika for FREE, right in your browser: link in bio.\n\n#puchika #minigames #pixelart #gaming #cozygames",
-      "draw": true
-    },
-    {
-      "id": "app-games",
-      "type": "reel",
-      "media": [
-        "media/app-games/reel.mp4"
-      ],
-      "cover": "media/app-games/cover.jpg",
-      "caption": "Cute little games. Not-so-cute difficulty 😤\nThere are 8 of them. Try to beat level 3.\n\nWhat’s your high score?\n\n🎀 Your tiny wins deserve a cute pet. Puchika is FREE, link in bio.\n\n#puchika #minigames #cozygames #pixelart #tamagotchi",
-      "draw": true
-    },
-    {
-      "id": "f-pyoko",
-      "type": "reel",
-      "media": [
-        "media/f-pyoko/reel.mp4"
-      ],
-      "cover": "media/f-pyoko/cover.jpg",
-      "caption": "Meet Pyoko 🐰 She hops everywhere and gives the best hugs.\n\nWho should hatch next? Mikan the kitty, Piyo the chick, Mugi the bear or Ame the frog? ↓\n\n🌸 Adopt a Puchi for FREE: link in bio.\n\n#puchika #kawaii #pixelart #virtualpet #cute",
-      "draw": true
-    },
-    {
-      "id": "p-thisorthat",
-      "type": "carousel",
-      "media": [
-        "media/p-thisorthat/1.jpg",
-        "media/p-thisorthat/2.jpg",
-        "media/p-thisorthat/3.jpg",
-        "media/p-thisorthat/4.jpg",
-        "media/p-thisorthat/5.jpg"
-      ],
-      "caption": "This or that: are you more Puchi ☀ or more Chika ☾?\n\nCount your answers and comment your score ↓\n\n☀ Track tiny wins, grow a pixel pet. 100% FREE, link in bio.\n\n#thisorthat #puchika #personalitytest #pixelart #kawaii",
-      "draw": true
-    },
-    {
-      "id": "f-mikan",
-      "type": "reel",
-      "media": [
-        "media/f-mikan/reel.mp4"
-      ],
-      "cover": "media/f-mikan/cover.jpg",
-      "caption": "Meet Mikan 🐱🍊 Naps in sunbeams, knocks things off tables, very proud of it.\n\nCat person or bunny person?\n\n🌱 Puchika is FREE: grow your own Puchi with your tiny daily wins. Link in bio!\n\n#puchika #kawaii #catsofinstagram #pixelart #virtualpet",
-      "draw": true
-    },
-    {
-      "id": "a-affirm-4",
-      "type": "image",
-      "media": [
-        "media/a-affirm-4/1.jpg"
-      ],
-      "caption": "Growth is growth. Even sideways. 🌱\n\nWhat’s one way you grew this month? ↓\n\n💗 Want your own Puchi? The app is FREE, link in bio.\n\n#affirmations #puchika #growth #memes #pixelart",
-      "draw": true
-    },
-    {
-      "id": "d08-ep5",
-      "type": "reel",
-      "media": [
-        "media/d08-ep5/reel.mp4"
-      ],
-      "cover": "media/d08-ep5/cover.jpg",
-      "caption": "Hydration, but make it a competition 💧\nChika says she wasn’t trying. Chika won.\n\nPuchi & Chika · Episode 5: The Water Race\n\nGo drink a glass of water right now, then comment “done” ↓\n\n✨ Play Puchika for FREE, right in your browser: link in bio.\n\n#puchika #littlewins #drinkwater #pixelart #cozy",
-      "draw": true
-    },
-    {
-      "id": "app-care",
-      "type": "reel",
-      "media": [
-        "media/app-care/reel.mp4"
-      ],
-      "cover": "media/app-care/cover.jpg",
-      "caption": "Feed it, cuddle it, try to put it to bed (it has opinions) ☾\nLike the little handheld pets we had as kids, but it grows with your wins.\n\nDid you have a virtual pet as a kid?\n\n🎀 Your tiny wins deserve a cute pet. Puchika is FREE, link in bio.\n\n#puchika #tamagotchi #virtualpet #nostalgia #pixelart",
-      "draw": true
-    },
-    {
-      "id": "f-piyo",
-      "type": "reel",
-      "media": [
-        "media/f-piyo/reel.mp4"
-      ],
-      "cover": "media/f-piyo/cover.jpg",
-      "caption": "Meet Piyo 🐥 Small. Loud. Always first to cheer.\n\nWhich friend is your favourite so far: Pyoko, Mikan or Piyo?\n\n🌸 Adopt a Puchi for FREE: link in bio.\n\n#puchika #kawaii #cute #pixelart #virtualpet",
-      "draw": true
-    },
-    {
-      "id": "d13-ep7",
-      "type": "carousel",
-      "media": [
-        "media/d13-ep7/1.jpg",
-        "media/d13-ep7/2.jpg",
-        "media/d13-ep7/3.jpg",
-        "media/d13-ep7/4.jpg",
-        "media/d13-ep7/5.jpg",
-        "media/d13-ep7/6.jpg",
-        "media/d13-ep7/7.jpg"
-      ],
-      "caption": "Five more minutes... turned into two hours 😴\nBut getting up is getting up. Any time counts ♡\n\nPuchi & Chika · Episode 7: Five More Minutes (swipe →)\n\nWhat time did you get up today? No judging ↓\n\n☀ Track tiny wins, grow a pixel pet. 100% FREE, link in bio.\n\n#puchika #webcomic #pixelcomic #littlewins #relatable",
-      "draw": true
-    },
-    {
-      "id": "g-bonk",
-      "type": "reel",
-      "media": [
-        "media/g-bonk/reel.mp4"
-      ],
-      "cover": "media/g-bonk/cover.jpg",
-      "caption": "The undefeated champion... was defeated in 4 seconds. 🔨\n\nWould you beat Chika? ↓\n\n🌱 Puchika is FREE: grow your own Puchi with your tiny daily wins. Link in bio!\n\n#indiegame #cozygames #gamer #puchika #memes",
-      "draw": true
-    },
-    {
-      "id": "d15-weather",
-      "type": "image",
-      "media": [
-        "media/d15-weather/1.jpg"
-      ],
-      "caption": "Quick check-in: how’s your inner weather today?\n\n☀ sunny\n☁ cloudy\n☂ rainy\n\nAll weather is okay here ♡ Comment one ↓\n\n💗 Want your own Puchi? The app is FREE, link in bio.\n\n#puchika #checkin #gentlereminder #pixelart #littlewins",
-      "draw": true
-    },
-    {
-      "id": "s-trying",
-      "type": "reel",
-      "media": [
-        "media/s-trying/reel.mp4"
-      ],
-      "cover": "media/s-trying/cover.jpg",
-      "caption": "If nobody told you today: trying counts ♡\n\nSend this to someone who’s trying really hard right now.\n\n✨ Play Puchika for FREE, right in your browser: link in bio.\n\n#puchika #proudofyou #gentlereminder #wholesome #mentalhealth",
-      "draw": true
-    },
-    {
-      "id": "app-customize",
-      "type": "reel",
-      "media": [
-        "media/app-customize/reel.mp4"
-      ],
-      "cover": "media/app-customize/cover.jpg",
-      "caption": "Shells, places, friends, stickers, outfits ✿\nYou unlock most of them just by logging your little wins.\n\nWhich shell are you choosing?\n\n🎀 Your tiny wins deserve a cute pet. Puchika is FREE, link in bio.\n\n#puchika #kawaii #customization #cozygames #pixelart",
-      "draw": true
-    },
-    {
-      "id": "m-tellme",
-      "type": "reel",
-      "media": [
-        "media/m-tellme/reel.mp4"
-      ],
-      "cover": "media/m-tellme/cover.jpg",
-      "caption": "Your turn: tell me you’re a Chika without telling me you’re a Chika ↓\n\n🌸 Adopt a Puchi for FREE: link in bio.\n\n#puchika #tellmewithouttellingme #relatable #memes #pixelart",
-      "draw": true
-    },
-    {
-      "id": "q-quote-2",
-      "type": "image",
-      "media": [
-        "media/q-quote-2/1.jpg"
-      ],
-      "caption": "Chika, being wise for once ☾\nRest isn’t a reward. It’s a need.\n\nSend this to someone who needs a break.\n\n☀ Track tiny wins, grow a pixel pet. 100% FREE, link in bio.\n\n#quotes #rest #gentlereminder #puchika #selfcare",
-      "draw": true
-    },
-    {
-      "id": "s-hug",
-      "type": "reel",
-      "media": [
-        "media/s-hug/reel.mp4"
-      ],
-      "cover": "media/s-hug/cover.jpg",
-      "caption": "Hug delivered 🫂 No refunds, no returns.\n\nSend one to someone who could use it today ♡\n\n🌱 Puchika is FREE: grow your own Puchi with your tiny daily wins. Link in bio!\n\n#puchika #virtualhug #wholesome #kawaii #pixelart",
-      "draw": true
-    },
-    {
-      "id": "d17-tired",
-      "type": "carousel",
-      "media": [
-        "media/d17-tired/1.jpg",
-        "media/d17-tired/2.jpg",
-        "media/d17-tired/3.jpg",
-        "media/d17-tired/4.jpg",
-        "media/d17-tired/5.jpg",
-        "media/d17-tired/6.jpg",
-        "media/d17-tired/7.jpg"
-      ],
-      "caption": "Tired days still have wins:\n\n1. You took a shower\n2. You put on comfy clothes\n3. You opened a window\n4. You ate something warm\n5. You went to bed early\n\nSave this for the next tired day ♡\n\n💗 Want your own Puchi? The app is FREE, link in bio.\n\n#littlewins #selfcare #gentlereminder #puchika #tired",
-      "draw": true
-    },
-    {
-      "id": "d10-ep6",
-      "type": "reel",
-      "media": [
-        "media/d10-ep6/reel.mp4"
-      ],
-      "cover": "media/d10-ep6/cover.jpg",
-      "caption": "Someone watered Puchi’s flowers... and it definitely wasn’t Chika. (It was Chika.)\nTiny kind things count the most ♡\n\nPuchi & Chika · Episode 6: Chika’s Secret\n\nDid you do something kind this week? Even tiny ↓\n\n✨ Play Puchika for FREE, right in your browser: link in bio.\n\n#puchika #littlewins #kindness #pixelart #webcomic",
-      "draw": true
-    },
-    {
-      "id": "app-lookback",
-      "type": "reel",
-      "media": [
-        "media/app-lookback/reel.mp4"
-      ],
-      "cover": "media/app-lookback/cover.jpg",
-      "caption": "On the days you feel like you did nothing, scroll back. You did so much ♡\n\nHow many wins do you think you had this week?\n\n🎀 Your tiny wins deserve a cute pet. Puchika is FREE, link in bio.\n\n#puchika #habittracker #littlewins #selfcare #mentalhealth",
-      "draw": true
-    },
-    {
-      "id": "s-checkin",
-      "type": "reel",
-      "media": [
-        "media/s-checkin/reel.mp4"
-      ],
-      "cover": "media/s-checkin/cover.jpg",
-      "caption": "Water, food, rest. The holy trinity 💧🍎☾\nWhich one did you skip today? Go do it, we’ll wait ♡\n\n🌸 Adopt a Puchi for FREE: link in bio.\n\n#puchika #selfcare #gentlereminder #checkin #wholesome",
-      "draw": true
-    },
-    {
-      "id": "d-devlog",
-      "type": "carousel",
-      "media": [
-        "media/d-devlog/1.jpg",
-        "media/d-devlog/2.jpg",
-        "media/d-devlog/3.jpg",
-        "media/d-devlog/4.jpg",
-        "media/d-devlog/5.jpg"
-      ],
-      "caption": "A little peek behind the scenes ✿\nEvery picture is 64×36 pixels and every sound is made with code. The Puchika app is out now, and it’s free!\n\nWhat should Puchi do next? Your idea might end up in the app ↓\n\n☀ Track tiny wins, grow a pixel pet. 100% FREE, link in bio.\n\n#devlog #indiedev #pixelart #gamedev #puchika",
-      "draw": true
-    },
-    {
-      "id": "w-puchi",
-      "type": "reel",
-      "media": [
-        "media/w-puchi/reel.mp4"
-      ],
-      "cover": "media/w-puchi/cover.jpg",
-      "caption": "A little Puchi for your lock screen 🌸\nPause, screenshot, done ♡\n\nWant a Chika one too? ↓\n\n🌱 Puchika is FREE: grow your own Puchi with your tiny daily wins. Link in bio!\n\n#puchika #wallpaper #lockscreen #pixelart #kawaii",
-      "draw": true
-    },
-    {
-      "id": "d21-rest",
-      "type": "image",
-      "media": [
-        "media/d21-rest/1.jpg"
-      ],
-      "caption": "Rest is part of the work.\nYou’re allowed to stop for today ♡\n\nSend this to someone who needs to hear it.\n\n💗 Want your own Puchi? The app is FREE, link in bio.\n\n#gentlereminder #rest #selfcare #puchika #pixelart",
-      "draw": true
-    },
-    {
-      "id": "d31-ep16",
-      "type": "reel",
-      "media": [
-        "media/d31-ep16/reel.mp4"
-      ],
-      "cover": "media/d31-ep16/cover.jpg",
-      "caption": "A walk can be tiny. To the door counts. To the mailbox counts ♡\n\nPuchi & Chika · Episode 16: The Tiny Walk\n\nDid you step outside today?\n\n✨ Play Puchika for FREE, right in your browser: link in bio.\n\n#puchika #littlewins #gentlereminder #pixelart #cozy",
-      "draw": true
-    },
-    {
-      "id": "app-newcell",
-      "type": "reel",
-      "media": [
-        "media/app-newcell/reel.mp4"
-      ],
-      "cover": "media/app-newcell/cover.jpg",
-      "caption": "Your wins, your rules ✿\nFed the cat? Called your mom? Made the bed? Add it as a win.\n\nWhat little win would you add first?\n\n🎀 Your tiny wins deserve a cute pet. Puchika is FREE, link in bio.\n\n#puchika #habittracker #littlewins #routine #cozy",
-      "draw": true
-    },
-    {
-      "id": "m-gratitude",
-      "type": "reel",
-      "media": [
-        "media/m-gratitude/reel.mp4"
-      ],
-      "cover": "media/m-gratitude/cover.jpg",
-      "caption": "Both are valid. One is just... cozier. 🛌\n\nWhat’s on your gratitude list today? ↓\n\n🌸 Adopt a Puchi for FREE: link in bio.\n\n#puchika #gratitude #memes #relatable #pixelart",
-      "draw": true
-    },
-    {
-      "id": "d23-ep12",
-      "type": "carousel",
-      "media": [
-        "media/d23-ep12/1.jpg",
-        "media/d23-ep12/2.jpg",
-        "media/d23-ep12/3.jpg",
-        "media/d23-ep12/4.jpg",
-        "media/d23-ep12/5.jpg",
-        "media/d23-ep12/6.jpg"
-      ],
-      "caption": "Breaking news: snacks are food. Cake especially 🍰\n\nPuchi & Chika · Episode 12: Snack Time (swipe →)\n\nWhat did you eat today? Snacks count ♡\n\n☀ Track tiny wins, grow a pixel pet. 100% FREE, link in bio.\n\n#puchika #webcomic #pixelcomic #littlewins #kawaii",
-      "draw": true
-    },
-    {
-      "id": "d32-ep17",
-      "type": "reel",
-      "media": [
-        "media/d32-ep17/reel.mp4"
-      ],
-      "cover": "media/d32-ep17/cover.jpg",
-      "caption": "Don’t clean the room. Pick up one sock. Then see how you feel 🧦\n\nPuchi & Chika · Episode 17: The Messy Room\n\nWhat’s your “one sock” today?\n\n🌱 Puchika is FREE: grow your own Puchi with your tiny daily wins. Link in bio!\n\n#puchika #littlewins #adhd #cleaningmotivation #pixelart",
-      "draw": true
-    },
-    {
-      "id": "d25-count",
-      "type": "image",
-      "media": [
-        "media/d25-count/1.jpg"
-      ],
-      "caption": "How many little wins did you have today?\nDrank water? +1. Got up? +1. Made it here? +1 ♡\n\nComment your number ↓ We’ll cheer for every one.\n\n💗 Want your own Puchi? The app is FREE, link in bio.\n\n#puchika #littlewins #smallwins #pixelart #motivation",
+      "cover": "media/a02-water/cover.jpg",
+      "caption": "Puchi & Chika · Episode 2: The Water Challenge 💧\n\nPuchi drank eight glasses. Chika drank eight... ice cubes.\n\nIs ice water? Asking for Chika 🧊\n\n🌱 Puchika is FREE: grow your own Puchi with your tiny daily wins. Link in bio!\n\n#puchika #anime #pixelart #cute #funny",
       "draw": true
     },
     {
-      "id": "d12-grow",
+      "id": "a03-5am",
       "type": "reel",
       "media": [
-        "media/d12-grow/reel.mp4"
+        "media/a03-5am/reel.mp4"
       ],
-      "cover": "media/d12-grow/cover.jpg",
-      "caption": "From a tiny seed to a big bloom, one little win at a time ♡\n\nDay 1: a seed\nDay 3: two wins\nDay 7: drank water\nDay 14: went outside\nDay 21: rested\nDay 30: look at us!\n\nWhat helped you grow this week? ↓\n\n✨ Play Puchika for FREE, right in your browser: link in bio.\n\n#puchika #littlewins #growth #pixelart #virtualpet",
+      "cover": "media/a03-5am/cover.jpg",
+      "caption": "Puchi & Chika · Episode 3: The 5 AM Club ⏰\n\nPuchi woke up at 5. Chika was ALSO up at 5... she just never went to bed.\n\nEarly bird or night owl? 🌙\n\n💗 Want your own Puchi? The app is FREE, link in bio.\n\n#puchika #anime #pixelart #cute #funny",
       "draw": true
     },
     {
-      "id": "app-store",
+      "id": "a04-pillow",
       "type": "reel",
       "media": [
-        "media/app-store/reel.mp4"
+        "media/a04-pillow/reel.mp4"
       ],
-      "cover": "media/app-store/cover.jpg",
-      "caption": "Mugi the Bear and Ame the Frog are waiting 🐻🐸\nThe app is free. Extras are optional, and everything you unlock is yours to keep.\n\nTeam bear or team frog?\n\n🎀 Your tiny wins deserve a cute pet. Puchika is FREE, link in bio.\n\n#puchika #kawaii #virtualpet #cute #pixelart",
+      "cover": "media/a04-pillow/cover.jpg",
+      "caption": "Puchi & Chika · Episode 4: The Study Pillow 📚\n\nPuchi studied all night. Chika slept on the book. Results may vary.\n\nWhat’s the lowest score you were secretly proud of? 😂\n\n✨ Play Puchika for FREE, right in your browser: link in bio.\n\n#puchika #anime #pixelart #cute #funny",
       "draw": true
     },
     {
-      "id": "d33-ep18",
+      "id": "a05-steps",
       "type": "reel",
-      "media": [
-        "media/d33-ep18/reel.mp4"
-      ],
-      "cover": "media/d33-ep18/cover.jpg",
-      "caption": "Some days you don’t need advice. Just someone sitting with you ☔\n\nPuchi & Chika · Episode 18: The Bad Day\n\nYou got through today. That counts ♡\n\n🌸 Adopt a Puchi for FREE: link in bio.\n\n#puchika #mentalhealth #gentlereminder #pixelart #cozy",
-      "draw": true
-    },
-    {
-      "id": "d30-month",
-      "type": "carousel",
       "media": [
-        "media/d30-month/1.jpg",
-        "media/d30-month/2.jpg",
-        "media/d30-month/3.jpg",
-        "media/d30-month/4.jpg"
+        "media/a05-steps/reel.mp4"
       ],
-      "caption": "One month of Puchi & Chika ♡\n30 little stories, and so many tiny wins in the comments.\n\nThank you for growing with us. The Puchika app is coming soon ✿\n\nWhat was your favorite win this month? ↓\n\n☀ Track tiny wins, grow a pixel pet. 100% FREE, link in bio.\n\n#puchika #littlewins #pixelart #thankyou #kawaiiart",
+      "cover": "media/a05-steps/cover.jpg",
+      "caption": "Puchi & Chika · Episode 5: Ten Thousand Steps 🐰\n\nPuchi walked. Chika... delegated.\n\nHow many steps did you take today? 👟\n\n🎀 Your tiny wins deserve a cute pet. Puchika is FREE, link in bio.\n\n#puchika #anime #pixelart #cute #funny",
       "draw": true
     },
     {
-      "id": "m-giant",
+      "id": "a06-zen",
       "type": "reel",
-      "media": [
-        "media/m-giant/reel.mp4"
-      ],
-      "cover": "media/m-giant/cover.jpg",
-      "caption": "Growth is beautiful. Also, sometimes, in the way. 🌱\n\nWhat little win are you proud of this week? ↓\n\n🌱 Puchika is FREE: grow your own Puchi with your tiny daily wins. Link in bio!\n\n#puchika #littlewins #growth #memes #pixelart",
-      "draw": true
-    },
-    {
-      "id": "a-affirm-5",
-      "type": "image",
       "media": [
-        "media/a-affirm-5/1.jpg"
+        "media/a06-zen/reel.mp4"
       ],
-      "caption": "Same morning, different energy ☀☾\n\nWhich one woke up in you today?\n\n💗 Want your own Puchi? The app is FREE, link in bio.\n\n#puchika #introvert #memes #relatable #pixelart",
+      "cover": "media/a06-zen/cover.jpg",
+      "caption": "Puchi & Chika · Episode 6: Zen Master Chika 🧘\n\nTen minutes of calm for Puchi. Two hours of \"deep meditation\" for Chika.\n\nDoes a nap count as meditation? Be honest 😴\n\n🌸 Adopt a Puchi for FREE: link in bio.\n\n#puchika #anime #pixelart #cute #funny",
       "draw": true
     },
     {
-      "id": "w-pyoko",
+      "id": "a07-piggy",
       "type": "reel",
       "media": [
-        "media/w-pyoko/reel.mp4"
+        "media/a07-piggy/reel.mp4"
       ],
-      "cover": "media/w-pyoko/cover.jpg",
-      "caption": "A Pyoko for your lock screen 🐰☁\nPause and screenshot ♡\n\nWho should be next?\n\n✨ Play Puchika for FREE, right in your browser: link in bio.\n\n#puchika #wallpaper #lockscreen #kawaii #pixelart",
+      "cover": "media/a07-piggy/cover.jpg",
+      "caption": "Puchi & Chika · Episode 7: The Piggy Bank 🐷\n\nPuchi saves one coin a day. Chika saved 70%... nine times.\n\nSaver or \"saver\"? 💸\n\n☀ Track tiny wins, grow a pixel pet. 100% FREE, link in bio.\n\n#puchika #anime #pixelart #cute #funny",
       "draw": true
     },
     {
-      "id": "d14-ep8",
+      "id": "a08-gym",
       "type": "reel",
       "media": [
-        "media/d14-ep8/reel.mp4"
+        "media/a08-gym/reel.mp4"
       ],
-      "cover": "media/d14-ep8/cover.jpg",
-      "caption": "A tiny walk to the cherry tree and back 🌸\nFive minutes outside can change a whole day.\n\nPuchi & Chika · Episode 8: The Tiny Walk\n\nWhen did you last step outside? ↓\n\n🎀 Your tiny wins deserve a cute pet. Puchika is FREE, link in bio.\n\n#puchika #littlewins #sakura #pixelart #selfcare",
+      "cover": "media/a08-gym/cover.jpg",
+      "caption": "Puchi & Chika · Episode 8: Gym Day 💪\n\nPuchi did twenty reps. Chika took one mirror selfie.\n\nDoes it count if the gym saw you? 📸\n\n🌱 Puchika is FREE: grow your own Puchi with your tiny daily wins. Link in bio!\n\n#puchika #anime #pixelart #cute #funny",
       "draw": true
     },
     {
-      "id": "a-fireflies",
+      "id": "a09-cake",
       "type": "reel",
-      "media": [
-        "media/a-fireflies/reel.mp4"
-      ],
-      "cover": "media/a-fireflies/cover.jpg",
-      "caption": "A little firefly break ✨\nBreathe in... breathe out.\n\nSave this for a busy day ♡\n\n🌸 Adopt a Puchi for FREE: link in bio.\n\n#puchika #calm #cozyvibes #pixelart #breathe",
-      "draw": true
-    },
-    {
-      "id": "m-buttons-2",
-      "type": "image",
       "media": [
-        "media/m-buttons-2/1.jpg"
+        "media/a09-cake/reel.mp4"
       ],
-      "caption": "We all know which button wins 📱🌙\n\nWhat time did you fall asleep last night?\n\n☀ Track tiny wins, grow a pixel pet. 100% FREE, link in bio.\n\n#puchika #twobuttons #memes #nightowl #relatable",
+      "cover": "media/a09-cake/cover.jpg",
+      "caption": "Puchi & Chika · Episode 9: Breakfast Cake 🍰\n\nEggs. Milk. Flour. Strawberry. Chika calls it balanced.\n\nWhat’s your most chaotic breakfast? 🍳\n\n💗 Want your own Puchi? The app is FREE, link in bio.\n\n#puchika #anime #pixelart #cute #funny",
       "draw": true
     },
     {
-      "id": "d16-rainynight",
+      "id": "a10-inbox",
       "type": "reel",
       "media": [
-        "media/d16-rainynight/reel.mp4"
+        "media/a10-inbox/reel.mp4"
       ],
-      "cover": "media/d16-rainynight/cover.jpg",
-      "caption": "Rain on the window, tea on the side, two sleepy friends ☔\nTake a slow breath with them ♡\n\nSave this for when you need a calm moment.\n\n🌱 Puchika is FREE: grow your own Puchi with your tiny daily wins. Link in bio!\n\n#puchika #cozyvibes #rainyday #pixelart #calm",
+      "cover": "media/a10-inbox/cover.jpg",
+      "caption": "Puchi & Chika · Episode 10: Inbox Zero 📱\n\nPuchi answered every message. Chika marked them all as read... including the one about free cake.\n\nHow many unread messages do you have right now? 👀\n\n✨ Play Puchika for FREE, right in your browser: link in bio.\n\n#puchika #anime #pixelart #cute #funny",
       "draw": true
     },
     {
-      "id": "w-chika-wins-2",
-      "type": "image",
-      "media": [
-        "media/w-chika-wins-2/1.jpg"
-      ],
-      "caption": "Chika’s wins, part 2 ✓✓✓✓\nAt least one of these is a real win.\n\nWhat’s your slightly chaotic win today?\n\n💗 Want your own Puchi? The app is FREE, link in bio.\n\n#puchika #littlewins #memes #relatable #darkcute",
-      "draw": true
-    },
-    {
-      "id": "d18-ep9",
+      "id": "a11-bed",
       "type": "reel",
       "media": [
-        "media/d18-ep9/reel.mp4"
+        "media/a11-bed/reel.mp4"
       ],
-      "cover": "media/d18-ep9/cover.jpg",
-      "caption": "When the whole room feels like too much, pick up just 5 things.\nThat’s it. That’s the trick ♡\n\nPuchi & Chika · Episode 9: The Messy Room\n\nTry it right now and comment “done” ↓\n\n✨ Play Puchika for FREE, right in your browser: link in bio.\n\n#puchika #littlewins #cleaningmotivation #pixelart #tinyhabits",
+      "cover": "media/a11-bed/cover.jpg",
+      "caption": "Puchi & Chika · Episode 11: Make Your Bed 🛏️\n\nChika’s bed has been made for three weeks. She sleeps on the floor.\n\nDo you make your bed every morning? 🙈\n\n🎀 Your tiny wins deserve a cute pet. Puchika is FREE, link in bio.\n\n#puchika #anime #pixelart #cute #funny",
       "draw": true
     },
     {
-      "id": "d22-ep11",
+      "id": "a12-list",
       "type": "reel",
       "media": [
-        "media/d22-ep11/reel.mp4"
+        "media/a12-list/reel.mp4"
       ],
-      "cover": "media/d22-ep11/cover.jpg",
-      "caption": "Saying something nice about yourself is hard. Start tiny.\n“I make good tea” totally counts ♡\n\nPuchi & Chika · Episode 11: One Nice Thing\n\nYour turn: one nice thing about you ↓ We’ll read every one.\n\n🎀 Your tiny wins deserve a cute pet. Puchika is FREE, link in bio.\n\n#puchika #selfkindness #littlewins #pixelart #webcomic",
+      "cover": "media/a12-list/cover.jpg",
+      "caption": "Puchi & Chika · Episode 12: The Shopping List 🛒\n\nRice, milk, vegetables. Chika came back with rice crackers, milk chocolate and vegetable chips.\n\nWhat’s always on YOUR list? 🍫\n\n🌸 Adopt a Puchi for FREE: link in bio.\n\n#puchika #anime #pixelart #cute #funny",
       "draw": true
     },
     {
-      "id": "w-chika",
+      "id": "a13-grass",
       "type": "reel",
-      "media": [
-        "media/w-chika/reel.mp4"
-      ],
-      "cover": "media/w-chika/cover.jpg",
-      "caption": "Chika for your lock screen, as promised ☾\nPause, screenshot, done ♡\n\n🌸 Adopt a Puchi for FREE: link in bio.\n\n#puchika #wallpaper #lockscreen #pixelart #darkcute",
-      "draw": true
-    },
-    {
-      "id": "c-openwhen",
-      "type": "carousel",
       "media": [
-        "media/c-openwhen/1.jpg",
-        "media/c-openwhen/2.jpg",
-        "media/c-openwhen/3.jpg",
-        "media/c-openwhen/4.jpg",
-        "media/c-openwhen/5.jpg",
-        "media/c-openwhen/6.jpg"
+        "media/a13-grass/reel.mp4"
       ],
-      "caption": "Little letters for hard moments ✉\nStuck? Tired? Proud? Lonely? There’s one for each.\n\nSave this for later, or send it to someone who needs one today ♡\n\n☀ Track tiny wins, grow a pixel pet. 100% FREE, link in bio.\n\n#puchika #openwhen #gentlereminder #mentalhealth #wholesome",
+      "cover": "media/a13-grass/cover.jpg",
+      "caption": "Puchi & Chika · Episode 13: Touch Grass 🌿\n\nPuchi rolled in the grass. Chika touched it with a stick. Then a butterfly picked her.\n\nWhen did you last go outside just for fun? 🦋\n\n☀ Track tiny wins, grow a pixel pet. 100% FREE, link in bio.\n\n#puchika #anime #pixelart #cute #funny",
       "draw": true
     },
     {
-      "id": "d24-ep13",
+      "id": "a14-sun",
       "type": "reel",
-      "media": [
-        "media/d24-ep13/reel.mp4"
-      ],
-      "cover": "media/d24-ep13/cover.jpg",
-      "caption": "Every little light out there is someone’s tiny win ✨\nBrushed your teeth? That’s yours.\n\nPuchi & Chika · Episode 13: Little Stars\n\nWhat’s your little light today? ↓\n\n🌱 Puchika is FREE: grow your own Puchi with your tiny daily wins. Link in bio!\n\n#puchika #littlewins #cozyvibes #pixelart #nightsky",
-      "draw": true
-    },
-    {
-      "id": "c-baddaywins",
-      "type": "carousel",
       "media": [
-        "media/c-baddaywins/1.jpg",
-        "media/c-baddaywins/2.jpg",
-        "media/c-baddaywins/3.jpg",
-        "media/c-baddaywins/4.jpg",
-        "media/c-baddaywins/5.jpg",
-        "media/c-baddaywins/6.jpg",
-        "media/c-baddaywins/7.jpg"
+        "media/a14-sun/reel.mp4"
       ],
-      "caption": "On bad days, the bar is on the floor. That’s okay ♡\n1. You got through it\n2. You drank something\n3. You told someone\n4. You washed your face\n5. You went to bed\n\nSave this for a hard day.\n\n💗 Want your own Puchi? The app is FREE, link in bio.\n\n#puchika #mentalhealth #littlewins #selfcare #gentlereminder",
+      "cover": "media/a14-sun/cover.jpg",
+      "caption": "Puchi & Chika · Episode 14: Sunscreen Day ☀️\n\nPuchi swam, played and built a sandcastle. Chika never left the shade.\n\nTeam sunshine or team parasol? ⛱️\n\n🌱 Puchika is FREE: grow your own Puchi with your tiny daily wins. Link in bio!\n\n#puchika #anime #pixelart #cute #funny",
       "draw": true
     },
     {
-      "id": "d20-ep10",
+      "id": "a15-gift",
       "type": "reel",
       "media": [
-        "media/d20-ep10/reel.mp4"
+        "media/a15-gift/reel.mp4"
       ],
-      "cover": "media/d20-ep10/cover.jpg",
-      "caption": "Even the sunny ones get cloudy days ☁\nYou don’t have to be cheerful all the time.\n\nPuchi & Chika · Episode 10: Puchi’s Cloudy Day\n\nWho’s the Chika in your life? ♡\n\n✨ Play Puchika for FREE, right in your browser: link in bio.\n\n#puchika #friendship #gentlereminder #pixelart #littlewins",
+      "cover": "media/a15-gift/cover.jpg",
+      "caption": "Puchi & Chika · Episode 15: The Gift 🎁\n\nChika gave back the scarf Puchi gave her last year. Never worn. Saved \"for something special\".\n\nWho would you give a handmade card to? 💌\n\n💗 Want your own Puchi? The app is FREE, link in bio.\n\n#puchika #anime #pixelart #cute #funny",
       "draw": true
     },
     {
-      "id": "d29-ep15",
+      "id": "a16-deadline",
       "type": "reel",
-      "media": [
-        "media/d29-ep15/reel.mp4"
-      ],
-      "cover": "media/d29-ep15/cover.jpg",
-      "caption": "“Today was fine, I guess.”\nThen: warm tea, a pink sky, a good friend. Three wins ♡\n\nPuchi & Chika · Episode 15: Three Good Things\n\nYour turn: 3 good things from today ↓\n\n🎀 Your tiny wins deserve a cute pet. Puchika is FREE, link in bio.\n\n#puchika #gratitude #littlewins #pixelart #threegoodthings",
-      "draw": true
-    },
-    {
-      "id": "c-whichfriend",
-      "type": "carousel",
-      "media": [
-        "media/c-whichfriend/1.jpg",
-        "media/c-whichfriend/2.jpg",
-        "media/c-whichfriend/3.jpg",
-        "media/c-whichfriend/4.jpg",
-        "media/c-whichfriend/5.jpg",
-        "media/c-whichfriend/6.jpg",
-        "media/c-whichfriend/7.jpg"
-      ],
-      "caption": "Swipe and find your Puchika friend ✿\nPuchi, Chika, Pyoko, Mikan or Piyo?\n\nTell us which one you got ↓\n\n🌸 Adopt a Puchi for FREE: link in bio.\n\n#puchika #personalityquiz #kawaii #pixelart #cute",
-      "draw": true
-    },
-    {
-      "id": "q-quote-3",
-      "type": "image",
       "media": [
-        "media/q-quote-3/1.jpg"
+        "media/a16-deadline/reel.mp4"
       ],
-      "caption": "Slow progress is still progress 🌱\nSave this for a slow week.\n\n☀ Track tiny wins, grow a pixel pet. 100% FREE, link in bio.\n\n#puchika #quotes #motivation #gentlereminder #pixelart",
+      "cover": "media/a16-deadline/cover.jpg",
+      "caption": "Puchi & Chika · Episode 16: The Deadline ⏳\n\nPuchi finished a week early. Chika finished at 11:59:59. Same grade.\n\nEarly bird or deadline warrior? 😅\n\n✨ Play Puchika for FREE, right in your browser: link in bio.\n\n#puchika #anime #pixelart #cute #funny",
       "draw": true
     },
     {
-      "id": "d26-halloween",
+      "id": "a17-dishes",
       "type": "reel",
-      "media": [
-        "media/d26-halloween/reel.mp4"
-      ],
-      "cover": "media/d26-halloween/cover.jpg",
-      "caption": "Dark nights are less spooky with a friend and a pumpkin lantern 🎃\nBeing a little brave counts as a win ♡\n\nPuchi & Chika · Episode 14: A Spooky Night\n\nAre you dressing up this year? ↓\n\n🌱 Puchika is FREE: grow your own Puchi with your tiny daily wins. Link in bio!\n\n#puchika #halloween #pixelart #cozyhalloween #kawaii",
-      "date": "2026-10-31",
-      "draw": true
-    },
-    {
-      "id": "d27-sunday",
-      "type": "carousel",
-      "media": [
-        "media/d27-sunday/1.jpg",
-        "media/d27-sunday/2.jpg",
-        "media/d27-sunday/3.jpg",
-        "media/d27-sunday/4.jpg",
-        "media/d27-sunday/5.jpg",
-        "media/d27-sunday/6.jpg",
-        "media/d27-sunday/7.jpg"
-      ],
-      "caption": "A tiny Sunday reset (no big cleaning day needed):\n\n1. Change your sheets\n2. Plan one fun thing\n3. Tidy one small spot\n4. Text someone you miss\n5. Go to bed a little early\n\nWhich one will you do today? Save for next Sunday ♡\n\n💗 Want your own Puchi? The app is FREE, link in bio.\n\n#sundayreset #littlewins #selfcare #puchika #pixelart",
-      "date": "2026-10-25",
-      "draw": true
-    },
-    {
-      "id": "d28-newweek",
-      "type": "image",
-      "media": [
-        "media/d28-newweek/1.jpg"
-      ],
-      "caption": "New week. No need to have it all figured out.\nOne tiny step at a time ♡\n\nWhat’s your first tiny step this week? ↓\n\n✨ Play Puchika for FREE, right in your browser: link in bio.\n\n#mondaymotivation #littlewins #gentlereminder #puchika #pixelart",
-      "date": "2026-10-26",
-      "draw": true
-    },
-    {
-      "id": "m-grr-mondays",
-      "type": "image",
       "media": [
-        "media/m-grr-mondays/1.jpg"
+        "media/a17-dishes/reel.mp4"
       ],
-      "caption": "Grr. Mondays. 🌧\nShow us your Monday face ↓\n\n🎀 Your tiny wins deserve a cute pet. Puchika is FREE, link in bio.\n\n#grrmondays #mondaymood #puchika #memes #pixelart",
-      "date": "2026-10-12",
+      "cover": "media/a17-dishes/cover.jpg",
+      "caption": "Puchi & Chika · Episode 17: Zero Dishes 🍽️\n\nChika ate straight from the pot. No plates, no dishes... until Puchi explained what a pot is.\n\nWhat chore do you secretly avoid? 🫧\n\n🎀 Your tiny wins deserve a cute pet. Puchika is FREE, link in bio.\n\n#puchika #anime #pixelart #cute #funny",
       "draw": true
     },
     {
-      "id": "m-sax-sunday",
+      "id": "a18-bus",
       "type": "reel",
       "media": [
-        "media/m-sax-sunday/reel.mp4"
+        "media/a18-bus/reel.mp4"
       ],
-      "cover": "media/m-sax-sunday/cover.jpg",
-      "caption": "The Sunday scaries arrive at exactly 8 PM 🎷\n\nWho else just remembered? ↓\n\n🌸 Adopt a Puchi for FREE: link in bio.\n\n#sundayscaries #puchika #relatable #memes #pixelart",
-      "date": "2026-10-11",
+      "cover": "media/a18-bus/cover.jpg",
+      "caption": "Puchi & Chika · Episode 18: The Bus 🚌\n\nChika set her clock twenty minutes slow so she’s never late. It did not go well.\n\nAre you always early or always \"on the way\"? 🏃\n\n🌸 Adopt a Puchi for FREE: link in bio.\n\n#puchika #anime #pixelart #cute #funny",
       "draw": true
     },
     {
-      "id": "s-friday-1",
+      "id": "a19-grateful",
       "type": "reel",
       "media": [
-        "media/s-friday-1/reel.mp4"
+        "media/a19-grateful/reel.mp4"
       ],
-      "cover": "media/s-friday-1/cover.jpg",
-      "caption": "Friday! You survived the whole week 🎉\nCelebrate however you like (Chika’s choice: bed).\n\nWhat was your win this week?\n\n☀ Track tiny wins, grow a pixel pet. 100% FREE, link in bio.\n\n#fridayfeeling #puchika #weekend #littlewins #pixelart",
-      "date": "2026-10-09",
+      "cover": "media/a19-grateful/cover.jpg",
+      "caption": "Puchi & Chika · Episode 19: Gratitude Journal 📔\n\nPuchi’s list ends with \"Chika\". Chika’s starts with \"me\". Then she quietly adds one more line.\n\nWhat are three tiny things you’re grateful for today? ♡\n\n☀ Track tiny wins, grow a pixel pet. 100% FREE, link in bio.\n\n#puchika #anime #pixelart #cute #funny",
       "draw": true
     },
     {
-      "id": "s-friday-2",
+      "id": "a20-remote",
       "type": "reel",
       "media": [
-        "media/s-friday-2/reel.mp4"
+        "media/a20-remote/reel.mp4"
       ],
-      "cover": "media/s-friday-2/cover.jpg",
-      "caption": "You got up, you ate, you kept going. That’s a win week ✓\n\nOne word for your week?\n\n🌱 Puchika is FREE: grow your own Puchi with your tiny daily wins. Link in bio!\n\n#fridayfeeling #puchika #littlewins #selfcare #pixelart",
-      "date": "2026-10-16",
+      "cover": "media/a20-remote/cover.jpg",
+      "caption": "Puchi & Chika · Episode 20: Where’s the Remote? 📺\n\nThe remote is missing. Chika \"tidied up\" yesterday. Puchi knows exactly where to look.\n\nWhere do the lost things go in YOUR house? 🚪\n\n🌱 Puchika is FREE: grow your own Puchi with your tiny daily wins. Link in bio!\n\n#puchika #anime #pixelart #cute #funny",
       "draw": true
     }
   ]
