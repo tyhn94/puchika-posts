@@ -1,0 +1,56 @@
+/* Episode 3: The 5 AM Club — Puchi wakes up at 5. Chika is also up at 5... because she never went to bed. */
+const blanket = () => { PEN = C.LILAC; for(let y = 66; y <= 74; y++) for(let x = 1; x <= 27; x++) P(x, y, y === 66 || x === 27 ? 1 : (x + y) % 4 ? 3 : 2); };
+const clockCard = txt => t => otext(txt(t), W / 2, 1150, {font: 'Dot', w: 400, size: 110, fill: '#fff', stroke: '#2b2240', sw: 16});
+const SOFA = 21, sofaCam = (dy, h) => rel([[0, 24, 55 + (dy || 0), h || 42], [1, 24, 56 + (dy || 0), (h || 42) - 4]]), twoSofa = rel([[0, ...two(38, 94)], [1, ...two(38, 88)]]);
+const zz = (x, y) => t => { const k = (t * 1.2) % 1; art2('zzz', x + Math.round(k * 4), y - Math.round(k * 8), C.LILAC); };
+episode({id: 'a03-5am', shots: [
+  shot({name: 'clock', set: 'room', night: true, in: 'black', cam: rel([[0, 56, 15, 30], [1, 56, 15, 24]]), dur: 2.0,
+    setOpts: t => ({clock: t < 1.3 ? 4.98 : 5}), shake: [[1.3, .7, 22]],
+    card: clockCard(t => t < 1.3 ? 'AM 4:59' : 'AM 5:00'), sfx: [[0, 'tictoc', 3], [1.3, 'alarm']]}),
+  shot({name: 'wake', set: 'room', night: true, cam: rel([[0, 16, 60, 46], [1, 16, 59, 42]]), style: t => t > .5 ? 'shoujo' : null,
+    p: t => ({x: 14, lift: t < .45 ? 6 : 10, eyes: t < .45 ? 'sleep' : 'shine', mouth: t < .45 ? 'sleep' : 'open', arms: t < .45 ? 'down' : 'up', hop: [.45, .4, 4], cheeks: t > .45}),
+    front: t => { if(t < .5) blanket(); }, sfx: [[.45, 'boing'], [.5, 'shine']],
+    lines: [['p', 'Good morning, world! Welcome to the 5 AM Club!', 'おはよう せかい！あさ5じクラブへ ようこそ！', 'excited', {at: .6, say: 'おはよう、せかい！あさごじクラブへ、ようこそ！'}]]}),
+  titleShot(3, 'あさ5じクラブ', 'The 5 AM Club'),
+  shot({name: 'sunrise', set: 'room', cam: 'ms:p', music: 'field', setOpts: {clock: 5.1},
+    p: t => ({eyes: 'happy', mouth: 'open', arms: Math.floor(t * 2) % 2 ? 'up' : 'down', cheeks: true}),
+    over: t => tint('#ffb37a', .18, 'soft-light'), win: [.2, 'Woke up at 5'],
+    lines: [['p', 'The early bird gets the tiny wins!', 'はやおきは さんもんの とく！', 'excited', {at: .9}]]}),
+  // meanwhile, Chika
+  shot({name: 'gamer', set: 'living', night: true, setOpts: {tv: true}, cam: sofaCam(), music: 'stop',
+    c: t => ({x: SOFA, lift: 10, eyes: 'tired', mouth: 'flat', look: 1, bob: false}), front: t => { sofaFront(4, 40); art2('remote', 30, 58, C.GRAY); },
+    over: t => { tint('#5d4c9c', .42); vignette(.4); X.save(); X.globalCompositeOperation = 'screen'; X.fillStyle = 'rgba(90,140,255,' + (.12 + .05 * Math.sin(t * 20)) + ')'; X.fillRect(0, 0, W, H); X.restore(); },
+    sfx: [[.1, 'qhit'], [.5, 'qhit'], [.9, 'qcrit']],
+    lines: [['c', 'Oh. It’s five already?', 'あ、もう 5じ？', 'deadpan', {at: 1.1, say: 'あ、もう、ごじ？'}]]}),
+  shot({name: 'meet', set: 'living', cam: twoSofa, music: 'town', setOpts: {tv: true},
+    p: t => ({x: 54, eyes: 'shine', mouth: 'open', arms: 'up', walk: [70, 54, 0, .5]}), c: t => ({x: SOFA, lift: 10, eyes: 'tired', mouth: 'flat', look: 1, bob: false}),
+    front: t => sofaFront(4, 40),
+    lines: [['p', 'Chika! You’re up early too?!', 'チカも はやおき？！', 'excited', {say: 'チカも、はやおき？！'}]]}),
+  shot({name: 'same club', set: 'living', cam: sofaCam(1, 40), setOpts: {tv: true}, win: [1.6, 'Up at 5 AM'],
+    c: t => ({x: SOFA, lift: 10, eyes: 'half', mouth: 'cat', look: 1, bob: false}), front: t => sofaFront(4, 40),
+    lines: [['c', 'Up early? No. Up LATE. Same club.', 'はやおき？ちがう、よふかし。おなじ クラブ。', 'smug', {say: 'はやおき？ちがう。よふかし。でも、おなじクラブ。'}]]}),
+  shot({name: 'never slept', style: 'shock', cam: 'snap:64', shake: [[0, .4, 24]], p: {x: 64, eyes: 'dot', mouth: 'scream', arms: 'up', fx: ['shock'], shake: 1, bob: false},
+    over: OVER.gaan(820, 1180), sfx: [[0, 'thunder'], [.05, 'gasp']],
+    lines: [['p', 'You never even SLEPT!!', 'ねてないじゃん！！', 'shout', {style: 'shout', pos: [540, 420], tail: false, say: 'ぜんぜん、ねてないじゃん！'}]]}),
+  shot({name: 'awake', style: 'gold', cam: rel([[0, ...cu(64)], [1, ...cu(64, 1).slice(0, 2), 36]]), c: t => ({x: 64, eyes: t < 1.6 ? 'wide' : 'tired', mouth: 'grin', fx: ['sweat2'], shake: t > 1.2 ? 1 : 0}),
+    lines: [['c', 'Technically... I’m EXTREMELY awake.', 'つまり… すごく おきてる。', 'nervous', {say: 'つまり…すっごく、おきてる。'}]]}),
+  shot({name: 'faceplant', set: 'living', cam: twoSofa, setOpts: {tv: true}, music: 'stop', dur: 2.4, shake: [[.5, .3, 30]],
+    c: t => ({x: SOFA, lift: t < .5 ? 10 : 4, eyes: t < .5 ? 'tired' : 'sleep', mouth: t < .5 ? 'flat' : 'sleep', look: 1, bob: false}), p: {x: 54, eyes: 'dot', mouth: 'o', look: -1},
+    front: t => { sofaFront(4, 40); if(t > .8) zz(30, 50)(t); },
+    over: t => { if(t > .5) mangaSfx('バタッ', 300, 820, {size: 130, fill: '#fff', stroke: '#3d2c4e', rot: -.12, sc: EASE.back(clamp((t - .5) / .15, 0, 1)), alpha: clamp(1.6 - t, 0, 1)}); },
+    sfx: [[.5, 'thud'], [1.1, 'snore']]}),
+  shot({name: 'asleep', set: 'living', cam: 'cu:54', setOpts: {tv: true}, p: {x: 54, eyes: 'tired', mouth: 'flat', fx: ['gloom'], look: -1}, sfx: [[.1, 'snore']],
+    lines: [['p', '...She’s asleep.', '…ねた。', 'deadpan']]}),
+  // Puchi's morning, Chika's morning
+  shot({name: 'routine 1', style: 'speed', music: 'field', cam: rel([[0, PX, 60, 46, .07], [1, PX, 60, 42, .09]]), dur: 1.3, p: t => ({eyes: 'squeeze', mouth: 'o', hop: [0, .4, 2, true]}), props: [['glass', 56, 60, C.BLUE]],
+    hud: true, card: t => winPill('Drank water', t - .1, PILL_Y), sfx: [[.1, 'gulp'], [.15, 'win']]}),
+  shot({name: 'routine 2', style: 'speed', cam: rel([[0, PX, 60, 46, -.07], [1, PX, 60, 42, -.09]]), dur: 1.3, p: t => ({eyes: 'happy', mouth: 'open', arms: Math.floor(t * 5) % 2 ? 'up' : 'wave', hop: [0, .3, 2, true]}),
+    hud: true, card: t => winPill('Stretched', t - .1, PILL_Y), sfx: [[.15, 'win'], [.2, 'swish'], [.6, 'swish']]}),
+  shot({name: 'rest win', set: 'living', cam: twoSofa, win: [.3, 'Rested', 1], c: {x: SOFA, lift: 4, eyes: 'sleep', mouth: 'sleep', look: 1, bob: false}, p: t => ({x: 54, eyes: t < .9 ? 'open' : 'dot', mouth: 'o', look: -1}),
+    front: t => { sofaFront(4, 40); zz(30, 50)(t); }, sfx: [[.1, 'snore']],
+    lines: [['p', 'She logged REST?!', '「きゅうけい」で かち？！', 'shout', {at: 1.0, say: 'きゅうけいで、かち？！'}]]}),
+  shot({name: 'sleep talk', set: 'living', cam: rel([[0, 22, 60, 36], [1, 22, 61, 32]]), music: 'stop', c: {x: SOFA, lift: 4, eyes: 'sleep', mouth: 'cat', look: 1, bob: false, flap: false},
+    front: t => { sofaFront(4, 40); zz(32, 52)(t); }, sfx: [[.05, 'snore']],
+    lines: [['c', '...Two... wins...', '…ふたつ… かち…', 'muffled', {at: .8, style: 'muffled', say: 'ふたつ…かち…'}]]}),
+  tsuzukuShot('The Study Pillow')
+]});
