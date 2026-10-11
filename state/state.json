@@ -95,6 +95,12 @@
       "permalink": "https://www.instagram.com/reel/DeXBKy-kTFs/",
       "type": "reel",
       "at": "2026-10-11T15:49:09.876Z"
+    },
+    "a04-pillow": {
+      "mediaId": "18122143481484002",
+      "permalink": "https://www.instagram.com/reel/DeXcvIWjEnk/",
+      "type": "reel",
+      "at": "2026-10-11T19:49:33.224Z"
     }
   },
   "failed": {},
@@ -104,7 +110,7 @@
     "2026-10-08": 3,
     "2026-10-09": 4,
     "2026-10-10": 2,
-    "2026-10-11": 1
+    "2026-10-11": 2
   },
   "notified": {},
   "firstRun": "2026-10-06T09:18:43.623Z",
