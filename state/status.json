@@ -1,9 +1,14 @@
 {
   "ok": true,
-  "at": "2026-10-10T15:32:42.808Z",
+  "at": "2026-10-11T15:49:09.876Z",
   "mode": "auto",
   "problems": [],
   "account": "puchikafriends",
-  "remaining": 18,
+  "posted": {
+    "id": "a03-5am",
+    "mediaId": "18108505451257709",
+    "permalink": "https://www.instagram.com/reel/DeXBKy-kTFs/"
+  },
+  "remaining": 17,
   "perDay": 2
 }
