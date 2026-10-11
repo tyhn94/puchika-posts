@@ -24,6 +24,11 @@
       "date": "2026-10-10",
       "followers": 2,
       "posts": 17
+    },
+    {
+      "date": "2026-10-11",
+      "followers": 2,
+      "posts": 18
     }
   ],
   "posts": {
@@ -39,7 +44,7 @@
       "shares": 0,
       "views": 37,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 21251
+      "ig_reels_avg_watch_time": 20888
     },
     "d02-meet": {
       "id": "d02-meet",
@@ -80,7 +85,7 @@
       "shares": 0,
       "views": 19,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 15719
+      "ig_reels_avg_watch_time": 15136
     },
     "m-nap": {
       "id": "m-nap",
@@ -148,7 +153,7 @@
       "shares": 0,
       "views": 132,
       "total_interactions": 4,
-      "ig_reels_avg_watch_time": 6195
+      "ig_reels_avg_watch_time": 6193
     },
     "s-friday-1": {
       "id": "s-friday-1",
@@ -162,7 +167,7 @@
       "shares": 0,
       "views": 74,
       "total_interactions": 0,
-      "ig_reels_avg_watch_time": 4347
+      "ig_reels_avg_watch_time": 4282
     },
     "app-water": {
       "id": "app-water",
@@ -171,12 +176,12 @@
       "permalink": "https://www.instagram.com/reel/DeRn8LRgZDk/",
       "likes": 0,
       "comments": 0,
-      "reach": 130,
+      "reach": 165,
       "saved": 0,
       "shares": 0,
-      "views": 155,
+      "views": 189,
       "total_interactions": 0,
-      "ig_reels_avg_watch_time": 1811
+      "ig_reels_avg_watch_time": 1739
     },
     "g-stack": {
       "id": "g-stack",
@@ -185,12 +190,12 @@
       "permalink": "https://www.instagram.com/reel/DeSOJUbDW0_/",
       "likes": 1,
       "comments": 0,
-      "reach": 129,
+      "reach": 130,
       "saved": 0,
       "shares": 0,
-      "views": 142,
+      "views": 143,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 3146
+      "ig_reels_avg_watch_time": 3332
     },
     "w-chika-wins": {
       "id": "w-chika-wins",
@@ -212,27 +217,27 @@
       "permalink": "https://www.instagram.com/reel/DeTuVzGDNEN/",
       "likes": 1,
       "comments": 0,
-      "reach": 29,
+      "reach": 84,
       "saved": 0,
       "shares": 0,
-      "views": 36,
+      "views": 97,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 3854
+      "ig_reels_avg_watch_time": 3323
     },
     "a02-water": {
       "id": "a02-water",
       "at": "2026-10-10T10:48:34.482Z",
       "type": "reel",
       "permalink": "https://www.instagram.com/reel/DeT6HeJgAKI/",
-      "likes": 0,
+      "likes": 2,
       "comments": 0,
-      "reach": 0,
+      "reach": 104,
       "saved": 0,
       "shares": 0,
-      "views": 0,
-      "total_interactions": 0,
-      "ig_reels_avg_watch_time": 0
+      "views": 121,
+      "total_interactions": 2,
+      "ig_reels_avg_watch_time": 14146
     }
   },
-  "updatedAt": "2026-10-10T10:48:34.482Z"
+  "updatedAt": "2026-10-11T09:04:05.560Z"
 }
