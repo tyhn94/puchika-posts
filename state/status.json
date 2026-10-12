@@ -1,9 +1,10 @@
 {
   "ok": true,
-  "at": "2026-10-11T23:17:21.262Z",
-  "mode": "auto",
+  "at": "2026-10-12T18:18:07.872Z",
+  "mode": "check",
   "problems": [],
   "account": "puchikafriends",
+  "next": "a05-steps",
   "remaining": 16,
   "perDay": 2
 }

@@ -227,7 +227,7 @@
       "shares": 0,
       "views": 98,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 3197
+      "ig_reels_avg_watch_time": 3171
     },
     "a02-water": {
       "id": "a02-water",
@@ -241,7 +241,7 @@
       "shares": 0,
       "views": 123,
       "total_interactions": 2,
-      "ig_reels_avg_watch_time": 13639
+      "ig_reels_avg_watch_time": 14298
     },
     "a03-5am": {
       "id": "a03-5am",
@@ -250,12 +250,12 @@
       "permalink": "https://www.instagram.com/reel/DeXBKy-kTFs/",
       "likes": 5,
       "comments": 0,
-      "reach": 113,
+      "reach": 126,
       "saved": 0,
       "shares": 0,
-      "views": 131,
+      "views": 144,
       "total_interactions": 5,
-      "ig_reels_avg_watch_time": 6129
+      "ig_reels_avg_watch_time": 6400
     },
     "a04-pillow": {
       "id": "a04-pillow",
@@ -264,13 +264,13 @@
       "permalink": "https://www.instagram.com/reel/DeXcvIWjEnk/",
       "likes": 2,
       "comments": 0,
-      "reach": 105,
+      "reach": 106,
       "saved": 0,
       "shares": 0,
-      "views": 116,
+      "views": 118,
       "total_interactions": 2,
-      "ig_reels_avg_watch_time": 5915
+      "ig_reels_avg_watch_time": 7478
     }
   },
-  "updatedAt": "2026-10-12T09:49:34.376Z"
+  "updatedAt": "2026-10-12T18:18:07.872Z"
 }
