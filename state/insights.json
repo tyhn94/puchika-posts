@@ -33,7 +33,7 @@
     {
       "date": "2026-10-12",
       "followers": 0,
-      "posts": 20
+      "posts": 22
     }
   ],
   "posts": {
@@ -227,7 +227,7 @@
       "shares": 0,
       "views": 98,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 3171
+      "ig_reels_avg_watch_time": 3150
     },
     "a02-water": {
       "id": "a02-water",
@@ -255,7 +255,7 @@
       "shares": 0,
       "views": 144,
       "total_interactions": 5,
-      "ig_reels_avg_watch_time": 6400
+      "ig_reels_avg_watch_time": 6362
     },
     "a04-pillow": {
       "id": "a04-pillow",
@@ -269,13 +269,41 @@
       "shares": 0,
       "views": 118,
       "total_interactions": 2,
-      "ig_reels_avg_watch_time": 7478
+      "ig_reels_avg_watch_time": 7630
     },
     "a05-steps": {
       "id": "a05-steps",
       "at": "2026-10-12T18:18:51.376Z",
       "type": "reel",
       "permalink": "https://www.instagram.com/reel/DeZ3JnHiYpS/",
+      "likes": 0,
+      "comments": 0,
+      "reach": 53,
+      "saved": 0,
+      "shares": 0,
+      "views": 61,
+      "total_interactions": 0,
+      "ig_reels_avg_watch_time": 4191
+    },
+    "a06-zen": {
+      "id": "a06-zen",
+      "at": "2026-10-12T19:27:32.617Z",
+      "type": "reel",
+      "permalink": "https://www.instagram.com/reel/DeZ_CBToOpm/",
+      "likes": 0,
+      "comments": 0,
+      "reach": 8,
+      "saved": 0,
+      "shares": 0,
+      "views": 10,
+      "total_interactions": 0,
+      "ig_reels_avg_watch_time": 7847
+    },
+    "a07-piggy": {
+      "id": "a07-piggy",
+      "at": "2026-10-12T21:38:46.488Z",
+      "type": "reel",
+      "permalink": "https://www.instagram.com/reel/DeaN-MklcDG/",
       "likes": 0,
       "comments": 0,
       "reach": 0,
@@ -286,5 +314,5 @@
       "ig_reels_avg_watch_time": 0
     }
   },
-  "updatedAt": "2026-10-12T18:18:51.376Z"
+  "updatedAt": "2026-10-12T21:38:46.488Z"
 }

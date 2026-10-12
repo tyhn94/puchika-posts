@@ -113,6 +113,12 @@
       "permalink": "https://www.instagram.com/reel/DeZ_CBToOpm/",
       "type": "reel",
       "at": "2026-10-12T19:27:32.617Z"
+    },
+    "a07-piggy": {
+      "mediaId": "18634423897049479",
+      "permalink": "https://www.instagram.com/reel/DeaN-MklcDG/",
+      "type": "reel",
+      "at": "2026-10-12T21:38:46.488Z"
     }
   },
   "failed": {},
@@ -123,13 +129,13 @@
     "2026-10-09": 4,
     "2026-10-10": 2,
     "2026-10-11": 2,
-    "2026-10-12": 2
+    "2026-10-12": 3
   },
   "notified": {},
   "firstRun": "2026-10-06T09:18:43.623Z",
   "refreshTriedAt": "2026-10-12T09:49:34.376Z",
   "refreshedAt": "2026-10-12T09:49:34.376Z",
   "tokenExpiresAt": "2026-12-11T09:49:34.376Z",
-  "insightsAt": "2026-10-12T18:18:51.376Z",
+  "insightsAt": "2026-10-12T21:38:46.488Z",
   "setupFails": 0
 }
