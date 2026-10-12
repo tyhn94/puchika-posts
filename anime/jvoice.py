@@ -7,8 +7,8 @@ import numpy as np, pyopenjtalk, pyworld as pw
 INFO, OUTD = sys.argv[1], sys.argv[2]
 SR, FPS = 48000, 30
 CHAR = {   # pitch factor, intonation (log-range scale), formant warp (>1 = smaller head), speed, breath
-  'p': dict(f0=1.26, range=1.3, warp=1.14, speed=1.08, ap=0.0, chip=.10),
-  'c': dict(f0=.6, range=.7, warp=.92, speed=.96, ap=.08, chip=.07)}
+  'p': dict(f0=1.26, range=1.3, warp=1.14, speed=1.16, ap=0.0, chip=.10),
+  'c': dict(f0=.6, range=.7, warp=.92, speed=1.06, ap=.08, chip=.07)}
 # moods: pitch (f0), intonation range, speed, level (db), brightness (tilt dB/octave above 1 kHz), breath (ap),
 # contour over the line (rise / fall / peak), tremble (trem: pitch, amp), jitter, drawl (slower last part), creak (vocal fry at the end)
 MOOD = {
@@ -16,10 +16,10 @@ MOOD = {
   'excited': dict(f0=1.14, range=1.7, speed=1.12, db=2, tilt=2, contour='rise'),
   'shout': dict(f0=1.3, range=1.9, speed=1.04, db=5, tilt=5, contour='peak', jitter=.012),
   'nervous': dict(f0=1.07, range=1.3, speed=1.1, trem=(.07, .3), ap=.12, jitter=.01),
-  'deadpan': dict(f0=.95, range=.22, speed=.9, db=-1, creak=.18),
-  'smug': dict(f0=.93, range=.95, speed=.86, contour='fall', drawl=1.5, creak=.12),
-  'tired': dict(f0=.9, range=.5, speed=.76, db=-2, ap=.3, contour='fall'),
-  'muffled': dict(speed=.9, ap=.1, range=1.3),
+  'deadpan': dict(f0=.95, range=.22, speed=.98, db=-1, creak=.18),
+  'smug': dict(f0=.93, range=.95, speed=.96, contour='fall', drawl=1.3, creak=.12),
+  'tired': dict(f0=.9, range=.5, speed=.88, db=-2, ap=.3, contour='fall'),
+  'muffled': dict(speed=1.0, ap=.1, range=1.3),
   'whisper': dict(db=-4, ap=.5)}
 def clean(t):
     t = t.replace('「', '').replace('」', '').replace('〜', 'ー').replace('~', 'ー').replace('—', '').replace('-', '')
@@ -28,6 +28,40 @@ def warp_env(sp, a):
     n = sp.shape[1]; k = np.arange(n); src = np.clip(k / a, 0, n - 1)
     lo = np.floor(src).astype(int); hi = np.minimum(lo + 1, n - 1); w = src - lo
     return sp[:, lo] * (1 - w) + sp[:, hi] * w
+# Open JTalk leaves about half a second of silence at every 、 and 。 (more when slowed down), which made the
+# lines sound halting. Inside a line those pauses are cut to a natural breath: short at 、, a bit longer between
+# sentences, a real beat only for …  (short gaps such as the stop in っ are left alone)
+PAUSE = {'、': .1, ',': .1, '。': .2, '！': .17, '!': .17, '？': .2, '?': .2, '…': .3}
+def tighten(y, text):
+    fr = int(.005 * SR); n = len(y) // fr
+    if n < 4: return y
+    e = np.sqrt(np.mean(y[:n * fr].reshape(n, fr) ** 2, axis=1)); on = e > e.max() * .03
+    idx = np.where(on)[0]
+    if not len(idx): return y
+    runs, i = [], idx[0]
+    while i <= idx[-1]:
+        if on[i]: i += 1; continue
+        j = i
+        while j <= idx[-1] and not on[j]: j += 1
+        if (j - i) * fr / SR >= .18: runs.append((i, j))
+        i = j
+    if not runs: return y
+    marks = re.findall(r'…+|[、。！？!?,]', re.sub(r'[…。！？!?、\s]+$', '', text))
+    goal = [PAUSE.get(m[0], .15) for m in marks] if len(marks) == len(runs) else [.13] * len(runs)
+    out, pos, xf = [], 0, int(.004 * SR)
+    for (a, b), g in zip(runs, goal):
+        keep = int(g * SR / 2); a0, b0 = a * fr, b * fr
+        if b0 - a0 <= 2 * keep: continue
+        head = y[pos:a0 + keep].copy(); tail_start = b0 - keep
+        out.append(head); pos = tail_start
+    out.append(y[pos:])
+    # stitch with tiny crossfades (the cuts are in silence, this just keeps them click-free)
+    res = out[0]
+    for seg in out[1:]:
+        k = min(xf, len(res), len(seg))
+        if k: res = np.concatenate([res[:-k], res[-k:] * np.linspace(1, 0, k) + seg[:k] * np.linspace(0, 1, k), seg[k:]])
+        else: res = np.concatenate([res, seg])
+    return res
 def voice(text, who, mood):
     C, M = CHAR[who], dict(MOOD.get(mood or 'normal', {}))
     n_long = text.count('ー') - text.count('ーっ') * 0   # a long ーー at the end is held out
@@ -87,6 +121,7 @@ def voice(text, who, mood):
     y = y / (rms + 1e-9) * 10 ** ((-20 + M.get('db', 0)) / 20)
     y = np.clip(y, -.98, .98)
     if sr != SR: y = np.interp(np.arange(int(len(y) * SR / sr)) * sr / SR, np.arange(len(y)), y)
+    y = tighten(y, text)
     f = int(.006 * SR); y[:f] *= np.linspace(0, 1, f); y[-f * 4:] *= np.linspace(1, 0, f * 4)
     return y
 info = json.load(open(INFO))
