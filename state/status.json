@@ -1,10 +1,14 @@
 {
   "ok": true,
-  "at": "2026-10-12T18:18:07.872Z",
-  "mode": "check",
+  "at": "2026-10-12T18:18:51.376Z",
+  "mode": "post-now",
   "problems": [],
   "account": "puchikafriends",
-  "next": "a05-steps",
-  "remaining": 16,
+  "posted": {
+    "id": "a05-steps",
+    "mediaId": "18101370713160615",
+    "permalink": "https://www.instagram.com/reel/DeZ3JnHiYpS/"
+  },
+  "remaining": 15,
   "perDay": 2
 }

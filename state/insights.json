@@ -270,7 +270,21 @@
       "views": 118,
       "total_interactions": 2,
       "ig_reels_avg_watch_time": 7478
+    },
+    "a05-steps": {
+      "id": "a05-steps",
+      "at": "2026-10-12T18:18:51.376Z",
+      "type": "reel",
+      "permalink": "https://www.instagram.com/reel/DeZ3JnHiYpS/",
+      "likes": 0,
+      "comments": 0,
+      "reach": 0,
+      "saved": 0,
+      "shares": 0,
+      "views": 0,
+      "total_interactions": 0,
+      "ig_reels_avg_watch_time": 0
     }
   },
-  "updatedAt": "2026-10-12T18:18:07.872Z"
+  "updatedAt": "2026-10-12T18:18:51.376Z"
 }
