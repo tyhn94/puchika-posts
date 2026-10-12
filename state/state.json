@@ -119,6 +119,12 @@
       "permalink": "https://www.instagram.com/reel/DeaN-MklcDG/",
       "type": "reel",
       "at": "2026-10-12T21:38:46.488Z"
+    },
+    "a08-gym": {
+      "mediaId": "18108252050610440",
+      "permalink": "https://www.instagram.com/reel/DeaR_UGihJ_/",
+      "type": "reel",
+      "at": "2026-10-12T22:13:52.174Z"
     }
   },
   "failed": {},
@@ -129,13 +135,13 @@
     "2026-10-09": 4,
     "2026-10-10": 2,
     "2026-10-11": 2,
-    "2026-10-12": 3
+    "2026-10-12": 4
   },
   "notified": {},
   "firstRun": "2026-10-06T09:18:43.623Z",
   "refreshTriedAt": "2026-10-12T09:49:34.376Z",
   "refreshedAt": "2026-10-12T09:49:34.376Z",
   "tokenExpiresAt": "2026-12-11T09:49:34.376Z",
-  "insightsAt": "2026-10-12T21:38:46.488Z",
+  "insightsAt": "2026-10-12T22:13:52.174Z",
   "setupFails": 0
 }

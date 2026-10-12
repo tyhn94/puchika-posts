@@ -33,7 +33,7 @@
     {
       "date": "2026-10-12",
       "followers": 0,
-      "posts": 22
+      "posts": 23
     }
   ],
   "posts": {
@@ -227,7 +227,7 @@
       "shares": 0,
       "views": 98,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 3150
+      "ig_reels_avg_watch_time": 3131
     },
     "a02-water": {
       "id": "a02-water",
@@ -241,7 +241,7 @@
       "shares": 0,
       "views": 123,
       "total_interactions": 2,
-      "ig_reels_avg_watch_time": 14298
+      "ig_reels_avg_watch_time": 14206
     },
     "a03-5am": {
       "id": "a03-5am",
@@ -255,7 +255,7 @@
       "shares": 0,
       "views": 144,
       "total_interactions": 5,
-      "ig_reels_avg_watch_time": 6362
+      "ig_reels_avg_watch_time": 6328
     },
     "a04-pillow": {
       "id": "a04-pillow",
@@ -269,7 +269,7 @@
       "shares": 0,
       "views": 118,
       "total_interactions": 2,
-      "ig_reels_avg_watch_time": 7630
+      "ig_reels_avg_watch_time": 7585
     },
     "a05-steps": {
       "id": "a05-steps",
@@ -281,9 +281,9 @@
       "reach": 53,
       "saved": 0,
       "shares": 0,
-      "views": 61,
+      "views": 66,
       "total_interactions": 0,
-      "ig_reels_avg_watch_time": 4191
+      "ig_reels_avg_watch_time": 4728
     },
     "a06-zen": {
       "id": "a06-zen",
@@ -292,12 +292,12 @@
       "permalink": "https://www.instagram.com/reel/DeZ_CBToOpm/",
       "likes": 0,
       "comments": 0,
-      "reach": 8,
+      "reach": 12,
       "saved": 0,
       "shares": 0,
-      "views": 10,
+      "views": 12,
       "total_interactions": 0,
-      "ig_reels_avg_watch_time": 7847
+      "ig_reels_avg_watch_time": 12973
     },
     "a07-piggy": {
       "id": "a07-piggy",
@@ -309,10 +309,24 @@
       "reach": 0,
       "saved": 0,
       "shares": 0,
+      "views": 6,
+      "total_interactions": 0,
+      "ig_reels_avg_watch_time": 122742
+    },
+    "a08-gym": {
+      "id": "a08-gym",
+      "at": "2026-10-12T22:13:52.174Z",
+      "type": "reel",
+      "permalink": "https://www.instagram.com/reel/DeaR_UGihJ_/",
+      "likes": 0,
+      "comments": 0,
+      "reach": 0,
+      "saved": 0,
+      "shares": 0,
       "views": 0,
       "total_interactions": 0,
       "ig_reels_avg_watch_time": 0
     }
   },
-  "updatedAt": "2026-10-12T21:38:46.488Z"
+  "updatedAt": "2026-10-12T22:13:52.174Z"
 }
