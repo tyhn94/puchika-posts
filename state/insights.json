@@ -34,6 +34,11 @@
       "date": "2026-10-12",
       "followers": 0,
       "posts": 23
+    },
+    {
+      "date": "2026-10-13",
+      "followers": 0,
+      "posts": 27
     }
   ],
   "posts": {
@@ -88,9 +93,9 @@
       "reach": 18,
       "saved": 0,
       "shares": 0,
-      "views": 20,
+      "views": 21,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 14251
+      "ig_reels_avg_watch_time": 13633
     },
     "m-nap": {
       "id": "m-nap",
@@ -116,7 +121,7 @@
       "reach": 2,
       "saved": 0,
       "shares": 0,
-      "views": 7,
+      "views": 9,
       "total_interactions": 0
     },
     "m-nobody-water": {
@@ -143,7 +148,7 @@
       "reach": 2,
       "saved": 0,
       "shares": 0,
-      "views": 7,
+      "views": 8,
       "total_interactions": 0
     },
     "m-brain-3am": {
@@ -186,7 +191,7 @@
       "shares": 0,
       "views": 189,
       "total_interactions": 0,
-      "ig_reels_avg_watch_time": 1791
+      "ig_reels_avg_watch_time": 1790
     },
     "g-stack": {
       "id": "g-stack",
@@ -200,7 +205,7 @@
       "shares": 0,
       "views": 143,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 3327
+      "ig_reels_avg_watch_time": 3311
     },
     "w-chika-wins": {
       "id": "w-chika-wins",
@@ -227,7 +232,7 @@
       "shares": 0,
       "views": 98,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 3131
+      "ig_reels_avg_watch_time": 3320
     },
     "a02-water": {
       "id": "a02-water",
@@ -241,7 +246,7 @@
       "shares": 0,
       "views": 123,
       "total_interactions": 2,
-      "ig_reels_avg_watch_time": 14206
+      "ig_reels_avg_watch_time": 14546
     },
     "a03-5am": {
       "id": "a03-5am",
@@ -255,7 +260,7 @@
       "shares": 0,
       "views": 144,
       "total_interactions": 5,
-      "ig_reels_avg_watch_time": 6328
+      "ig_reels_avg_watch_time": 7157
     },
     "a04-pillow": {
       "id": "a04-pillow",
@@ -269,7 +274,7 @@
       "shares": 0,
       "views": 118,
       "total_interactions": 2,
-      "ig_reels_avg_watch_time": 7585
+      "ig_reels_avg_watch_time": 7714
     },
     "a05-steps": {
       "id": "a05-steps",
@@ -278,12 +283,12 @@
       "permalink": "https://www.instagram.com/reel/DeZ3JnHiYpS/",
       "likes": 0,
       "comments": 0,
-      "reach": 53,
+      "reach": 88,
       "saved": 0,
       "shares": 0,
-      "views": 66,
+      "views": 97,
       "total_interactions": 0,
-      "ig_reels_avg_watch_time": 4728
+      "ig_reels_avg_watch_time": 4204
     },
     "a06-zen": {
       "id": "a06-zen",
@@ -292,32 +297,60 @@
       "permalink": "https://www.instagram.com/reel/DeZ_CBToOpm/",
       "likes": 0,
       "comments": 0,
-      "reach": 12,
+      "reach": 62,
       "saved": 0,
       "shares": 0,
-      "views": 12,
+      "views": 65,
       "total_interactions": 0,
-      "ig_reels_avg_watch_time": 12973
+      "ig_reels_avg_watch_time": 6031
     },
     "a07-piggy": {
       "id": "a07-piggy",
       "at": "2026-10-12T21:38:46.488Z",
       "type": "reel",
       "permalink": "https://www.instagram.com/reel/DeaN-MklcDG/",
-      "likes": 0,
+      "likes": 2,
       "comments": 0,
-      "reach": 0,
+      "reach": 104,
       "saved": 0,
       "shares": 0,
-      "views": 6,
-      "total_interactions": 0,
-      "ig_reels_avg_watch_time": 122742
+      "views": 116,
+      "total_interactions": 2,
+      "ig_reels_avg_watch_time": 8115
     },
     "a08-gym": {
       "id": "a08-gym",
       "at": "2026-10-12T22:13:52.174Z",
       "type": "reel",
       "permalink": "https://www.instagram.com/reel/DeaR_UGihJ_/",
+      "likes": 0,
+      "comments": 0,
+      "reach": 94,
+      "saved": 0,
+      "shares": 0,
+      "views": 102,
+      "total_interactions": 0,
+      "ig_reels_avg_watch_time": 5481
+    },
+    "a09-cake": {
+      "id": "a09-cake",
+      "at": "2026-10-13T16:37:10.520Z",
+      "type": "reel",
+      "permalink": "https://www.instagram.com/reel/DecQXLbgMiJ/",
+      "likes": 1,
+      "comments": 0,
+      "reach": 38,
+      "saved": 0,
+      "shares": 0,
+      "views": 43,
+      "total_interactions": 1,
+      "ig_reels_avg_watch_time": 14744
+    },
+    "a10-inbox": {
+      "id": "a10-inbox",
+      "at": "2026-10-13T21:39:20.595Z",
+      "type": "reel",
+      "permalink": "https://www.instagram.com/reel/Decy5eKD5j6/",
       "likes": 0,
       "comments": 0,
       "reach": 0,
@@ -328,5 +361,5 @@
       "ig_reels_avg_watch_time": 0
     }
   },
-  "updatedAt": "2026-10-12T22:13:52.174Z"
+  "updatedAt": "2026-10-13T21:39:20.595Z"
 }
