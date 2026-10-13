@@ -417,6 +417,23 @@ function tsuzukuShot(next, o){
     },
     sfx: [[0, 'tsuzuku']], music: {track: 'title', vol: .7, from: 48, fadeIn: .2}}, o || {}));
 }
+// the last card of every episode (added automatically by episode()): where to find Puchi & Chika
+function appCtaShot(o){
+  return shot(Object.assign({name: 'app', isCta: true, dur: 1.9, style: 'shoujo', cam: rel([[0, 64, 46, 96], [1, 64, 47, 93]]), in: 'flash',
+    p: t => ({x: 50, eyes: 'happy', mouth: 'open', arms: 'wave', cheeks: true, hop: [0, .35, 2, true]}), c: {x: 78, eyes: 'happy', mouth: 'cat', arms: 'wave', look: -1},
+    card: t => {
+      const k = EASE.back(clamp(t / .28, 0, 1)), a = clamp((t - .15) / .2, 0, 1), b = EASE.back(clamp((t - .22) / .3, 0, 1));
+      const img = document.getElementById('logo'); if(img.naturalWidth){ const w = 520 * k, h = w * img.naturalHeight / img.naturalWidth; X.setTransform(1, 0, 0, 1, 0, 0); X.drawImage(img, W / 2 - w / 2, 430 - h / 2, w, h); }
+      otext('Puchi & Chika live at', W / 2, 615, {size: 56, fill: '#3d2c4e', stroke: '#fff', sw: 16, alpha: a});
+      // the address on a big pink pill
+      X.save(); X.setTransform(1, 0, 0, 1, 0, 0); X.translate(W / 2, 735); X.scale(b, b);
+      X.fillStyle = '#c8457a'; rrect(X, -290, -62, 580, 136, 68); X.fill();
+      X.fillStyle = '#ff6fa3'; rrect(X, -290, -72, 580, 136, 68); X.fill(); X.restore();
+      otext('puchika.app', W / 2, 727, {size: 84, fill: '#fff', sc: b});
+      otext('FREE  ·  no download  ·  link in bio', W / 2, 865, {size: 40, fill: '#fff', stroke: '#e0609a', sw: 12, alpha: clamp((t - .45) / .2, 0, 1)});
+    },
+    sfx: [[0, 'whoosh'], [.08, 'shine']], music: {track: 'win', vol: .85}}, o || {}));
+}
 // standard reaction effects as a style or over-layer
 const OVER = {
   focus: (o) => t => focusLines(t, o),

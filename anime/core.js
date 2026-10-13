@@ -40,6 +40,8 @@ function keys(list, t){
 let EPISODE = null, SHOTS = [], EP_DUR = 0, LINES = [], CUES = [];
 function episode(ep){
   EPISODE = ep; SHOTS = ep.shots.filter(Boolean); let t = 0;
+  // every episode ends on the puchika.app card (ep.noCta: false to skip it)
+  if(!ep.noCta && typeof appCtaShot === 'function' && !SHOTS.some(s => s.isCta)) SHOTS.push(appCtaShot());
   const CLIPS = typeof VOICE_CLIPS !== 'undefined' ? VOICE_CLIPS : {};
   // how long a line takes: its recorded clip, or a guess from the text (the first pass, before the voices exist)
   const lineDur = L => { if(L.clip) return L.clip.dur; if(L.ro){ const T0 = L.T; L.T = 0; prepareVoice(L); const d = L.end; L.T = T0; return d; }
