@@ -16,4 +16,5 @@ for L in json.load(open(INFO))['lines']:
     for d, g in ((0, 1.0), (int(.045 * SR), .12), (int(.09 * SR), .06)):   # a little room
         e = min(len(bed), s + d + len(v))
         if e > s + d: bed[s + d:e, 0] += v[:e - s - d] * g; bed[s + d:e, 1] += v[:e - s - d] * g
-with wave.open(OUT, 'wb') as w: w.setnchannels(2); w.setsampwidth(2); w.setframerate(SR); w.writeframes((np.clip(bed, -1, 1) * 32767).astype('<i2').tobytes())
+a = np.abs(bed); bed = np.where(a > .8, np.sign(bed) * (.8 + .18 * np.tanh((a - .8) / .18)), bed)   # peaks are rounded off softly, never clipped
+with wave.open(OUT, 'wb') as w: w.setnchannels(2); w.setsampwidth(2); w.setframerate(SR); w.writeframes((bed * 32767).astype('<i2').tobytes())

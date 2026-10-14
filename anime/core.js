@@ -98,6 +98,8 @@ function applyCam(ctx, c){
   ctx.translate(W / 2 + c.sx, H / 2 + c.sy); if(c.roll) ctx.rotate(c.roll);
   ctx.scale(c.k, c.k); ctx.translate(-c.cx, -c.cy);
 }
+// the same, without the camera shake (speech bubbles hold still while the picture shakes)
+const toScreenSteady = (x, y) => { const c = CAM, dx = (x - c.cx) * c.k, dy = (y - c.cy) * c.k, co = Math.cos(c.roll), si = Math.sin(c.roll); return [W / 2 + dx * co - dy * si, H / 2 + dx * si + dy * co]; };
 const toScreen = (x, y) => { const c = CAM, dx = (x - c.cx) * c.k, dy = (y - c.cy) * c.k, co = Math.cos(c.roll), si = Math.sin(c.roll); return [W / 2 + c.sx + dx * co - dy * si, H / 2 + c.sy + dx * si + dy * co]; };
 
 /* ---------- painting the cells ---------- */
@@ -146,8 +148,9 @@ function actor(who, o, t){
   let x = o.x, lift = o.lift;
   if(o.walk){ const [x0, x1, t0, t1] = o.walk; const k = clamp((t - t0) / (t1 - t0), 0, 1); x = Math.round(lerp(x0, x1, k)); if(k > 0 && k < 1) o.step = ((t * 7) | 0) % 2 ? 1 : 2; }
   if(o.hop){ const [t0, d, h, rep] = o.hop; let tt = t - t0; if(rep) tt = tt >= 0 ? tt % d : -1; if(tt >= 0 && tt < d) lift += Math.round(4 * h * (tt / d) * (1 - tt / d)); }
-  if(o.shake) x += ((t * 30) | 0) % 2 ? o.shake : -o.shake;
+  const shk = o.shake ? (((t * 30) | 0) % 2 ? o.shake : -o.shake) : 0; x += shk;
   if(o.bob !== false && !o.hop) lift += ((t * 1.6 + (who === 'c' ? .5 : 0)) % 1) < .12 ? 1 : 0;
+  const jump = lift - (o.lift || 0);   // hops and bobs: the speech bubble doesn't follow these
   const ENG_EYES = ['open', 'happy', 'blink', 'sleep'];
   let eyes = o.eyes;
   if(eyes === 'open' && o.blink !== false && ((t + (who === 'c' ? 1.3 : 0)) % 3.3) < .12) eyes = 'blink';
@@ -162,7 +165,8 @@ function actor(who, o, t){
   if(custom) drawEyes(R, eyes, ink, t);
   if(!engMouth) drawMouth(R, mouth, ink, who);
   (o.fx || []).forEach(f => faceFx(R, f, who, t));
-  ANCH[who] = {x: R.cx, top: R.top - (o.stage >= 4 ? 11 : 6), head: R.top, mouth: R.my};
+  // where the speech bubble hangs: steady while the character shakes, hops or bobs (İdil, 14 Oct 2026: shaking bubbles can't be read)
+  ANCH[who] = {x: R.cx - shk, top: R.top + jump - (o.stage >= 4 ? 11 : 6), head: R.top + jump, mouth: R.my + jump};
   return R;
 }
 function drawEyes(R, eyes, ink, t){
@@ -262,11 +266,11 @@ function otext(str, x, y, o){
   X.restore();
 }
 function rrect(ctx, x, y, w, h, r){ ctx.beginPath(); ctx.moveTo(x + r, y); ctx.arcTo(x + w, y, x + w, y + h, r); ctx.arcTo(x + w, y + h, x, y + h, r); ctx.arcTo(x, y + h, x, y, r); ctx.arcTo(x, y, x + w, y, r); ctx.closePath(); }
-// manga sound word (big katakana), shaking a little
+// manga sound word (big katakana), swaying a little
 function mangaSfx(str, x, y, o){
   o = Object.assign({size: 150, fill: '#fff', stroke: '#3d2c4e', rot: -.12, jit: 6}, o);
-  const f = Math.floor(T_NOW * FPS);
-  otext(str, x + (hsh(f, 3) - .5) * o.jit, y + (hsh(f, 4) - .5) * o.jit, {font: o.font || 'MPR', size: o.size, fill: o.fill, stroke: o.stroke, sw: o.size * .22, rot: o.rot, sc: o.sc, alpha: o.alpha, spacing: o.spacing});
+  const sway = Math.sin(T_NOW * 5) * o.jit * .5;   // a slow sway, never a per-frame jitter: words must stay readable
+  otext(str, x + sway, y - Math.abs(sway) * .3, {font: o.font || 'MPR', size: o.size, fill: o.fill, stroke: o.stroke, sw: o.size * .22, rot: o.rot + sway * .004, sc: o.sc, alpha: o.alpha, spacing: o.spacing});
 }
 
 /* ---------- anime backgrounds (drawn on a low-res canvas, so they stay pixel art) ---------- */
@@ -356,16 +360,15 @@ function bubble(L, T){
   let x, y, tail = null;
   const A = ANCH[L.who];
   if(L.pos){ x = L.pos[0]; y = L.pos[1]; }
-  else if(A){ const [hx, hy] = toScreen(A.x, A.top); x = hx; y = hy - 70 - bh / 2; }
+  else if(A){ const [hx, hy] = toScreenSteady(A.x, A.top); x = hx; y = hy - 70 - bh / 2; }
   else { x = W / 2; y = 320; }
   x = clamp(x, bw / 2 + 50, W - bw / 2 - 130); y = clamp(y, bh / 2 + (shout ? 50 : 0) + (L.shot && L.shot.hud ? SAFE_TOP + 150 : SAFE_TOP), SAFE_BOTTOM - bh / 2 - (shout ? 50 : 0));
-  if(L.tail !== false && A && !L.os){ const [mx, my] = toScreen(A.x, (L.tailTo === 'mouth' ? A.mouth : A.top)); tail = [mx, my]; }
+  if(L.tail !== false && A && !L.os){ const [mx, my] = toScreenSteady(A.x, (L.tailTo === 'mouth' ? A.mouth : A.top)); tail = [mx, my]; }
   // pop in, fade out
   const k = clamp(age / .16, 0, 1), sc = (L.pop === false ? 1 : EASE.back(k)) * (left < .12 ? .95 + left / 2.4 : 1);
   const alpha = clamp(left / .12, 0, 1);
   X.save(); X.setTransform(1, 0, 0, 1, 0, 0); X.globalAlpha = alpha;
   X.translate(x, y); X.scale(sc, sc);
-  if(shout){ const sh = Math.floor(T * 24) % 2 ? 3 : -3; X.translate(sh, -sh); }
   const bx = -bw / 2, by = -bh / 2;
   X.lineJoin = 'round';
   // tail

@@ -7,15 +7,15 @@ import numpy as np, pyopenjtalk, pyworld as pw
 INFO, OUTD = sys.argv[1], sys.argv[2]
 SR, FPS = 48000, 30
 CHAR = {   # pitch factor, intonation (log-range scale), formant warp (>1 = smaller head), speed, breath
-  'p': dict(f0=1.26, range=1.3, warp=1.14, speed=1.16, ap=0.0, chip=.10),
-  'c': dict(f0=.6, range=.7, warp=.92, speed=1.06, ap=.08, chip=.07)}
+  'p': dict(f0=1.18, range=1.25, warp=1.1, speed=1.16, ap=0.0, chip=.05),
+  'c': dict(f0=.6, range=.7, warp=.92, speed=1.06, ap=.05, chip=.04)}
 # moods: pitch (f0), intonation range, speed, level (db), brightness (tilt dB/octave above 1 kHz), breath (ap),
 # contour over the line (rise / fall / peak), tremble (trem: pitch, amp), jitter, drawl (slower last part), creak (vocal fry at the end)
 MOOD = {
   'normal': {},
-  'excited': dict(f0=1.14, range=1.7, speed=1.12, db=2, tilt=2, contour='rise'),
-  'shout': dict(f0=1.3, range=1.9, speed=1.04, db=5, tilt=5, contour='peak', jitter=.012),
-  'nervous': dict(f0=1.07, range=1.3, speed=1.1, trem=(.07, .3), ap=.12, jitter=.01),
+  'excited': dict(f0=1.08, range=1.5, speed=1.12, db=1.5, tilt=1.5, contour='rise'),
+  'shout': dict(f0=1.16, range=1.6, speed=1.04, db=3, tilt=2.5, contour='peak', jitter=.008),
+  'nervous': dict(f0=1.05, range=1.25, speed=1.1, trem=(.06, .25), ap=.08, jitter=.008),
   'deadpan': dict(f0=.95, range=.22, speed=.98, db=-1, creak=.18),
   'smug': dict(f0=.93, range=.95, speed=.96, contour='fall', drawl=1.3, creak=.12),
   'tired': dict(f0=.9, range=.5, speed=.88, db=-2, ap=.3, contour='fall'),
@@ -62,6 +62,17 @@ def tighten(y, text):
         if k: res = np.concatenate([res[:-k], res[-k:] * np.linspace(1, 0, k) + seg[:k] * np.linspace(0, 1, k), seg[k:]])
         else: res = np.concatenate([res, seg])
     return res
+# Easy on the ears (İdil, 14 Oct 2026: the voices were a bit shrill): the top end rolls off gently from 5 kHz
+# (WORLD's high pitch shifts leave a fizz up there), a soft dip tames the sharp "s" region, and peaks are rounded
+# off with a soft limiter instead of being clipped.
+def soften(y, sr):
+    n = len(y); Y = np.fft.rfft(y); f = np.fft.rfftfreq(n, 1 / sr)
+    db = np.where(f > 5000, -9 * np.log2(np.maximum(f, 5000) / 5000), 0)          # -9 dB per octave above 5 kHz
+    db += -3 * np.exp(-((f - 3200) / 900) ** 2)                                    # a soft dip in the harsh 3 kHz band
+    y = np.fft.irfft(Y * 10 ** (db / 20), n)
+    pk = np.abs(y).max()
+    if pk > .7: y = np.where(np.abs(y) > .7, np.sign(y) * (.7 + .28 * np.tanh((np.abs(y) - .7) / .28)), y)
+    return y
 def voice(text, who, mood):
     C, M = CHAR[who], dict(MOOD.get(mood or 'normal', {}))
     n_long = text.count('ー') - text.count('ーっ') * 0   # a long ーー at the end is held out
@@ -92,7 +103,7 @@ def voice(text, who, mood):
     else: f0n = f0
     sp = warp_env(sp, C['warp'])
     if M.get('tilt'):
-        fq = np.linspace(0, sr / 2, sp.shape[1]); g = 10 ** (M['tilt'] * np.log2(np.maximum(fq, 1000) / 1000) / 10)
+        fq = np.linspace(0, sr / 2, sp.shape[1]); g = 10 ** (M['tilt'] * np.log2(np.clip(fq, 1000, 3500) / 1000) / 10)
         sp = sp * g[None, :]
     a_add = C['ap'] + M.get('ap', 0)
     if a_add: ap = np.clip(ap + a_add, 0, 1)
@@ -106,7 +117,7 @@ def voice(text, who, mood):
     # a faint pulse wave that follows the pitch, shaped by the voice's loudness
     if C['chip']:
         f = np.interp(np.arange(len(y)) / sr, t, f0n); ph = np.cumsum(2 * np.pi * f / sr)
-        sq = np.sign(np.sin(ph)) * (f > 0)
+        sq = (np.sin(ph) + .15 * np.sin(2 * ph)) * (f > 0)   # soft, round (a square wave here buzzed and aliased)
         env = np.sqrt(np.convolve(y ** 2, np.ones(480) / 480, 'same'))
         y = y + sq * env * C['chip']
     if mood == 'muffled':
@@ -119,7 +130,7 @@ def voice(text, who, mood):
     y = y[max(0, idx[0] - 240): idx[-1] + 2400]
     rms = np.sqrt(np.mean(y[np.abs(y) > np.abs(y).max() * .05] ** 2))
     y = y / (rms + 1e-9) * 10 ** ((-20 + M.get('db', 0)) / 20)
-    y = np.clip(y, -.98, .98)
+    y = soften(y, sr)
     if sr != SR: y = np.interp(np.arange(int(len(y) * SR / sr)) * sr / SR, np.arange(len(y)), y)
     y = tighten(y, text)
     f = int(.006 * SR); y[:f] *= np.linspace(0, 1, f); y[-f * 4:] *= np.linspace(1, 0, f * 4)

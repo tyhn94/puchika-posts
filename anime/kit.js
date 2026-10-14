@@ -391,7 +391,7 @@ function attackShot(who, jp, en, say, o){
     [who]: {x, eyes: who === 'c' ? 'evil' : 'shine', mouth: 'scream', arms: 'up', shake: 1, bob: false}, [who === 'c' ? 'p' : 'c']: false,
     over: t => focusLines(t, {cy: H * .62, r: 300, color: who === 'c' ? 'rgba(255,140,170,.85)' : 'rgba(255,200,90,.85)'}),
     card: t => {
-      const k = EASE.snap(clamp(t / .18, 0, 1)), sh = Math.floor(t * 30) % 2 ? 4 : -4;
+      const k = EASE.snap(clamp(t / .18, 0, 1)), sh = 0;   // the attack name holds still (readable); the picture behind does the shaking
       X.save(); X.setTransform(1, 0, 0, 1, 0, 0); X.translate(W / 2, 600); X.rotate(-.08); X.scale(k, k);
       X.fillStyle = '#2b2240'; X.fillRect(-620, -210, 1240, 420); X.fillStyle = who === 'c' ? '#ff6fa3' : '#ffd36b'; X.fillRect(-620, -210, 1240, 22); X.fillRect(-620, 188, 1240, 22);
       X.restore();
