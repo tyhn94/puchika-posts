@@ -1,9 +1,14 @@
 {
   "ok": true,
-  "at": "2026-10-15T14:13:18.258Z",
+  "at": "2026-10-15T18:21:25.578Z",
   "mode": "auto",
   "problems": [],
   "account": "puchikafriends",
-  "remaining": 3,
+  "posted": {
+    "id": "sh08-dinner",
+    "mediaId": "18091349777204142",
+    "permalink": "https://www.instagram.com/reel/DehlxY1jT2Y/"
+  },
+  "remaining": 2,
   "perDay": 1
 }

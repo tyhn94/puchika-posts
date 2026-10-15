@@ -143,6 +143,12 @@
       "permalink": "https://www.instagram.com/reel/Ded6gDRGp6r/",
       "type": "reel",
       "at": "2026-10-14T08:05:26.668Z"
+    },
+    "sh08-dinner": {
+      "mediaId": "18091349777204142",
+      "permalink": "https://www.instagram.com/reel/DehlxY1jT2Y/",
+      "type": "reel",
+      "at": "2026-10-15T18:21:25.578Z"
     }
   },
   "failed": {},
@@ -155,9 +161,12 @@
     "2026-10-11": 2,
     "2026-10-12": 4,
     "2026-10-13": 2,
-    "2026-10-14": 1
+    "2026-10-14": 1,
+    "2026-10-15": 1
   },
-  "notified": {},
+  "notified": {
+    "low": "2026-10-15T18:21:25.578Z"
+  },
   "firstRun": "2026-10-06T09:18:43.623Z",
   "refreshTriedAt": "2026-10-12T09:49:34.376Z",
   "refreshedAt": "2026-10-12T09:49:34.376Z",
