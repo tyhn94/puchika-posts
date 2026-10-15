@@ -41,7 +41,8 @@ let EPISODE = null, SHOTS = [], EP_DUR = 0, LINES = [], CUES = [];
 function episode(ep){
   EPISODE = ep; SHOTS = ep.shots.filter(Boolean); let t = 0;
   // every episode ends on the puchika.app card (ep.noCta: false to skip it)
-  if(!ep.noCta && typeof appCtaShot === 'function' && !SHOTS.some(s => s.isCta)) SHOTS.push(appCtaShot());
+  // shorts (ep.short) never end on an ad card: they loop, with a small puchika.app tag instead
+  if(!ep.noCta && !ep.short && typeof appCtaShot === 'function' && !SHOTS.some(s => s.isCta)) SHOTS.push(appCtaShot());
   const CLIPS = typeof VOICE_CLIPS !== 'undefined' ? VOICE_CLIPS : {};
   // how long a line takes: its recorded clip, or a guess from the text (the first pass, before the voices exist)
   const lineDur = L => { if(L.clip) return L.clip.dur; if(L.ro){ const T0 = L.T; L.T = 0; prepareVoice(L); const d = L.end; L.T = T0; return d; }
@@ -56,6 +57,8 @@ function episode(ep){
       if(L.at == null) L.at = k === 0 ? (s.first != null ? s.first : .3) : end + (L.gap != null ? L.gap : .22);
       L.d = lineDur(L); end = L.at + L.d;
       if(!s.fixed) s.dur = Math.max(s.dur || 0, end + (L.tail != null ? L.tail : s.tail != null ? s.tail : .45));
+      // shorts: every line stays up long enough to read, however quick the voice is
+      if(ep.short && !s.fixed) s.dur = Math.max(s.dur, L.at + .55 + .055 * (L.en || '').length + .15);
     });
     if(!s.dur) s.dur = 1.5;
   });
@@ -352,17 +355,17 @@ function bubble(L, T){
   const shout = L.style === 'shout', small = L.style === 'muffled';
   const size = L.size || (shout ? 70 : small ? 46 : 56), font = `800 ${size}px MPR`, jfont = `700 ${Math.round(size * .52)}px MPR`;
   const maxW = L.maxW || 760;
-  const lines = wrap(L.en, font, maxW);
+  const lines = wrap(L.en, font, maxW), jp = EPISODE.noJp ? '' : L.jp;
   X.font = font; let tw = Math.max(...lines.map(s => X.measureText(s).width));
-  X.font = jfont; const jw = L.jp ? X.measureText(L.jp).width : 0; tw = Math.max(tw, jw);
-  const lh = size * 1.18, padX = 48, padY = 38, bw = tw + padX * 2, bh = lines.length * lh + (L.jp ? size * .78 : 0) + padY * 2 - (lh - size);
+  X.font = jfont; const jw = jp ? X.measureText(jp).width : 0; tw = Math.max(tw, jw);
+  const lh = size * 1.18, padX = 48, padY = 38, bw = tw + padX * 2, bh = lines.length * lh + (jp ? size * .78 : 0) + padY * 2 - (lh - size);
   // where: above the speaker's head unless the line says otherwise
   let x, y, tail = null;
   const A = ANCH[L.who];
   if(L.pos){ x = L.pos[0]; y = L.pos[1]; }
   else if(A){ const [hx, hy] = toScreenSteady(A.x, A.top); x = hx; y = hy - 70 - bh / 2; }
   else { x = W / 2; y = 320; }
-  x = clamp(x, bw / 2 + 50, W - bw / 2 - 130); y = clamp(y, bh / 2 + (shout ? 50 : 0) + (L.shot && L.shot.hud ? SAFE_TOP + 150 : SAFE_TOP), SAFE_BOTTOM - bh / 2 - (shout ? 50 : 0));
+  x = clamp(x, bw / 2 + 50, W - bw / 2 - 130); y = clamp(y, bh / 2 + (shout ? 50 : 0) + Math.max(HOOK_BOTTOM + 40, L.shot && L.shot.hud ? SAFE_TOP + 150 : SAFE_TOP), SAFE_BOTTOM - bh / 2 - (shout ? 50 : 0));
   if(L.tail !== false && A && !L.os){ const [mx, my] = toScreenSteady(A.x, (L.tailTo === 'mouth' ? A.mouth : A.top)); tail = [mx, my]; }
   // pop in, fade out
   const k = clamp(age / .16, 0, 1), sc = (L.pop === false ? 1 : EASE.back(k)) * (left < .12 ? .95 + left / 2.4 : 1);
@@ -401,13 +404,50 @@ function bubble(L, T){
   // text
   X.textAlign = 'center'; X.textBaseline = 'alphabetic'; X.fillStyle = st.ink; X.font = font;
   lines.forEach((s, i) => X.fillText(s, 0, by + padY + size * .86 + i * lh));
-  if(L.jp){ X.font = jfont; X.fillStyle = st.jp; X.fillText(L.jp, 0, by + padY + size * .86 + (lines.length - 1) * lh + size * .86); }
+  if(jp){ X.font = jfont; X.fillStyle = st.jp; X.fillText(jp, 0, by + padY + size * .86 + (lines.length - 1) * lh + size * .86); }
+  X.restore();
+}
+
+/* ---------- the hook: a big meme caption at the top of a short (ep.hook: 'text' or [[t, 'text'], ...]; *word* is pink) ---------- */
+let HOOK_BOTTOM = 0;
+function hookAt(T){
+  const h = EPISODE.hook; if(!h) return null;
+  const list = typeof h === 'string' ? [[0, h]] : h; let cur = null;
+  // a time, or the name of the shot it starts with
+  list.forEach(e => { const t = typeof e[0] === 'string' ? ((SHOTS.find(S => S.name === e[0]) || {start: 0}).start + .05) : e[0]; if(T >= t) cur = [t, e[1]]; });
+  return cur;
+}
+function drawHook(T){
+  const cur = hookAt(T); if(!cur) return;
+  const [t0, text] = cur, age = T - t0, size = 64, font = `800 ${size}px 'Baloo 2'`, maxW = 900, lh = size * 1.08;
+  // words keep their colour: *pink* parts
+  const words = []; let pink = false;
+  // a piece right after a * with no space ("*dreading*:") sticks to the word before it
+  let open = true; text.split(/(\*)/).forEach(part => { if(part === '*'){ pink = !pink; return; } part.split(' ').forEach((w, i) => { if(w) words.push({w, pink, glue: i === 0 && !open}); }); if(part) open = part.endsWith(' '); });
+  X.save(); X.setTransform(1, 0, 0, 1, 0, 0); X.font = font;
+  const space = X.measureText(' ').width, lines = [[]]; let lw = 0;
+  const gap = (o, i) => i && !o.glue ? space : 0;
+  words.forEach(o => { const ww = X.measureText(o.w).width; if(lw && !o.glue && lw + space + ww > maxW){ lines.push([]); lw = 0; } const l = lines[lines.length - 1]; lw += gap(o, l.length) + ww; l.push(o); });
+  const widths = lines.map(l => l.reduce((a, o, i) => a + X.measureText(o.w).width + gap(o, i), 0));
+  const bw = Math.max(...widths) + 90, bh = lines.length * lh + 56, y0 = SAFE_TOP + 6;
+  HOOK_BOTTOM = y0 + bh + 22;
+  // a one-time pop when the caption changes (the first one is there from the very first frame)
+  const k = t0 === 0 ? 1 : EASE.back(clamp(age / .2, 0, 1));
+  X.translate(W / 2 - 40, y0 + bh / 2); X.scale(k, k);
+  X.shadowColor = 'rgba(60,20,50,.28)'; X.shadowOffsetY = 12; rrect(X, -bw / 2, -bh / 2, bw, bh, 40); X.fillStyle = '#fff'; X.fill(); X.shadowColor = 'transparent';
+  X.lineWidth = 8; X.strokeStyle = '#ff8fb8'; X.stroke();
+  // the app's name hangs from the caption like the name tags on the bubbles: there in every frame, never in the way
+  X.font = '400 30px Dot'; const tagW = X.measureText('puchika.app').width + 34; rrect(X, bw / 2 - tagW - 34, bh / 2 - 22, tagW, 44, 22); X.fillStyle = '#ff8fb8'; X.fill();
+  X.fillStyle = '#fff'; X.textAlign = 'left'; X.textBaseline = 'middle'; X.fillText('puchika.app', bw / 2 - tagW - 17, bh / 2 + 1);
+  X.font = font; X.textBaseline = 'middle'; X.textAlign = 'left';
+  lines.forEach((l, i) => { let x = -widths[i] / 2; const y = -bh / 2 + 28 + lh * (i + .5) + 4;
+    l.forEach((o, j) => { x += gap(o, j); X.fillStyle = o.pink ? '#ff4f93' : '#3d2c4e'; X.fillText(o.w, x, y); x += X.measureText(o.w).width; }); });
   X.restore();
 }
 
 /* ---------- one frame ---------- */
 async function ready(){
-  await Promise.all(['800 56px MPR', '700 30px MPR', '400 30px Dot', "800 60px 'Baloo 2'"].map(f => document.fonts.load(f, 'Aaあア漢')));
+  await Promise.all(['800 56px MPR', '700 30px MPR', '400 30px Dot', "800 60px 'Baloo 2'", '700 60px Pixelify', '400 30px Pixelify'].map(f => document.fonts.load(f, 'Aaあア漢')));
   await document.fonts.load('800 56px MPR', '秘技全部掃除続く話今時間前');
   await document.fonts.load('400 30px Dot', '秘技全部掃除続く話今時間前');
   const img = document.getElementById('logo'); if(!img.complete) await new Promise(r => { img.onload = r; img.onerror = r; });
@@ -442,7 +482,9 @@ function renderAt(T){
     focusLines(t, {color: inv ? 'rgba(255,255,255,.95)' : 'rgba(18,12,24,.95)', r: 260, n: 80});
   }
   if(S.fxTop) S.fxTop(t);
-  // bubbles
+  // the hook caption (shorts), then the bubbles under it
+  HOOK_BOTTOM = 0;
+  if(EPISODE.hook && !S.isCta && !S.noHook) drawHook(T);
   if(!S.noBubbles) LINES.forEach(L => { if(T >= L.show && T <= L.hide) bubble(L, T); });
   if(S.card) S.card(t);
   // cuts: a quick white flash in, or a whip blur

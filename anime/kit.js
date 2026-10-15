@@ -316,6 +316,9 @@ function cam(spec){
   const x = a ? (isNaN(+a) ? WX(a) : +a) : 64;
   switch(kind){
     case 'two': return rel([[0, ...two(a ? x : 64, 92)], [1, ...two(a ? x : 64, 84)]]);
+    // shorts: the pair (or one of them) in the middle of the frame, clear of Instagram's caption at the bottom
+    case 'stwo': return rel([[0, a ? x : 65, 61, 94], [1, a ? x : 65, 61, 88]]);
+    case 'sms': return rel([[0, x, 59, 60], [1, x, 59, 55]]);
     case 'wide': return rel([[0, a ? x : 50, 50, 100], [1, b ? +b : 78, 50, 100, 'lin']]);
     case 'cu': return rel([[0, ...cu(x)], [1, ...cu(x, 1).slice(0, 2), 37]]);
     case 'ecu': return rel([[0, ...ecu(x)], [1, ...ecu(x, 1).slice(0, 2), 28]]);
@@ -378,8 +381,10 @@ function timeCard(jp, en, o){
     card: t => { X.setTransform(1, 0, 0, 1, 0, 0); X.fillStyle = '#2b2240'; X.fillRect(0, 0, W, H);
       for(let y = 0; y < H; y += 8){ X.fillStyle = 'rgba(255,255,255,' + (hsh(y, Math.floor(t * 30)) * .05) + ')'; X.fillRect(0, y, W, 3); }
       const sl = (1 - EASE.out(clamp(t / .25, 0, 1))) * 300;
+      if(o && o.enOnly){ otext(en, W / 2 - sl, 900, {font: 'Baloo', w: 800, size: 118, fill: '#fff'}); otext(jp, W / 2 + sl, 1010, {font: 'Dot', w: 400, size: 44, fill: '#ff8fb8', spacing: 4}); }   // shorts: the English is the big line
+      else {
       otext(jp, W / 2 - sl, 820, {font: 'Dot', w: 400, size: jp.length > 8 ? 92 : jp.length > 5 ? 120 : 150, fill: '#fff'});
-      otext(en, W / 2 + sl, 980, {font: 'Dot', w: 400, size: 64, fill: '#ff8fb8', spacing: 6});
+      otext(en, W / 2 + sl, 980, {font: 'Dot', w: 400, size: 64, fill: '#ff8fb8', spacing: 6}); }
       if(o && o.rewind !== false) otext(o && o.ff ? '▶▶' : '◀◀', W / 2, 1120, {font: 'Dot', w: 400, size: 60, fill: Math.floor(t * 6) % 2 ? '#fff' : '#7a68b8'}); },
     sfx: [[0, o && o.ff ? 'whoosh' : 'rewind']]}, o || {});
 }

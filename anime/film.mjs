@@ -14,7 +14,7 @@ export async function filmAnime(browser, ep, out, opts = {}){
   const open = async vox => { await p.goto(base + (vox ? '&vox=' + encodeURIComponent(vox) : '')); await p.waitForSelector('body[data-ready]', {timeout: 90000}); };
   await open();
   fs.writeFileSync(path.join(out, 'info0.json'), JSON.stringify(await p.evaluate(() => info())));
-  execFileSync('python3', [path.join(HERE, 'jvoice.py'), path.join(out, 'info0.json'), out], {stdio: 'inherit'});
+  execFileSync('python3', [path.join(HERE, opts.voice === 'babble' ? 'babble.py' : 'jvoice.py'), path.join(out, 'info0.json'), out], {stdio: 'inherit'});   // babble = the "pıt pıt" voices
   const vox = path.relative(HERE, path.join(out, 'voices.js'));
   await open(vox);
   const info = await p.evaluate(() => info());
@@ -28,7 +28,7 @@ export async function filmAnime(browser, ep, out, opts = {}){
   for(let i = 0; i < N; i++) await shot(i / 30, path.join(fdir, 'f' + String(i).padStart(5, '0') + '.jpg'));
   await shot(info.cover, path.join(out, 'cover.jpg'), 92);
   execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-framerate', '30', '-i', path.join(fdir, 'f%05d.jpg'), '-i', path.join(out, 'audio.wav'),
-    '-af', 'alimiter=limit=0.8:attack=2:release=60,loudnorm=I=-14:TP=-1.5:LRA=11,alimiter=limit=0.82:level=false', '-ar', '48000',
+    '-af', 'alimiter=limit=0.8:attack=2:release=60,loudnorm=I=-14:TP=-1.5:LRA=11,alimiter=limit=0.78:level=false', '-ar', '48000',
     '-c:v', 'libx264', '-preset', opts.preset || 'medium', '-crf', '23', '-pix_fmt', 'yuv420p', '-r', '30',
     '-c:a', 'aac', '-b:a', '128k', '-shortest', '-use_editlist', '0', '-movflags', '+faststart', path.join(out, 'reel.mp4')]);
   if(opts.checks) info.shots.forEach((s, k) => { const n = Math.min(N - 1, Math.round((s.start + s.dur * .7) * 30)); fs.copyFileSync(path.join(fdir, 'f' + String(n).padStart(5, '0') + '.jpg'), path.join(out, 'check-' + String(k + 1).padStart(2, '0') + '.jpg')); });
@@ -41,8 +41,8 @@ if(process.argv[1] === fileURLToPath(import.meta.url)){
   const { chromium } = await import('playwright');
   const [cmd, ep, ts] = process.argv.slice(2);
   const b = await chromium.launch({args: ['--allow-file-access-from-files']});
-  const out = path.join(HERE, 'out', ep);
-  if(cmd === 'film'){ const r = await filmAnime(b, ep, out, {checks: true, keep: !!process.env.KEEP}); console.log(ep, r.dur.toFixed(1) + 's', r.errs.length ? 'ERRORS ' + [...new Set(r.errs)].join(' | ') : ''); }
+  const BAB = process.env.VOICE === 'babble', out = path.join(HERE, 'out', ep + (BAB ? '-pt' : ''));
+  if(cmd === 'film'){ const r = await filmAnime(b, ep, out, {checks: true, keep: !!process.env.KEEP, voice: BAB ? 'babble' : ''}); console.log(ep, r.dur.toFixed(1) + 's', r.errs.length ? 'ERRORS ' + [...new Set(r.errs)].join(' | ') : ''); }
   else {
     const p = await b.newPage({viewport: {width: 1080, height: 1920}});
     const errs = []; p.on('pageerror', e => errs.push(e.message)); p.on('console', m => { if(m.type() === 'error') errs.push(m.text()); });
