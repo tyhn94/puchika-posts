@@ -1,205 +1,44 @@
 {
   "settings": {
     "timesUTC": [
-      10,
-      17
+      18
     ],
-    "lowWarn": 6,
+    "lowWarn": 2,
     "minGapMinutes": 40,
     "brakeTimesUTC": [
-      17
+      18
     ],
     "ramp": []
   },
   "posts": [
     {
-      "id": "a02-water",
+      "id": "sh08-dinner",
       "type": "reel",
       "media": [
-        "media/a02-water/reel.mp4"
+        "media/sh08-dinner/reel.mp4"
       ],
-      "cover": "media/a02-water/cover.jpg",
-      "caption": "Puchi & Chika · Episode 2: The Water Challenge 💧\n\nPuchi drank eight glasses. Chika drank eight... ice cubes.\n\nIs ice water? Asking for Chika 🧊\n\n🌱 Puchika is FREE: grow your own Puchi with your tiny daily wins. Link in bio!\n\n#puchika #anime #pixelart #cute #funny",
+      "cover": "media/sh08-dinner/cover.jpg",
+      "caption": "cooking 101: patience vs. max fire 🔥\nwhich one are you in the kitchen?\n\n🌱 Puchika is FREE: grow your own Puchi with your tiny daily wins. Link in bio!\n\n#relatable #cooking #cozygames #pixelart #puchika",
       "draw": true
     },
     {
-      "id": "a03-5am",
+      "id": "sh07-osmosis",
       "type": "reel",
       "media": [
-        "media/a03-5am/reel.mp4"
+        "media/sh07-osmosis/reel.mp4"
       ],
-      "cover": "media/a03-5am/cover.jpg",
-      "caption": "Puchi & Chika · Episode 3: The 5 AM Club ⏰\n\nPuchi woke up at 5. Chika was ALSO up at 5... she just never went to bed.\n\nEarly bird or night owl? 🌙\n\n💗 Want your own Puchi? The app is FREE, link in bio.\n\n#puchika #anime #pixelart #cute #funny",
+      "cover": "media/sh07-osmosis/cover.jpg",
+      "caption": "some of us study. some of us nap on the book and hope 📚\nwhich one are you?\n\n💗 Want your own Puchi? The app is FREE, link in bio.\n\n#studytok #relatable #cozygames #pixelart #puchika",
       "draw": true
     },
     {
-      "id": "a04-pillow",
+      "id": "sh06-alarms",
       "type": "reel",
       "media": [
-        "media/a04-pillow/reel.mp4"
+        "media/sh06-alarms/reel.mp4"
       ],
-      "cover": "media/a04-pillow/cover.jpg",
-      "caption": "Puchi & Chika · Episode 4: The Study Pillow 📚\n\nPuchi studied all night. Chika slept on the book. Results may vary.\n\nWhat’s the lowest score you were secretly proud of? 😂\n\n✨ Play Puchika for FREE, right in your browser: link in bio.\n\n#puchika #anime #pixelart #cute #funny",
-      "draw": true
-    },
-    {
-      "id": "a05-steps",
-      "type": "reel",
-      "media": [
-        "media/a05-steps/reel.mp4"
-      ],
-      "cover": "media/a05-steps/cover.jpg",
-      "caption": "Puchi & Chika · Episode 5: Ten Thousand Steps 🐰\n\nPuchi walked. Chika... delegated.\n\nHow many steps did you take today? 👟\n\n🎀 Your tiny wins deserve a cute pet. Puchika is FREE, link in bio.\n\n#puchika #anime #pixelart #cute #funny",
-      "draw": true
-    },
-    {
-      "id": "a06-zen",
-      "type": "reel",
-      "media": [
-        "media/a06-zen/reel.mp4"
-      ],
-      "cover": "media/a06-zen/cover.jpg",
-      "caption": "Puchi & Chika · Episode 6: Zen Master Chika 🧘\n\nTen minutes of calm for Puchi. Two hours of \"deep meditation\" for Chika.\n\nDoes a nap count as meditation? Be honest 😴\n\n🌸 Adopt a Puchi for FREE: link in bio.\n\n#puchika #anime #pixelart #cute #funny",
-      "draw": true
-    },
-    {
-      "id": "a07-piggy",
-      "type": "reel",
-      "media": [
-        "media/a07-piggy/reel.mp4"
-      ],
-      "cover": "media/a07-piggy/cover.jpg",
-      "caption": "Puchi & Chika · Episode 7: The Piggy Bank 🐷\n\nPuchi saves one coin a day. Chika saved 70%... nine times.\n\nSaver or \"saver\"? 💸\n\n☀ Track tiny wins, grow a pixel pet. 100% FREE, link in bio.\n\n#puchika #anime #pixelart #cute #funny",
-      "draw": true
-    },
-    {
-      "id": "a08-gym",
-      "type": "reel",
-      "media": [
-        "media/a08-gym/reel.mp4"
-      ],
-      "cover": "media/a08-gym/cover.jpg",
-      "caption": "Puchi & Chika · Episode 8: Gym Day 💪\n\nPuchi did twenty reps. Chika took one mirror selfie.\n\nDoes it count if the gym saw you? 📸\n\n🌱 Puchika is FREE: grow your own Puchi with your tiny daily wins. Link in bio!\n\n#puchika #anime #pixelart #cute #funny",
-      "draw": true
-    },
-    {
-      "id": "a09-cake",
-      "type": "reel",
-      "media": [
-        "media/a09-cake/reel.mp4"
-      ],
-      "cover": "media/a09-cake/cover.jpg",
-      "caption": "Puchi & Chika · Episode 9: Breakfast Cake 🍰\n\nEggs. Milk. Flour. Strawberry. Chika calls it balanced.\n\nWhat’s your most chaotic breakfast? 🍳\n\n💗 Want your own Puchi? The app is FREE, link in bio.\n\n#puchika #anime #pixelart #cute #funny",
-      "draw": true
-    },
-    {
-      "id": "a10-inbox",
-      "type": "reel",
-      "media": [
-        "media/a10-inbox/reel.mp4"
-      ],
-      "cover": "media/a10-inbox/cover.jpg",
-      "caption": "Puchi & Chika · Episode 10: Inbox Zero 📱\n\nPuchi answered every message. Chika marked them all as read... including the one about free cake.\n\nHow many unread messages do you have right now? 👀\n\n✨ Play Puchika for FREE, right in your browser: link in bio.\n\n#puchika #anime #pixelart #cute #funny",
-      "draw": true
-    },
-    {
-      "id": "a11-bed",
-      "type": "reel",
-      "media": [
-        "media/a11-bed/reel.mp4"
-      ],
-      "cover": "media/a11-bed/cover.jpg",
-      "caption": "Puchi & Chika · Episode 11: Make Your Bed 🛏️\n\nChika’s bed has been made for three weeks. She sleeps on the floor.\n\nDo you make your bed every morning? 🙈\n\n🎀 Your tiny wins deserve a cute pet. Puchika is FREE, link in bio.\n\n#puchika #anime #pixelart #cute #funny",
-      "draw": true
-    },
-    {
-      "id": "a12-list",
-      "type": "reel",
-      "media": [
-        "media/a12-list/reel.mp4"
-      ],
-      "cover": "media/a12-list/cover.jpg",
-      "caption": "Puchi & Chika · Episode 12: The Shopping List 🛒\n\nRice, milk, vegetables. Chika came back with rice crackers, milk chocolate and vegetable chips.\n\nWhat’s always on YOUR list? 🍫\n\n🌸 Adopt a Puchi for FREE: link in bio.\n\n#puchika #anime #pixelart #cute #funny",
-      "draw": true
-    },
-    {
-      "id": "a13-grass",
-      "type": "reel",
-      "media": [
-        "media/a13-grass/reel.mp4"
-      ],
-      "cover": "media/a13-grass/cover.jpg",
-      "caption": "Puchi & Chika · Episode 13: Touch Grass 🌿\n\nPuchi rolled in the grass. Chika touched it with a stick. Then a butterfly picked her.\n\nWhen did you last go outside just for fun? 🦋\n\n☀ Track tiny wins, grow a pixel pet. 100% FREE, link in bio.\n\n#puchika #anime #pixelart #cute #funny",
-      "draw": true
-    },
-    {
-      "id": "a14-sun",
-      "type": "reel",
-      "media": [
-        "media/a14-sun/reel.mp4"
-      ],
-      "cover": "media/a14-sun/cover.jpg",
-      "caption": "Puchi & Chika · Episode 14: Sunscreen Day ☀️\n\nPuchi swam, played and built a sandcastle. Chika never left the shade.\n\nTeam sunshine or team parasol? ⛱️\n\n🌱 Puchika is FREE: grow your own Puchi with your tiny daily wins. Link in bio!\n\n#puchika #anime #pixelart #cute #funny",
-      "draw": true
-    },
-    {
-      "id": "a15-gift",
-      "type": "reel",
-      "media": [
-        "media/a15-gift/reel.mp4"
-      ],
-      "cover": "media/a15-gift/cover.jpg",
-      "caption": "Puchi & Chika · Episode 15: The Gift 🎁\n\nChika gave back the scarf Puchi gave her last year. Never worn. Saved \"for something special\".\n\nWho would you give a handmade card to? 💌\n\n💗 Want your own Puchi? The app is FREE, link in bio.\n\n#puchika #anime #pixelart #cute #funny",
-      "draw": true
-    },
-    {
-      "id": "a16-deadline",
-      "type": "reel",
-      "media": [
-        "media/a16-deadline/reel.mp4"
-      ],
-      "cover": "media/a16-deadline/cover.jpg",
-      "caption": "Puchi & Chika · Episode 16: The Deadline ⏳\n\nPuchi finished a week early. Chika finished at 11:59:59. Same grade.\n\nEarly bird or deadline warrior? 😅\n\n✨ Play Puchika for FREE, right in your browser: link in bio.\n\n#puchika #anime #pixelart #cute #funny",
-      "draw": true
-    },
-    {
-      "id": "a17-dishes",
-      "type": "reel",
-      "media": [
-        "media/a17-dishes/reel.mp4"
-      ],
-      "cover": "media/a17-dishes/cover.jpg",
-      "caption": "Puchi & Chika · Episode 17: Zero Dishes 🍽️\n\nChika ate straight from the pot. No plates, no dishes... until Puchi explained what a pot is.\n\nWhat chore do you secretly avoid? 🫧\n\n🎀 Your tiny wins deserve a cute pet. Puchika is FREE, link in bio.\n\n#puchika #anime #pixelart #cute #funny",
-      "draw": true
-    },
-    {
-      "id": "a18-bus",
-      "type": "reel",
-      "media": [
-        "media/a18-bus/reel.mp4"
-      ],
-      "cover": "media/a18-bus/cover.jpg",
-      "caption": "Puchi & Chika · Episode 18: The Bus 🚌\n\nChika set her clock twenty minutes slow so she’s never late. It did not go well.\n\nAre you always early or always \"on the way\"? 🏃\n\n🌸 Adopt a Puchi for FREE: link in bio.\n\n#puchika #anime #pixelart #cute #funny",
-      "draw": true
-    },
-    {
-      "id": "a19-grateful",
-      "type": "reel",
-      "media": [
-        "media/a19-grateful/reel.mp4"
-      ],
-      "cover": "media/a19-grateful/cover.jpg",
-      "caption": "Puchi & Chika · Episode 19: Gratitude Journal 📔\n\nPuchi’s list ends with \"Chika\". Chika’s starts with \"me\". Then she quietly adds one more line.\n\nWhat are three tiny things you’re grateful for today? ♡\n\n☀ Track tiny wins, grow a pixel pet. 100% FREE, link in bio.\n\n#puchika #anime #pixelart #cute #funny",
-      "draw": true
-    },
-    {
-      "id": "a20-remote",
-      "type": "reel",
-      "media": [
-        "media/a20-remote/reel.mp4"
-      ],
-      "cover": "media/a20-remote/cover.jpg",
-      "caption": "Puchi & Chika · Episode 20: Where’s the Remote? 📺\n\nThe remote is missing. Chika \"tidied up\" yesterday. Puchi knows exactly where to look.\n\nWhere do the lost things go in YOUR house? 🚪\n\n🌱 Puchika is FREE: grow your own Puchi with your tiny daily wins. Link in bio!\n\n#puchika #anime #pixelart #cute #funny",
+      "cover": "media/sh06-alarms/cover.jpg",
+      "caption": "my alarms work for me, i just don’t work for them ⏰\nhow many alarms do you set? be honest\n\n✨ Play Puchika for FREE, right in your browser: link in bio.\n\n#relatable #sleepy #cozygames #pixelart #puchika",
       "draw": true
     }
   ]
