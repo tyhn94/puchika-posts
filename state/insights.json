@@ -49,6 +49,11 @@
       "date": "2026-10-15",
       "followers": 0,
       "posts": 20
+    },
+    {
+      "date": "2026-10-16",
+      "followers": 0,
+      "posts": 21
     }
   ],
   "posts": {
@@ -105,7 +110,7 @@
       "shares": 0,
       "views": 21,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 11917
+      "ig_reels_avg_watch_time": 11755
     },
     "m-nap": {
       "id": "m-nap",
@@ -242,7 +247,7 @@
       "shares": 0,
       "views": 98,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 3433
+      "ig_reels_avg_watch_time": 3386
     },
     "a02-water": {
       "id": "a02-water",
@@ -303,7 +308,21 @@
       "at": "2026-10-14T08:05:26.668Z",
       "type": "reel",
       "permalink": "https://www.instagram.com/reel/Ded6gDRGp6r/"
+    },
+    "sh08-dinner": {
+      "id": "sh08-dinner",
+      "at": "2026-10-15T18:21:25.578Z",
+      "type": "reel",
+      "permalink": "https://www.instagram.com/reel/DehlxY1jT2Y/",
+      "likes": 0,
+      "comments": 0,
+      "reach": 103,
+      "saved": 0,
+      "shares": 0,
+      "views": 117,
+      "total_interactions": 0,
+      "ig_reels_avg_watch_time": 7254
     }
   },
-  "updatedAt": "2026-10-15T09:17:18.608Z"
+  "updatedAt": "2026-10-16T09:19:56.659Z"
 }
