@@ -149,6 +149,12 @@
       "permalink": "https://www.instagram.com/reel/DehlxY1jT2Y/",
       "type": "reel",
       "at": "2026-10-15T18:21:25.578Z"
+    },
+    "sh07-osmosis": {
+      "mediaId": "18129019385497761",
+      "permalink": "https://www.instagram.com/reel/DekI-LliOwi/",
+      "type": "reel",
+      "at": "2026-10-16T18:07:28.232Z"
     }
   },
   "failed": {},
@@ -162,7 +168,8 @@
     "2026-10-12": 4,
     "2026-10-13": 2,
     "2026-10-14": 1,
-    "2026-10-15": 1
+    "2026-10-15": 1,
+    "2026-10-16": 1
   },
   "notified": {
     "low": "2026-10-15T18:21:25.578Z"
