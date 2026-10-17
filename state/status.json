@@ -1,9 +1,14 @@
 {
   "ok": true,
-  "at": "2026-10-16T21:17:46.362Z",
-  "mode": "auto",
+  "at": "2026-10-17T07:24:28.587Z",
+  "mode": "post-now",
   "problems": [],
   "account": "puchikafriends",
-  "remaining": 1,
+  "posted": {
+    "id": "sh06-alarms",
+    "mediaId": "18110067554620494",
+    "permalink": "https://www.instagram.com/reel/DelkLVVFHLG/"
+  },
+  "remaining": 0,
   "perDay": 1
 }

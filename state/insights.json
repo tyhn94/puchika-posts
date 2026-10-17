@@ -335,13 +335,27 @@
       "permalink": "https://www.instagram.com/reel/DekI-LliOwi/",
       "likes": 1,
       "comments": 0,
-      "reach": 110,
+      "reach": 114,
       "saved": 0,
       "shares": 0,
-      "views": 137,
+      "views": 140,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 9639
+      "ig_reels_avg_watch_time": 9403
+    },
+    "sh06-alarms": {
+      "id": "sh06-alarms",
+      "at": "2026-10-17T07:24:28.587Z",
+      "type": "reel",
+      "permalink": "https://www.instagram.com/reel/DelkLVVFHLG/",
+      "likes": 0,
+      "comments": 0,
+      "reach": 0,
+      "saved": 0,
+      "shares": 0,
+      "views": 0,
+      "total_interactions": 0,
+      "ig_reels_avg_watch_time": 0
     }
   },
-  "updatedAt": "2026-10-17T06:15:54.558Z"
+  "updatedAt": "2026-10-17T07:24:28.587Z"
 }
