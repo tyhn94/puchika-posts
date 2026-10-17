@@ -54,6 +54,11 @@
       "date": "2026-10-16",
       "followers": 0,
       "posts": 21
+    },
+    {
+      "date": "2026-10-17",
+      "followers": 0,
+      "posts": 22
     }
   ],
   "posts": {
@@ -69,7 +74,7 @@
       "shares": 0,
       "views": 37,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 20888
+      "ig_reels_avg_watch_time": 20580
     },
     "d02-meet": {
       "id": "d02-meet",
@@ -96,7 +101,7 @@
       "shares": 0,
       "views": 15,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 18350
+      "ig_reels_avg_watch_time": 17919
     },
     "app-sprout": {
       "id": "app-sprout",
@@ -124,7 +129,7 @@
       "shares": 0,
       "views": 38,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 7807
+      "ig_reels_avg_watch_time": 7873
     },
     "c-howitworks": {
       "id": "c-howitworks",
@@ -151,7 +156,7 @@
       "shares": 0,
       "views": 38,
       "total_interactions": 0,
-      "ig_reels_avg_watch_time": 3948
+      "ig_reels_avg_watch_time": 4011
     },
     "a-affirm-1": {
       "id": "a-affirm-1",
@@ -178,7 +183,7 @@
       "shares": 0,
       "views": 132,
       "total_interactions": 4,
-      "ig_reels_avg_watch_time": 6191
+      "ig_reels_avg_watch_time": 6225
     },
     "s-friday-1": {
       "id": "s-friday-1",
@@ -192,7 +197,7 @@
       "shares": 0,
       "views": 74,
       "total_interactions": 0,
-      "ig_reels_avg_watch_time": 4311
+      "ig_reels_avg_watch_time": 4349
     },
     "app-water": {
       "id": "app-water",
@@ -206,7 +211,7 @@
       "shares": 0,
       "views": 189,
       "total_interactions": 0,
-      "ig_reels_avg_watch_time": 1813
+      "ig_reels_avg_watch_time": 1828
     },
     "g-stack": {
       "id": "g-stack",
@@ -220,7 +225,7 @@
       "shares": 0,
       "views": 143,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 3407
+      "ig_reels_avg_watch_time": 3399
     },
     "w-chika-wins": {
       "id": "w-chika-wins",
@@ -247,7 +252,7 @@
       "shares": 0,
       "views": 98,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 3386
+      "ig_reels_avg_watch_time": 3387
     },
     "a02-water": {
       "id": "a02-water",
@@ -321,8 +326,22 @@
       "shares": 0,
       "views": 117,
       "total_interactions": 0,
-      "ig_reels_avg_watch_time": 7254
+      "ig_reels_avg_watch_time": 8303
+    },
+    "sh07-osmosis": {
+      "id": "sh07-osmosis",
+      "at": "2026-10-16T18:07:28.232Z",
+      "type": "reel",
+      "permalink": "https://www.instagram.com/reel/DekI-LliOwi/",
+      "likes": 1,
+      "comments": 0,
+      "reach": 110,
+      "saved": 0,
+      "shares": 0,
+      "views": 137,
+      "total_interactions": 1,
+      "ig_reels_avg_watch_time": 9639
     }
   },
-  "updatedAt": "2026-10-16T09:19:56.659Z"
+  "updatedAt": "2026-10-17T06:15:54.558Z"
 }
