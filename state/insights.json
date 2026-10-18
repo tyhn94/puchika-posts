@@ -59,6 +59,11 @@
       "date": "2026-10-17",
       "followers": 0,
       "posts": 22
+    },
+    {
+      "date": "2026-10-18",
+      "followers": 0,
+      "posts": 22
     }
   ],
   "posts": {
@@ -321,12 +326,12 @@
       "permalink": "https://www.instagram.com/reel/DehlxY1jT2Y/",
       "likes": 0,
       "comments": 0,
-      "reach": 103,
+      "reach": 104,
       "saved": 0,
       "shares": 0,
       "views": 117,
       "total_interactions": 0,
-      "ig_reels_avg_watch_time": 8303
+      "ig_reels_avg_watch_time": 8187
     },
     "sh07-osmosis": {
       "id": "sh07-osmosis",
@@ -335,12 +340,12 @@
       "permalink": "https://www.instagram.com/reel/DekI-LliOwi/",
       "likes": 1,
       "comments": 0,
-      "reach": 114,
+      "reach": 129,
       "saved": 0,
       "shares": 0,
-      "views": 140,
+      "views": 161,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 9403
+      "ig_reels_avg_watch_time": 9635
     },
     "sh06-alarms": {
       "id": "sh06-alarms",
@@ -349,5 +354,5 @@
       "permalink": "https://www.instagram.com/reel/DelkLVVFHLG/"
     }
   },
-  "updatedAt": "2026-10-17T07:34:19.792Z"
+  "updatedAt": "2026-10-18T06:38:13.902Z"
 }
