@@ -183,9 +183,9 @@
     "empty": "2026-10-17T07:24:28.587Z"
   },
   "firstRun": "2026-10-06T09:18:43.623Z",
-  "refreshTriedAt": "2026-10-12T09:49:34.376Z",
-  "refreshedAt": "2026-10-12T09:49:34.376Z",
-  "tokenExpiresAt": "2026-12-11T09:49:34.376Z",
+  "refreshTriedAt": "2026-10-18T11:46:18.370Z",
+  "refreshedAt": "2026-10-18T11:46:18.370Z",
+  "tokenExpiresAt": "2026-12-17T11:46:18.370Z",
   "insightsAt": "2026-10-18T06:38:13.902Z",
   "setupFails": 0
 }
