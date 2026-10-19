@@ -1,9 +1,14 @@
 {
   "ok": true,
-  "at": "2026-10-17T10:51:48.241Z",
-  "mode": "auto",
+  "at": "2026-10-19T13:58:50.059Z",
+  "mode": "post-now",
   "problems": [],
   "account": "puchikafriends",
-  "remaining": 0,
-  "perDay": 1
+  "posted": {
+    "id": "rl01-onevideo",
+    "mediaId": "17962956582231112",
+    "permalink": "https://www.instagram.com/reel/Dera5xaiHiK/"
+  },
+  "remaining": 18,
+  "perDay": 2
 }
