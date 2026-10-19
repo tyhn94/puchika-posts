@@ -1,9 +1,10 @@
 {
   "settings": {
     "timesUTC": [
+      10,
       18
     ],
-    "lowWarn": 2,
+    "lowWarn": 4,
     "minGapMinutes": 40,
     "brakeTimesUTC": [
       18
@@ -39,6 +40,198 @@
       ],
       "cover": "media/sh06-alarms/cover.jpg",
       "caption": "my alarms work for me, i just don’t work for them ⏰\nhow many alarms do you set? be honest\n\n✨ Play Puchika for FREE, right in your browser: link in bio.\n\n#relatable #sleepy #cozygames #pixelart #puchika",
+      "draw": true
+    },
+    {
+      "id": "rl01-onevideo",
+      "type": "reel",
+      "media": [
+        "media/rl01-onevideo/reel.mp4"
+      ],
+      "cover": "media/rl01-onevideo/cover.jpg",
+      "caption": "it’s never just one video 📱\nwhat’s the weirdest thing you’ve watched at 3am?\n\n🎀 Your tiny wins deserve a cute pet. Puchika is FREE, link in bio.\n\n#relatable #cantsleep #cozygames #pixelart #puchika",
+      "draw": true
+    },
+    {
+      "id": "rl11-cancel",
+      "type": "reel",
+      "media": [
+        "media/rl11-cancel/reel.mp4"
+      ],
+      "cover": "media/rl11-cancel/cover.jpg",
+      "caption": "when they cancel first and you don’t have to 🛋️\nsend this to the friend who always cancels (with love)\n\n🌸 Adopt a Puchi for FREE: link in bio.\n\n#introvert #relatable #cozynight #pixelart #puchika",
+      "draw": true
+    },
+    {
+      "id": "rl02-chair",
+      "type": "reel",
+      "media": [
+        "media/rl02-chair/reel.mp4"
+      ],
+      "cover": "media/rl02-chair/cover.jpg",
+      "caption": "the chair is not a chair. it’s a closet 🪑\nwhat’s on your chair right now? be honest\n\n☀ Track tiny wins, grow a pixel pet. 100% FREE, link in bio.\n\n#relatable #messyroom #cozygames #pixelart #puchika",
+      "draw": true
+    },
+    {
+      "id": "rl18-package",
+      "type": "reel",
+      "media": [
+        "media/rl18-package/reel.mp4"
+      ],
+      "cover": "media/rl18-package/cover.jpg",
+      "caption": "waited all day. went to the bathroom for 1 minute 📦\nwhat are you waiting for in the mail right now?\n\n🌱 Puchika is FREE: grow your own Puchi with your tiny daily wins. Link in bio!\n\n#relatable #onlineshopping #cozygames #pixelart #puchika",
+      "draw": true
+    },
+    {
+      "id": "rl07-3am",
+      "type": "reel",
+      "media": [
+        "media/rl07-3am/reel.mp4"
+      ],
+      "cover": "media/rl07-3am/cover.jpg",
+      "caption": "my brain at bedtime: hey. remember 5th grade? 🧠\nwhat’s the memory your brain loves to replay?\n\n💗 Want your own Puchi? The app is FREE, link in bio.\n\n#relatable #cantsleep #overthinking #pixelart #puchika",
+      "draw": true
+    },
+    {
+      "id": "rl05-doorbell",
+      "type": "reel",
+      "media": [
+        "media/rl05-doorbell/reel.mp4"
+      ],
+      "cover": "media/rl05-doorbell/cover.jpg",
+      "caption": "the doorbell rang and i became a ninja 🚪\nwho else pretends not to be home?\n\n✨ Play Puchika for FREE, right in your browser: link in bio.\n\n#introvert #relatable #cozygames #pixelart #puchika",
+      "draw": true
+    },
+    {
+      "id": "rl04-call",
+      "type": "reel",
+      "media": [
+        "media/rl04-call/reel.mp4"
+      ],
+      "cover": "media/rl04-call/cover.jpg",
+      "caption": "practiced 7 times. still said “you too” 📞\nwhat’s your worst “you too” moment?\n\n🎀 Your tiny wins deserve a cute pet. Puchika is FREE, link in bio.\n\n#relatable #phoneanxiety #introvert #pixelart #puchika",
+      "draw": true
+    },
+    {
+      "id": "rl14-battery",
+      "type": "reel",
+      "media": [
+        "media/rl14-battery/reel.mp4"
+      ],
+      "cover": "media/rl14-battery/cover.jpg",
+      "caption": "my battery at a party: 100% → 2% in 10 minutes 🔋\nwhat’s your favourite excuse to leave early?\n\n🌸 Adopt a Puchi for FREE: link in bio.\n\n#introvert #socialbattery #relatable #pixelart #puchika",
+      "draw": true
+    },
+    {
+      "id": "rl09-keys",
+      "type": "reel",
+      "media": [
+        "media/rl09-keys/reel.mp4"
+      ],
+      "cover": "media/rl09-keys/cover.jpg",
+      "caption": "looked for my keys for 5 minutes. they were in my hand 🔑\nwhat’s the weirdest thing in your bag right now?\n\n☀ Track tiny wins, grow a pixel pet. 100% FREE, link in bio.\n\n#relatable #whatsinmybag #cozygames #pixelart #puchika",
+      "draw": true
+    },
+    {
+      "id": "rl06-planner",
+      "type": "reel",
+      "media": [
+        "media/rl06-planner/reel.mp4"
+      ],
+      "cover": "media/rl06-planner/cover.jpg",
+      "caption": "page 1: a masterpiece. the rest: empty 📒\nhow many planners have you started this year?\n\n🌱 Puchika is FREE: grow your own Puchi with your tiny daily wins. Link in bio!\n\n#planner #relatable #stationery #pixelart #puchika",
+      "draw": true
+    },
+    {
+      "id": "rl10-nap",
+      "type": "reel",
+      "media": [
+        "media/rl10-nap/reel.mp4"
+      ],
+      "cover": "media/rl10-nap/cover.jpg",
+      "caption": "a 20 minute nap. woke up in a new year 😴\nwhat’s your longest “quick nap”?\n\n💗 Want your own Puchi? The app is FREE, link in bio.\n\n#nap #relatable #sleepy #pixelart #puchika",
+      "draw": true
+    },
+    {
+      "id": "rl16-camera",
+      "type": "reel",
+      "media": [
+        "media/rl16-camera/reel.mp4"
+      ],
+      "cover": "media/rl16-camera/cover.jpg",
+      "caption": "work on top, pajamas on the bottom 💻\nwhat are you wearing in your meetings right now?\n\n✨ Play Puchika for FREE, right in your browser: link in bio.\n\n#wfh #relatable #remotework #pixelart #puchika",
+      "draw": true
+    },
+    {
+      "id": "rl08-onmyway",
+      "type": "reel",
+      "media": [
+        "media/rl08-onmyway/reel.mp4"
+      ],
+      "cover": "media/rl08-onmyway/cover.jpg",
+      "caption": "“on my way!” (still in bed) 🛏️\nhow late are you, really? be honest\n\n🎀 Your tiny wins deserve a cute pet. Puchika is FREE, link in bio.\n\n#relatable #alwayslate #cozygames #pixelart #puchika",
+      "draw": true
+    },
+    {
+      "id": "rl17-sorry",
+      "type": "reel",
+      "media": [
+        "media/rl17-sorry/reel.mp4"
+      ],
+      "cover": "media/rl17-sorry/cover.jpg",
+      "caption": "sorry door. sorry chair. sorry floor 🙇\nwhat’s the weirdest thing you’ve said sorry to?\n\n🌸 Adopt a Puchi for FREE: link in bio.\n\n#relatable #peoplepleaser #cozygames #pixelart #puchika",
+      "draw": true
+    },
+    {
+      "id": "rl19-sink",
+      "type": "reel",
+      "media": [
+        "media/rl19-sink/reel.mp4"
+      ],
+      "cover": "media/rl19-sink/cover.jpg",
+      "caption": "it’s not dirty, it’s soaking 🍽️\nhow long has your mug been “soaking”?\n\n☀ Track tiny wins, grow a pixel pet. 100% FREE, link in bio.\n\n#relatable #dishes #adulting #pixelart #puchika",
+      "draw": true
+    },
+    {
+      "id": "rl12-bake",
+      "type": "reel",
+      "media": [
+        "media/rl12-bake/reel.mp4"
+      ],
+      "cover": "media/rl12-bake/cover.jpg",
+      "caption": "the video said “easy”. the video lied 🎂\nwhat’s your biggest baking fail?\n\n🌱 Puchika is FREE: grow your own Puchi with your tiny daily wins. Link in bio!\n\n#bakingfail #relatable #cozygames #pixelart #puchika",
+      "draw": true
+    },
+    {
+      "id": "rl15-walk",
+      "type": "reel",
+      "media": [
+        "media/rl15-walk/reel.mp4"
+      ],
+      "cover": "media/rl15-walk/cover.jpg",
+      "caption": "headphones on: music video. battery dead: just wet 🎧\nwhat song makes your walk a music video?\n\n💗 Want your own Puchi? The app is FREE, link in bio.\n\n#relatable #rainyday #cozyvibes #pixelart #puchika",
+      "draw": true
+    },
+    {
+      "id": "rl20-candy",
+      "type": "reel",
+      "media": [
+        "media/rl20-candy/reel.mp4"
+      ],
+      "cover": "media/rl20-candy/cover.jpg",
+      "caption": "bought candy for the kids. ate it all by oct 30 🍬\nhow much halloween candy is left in your house?\n\n✨ Play Puchika for FREE, right in your browser: link in bio.\n\n#halloween #halloweencandy #relatable #pixelart #puchika",
+      "date": "2026-10-30",
+      "draw": true
+    },
+    {
+      "id": "rl21-costume",
+      "type": "reel",
+      "media": [
+        "media/rl21-costume/reel.mp4"
+      ],
+      "cover": "media/rl21-costume/cover.jpg",
+      "caption": "planned my costume for a month. made it in 5 minutes 🐱\nwhat are you dressing up as this year?\n\n🎀 Your tiny wins deserve a cute pet. Puchika is FREE, link in bio.\n\n#halloween #halloweencostume #relatable #pixelart #puchika",
+      "date": "2026-10-31",
       "draw": true
     }
   ]
