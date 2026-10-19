@@ -446,3 +446,49 @@ const OVER = {
   gaan: (x, y) => t => mangaSfx('ガーン', x || 270, y || 1180, {size: 120, fill: '#fff', stroke: '#1b1d4a', rot: -.1, alpha: clamp(t / .1, 0, 1)}),
   word: (w, x, y, o) => t => mangaSfx(w, x, y, Object.assign({size: 140, sc: EASE.back(clamp(t / .15, 0, 1))}, o))
 };
+
+/* ---------- TOY: shared props for the bible shorts (sh09+): big sprites, discs, smoke, signs, close-up cameras ----------
+   Everything lives under TOY so older episode files (which define their own helpers) never clash. */
+const TOY = {
+  // close-ups: Puchi at x 46 with her thing at 63; Chika at x 96 with her thing at 78 (sh08's layout)
+  PX: 46, PT: 63, CT: 78, CX: 96,
+  CP: rel([[0, 54, 59, 66], [1, 54, 59, 60]]), CC: rel([[0, 87, 58, 66], [1, 87, 58, 60]]),
+  // a sprite drawn s times bigger (each pixel an s×s block)
+  big(name, x, y, pen, s){ s = s || 2; const rows = ART[name], keep = PEN; PEN = pen;
+    rows.forEach((r, j) => { for(let i = 0; i < r.length; i++){ const ch = r[i], v = ch === 'X' ? 1 : ch === 'o' ? 2 : ch === '+' ? 3 : ch === '~' ? 4 : -1; if(v < 0) continue;
+      for(let a = 0; a < s; a++) for(let b = 0; b < s; b++) P(Math.round(x) + i * s + a, Math.round(y) + j * s + b, v); } });
+    PEN = keep; },
+  // size of a big sprite in world cells
+  size(name, s){ s = s || 2; return [Math.max(...ART[name].map(r => r.length)) * s, ART[name].length * s]; },
+  box(x0, y0, x1, y1, pen, v){ solid(Math.round(x0), Math.round(y0), Math.round(x1), Math.round(y1), pen, v == null ? 3 : v, true); },
+  disc(cx, cy, r, pen, v, sy){ sy = sy || 1; PEN = pen; for(let y = Math.round(cy - r * sy); y <= cy + r * sy; y++) for(let x = Math.round(cx - r); x <= cx + r; x++){ const d = Math.hypot(x - cx, (y - cy) / sy); if(d <= r) P(x, y, d > r - 1 ? 1 : (v == null ? 3 : v)); } },
+  line(x0, y0, x1, y1, pen, v){ PEN = pen; const n = Math.max(Math.abs(x1 - x0), Math.abs(y1 - y0), 1); for(let i = 0; i <= n; i++) P(Math.round(x0 + (x1 - x0) * i / n), Math.round(y0 + (y1 - y0) * i / n), v || 1); },
+  // puffs rising from (cx, y0): n puffs, dark = black smoke
+  smoke(cx, y0, t, n, dark, h){ h = h || 30; for(let i = 0; i < n; i++){ const k = ((t * .7) + i / n) % 1; TOY.disc(cx + Math.round(Math.sin((t + i) * 2) * 3) + (i % 2 ? 3 : -3), y0 - k * h, 2 + k * 4, dark ? C.NIGHT : C.GRAY, 3); } },
+  // water drops / splash around (cx, cy)
+  splash(cx, cy, k, pen){ PEN = pen || C.BLUE; for(let i = 0; i < 10; i++){ const a = Math.PI * (i / 9), r = 4 + k * 12; P(Math.round(cx + Math.cos(a) * r * 1.3), Math.round(cy - Math.sin(a) * r + k * k * 10)); P(Math.round(cx + Math.cos(a) * r * 1.3) + 1, Math.round(cy - Math.sin(a) * r + k * k * 10)); } },
+  sparks(x, y, t){ const F = Math.floor(t * 6) % 2; art2(F ? 'spark' : 'spark5', x - 12, y, C.GOLD); art2(F ? 'spark5' : 'spark', x + 10, y - 3, C.GOLD); },
+  hearts(x, y, t){ const k = (t * .8) % 1; if(k < .85) art2('heart', x, y - Math.round(7 * k), C.PINK); },
+  zz(x, y, t){ const k = (t * 1.2) % 1; art2('zzz', x + Math.round(k * 4), y - Math.round(k * 8), C.LILAC); },
+  // a big screen-space sign (Pixelify Sans Bold) that pops in: labels like "DAY 7", "STEPS: 12,000", grades, names
+  sign(text, t, x, y, o){
+    if(t < 0) return; o = o || {}; const k = EASE.back(clamp(t / .2, 0, 1)), size = o.size || 64;
+    X.save(); X.setTransform(1, 0, 0, 1, 0, 0); X.translate(x, y); X.rotate(o.rot || 0); X.scale(k, k);
+    X.font = `700 ${size}px Pixelify`; const w = Math.max(o.w || 0, X.measureText(text).width + size * .9), h = size * 1.5;
+    X.fillStyle = 'rgba(40,20,50,.25)'; rrect(X, -w / 2, -h / 2 + 8, w, h, o.square ? 14 : h / 2); X.fill();
+    X.fillStyle = o.bg || '#fff'; rrect(X, -w / 2, -h / 2, w, h, o.square ? 14 : h / 2); X.fill(); X.lineWidth = 7; X.strokeStyle = o.edge || '#3d2c4e'; X.stroke();
+    X.textAlign = 'center'; X.textBaseline = 'middle'; X.fillStyle = o.fg || '#3d2c4e'; X.fillText(text, 0, size * .06);
+    if(o.strike){ X.strokeStyle = o.strike; X.lineWidth = 10; X.beginPath(); X.moveTo(-w / 2 + 20, 0); X.lineTo(w / 2 - 20, 0); X.stroke(); }
+    X.restore(); },
+  // a paper with lines and a big mark on it (grades, names, notes)
+  paper(lines, t, x, y, o){
+    if(t < 0) return; o = o || {}; const k = EASE.back(clamp(t / .22, 0, 1)), w = o.w || 300, h = o.h || 340;
+    X.save(); X.setTransform(1, 0, 0, 1, 0, 0); X.translate(x, y); X.rotate(o.rot || 0); X.scale(k, k);
+    X.fillStyle = 'rgba(40,20,50,.25)'; X.fillRect(-w / 2 + 8, -h / 2 + 10, w, h);
+    X.fillStyle = '#fffdf6'; X.fillRect(-w / 2, -h / 2, w, h); X.lineWidth = 6; X.strokeStyle = '#3d2c4e'; X.strokeRect(-w / 2, -h / 2, w, h);
+    X.textAlign = 'center'; X.textBaseline = 'middle';
+    lines.forEach(([txt, size, color], i) => { X.font = `700 ${size}px Pixelify`; X.fillStyle = color || '#3d2c4e'; X.fillText(txt, 0, -h / 2 + 50 + lines.slice(0, i).reduce((a, l) => a + l[1] * 1.25, 0) + size * .5); });
+    if(o.circle){ X.strokeStyle = o.circle; X.lineWidth = 8; X.beginPath(); X.arc(0, o.cy || 60, o.r || 80, 0, Math.PI * 2); X.stroke(); }
+    X.restore(); },
+  word(text, x, y, t, o){ if(t < 0) return; OVER.word(text, x, y, Object.assign({size: 120, fill: '#ffd36b', stroke: '#3d2c4e', rot: -.08}, o))(t); }
+};

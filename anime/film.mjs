@@ -3,7 +3,7 @@
 //   4. render the music + sound effects   5. lay the voices over them (mix.py)   6. film every frame, encode reel.mp4 + cover.jpg
 import fs from 'node:fs';
 import path from 'node:path';
-import { execFileSync } from 'node:child_process';
+import { execFileSync, spawnSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 export async function filmAnime(browser, ep, out, opts = {}){
@@ -31,6 +31,13 @@ export async function filmAnime(browser, ep, out, opts = {}){
     '-af', 'alimiter=limit=0.8:attack=2:release=60,loudnorm=I=-14:TP=-1.5:LRA=11,alimiter=limit=0.78:level=false', '-ar', '48000',
     '-c:v', 'libx264', '-preset', opts.preset || 'medium', '-crf', '23', '-pix_fmt', 'yuv420p', '-r', '30',
     '-c:a', 'aac', '-b:a', '128k', '-shortest', '-use_editlist', '0', '-movflags', '+faststart', path.join(out, 'reel.mp4')]);
+  // loudness check: a dense song can leave loudnorm short of -14 (rl15 came out at -16.4); lift it with a plain gain + limiter
+  { const r = spawnSync('ffmpeg', ['-nostats', '-i', path.join(out, 'reel.mp4'), '-af', 'ebur128', '-f', 'null', '-'], {encoding: 'utf8'});
+    const m = /I:\s+(-?[\d.]+) LUFS\s*\n\s*Threshold/.exec(r.stderr || ''), I = m ? parseFloat(m[1]) : null;
+    if(I != null && I < -14.8){ const tmp = path.join(out, 'reel-gain.mp4');
+      execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-i', path.join(out, 'reel.mp4'), '-c:v', 'copy', '-af', 'volume=' + (-14.2 - I).toFixed(2) + 'dB,alimiter=limit=0.8:level=false',
+        '-ar', '48000', '-c:a', 'aac', '-b:a', '128k', '-use_editlist', '0', '-movflags', '+faststart', tmp]);
+      fs.renameSync(tmp, path.join(out, 'reel.mp4')); } }
   if(opts.checks) info.shots.forEach((s, k) => { const n = Math.min(N - 1, Math.round((s.start + s.dur * .7) * 30)); fs.copyFileSync(path.join(fdir, 'f' + String(n).padStart(5, '0') + '.jpg'), path.join(out, 'check-' + String(k + 1).padStart(2, '0') + '.jpg')); });
   if(!opts.keep){ fs.rmSync(fdir, {recursive: true, force: true}); ['bed.wav', 'audio.wav', 'info0.json', 'voices.js'].forEach(f => fs.rmSync(path.join(out, f), {force: true})); fs.rmSync(path.join(out, 'vox'), {recursive: true, force: true}); }
   await p.close();

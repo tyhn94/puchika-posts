@@ -56,9 +56,9 @@ function episode(ep){
       L.clip = CLIPS[L.id] || null;
       if(L.at == null) L.at = k === 0 ? (s.first != null ? s.first : .3) : end + (L.gap != null ? L.gap : .22);
       L.d = lineDur(L); end = L.at + L.d;
-      if(!s.fixed) s.dur = Math.max(s.dur || 0, end + (L.tail != null ? L.tail : s.tail != null ? s.tail : .45));
-      // shorts: every line stays up long enough to read, however quick the voice is
-      if(ep.short && !s.fixed) s.dur = Math.max(s.dur, L.at + .55 + .055 * (L.en || '').length + .15);
+      if(!s.fixed) s.dur = Math.max(s.dur || 0, end + (L.tail != null ? L.tail : s.tail != null ? s.tail : ep.short ? .25 : .45));
+      // shorts: every line stays up long enough to read, however quick the voice is (snappy: İdil, 19 Oct 2026)
+      if(ep.short && !s.fixed) s.dur = Math.max(s.dur, L.at + .35 + .045 * (L.en || '').length + .1);
     });
     if(!s.dur) s.dur = 1.5;
   });
@@ -93,6 +93,8 @@ function camAt(S, t){
   const v = (S.cam && S.cam.rel ? keys(S.cam.k, t / S.dur) : keys(S.cam, t)) || [64, 50, 100, 0];
   const c = {cx: v[0], cy: v[1], h: v[2], roll: v[3] || 0};
   c.k = H / c.h; c.sx = 0; c.sy = 0;
+  // never show outside the world (no dark strip at the edges): keep the view inside x 0..LW, y 0..LH
+  if(!c.roll && !S.free){ const hw = W / 2 / c.k, hh = c.h / 2; if(hw * 2 <= LW) c.cx = Math.min(LW - hw, Math.max(hw, c.cx)); if(hh * 2 <= LH) c.cy = Math.min(LH - hh, Math.max(hh, c.cy)); }
   (S.shake || []).forEach(([t0, d, amp]) => { if(t >= t0 && t < t0 + d){ const f = Math.floor(t * FPS), fall = 1 - (t - t0) / d; c.sx += (hsh(f, 1) * 2 - 1) * amp * fall; c.sy += (hsh(f, 2) * 2 - 1) * amp * fall; } });
   return c;
 }
@@ -447,7 +449,7 @@ function drawHook(T){
 
 /* ---------- one frame ---------- */
 async function ready(){
-  await Promise.all(['800 56px MPR', '700 30px MPR', '400 30px Dot', "800 60px 'Baloo 2'", '700 60px Pixelify', '400 30px Pixelify'].map(f => document.fonts.load(f, 'Aaあア漢')));
+  await Promise.all(['800 56px MPR', '700 30px MPR', '400 30px Dot', "800 60px 'Baloo 2'", '700 60px Pixelify', '400 30px Pixelify'].map(f => document.fonts.load(f, 'Aaあア漢0')));
   await document.fonts.load('800 56px MPR', '秘技全部掃除続く話今時間前');
   await document.fonts.load('400 30px Dot', '秘技全部掃除続く話今時間前');
   const img = document.getElementById('logo'); if(!img.complete) await new Promise(r => { img.onload = r; img.onerror = r; });

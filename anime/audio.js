@@ -10,6 +10,18 @@ VOICE_BUS.connect(ac.destination); MUSIC_BUS.connect(ac.destination);
 const NOTE = {C: 0, D: 2, E: 4, F: 5, G: 7, A: 9, B: 11};
 const freq = n => { const m = /^([A-G])([#b]?)(\d)$/.exec(n); if(!m) return 0; const s = NOTE[m[1]] + (m[2] === '#' ? 1 : m[2] === 'b' ? -1 : 0) + (+m[3] + 1) * 12; return 440 * Math.pow(2, (s - 69) / 12); };
 function parseTrack(str){ const toks = str.replace(/\|/g, ' ').trim().split(/\s+/), ev = []; toks.forEach((t, i) => { if(t === '-'){ if(ev.length && ev[ev.length - 1].end === i) ev[ev.length - 1].end = i + 1; return; } if(t === '.') return; ev.push({at: i, end: i + 1, n: t}); }); return {len: toks.length, ev}; }
+// extra tracks for the shorts (not from the console): 'silly' = the comedy callback at the end (bouncy oom-pah, staccato),
+// 'anthem' = the big dramatic pop song in her headphones (rl15)
+Object.assign(TRACKS, {
+  silly: {bpm: 138, lead: 'G4 . C5 . E5 . G5 . | F#5 G5 . E5 C5 . . . | D5 . F5 . A5 . F5 . | G5 . . . B4 . . . | G4 . C5 . E5 . G5 . | A5 G5 . E5 C5 . A4 . | B4 . D5 . G5 . F5 D5 | C5 . G4 . C5 . . .',
+    harm: '. E4 . E4 . E4 . E4 | . E4 . E4 . E4 . E4 | . F4 . F4 . F4 . F4 | . D4 . D4 . D4 . D4 | . E4 . E4 . E4 . E4 | . F4 . F4 . F4 . F4 | . D4 . D4 . F4 . F4 | . E4 . . . . . .',
+    bass: 'C3 . G2 . C3 . G2 . | C3 . G2 . C3 . G2 . | F2 . C3 . F2 . C3 . | G2 . D3 . G2 . D3 . | C3 . G2 . C3 . G2 . | F2 . C3 . F2 . C3 . | G2 . D3 . G2 . B2 . | C3 . G2 . C3 . . .',
+    drum: 'k . s . k . s . | k . s . k . s . | k . s . k . s . | k . s . k s s . | k . s . k . s . | k . s . k . s . | k . s . k . s s | k . s . k . . .'},
+  anthem: {bpm: 116, lead: 'E5 - - - D5 - C5 - | C5 - - - - - G4 - | A4 - C5 - E5 - G5 - | G5 - - - F5 - E5 D5 | E5 - - - D5 - C5 - | C5 - - - - - E5 - | D5 - - - C5 - B4 - | C5 - - - - - . .',
+    harm: 'A3 C4 E4 C4 A3 C4 E4 C4 | F3 A3 C4 A3 F3 A3 C4 A3 | C4 E4 G4 E4 C4 E4 G4 E4 | G3 B3 D4 B3 G3 B3 D4 B3 | A3 C4 E4 C4 A3 C4 E4 C4 | F3 A3 C4 A3 F3 A3 C4 A3 | G3 B3 D4 B3 G3 B3 D4 B3 | C4 E4 G4 E4 C4 E4 G4 E4',
+    bass: 'A2 - A2 - A2 - A2 - | F2 - F2 - F2 - F2 - | C3 - C3 - C3 - C3 - | G2 - G2 - G2 - G2 - | A2 - A2 - A2 - A2 - | F2 - F2 - F2 - F2 - | G2 - G2 - G2 - G2 - | C3 - C3 - C3 - C3 -',
+    drum: 'k . h . s . h . | k . h k s . h . | k . h . s . h . | k . h k s . s s | k . h . s . h . | k . h k s . h . | k . h . s . h . | k k h . s s s s'}
+});
 for(const k in TRACKS) ['lead', 'harm', 'bass', 'drum'].forEach(ch => { if(typeof TRACKS[k][ch] === 'string') TRACKS[k][ch] = parseTrack(TRACKS[k][ch]); });
 const PW = {};
 function pulse(duty){ if(PW[duty]) return PW[duty]; const n = 48, re = new Float32Array(n), im = new Float32Array(n); for(let i = 1; i < n; i++) re[i] = 2 / (i * Math.PI) * Math.sin(i * Math.PI * duty); return PW[duty] = ac.createPeriodicWave(re, im); }
@@ -96,6 +108,9 @@ const SFX = {
   fizz: () => Sound.noise({ft: 'highpass', f: 5000, a: .05, d: .8, vol: .05, wet: .3}),
   alarm: () => { for(let i = 0; i < 10; i++) Sound.tone({type: 'square', f: 1760, t: i * .12, a: .002, d: .06, vol: .07, lp: 4000}); },
   snore: () => { Sound.noise({ft: 'lowpass', f: 300, f1: 700, q: 1.5, a: .3, d: .5, vol: .14, wet: .3}); Sound.tone({type: 'sawtooth', f: 70, f1: 90, a: .3, d: .5, vol: .05, lp: 400}); Sound.tone({type: 'sine', f: 900, f1: 1400, t: .9, a: .1, d: .25, vol: .04}); },
+  // a mug/plate breaking: a sharp crack, then tinkling shards
+  shatter: () => { Sound.noise({ft: 'highpass', f: 2600, a: .001, d: .22, vol: .32, wet: .35}); Sound.tone({f: 240, f1: 90, a: .001, d: .07, vol: .2});
+    for(let i = 0; i < 9; i++) Sound.tone({type: 'triangle', f: 2400 + ((i * 937) % 2600), t: .03 + i * .035, a: .001, d: .11, vol: .055, wet: .45}); },
   thud: () => { Sound.tone({f: 120, f1: 50, a: .002, d: .18, vol: .35}); Sound.noise({ft: 'lowpass', f: 800, a: .002, d: .12, vol: .2}); },
   bird: () => [0, .14, .5, .62].forEach((t, i) => Sound.tone({type: 'sine', f: [2800, 3300, 2900, 3500][i], f1: [3300, 2700, 3400, 2900][i], glide: .08, t, a: .005, d: .09, vol: .05, wet: .5})),
   pencil: () => { for(let i = 0; i < 12; i++) Sound.noise({f: 5200, q: 2.2, t: i * .07 + Math.random() * .02, a: .002, d: .02, vol: .05}); },
