@@ -1,9 +1,14 @@
 {
   "ok": true,
-  "at": "2026-10-20T15:26:03.777Z",
+  "at": "2026-10-20T19:38:41.014Z",
   "mode": "auto",
   "problems": [],
   "account": "puchikafriends",
-  "remaining": 16,
+  "posted": {
+    "id": "rl18-package",
+    "mediaId": "17886072606624414",
+    "permalink": "https://www.instagram.com/reel/DeumoitFuT8/"
+  },
+  "remaining": 15,
   "perDay": 2
 }
