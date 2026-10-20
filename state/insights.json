@@ -69,6 +69,11 @@
       "date": "2026-10-19",
       "followers": 0,
       "posts": 22
+    },
+    {
+      "date": "2026-10-20",
+      "followers": 0,
+      "posts": 24
     }
   ],
   "posts": {
@@ -193,7 +198,7 @@
       "shares": 0,
       "views": 132,
       "total_interactions": 4,
-      "ig_reels_avg_watch_time": 6259
+      "ig_reels_avg_watch_time": 6240
     },
     "s-friday-1": {
       "id": "s-friday-1",
@@ -227,7 +232,7 @@
       "shares": 0,
       "views": 143,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 3399
+      "ig_reels_avg_watch_time": 3389
     },
     "w-chika-wins": {
       "id": "w-chika-wins",
@@ -254,7 +259,7 @@
       "shares": 0,
       "views": 98,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 3387
+      "ig_reels_avg_watch_time": 3451
     },
     "a02-water": {
       "id": "a02-water",
@@ -328,7 +333,7 @@
       "shares": 0,
       "views": 117,
       "total_interactions": 0,
-      "ig_reels_avg_watch_time": 8530
+      "ig_reels_avg_watch_time": 8946
     },
     "sh07-osmosis": {
       "id": "sh07-osmosis",
@@ -342,7 +347,7 @@
       "shares": 0,
       "views": 161,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 9938
+      "ig_reels_avg_watch_time": 10218
     },
     "sh06-alarms": {
       "id": "sh06-alarms",
@@ -357,6 +362,34 @@
       "permalink": "https://www.instagram.com/reel/Dera5xaiHiK/",
       "likes": 0,
       "comments": 0,
+      "reach": 114,
+      "saved": 0,
+      "shares": 0,
+      "views": 140,
+      "total_interactions": 0,
+      "ig_reels_avg_watch_time": 9433
+    },
+    "rl11-cancel": {
+      "id": "rl11-cancel",
+      "at": "2026-10-19T21:34:30.398Z",
+      "type": "reel",
+      "permalink": "https://www.instagram.com/reel/DesPJcOFPmu/",
+      "likes": 4,
+      "comments": 0,
+      "reach": 130,
+      "saved": 0,
+      "shares": 0,
+      "views": 180,
+      "total_interactions": 4,
+      "ig_reels_avg_watch_time": 8096
+    },
+    "rl02-chair": {
+      "id": "rl02-chair",
+      "at": "2026-10-20T10:27:26.841Z",
+      "type": "reel",
+      "permalink": "https://www.instagram.com/reel/DetngQBFEvf/",
+      "likes": 0,
+      "comments": 0,
       "reach": 0,
       "saved": 0,
       "shares": 0,
@@ -365,5 +398,5 @@
       "ig_reels_avg_watch_time": 0
     }
   },
-  "updatedAt": "2026-10-19T13:58:50.059Z"
+  "updatedAt": "2026-10-20T10:27:26.841Z"
 }
