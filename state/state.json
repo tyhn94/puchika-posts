@@ -191,6 +191,12 @@
       "permalink": "https://www.instagram.com/reel/DewWx7YjG8v/",
       "type": "reel",
       "at": "2026-10-21T11:59:01.803Z"
+    },
+    "rl05-doorbell": {
+      "mediaId": "18075956843754264",
+      "permalink": "https://www.instagram.com/reel/DexShTsDO8A/",
+      "type": "reel",
+      "at": "2026-10-21T20:41:03.007Z"
     }
   },
   "failed": {},
@@ -209,7 +215,7 @@
     "2026-10-17": 1,
     "2026-10-19": 2,
     "2026-10-20": 2,
-    "2026-10-21": 1
+    "2026-10-21": 2
   },
   "notified": {
     "low": "2026-10-15T18:21:25.578Z",
