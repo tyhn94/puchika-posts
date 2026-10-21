@@ -185,6 +185,12 @@
       "permalink": "https://www.instagram.com/reel/DeumoitFuT8/",
       "type": "reel",
       "at": "2026-10-20T19:38:41.014Z"
+    },
+    "rl07-3am": {
+      "mediaId": "17941416069385106",
+      "permalink": "https://www.instagram.com/reel/DewWx7YjG8v/",
+      "type": "reel",
+      "at": "2026-10-21T11:59:01.803Z"
     }
   },
   "failed": {},
@@ -202,7 +208,8 @@
     "2026-10-16": 1,
     "2026-10-17": 1,
     "2026-10-19": 2,
-    "2026-10-20": 2
+    "2026-10-20": 2,
+    "2026-10-21": 1
   },
   "notified": {
     "low": "2026-10-15T18:21:25.578Z",
@@ -212,6 +219,6 @@
   "refreshTriedAt": "2026-10-18T11:46:18.370Z",
   "refreshedAt": "2026-10-18T11:46:18.370Z",
   "tokenExpiresAt": "2026-12-17T11:46:18.370Z",
-  "insightsAt": "2026-10-20T10:27:26.841Z",
+  "insightsAt": "2026-10-21T11:59:01.803Z",
   "setupFails": 0
 }

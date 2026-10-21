@@ -74,6 +74,11 @@
       "date": "2026-10-20",
       "followers": 0,
       "posts": 24
+    },
+    {
+      "date": "2026-10-21",
+      "followers": 0,
+      "posts": 26
     }
   ],
   "posts": {
@@ -259,7 +264,7 @@
       "shares": 0,
       "views": 98,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 3451
+      "ig_reels_avg_watch_time": 3423
     },
     "a02-water": {
       "id": "a02-water",
@@ -347,7 +352,7 @@
       "shares": 0,
       "views": 161,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 10218
+      "ig_reels_avg_watch_time": 10153
     },
     "sh06-alarms": {
       "id": "sh06-alarms",
@@ -362,32 +367,60 @@
       "permalink": "https://www.instagram.com/reel/Dera5xaiHiK/",
       "likes": 0,
       "comments": 0,
-      "reach": 114,
+      "reach": 119,
       "saved": 0,
       "shares": 0,
-      "views": 140,
+      "views": 147,
       "total_interactions": 0,
-      "ig_reels_avg_watch_time": 9433
+      "ig_reels_avg_watch_time": 9444
     },
     "rl11-cancel": {
       "id": "rl11-cancel",
       "at": "2026-10-19T21:34:30.398Z",
       "type": "reel",
       "permalink": "https://www.instagram.com/reel/DesPJcOFPmu/",
-      "likes": 4,
+      "likes": 5,
       "comments": 0,
-      "reach": 130,
+      "reach": 165,
       "saved": 0,
       "shares": 0,
-      "views": 180,
-      "total_interactions": 4,
-      "ig_reels_avg_watch_time": 8096
+      "views": 221,
+      "total_interactions": 5,
+      "ig_reels_avg_watch_time": 8137
     },
     "rl02-chair": {
       "id": "rl02-chair",
       "at": "2026-10-20T10:27:26.841Z",
       "type": "reel",
       "permalink": "https://www.instagram.com/reel/DetngQBFEvf/",
+      "likes": 0,
+      "comments": 0,
+      "reach": 120,
+      "saved": 0,
+      "shares": 0,
+      "views": 156,
+      "total_interactions": 0,
+      "ig_reels_avg_watch_time": 8569
+    },
+    "rl18-package": {
+      "id": "rl18-package",
+      "at": "2026-10-20T19:38:41.014Z",
+      "type": "reel",
+      "permalink": "https://www.instagram.com/reel/DeumoitFuT8/",
+      "likes": 1,
+      "comments": 0,
+      "reach": 122,
+      "saved": 0,
+      "shares": 0,
+      "views": 151,
+      "total_interactions": 1,
+      "ig_reels_avg_watch_time": 5280
+    },
+    "rl07-3am": {
+      "id": "rl07-3am",
+      "at": "2026-10-21T11:59:01.803Z",
+      "type": "reel",
+      "permalink": "https://www.instagram.com/reel/DewWx7YjG8v/",
       "likes": 0,
       "comments": 0,
       "reach": 0,
@@ -398,5 +431,5 @@
       "ig_reels_avg_watch_time": 0
     }
   },
-  "updatedAt": "2026-10-20T10:27:26.841Z"
+  "updatedAt": "2026-10-21T11:59:01.803Z"
 }
