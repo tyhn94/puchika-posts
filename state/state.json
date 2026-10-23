@@ -215,6 +215,12 @@
       "permalink": "https://www.instagram.com/reel/De1T6sSkkle/",
       "type": "reel",
       "at": "2026-10-23T10:10:13.994Z"
+    },
+    "rl06-planner": {
+      "mediaId": "18347385409264716",
+      "permalink": "https://www.instagram.com/reel/De2S0Mpjmuu/",
+      "type": "reel",
+      "at": "2026-10-23T19:19:22.027Z"
     }
   },
   "failed": {},
@@ -235,7 +241,7 @@
     "2026-10-20": 2,
     "2026-10-21": 2,
     "2026-10-22": 2,
-    "2026-10-23": 1
+    "2026-10-23": 2
   },
   "notified": {
     "low": "2026-10-15T18:21:25.578Z",
