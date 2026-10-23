@@ -84,6 +84,11 @@
       "date": "2026-10-22",
       "followers": 1,
       "posts": 28
+    },
+    {
+      "date": "2026-10-23",
+      "followers": 1,
+      "posts": 30
     }
   ],
   "posts": {
@@ -391,7 +396,7 @@
       "shares": 0,
       "views": 222,
       "total_interactions": 5,
-      "ig_reels_avg_watch_time": 8419
+      "ig_reels_avg_watch_time": 8398
     },
     "rl02-chair": {
       "id": "rl02-chair",
@@ -405,7 +410,7 @@
       "shares": 0,
       "views": 157,
       "total_interactions": 0,
-      "ig_reels_avg_watch_time": 8812
+      "ig_reels_avg_watch_time": 8823
     },
     "rl18-package": {
       "id": "rl18-package",
@@ -419,7 +424,7 @@
       "shares": 0,
       "views": 162,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 5827
+      "ig_reels_avg_watch_time": 5801
     },
     "rl07-3am": {
       "id": "rl07-3am",
@@ -428,32 +433,60 @@
       "permalink": "https://www.instagram.com/reel/DewWx7YjG8v/",
       "likes": 10,
       "comments": 0,
-      "reach": 418,
+      "reach": 422,
       "saved": 1,
       "shares": 0,
-      "views": 591,
+      "views": 596,
       "total_interactions": 13,
-      "ig_reels_avg_watch_time": 8686
+      "ig_reels_avg_watch_time": 8687
     },
     "rl05-doorbell": {
       "id": "rl05-doorbell",
       "at": "2026-10-21T20:41:03.007Z",
       "type": "reel",
       "permalink": "https://www.instagram.com/reel/DexShTsDO8A/",
-      "likes": 1,
+      "likes": 11,
       "comments": 0,
-      "reach": 439,
-      "saved": 1,
+      "reach": 675,
+      "saved": 2,
       "shares": 0,
-      "views": 629,
-      "total_interactions": 2,
-      "ig_reels_avg_watch_time": 8238
+      "views": 950,
+      "total_interactions": 14,
+      "ig_reels_avg_watch_time": 8454
     },
     "rl04-call": {
       "id": "rl04-call",
       "at": "2026-10-22T13:13:40.324Z",
       "type": "reel",
       "permalink": "https://www.instagram.com/reel/DezEMYwjviM/",
+      "likes": 2,
+      "comments": 0,
+      "reach": 116,
+      "saved": 0,
+      "shares": 0,
+      "views": 131,
+      "total_interactions": 2,
+      "ig_reels_avg_watch_time": 5055
+    },
+    "rl14-battery": {
+      "id": "rl14-battery",
+      "at": "2026-10-22T21:45:24.779Z",
+      "type": "reel",
+      "permalink": "https://www.instagram.com/reel/Dez-vzMDvV9/",
+      "likes": 25,
+      "comments": 0,
+      "reach": 1019,
+      "saved": 1,
+      "shares": 0,
+      "views": 1530,
+      "total_interactions": 28,
+      "ig_reels_avg_watch_time": 11639
+    },
+    "rl09-keys": {
+      "id": "rl09-keys",
+      "at": "2026-10-23T10:10:13.994Z",
+      "type": "reel",
+      "permalink": "https://www.instagram.com/reel/De1T6sSkkle/",
       "likes": 0,
       "comments": 0,
       "reach": 0,
@@ -464,5 +497,5 @@
       "ig_reels_avg_watch_time": 0
     }
   },
-  "updatedAt": "2026-10-22T13:13:40.324Z"
+  "updatedAt": "2026-10-23T10:10:13.994Z"
 }
