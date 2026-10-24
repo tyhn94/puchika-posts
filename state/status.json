@@ -1,9 +1,14 @@
 {
   "ok": true,
-  "at": "2026-10-24T17:03:32.025Z",
+  "at": "2026-10-24T19:32:01.718Z",
   "mode": "auto",
   "problems": [],
   "account": "puchikafriends",
-  "remaining": 8,
+  "posted": {
+    "id": "rl16-camera",
+    "mediaId": "18018235340746963",
+    "permalink": "https://www.instagram.com/reel/De45APiCZ16/"
+  },
+  "remaining": 7,
   "perDay": 2
 }
