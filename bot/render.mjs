@@ -62,7 +62,7 @@ function stamps(cal){
   const eng = sha(fs.readFileSync(file('gen/engine.html')));
   const app = fs.existsSync(file('gen/app.html')) ? sha(fs.readFileSync(file('gen/app.html'))) : '';
   // anime: the renderer's files and the episode's own file
-  const A = ['core.js', 'kit.js', 'voice.js', 'audio.js', 'engine.js', 'sound.js', 'tracks.js', 'prelude.js', 'page.html', 'film.mjs', 'jvoice.py', 'babble.py', 'mix.py'];
+  const A = ['core.js', 'kit.js', 'voice.js', 'audio.js', 'engine.js', 'sound.js', 'tracks.js', 'prelude.js', 'page.html', 'film.mjs', 'jvoice.py', 'babble.py', 'kalimba.py', 'mix.py'];
   const anim = fs.existsSync(file('anime/core.js')) ? sha(A.map(f => fs.readFileSync(file('anime/' + f), 'utf8')).join('|')) : '';
   const epFile = p => { try { return sha(fs.readFileSync(file('anime/eps/' + p.ep + '.js'))); } catch { return 'missing'; } };
   const out = {}; cal.forEach((p, i) => { out[p.id] = p.type === 'anime' ? sha(anim + '|' + epFile(p) + '|' + JSON.stringify(p)) : sha(eng + '|' + i + '|' + JSON.stringify(p) + (p.app ? '|' + app : '')); }); return out;
@@ -120,7 +120,7 @@ async function draw(ids){
       const spec0 = loadPosts().cal.find(x => x.id === id);
       if(spec0 && spec0.type === 'anime'){
         const { filmAnime } = await import('../anime/film.mjs');
-        const r = await filmAnime(b, spec0.ep, out, {checks: !!process.env.KEEP_CHECKS, voice: spec0.voice || ''});   // shorts: voice 'babble' (pıt pıt)
+        const r = await filmAnime(b, spec0.ep, out, {checks: !!process.env.KEEP_CHECKS, voice: spec0.voice || ''});   // shorts: voice 'babble' (pıt pıt) or 'kalimba' (from 25 Oct 2026)
         if(r.errs.length) log(id, 'page notes:', [...new Set(r.errs)].slice(0, 4).join(' | '));
         fs.writeFileSync(path.join(out, 'stamp.txt'), (st[id] || '') + '\n');
         const dest = file('media/' + id); fs.rmSync(dest, {recursive: true, force: true}); fs.mkdirSync(path.dirname(dest), {recursive: true});

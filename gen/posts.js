@@ -1,8 +1,10 @@
 // Puchi & Chika: the RELATABLE anime shorts (bible v3, 18 Oct 2026). Every post is one short (anime/eps/<ep>.js),
-// filmed on GitHub by bot/render.mjs with the "pıt pıt" voices. The rules live in İdil's doc "Puchika Reels Stratejisi".
+// filmed on GitHub by bot/render.mjs with the "pıt pıt" voices (pack 1) or the kalimba voices (pack 2 on). The rules live in İdil's doc "Puchika Reels Stratejisi".
 // Every video is a real habit the tired cozy girl does herself ("aaa, this is me"); one character or both.
 // Captions: 2-4 short lines and a real question, max 5 hashtags, no tag/comment bait. The FREE / link-in-bio line is added automatically.
 const short = (id, lines, tags, date) => Object.assign({id, type: 'anime', ep: id, voice: 'babble', caption: lines + '\n\n' + tags}, date ? {date} : {});
+// from pack 2 (25 Oct 2026) the shorts speak with the sweet melodic kalimba voices
+const kshort = (id, lines, tags, date) => Object.assign(short(id, lines, tags, date), {voice: 'kalimba'});
 const CAL = [
   // already posted (kept so their ids stay known)
   short('sh08-dinner', 'cooking 101: patience vs. max fire 🔥\nwhich one are you in the kitchen?', '#relatable #cooking #cozygames #pixelart #puchika'),
@@ -25,10 +27,31 @@ const CAL = [
   short('rl17-sorry', 'sorry door. sorry chair. sorry floor 🙇\nwhat’s the weirdest thing you’ve said sorry to?', '#relatable #peoplepleaser #cozygames #pixelart #puchika'),
   short('rl19-sink', 'it’s not dirty, it’s soaking 🍽️\nhow long has your mug been “soaking”?', '#relatable #dishes #adulting #pixelart #puchika'),
   short('rl12-bake', 'the video said “easy”. the video lied 🎂\nwhat’s your biggest baking fail?', '#bakingfail #relatable #cozygames #pixelart #puchika'),
-  short('rl15-walk', 'headphones on: music video. battery dead: just wet 🎧\nwhat song makes your walk a music video?', '#relatable #rainyday #cozyvibes #pixelart #puchika'),
+  short('rl15-walk', 'headphones on: music video. battery dead: everyone saw 🎧\nwhat song turns your walk into a music video?', '#relatable #rainyday #cozyvibes #pixelart #puchika'),
+  // pack 2 (25 Oct 2026): kalimba voices, three a day; goes out after the pack above
+  kshort('rl24-guests', 'guests in 10 minutes. the closet knows everything 🚪\nwhere do YOU hide the mess?', '#relatable #cleaning #cozygames #pixelart #puchika'),
+  kshort('rl22-bottle', 'bought a cute water bottle. drank from it once 💧\nhow many water bottles do you own? be honest', '#relatable #hydration #cozygames #pixelart #puchika'),
+  kshort('rl42-door', 'the sign said PULL. i pushed. for 5 minutes 🚪\nwhat’s your most embarrassing door moment?', '#relatable #awkward #cozygames #pixelart #puchika'),
+  kshort('rl29-pillow', 'found the perfect sleeping position at 3am ⏰\ncold side of the pillow or leg out of the blanket?', '#relatable #cantsleep #cozygames #pixelart #puchika'),
+  kshort('rl32-typing', '“typing...” for 5 minutes. then: “ok” 📱\nwhat’s the scariest text you can get?', '#relatable #overthinking #cozygames #pixelart #puchika'),
+  kshort('rl23-reply', 'replied 4 days later. so did she 💌\nsend this to the friend who replies like you', '#introvert #relatable #cozygames #pixelart #puchika'),
+  kshort('rl43-anything', '“i don’t mind, anything.” (says no to everything) 🍕\nwho decides the food in your house?', '#relatable #foodie #cozygames #pixelart #puchika'),
+  kshort('rl34-shower', 'shower concert: sold out. neighbor: not a fan 🎤\nwhat song do you sing in the shower?', '#relatable #showersinging #cozygames #pixelart #puchika'),
+  kshort('rl27-weekend', 'this weekend me: rests. next weekend me: does everything 🛋️\nwhat did you move to next weekend?', '#relatable #weekendvibes #cozygames #pixelart #puchika'),
+  kshort('rl28-charger', 'the charger only works at one angle. so i became a statue 🔌\nwhat’s your weirdest charging position?', '#relatable #phonebattery #cozygames #pixelart #puchika'),
+  kshort('rl35-selfie', '87 selfies. posted the first one 📸\nhow many photos do you take for one post?', '#relatable #selfie #cozygames #pixelart #puchika'),
+  kshort('rl40-tv', 'one hour of scrolling. episode 1 of my comfort show. again 📺\nwhat’s your comfort show?', '#comfortshow #relatable #cozynight #pixelart #puchika'),
+  kshort('rl30-cart', 'emptied my cart. saved so much money. for 1 minute 🛒\nhow many things are in your cart right now?', '#relatable #onlineshopping #cozygames #pixelart #puchika'),
+  kshort('rl26-selfcare', 'planned the perfect self-care night. lasted 2 minutes 🧖\nwhat’s in your self-care night?', '#selfcare #relatable #cozynight #pixelart #puchika'),
+  kshort('rl38-tidy', '5 minutes of tidying. 3 hours of old photos 🗂️\nwhat did you find the last time you cleaned?', '#relatable #cleaning #cozygames #pixelart #puchika'),
+  kshort('rl33-tabs', '47 tabs. i couldn’t name one. restored them all anyway 💻\nhow many tabs do you have open right now?', '#relatable #studytok #cozygames #pixelart #puchika'),
+  kshort('rl31-hobby', 'knitting person. painting person. ALL the hobbies person 🧶\nhow many hobbies have you started this year?', '#newhobby #relatable #cozygames #pixelart #puchika'),
+  kshort('rl39-gymfit', 'new gym clothes. new me. same sofa 💪\ndo you own more gym clothes than gym visits?', '#relatable #gymclothes #cozygames #pixelart #puchika'),
+  kshort('rl36-plants', '“just one plant.” three months later: a jungle 🌿\nhow many plants do you have?', '#plantmom #relatable #cozygames #pixelart #puchika'),
+  kshort('rl41-layers', '15°C outside. me: all my clothes at once 🧣\nare you always cold too?', '#relatable #alwayscold #cozygames #pixelart #puchika'),
   // Halloween: these go out only on their day
   short('rl20-candy', 'bought candy for the kids. ate it all by oct 30 🍬\nhow much halloween candy is left in your house?', '#halloween #halloweencandy #relatable #pixelart #puchika', '2026-10-30'),
   short('rl21-costume', 'planned my costume for a month. made it in 5 minutes 🐱\nwhat are you dressing up as this year?', '#halloween #halloweencostume #relatable #pixelart #puchika', '2026-10-31')
 ];
-// Two shorts a day: 10:00 and 18:00 UTC (13:00 and 21:00 in Turkey). lowWarn: the bot opens a GitHub issue when this many are left.
-const SETTINGS = {timesUTC: [10, 18], ramp: [], lowWarn: 4, minGapMinutes: 40, brakeTimesUTC: [18]};
+// Three shorts a day: 07:00, 13:00 and 18:00 UTC (10:00, 16:00 and 21:00 in Turkey). lowWarn: the bot opens a GitHub issue when this many are left.
+const SETTINGS = {timesUTC: [7, 13, 18], ramp: [], lowWarn: 6, minGapMinutes: 40, brakeTimesUTC: [18]};

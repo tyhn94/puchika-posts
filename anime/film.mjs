@@ -14,13 +14,13 @@ export async function filmAnime(browser, ep, out, opts = {}){
   const open = async vox => { await p.goto(base + (vox ? '&vox=' + encodeURIComponent(vox) : '')); await p.waitForSelector('body[data-ready]', {timeout: 90000}); };
   await open();
   fs.writeFileSync(path.join(out, 'info0.json'), JSON.stringify(await p.evaluate(() => info())));
-  execFileSync('python3', [path.join(HERE, opts.voice === 'babble' ? 'babble.py' : 'jvoice.py'), path.join(out, 'info0.json'), out], {stdio: 'inherit'});   // babble = the "pıt pıt" voices
+  execFileSync('python3', [path.join(HERE, ({babble: 'babble.py', kalimba: 'kalimba.py'})[opts.voice] || 'jvoice.py'), path.join(out, 'info0.json'), out], {stdio: 'inherit'});   // babble = the "pıt pıt" blips (Oct 2026 shorts), kalimba = the sweet melodic voices (from 25 Oct 2026)
   const vox = path.relative(HERE, path.join(out, 'voices.js'));
   await open(vox);
   const info = await p.evaluate(() => info());
   fs.writeFileSync(path.join(out, 'info.json'), JSON.stringify(info));
   fs.writeFileSync(path.join(out, 'bed.wav'), Buffer.from(await p.evaluate(() => renderAudio('vms')), 'base64'));
-  execFileSync('python3', [path.join(HERE, 'mix.py'), path.join(out, 'bed.wav'), path.join(out, 'info.json'), path.join(out, 'vox'), path.join(out, 'audio.wav'), String(opts.voiceGain || 1.5)]);
+  execFileSync('python3', [path.join(HERE, 'mix.py'), path.join(out, 'bed.wav'), path.join(out, 'info.json'), path.join(out, 'vox'), path.join(out, 'audio.wav'), String(opts.voiceGain || (opts.voice === 'kalimba' ? 1.9 : 1.5))]);
   await open(vox);
   const fdir = path.join(out, 'frames'); fs.rmSync(fdir, {recursive: true, force: true}); fs.mkdirSync(fdir);
   const N = Math.round(info.dur * 30);
@@ -48,8 +48,8 @@ if(process.argv[1] === fileURLToPath(import.meta.url)){
   const { chromium } = await import('playwright');
   const [cmd, ep, ts] = process.argv.slice(2);
   const b = await chromium.launch({args: ['--allow-file-access-from-files']});
-  const BAB = process.env.VOICE === 'babble', out = path.join(HERE, 'out', ep + (BAB ? '-pt' : ''));
-  if(cmd === 'film'){ const r = await filmAnime(b, ep, out, {checks: true, keep: !!process.env.KEEP, voice: BAB ? 'babble' : ''}); console.log(ep, r.dur.toFixed(1) + 's', r.errs.length ? 'ERRORS ' + [...new Set(r.errs)].join(' | ') : ''); }
+  const VO = process.env.VOICE || '', BAB = VO === 'babble', out = path.join(HERE, 'out', ep + ({babble: '-pt', kalimba: '-kb'}[VO] || ''));
+  if(cmd === 'film'){ const r = await filmAnime(b, ep, out, {checks: true, keep: !!process.env.KEEP, voice: VO}); console.log(ep, r.dur.toFixed(1) + 's', r.errs.length ? 'ERRORS ' + [...new Set(r.errs)].join(' | ') : ''); }
   else {
     const p = await b.newPage({viewport: {width: 1080, height: 1920}});
     const errs = []; p.on('pageerror', e => errs.push(e.message)); p.on('console', m => { if(m.type() === 'error') errs.push(m.text()); });

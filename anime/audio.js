@@ -129,6 +129,9 @@ function renderAudio(stems){
   SFX_BUS.gain.value = stems.indexOf('s') >= 0 ? (EPISODE.mix && EPISODE.mix.sfx || 1) : 0;
   LINES.forEach(L => { if(!L.clip) synthLine(L, VOICE_BUS); });
   const st = n => { const s = SHOTS.find(s => s.name === n); if(!s) throw new Error('no shot ' + n); return s.start; };
+  // shorts: the music steps back while someone talks (İdil, 26 Oct 2026: voices got lost in the music)
+  if(EPISODE.short && stems.indexOf('m') >= 0){ const g = MUSIC_BUS.gain, base = g.value, lo = base * (EPISODE.duck != null ? EPISODE.duck : .55);
+    g.setValueAtTime(base, 0); LINES.forEach(L => { const t0 = Math.max(0, L.T - .06), t1 = (L.end || L.T + (L.d || 1)) + .08; g.setTargetAtTime(lo, t0, .025); g.setTargetAtTime(base, t1, .12); }); }
   (typeof EPISODE.music === 'function' ? EPISODE.music(st) : EPISODE.music || []).forEach(m => { if(m[0] === 'drone') drone(m[1], m[2], m[3], m[4]); else music(m[0], m[1], m[2], m[3]); });
   CUES.forEach(([t, name, arg]) => { if(SFX[name]) at(t, () => SFX[name](arg)); else console.error('no sfx ' + name); });
   return ac.startRendering().then(buf => {
