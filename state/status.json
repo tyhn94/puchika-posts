@@ -1,9 +1,14 @@
 {
   "ok": true,
-  "at": "2026-10-24T21:59:51.744Z",
+  "at": "2026-10-25T13:58:23.118Z",
   "mode": "auto",
   "problems": [],
   "account": "puchikafriends",
-  "remaining": 7,
+  "posted": {
+    "id": "rl08-onmyway",
+    "mediaId": "18642747382052019",
+    "permalink": "https://www.instagram.com/reel/De63rP_ARvy/"
+  },
+  "remaining": 6,
   "perDay": 2
 }
