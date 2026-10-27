@@ -104,6 +104,11 @@
       "date": "2026-10-26",
       "followers": 3,
       "posts": 37
+    },
+    {
+      "date": "2026-10-27",
+      "followers": 3,
+      "posts": 40
     }
   ],
   "posts": {
@@ -532,12 +537,12 @@
       "permalink": "https://www.instagram.com/reel/De4QkacjT_5/",
       "likes": 36,
       "comments": 0,
-      "reach": 1091,
+      "reach": 1093,
       "saved": 2,
       "shares": 1,
-      "views": 1637,
+      "views": 1638,
       "total_interactions": 39,
-      "ig_reels_avg_watch_time": 10108
+      "ig_reels_avg_watch_time": 10100
     },
     "rl16-camera": {
       "id": "rl16-camera",
@@ -560,12 +565,12 @@
       "permalink": "https://www.instagram.com/reel/De63rP_ARvy/",
       "likes": 1,
       "comments": 0,
-      "reach": 121,
+      "reach": 122,
       "saved": 0,
       "shares": 0,
-      "views": 153,
+      "views": 154,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 7368
+      "ig_reels_avg_watch_time": 7332
     },
     "rl17-sorry": {
       "id": "rl17-sorry",
@@ -574,12 +579,12 @@
       "permalink": "https://www.instagram.com/reel/De7hVNEk9Rg/",
       "likes": 38,
       "comments": 3,
-      "reach": 1096,
+      "reach": 1098,
       "saved": 2,
       "shares": 1,
-      "views": 1594,
+      "views": 1605,
       "total_interactions": 51,
-      "ig_reels_avg_watch_time": 10320
+      "ig_reels_avg_watch_time": 10355
     },
     "rl19-sink": {
       "id": "rl19-sink",
@@ -593,13 +598,55 @@
       "shares": 0,
       "views": 161,
       "total_interactions": 2,
-      "ig_reels_avg_watch_time": 5519
+      "ig_reels_avg_watch_time": 5492
     },
     "rl12-bake": {
       "id": "rl12-bake",
       "at": "2026-10-26T11:34:20.558Z",
       "type": "reel",
       "permalink": "https://www.instagram.com/reel/De9L_oSlGvP/",
+      "likes": 1,
+      "comments": 0,
+      "reach": 143,
+      "saved": 0,
+      "shares": 0,
+      "views": 195,
+      "total_interactions": 1,
+      "ig_reels_avg_watch_time": 7918
+    },
+    "rl15-walk": {
+      "id": "rl15-walk",
+      "at": "2026-10-26T17:42:05.003Z",
+      "type": "reel",
+      "permalink": "https://www.instagram.com/reel/De92Am2jWhU/",
+      "likes": 2,
+      "comments": 0,
+      "reach": 130,
+      "saved": 0,
+      "shares": 0,
+      "views": 169,
+      "total_interactions": 3,
+      "ig_reels_avg_watch_time": 7134
+    },
+    "rl24-guests": {
+      "id": "rl24-guests",
+      "at": "2026-10-26T21:57:50.066Z",
+      "type": "reel",
+      "permalink": "https://www.instagram.com/reel/De-TSf9k81c/",
+      "likes": 8,
+      "comments": 0,
+      "reach": 751,
+      "saved": 1,
+      "shares": 0,
+      "views": 1083,
+      "total_interactions": 9,
+      "ig_reels_avg_watch_time": 10683
+    },
+    "rl22-bottle": {
+      "id": "rl22-bottle",
+      "at": "2026-10-27T12:46:33.539Z",
+      "type": "reel",
+      "permalink": "https://www.instagram.com/reel/De_4_WFCA1W/",
       "likes": 0,
       "comments": 0,
       "reach": 0,
@@ -610,5 +657,5 @@
       "ig_reels_avg_watch_time": 0
     }
   },
-  "updatedAt": "2026-10-26T11:34:20.558Z"
+  "updatedAt": "2026-10-27T12:46:33.539Z"
 }

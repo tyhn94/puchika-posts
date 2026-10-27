@@ -1,9 +1,14 @@
 {
   "ok": true,
-  "at": "2026-10-27T01:34:02.481Z",
+  "at": "2026-10-27T12:46:33.539Z",
   "mode": "auto",
   "problems": [],
   "account": "puchikafriends",
-  "remaining": 21,
+  "posted": {
+    "id": "rl22-bottle",
+    "mediaId": "18201157942383372",
+    "permalink": "https://www.instagram.com/reel/De_4_WFCA1W/"
+  },
+  "remaining": 20,
   "perDay": 3
 }
