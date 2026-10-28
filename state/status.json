@@ -1,9 +1,14 @@
 {
   "ok": true,
-  "at": "2026-10-28T01:51:14.972Z",
+  "at": "2026-10-28T07:30:23.964Z",
   "mode": "auto",
   "problems": [],
   "account": "puchikafriends",
-  "remaining": 18,
+  "posted": {
+    "id": "rl32-typing",
+    "mediaId": "18105426557201063",
+    "permalink": "https://www.instagram.com/reel/DfB5obTDxZQ/"
+  },
+  "remaining": 17,
   "perDay": 3
 }
