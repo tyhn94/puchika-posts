@@ -335,6 +335,12 @@
       "permalink": "https://www.instagram.com/reel/DfH9inVgFyg/",
       "type": "reel",
       "at": "2026-10-30T15:59:32.444Z"
+    },
+    "rl40-tv": {
+      "mediaId": "18488595478129281",
+      "permalink": "https://www.instagram.com/reel/DfIfGupmtCD/",
+      "type": "reel",
+      "at": "2026-10-30T20:53:34.006Z"
     }
   },
   "failed": {},
@@ -362,7 +368,7 @@
     "2026-10-27": 3,
     "2026-10-28": 3,
     "2026-10-29": 3,
-    "2026-10-30": 2
+    "2026-10-30": 3
   },
   "notified": {
     "low": "2026-10-15T18:21:25.578Z",
