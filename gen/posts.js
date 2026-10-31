@@ -1,10 +1,12 @@
 // Puchi & Chika: the RELATABLE anime shorts (bible v3, 18 Oct 2026). Every post is one short (anime/eps/<ep>.js),
-// filmed on GitHub by bot/render.mjs with the "pıt pıt" voices (pack 1) or the kalimba voices (pack 2 on). The rules live in İdil's doc "Puchika Reels Stratejisi".
+// filmed on GitHub by bot/render.mjs with the "pıt pıt" voices (pack 1), the kalimba voices (pack 2) or the clicky ASMR voices (from 31 Oct 2026). The rules live in İdil's doc "Puchika Reels Stratejisi".
 // Every video is a real habit the tired cozy girl does herself ("aaa, this is me"); one character or both.
 // Captions: 2-4 short lines and a real question, max 5 hashtags, no tag/comment bait. The FREE / link-in-bio line is added automatically.
 const short = (id, lines, tags, date) => Object.assign({id, type: 'anime', ep: id, voice: 'babble', caption: lines + '\n\n' + tags}, date ? {date} : {});
 // from pack 2 (25 Oct 2026) the shorts speak with the sweet melodic kalimba voices
 const kshort = (id, lines, tags, date) => Object.assign(short(id, lines, tags, date), {voice: 'kalimba'});
+// from 31 Oct 2026 (the rest of pack 2 on): the soft clicky ASMR voices, Puchi a glass "tink", Chika a bubble "blip"
+const cshort = (id, lines, tags, date) => Object.assign(short(id, lines, tags, date), {voice: 'clicks'});
 const CAL = [
   // already posted (kept so their ids stay known)
   short('sh08-dinner', 'cooking 101: patience vs. max fire 🔥\nwhich one are you in the kitchen?', '#relatable #cooking #cozygames #pixelart #puchika'),
@@ -41,14 +43,15 @@ const CAL = [
   kshort('rl28-charger', 'the charger only works at one angle. so i became a statue 🔌\nwhat’s your weirdest charging position?', '#relatable #phonebattery #cozygames #pixelart #puchika'),
   kshort('rl35-selfie', '87 selfies. posted the first one 📸\nhow many photos do you take for one post?', '#relatable #selfie #cozygames #pixelart #puchika'),
   kshort('rl40-tv', 'one hour of scrolling. episode 1 of my comfort show. again 📺\nwhat’s your comfort show?', '#comfortshow #relatable #cozynight #pixelart #puchika'),
-  kshort('rl30-cart', 'emptied my cart. saved so much money. for 1 minute 🛒\nhow many things are in your cart right now?', '#relatable #onlineshopping #cozygames #pixelart #puchika'),
-  kshort('rl26-selfcare', 'planned the perfect self-care night. lasted 2 minutes 🧖\nwhat’s in your self-care night?', '#selfcare #relatable #cozynight #pixelart #puchika'),
-  kshort('rl38-tidy', '5 minutes of tidying. 3 hours of old photos 🗂️\nwhat did you find the last time you cleaned?', '#relatable #cleaning #cozygames #pixelart #puchika'),
-  kshort('rl33-tabs', '47 tabs. i couldn’t name one. restored them all anyway 💻\nhow many tabs do you have open right now?', '#relatable #studytok #cozygames #pixelart #puchika'),
-  kshort('rl31-hobby', 'knitting person. painting person. ALL the hobbies person 🧶\nhow many hobbies have you started this year?', '#newhobby #relatable #cozygames #pixelart #puchika'),
-  kshort('rl39-gymfit', 'new gym clothes. new me. same sofa 💪\ndo you own more gym clothes than gym visits?', '#relatable #gymclothes #cozygames #pixelart #puchika'),
-  kshort('rl36-plants', '“just one plant.” three months later: a jungle 🌿\nhow many plants do you have?', '#plantmom #relatable #cozygames #pixelart #puchika'),
-  kshort('rl41-layers', '15°C outside. me: all my clothes at once 🧣\nare you always cold too?', '#relatable #alwayscold #cozygames #pixelart #puchika'),
+  // not posted yet on 31 Oct 2026: these go out with the new clicky voices
+  cshort('rl30-cart', 'emptied my cart. saved so much money. for 1 minute 🛒\nhow many things are in your cart right now?', '#relatable #onlineshopping #cozygames #pixelart #puchika'),
+  cshort('rl26-selfcare', 'planned the perfect self-care night. lasted 2 minutes 🧖\nwhat’s in your self-care night?', '#selfcare #relatable #cozynight #pixelart #puchika'),
+  cshort('rl38-tidy', '5 minutes of tidying. 3 hours of old photos 🗂️\nwhat did you find the last time you cleaned?', '#relatable #cleaning #cozygames #pixelart #puchika'),
+  cshort('rl33-tabs', '47 tabs. i couldn’t name one. restored them all anyway 💻\nhow many tabs do you have open right now?', '#relatable #studytok #cozygames #pixelart #puchika'),
+  cshort('rl31-hobby', 'knitting person. painting person. ALL the hobbies person 🧶\nhow many hobbies have you started this year?', '#newhobby #relatable #cozygames #pixelart #puchika'),
+  cshort('rl39-gymfit', 'new gym clothes. new me. same sofa 💪\ndo you own more gym clothes than gym visits?', '#relatable #gymclothes #cozygames #pixelart #puchika'),
+  cshort('rl36-plants', '“just one plant.” three months later: a jungle 🌿\nhow many plants do you have?', '#plantmom #relatable #cozygames #pixelart #puchika'),
+  cshort('rl41-layers', '15°C outside. me: all my clothes at once 🧣\nare you always cold too?', '#relatable #alwayscold #cozygames #pixelart #puchika'),
   // Halloween: these go out only on their day
   short('rl20-candy', 'bought candy for the kids. ate it all by oct 30 🍬\nhow much halloween candy is left in your house?', '#halloween #halloweencandy #relatable #pixelart #puchika', '2026-10-30'),
   short('rl21-costume', 'planned my costume for a month. made it in 5 minutes 🐱\nwhat are you dressing up as this year?', '#halloween #halloweencostume #relatable #pixelart #puchika', '2026-10-31')

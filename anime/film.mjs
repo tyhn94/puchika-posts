@@ -6,6 +6,34 @@ import path from 'node:path';
 import { execFileSync, spawnSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 const HERE = path.dirname(fileURLToPath(import.meta.url));
+// The clicky voices (clickvoice.js): every line is rendered in a blank page with the voice's own little sound engine, exactly as in the
+// approved audio-only tests (31 Oct 2026). The voices are lifted ×3.84, unless the loudest click of the episode would pass 0.42: then the
+// voices AND the music come down by the same factor (returned, for mix.py), so a click is never clipped and the balance stays.
+async function clickVoices(browser, infoPath, out){
+  const SR = 48000, info = JSON.parse(fs.readFileSync(infoPath, 'utf8')), lines = info.lines.filter(L => L.id);
+  const od = path.join(out, 'vox'); fs.mkdirSync(od, {recursive: true});
+  const p = await browser.newPage(); await p.setContent('<html><body></body></html>'); await p.addScriptTag({path: path.join(HERE, 'clickvoice.js')});
+  const raw = {};
+  for(const L of lines){
+    const b = Buffer.from(await p.evaluate(([w, t]) => clickLine(w, t), [L.who, L.en || 'mm']), 'base64');
+    const a = new Float64Array(b.length / 2); for(let i = 0; i < a.length; i++) a[i] = b.readInt16LE(i * 2) / 32768; raw[L.id] = a;
+  }
+  await p.close();
+  const G0 = 3.84; let pk = 0; for(const id in raw) for(const v of raw[id]) pk = Math.max(pk, Math.abs(v) * G0);
+  const r = Math.min(1, .42 / (pk || 1)), G = G0 * r, clips = {};
+  for(const L of lines){
+    const y = raw[L.id].map(v => v * G * ((L.mood || '') === 'whisper' ? .4 : 1)), n = y.length, k = Math.min(n, Math.floor(.06 * SR));
+    for(let i = 0; i < k; i++) y[n - k + i] *= 1 - i / (k - 1);
+    const pcm = Buffer.alloc(n * 2); for(let i = 0; i < n; i++) pcm.writeInt16LE(Math.trunc(Math.max(-1, Math.min(1, y[i])) * 32767), i * 2);
+    const h = Buffer.alloc(44);
+    h.write('RIFF', 0); h.writeUInt32LE(36 + pcm.length, 4); h.write('WAVEfmt ', 8); h.writeUInt32LE(16, 16); h.writeUInt16LE(1, 20); h.writeUInt16LE(1, 22); h.writeUInt32LE(SR, 24); h.writeUInt32LE(SR * 2, 28); h.writeUInt16LE(2, 32); h.writeUInt16LE(16, 34); h.write('data', 36); h.writeUInt32LE(pcm.length, 40);
+    fs.writeFileSync(path.join(od, L.id + '.wav'), Buffer.concat([h, pcm]));
+    const fr = SR / 30, e = []; for(let i = 0; i < n; i += fr){ let s = 0, m = 0; for(let j = i; j < Math.min(n, i + fr); j++){ s += y[j] * y[j]; m++; } e.push(Math.sqrt(s / m)); }
+    const mx = Math.max(...e) || 1; clips[L.id] = {dur: Math.round(n / SR * 1000) / 1000, env: e.map(v => Math.round(v / mx * 100) / 100)};
+  }
+  fs.writeFileSync(path.join(out, 'voices.js'), 'const VOICE_CLIPS = ' + JSON.stringify(clips) + ';\n');
+  return r;
+}
 export async function filmAnime(browser, ep, out, opts = {}){
   fs.mkdirSync(out, {recursive: true});
   const p = await browser.newPage({viewport: {width: 1080, height: 1920}, deviceScaleFactor: 1});
@@ -14,13 +42,16 @@ export async function filmAnime(browser, ep, out, opts = {}){
   const open = async vox => { await p.goto(base + (vox ? '&vox=' + encodeURIComponent(vox) : '')); await p.waitForSelector('body[data-ready]', {timeout: 90000}); };
   await open();
   fs.writeFileSync(path.join(out, 'info0.json'), JSON.stringify(await p.evaluate(() => info())));
-  execFileSync('python3', [path.join(HERE, ({babble: 'babble.py', kalimba: 'kalimba.py'})[opts.voice] || 'jvoice.py'), path.join(out, 'info0.json'), out], {stdio: 'inherit'});   // babble = the "pıt pıt" blips (Oct 2026 shorts), kalimba = the sweet melodic voices (from 25 Oct 2026)
+  let bedGain = 1;
+  if(opts.voice === 'clicks') bedGain = await clickVoices(browser, path.join(out, 'info0.json'), out);   // clicks = the soft clicky ASMR voices (from 31 Oct 2026)
+  else execFileSync('python3', [path.join(HERE, ({babble: 'babble.py', kalimba: 'kalimba.py'})[opts.voice] || 'jvoice.py'), path.join(out, 'info0.json'), out], {stdio: 'inherit'});   // babble = the "pıt pıt" blips (Oct 2026 shorts), kalimba = the sweet melodic voices (from 25 Oct 2026)
   const vox = path.relative(HERE, path.join(out, 'voices.js'));
   await open(vox);
   const info = await p.evaluate(() => info());
   fs.writeFileSync(path.join(out, 'info.json'), JSON.stringify(info));
   fs.writeFileSync(path.join(out, 'bed.wav'), Buffer.from(await p.evaluate(() => renderAudio('vms')), 'base64'));
-  execFileSync('python3', [path.join(HERE, 'mix.py'), path.join(out, 'bed.wav'), path.join(out, 'info.json'), path.join(out, 'vox'), path.join(out, 'audio.wav'), String(opts.voiceGain || (opts.voice === 'kalimba' ? 1.9 : 1.5))]);
+  execFileSync('python3', [path.join(HERE, 'mix.py'), path.join(out, 'bed.wav'), path.join(out, 'info.json'), path.join(out, 'vox'), path.join(out, 'audio.wav'), String(opts.voiceGain || (opts.voice === 'kalimba' || opts.voice === 'clicks' ? 1.9 : 1.5))]
+    .concat(opts.voice === 'clicks' ? [String(bedGain), '0'] : []));   // clicks: the music comes down with the voices, and no extra echo taps (the clicks have their own little room)
   await open(vox);
   const fdir = path.join(out, 'frames'); fs.rmSync(fdir, {recursive: true, force: true}); fs.mkdirSync(fdir);
   const N = Math.round(info.dur * 30);
@@ -48,7 +79,7 @@ if(process.argv[1] === fileURLToPath(import.meta.url)){
   const { chromium } = await import('playwright');
   const [cmd, ep, ts] = process.argv.slice(2);
   const b = await chromium.launch({args: ['--allow-file-access-from-files']});
-  const VO = process.env.VOICE || '', BAB = VO === 'babble', out = path.join(HERE, 'out', ep + ({babble: '-pt', kalimba: '-kb'}[VO] || ''));
+  const VO = process.env.VOICE || '', BAB = VO === 'babble', out = path.join(HERE, 'out', ep + ({babble: '-pt', kalimba: '-kb', clicks: '-ck'}[VO] || ''));
   if(cmd === 'film'){ const r = await filmAnime(b, ep, out, {checks: true, keep: !!process.env.KEEP, voice: VO}); console.log(ep, r.dur.toFixed(1) + 's', r.errs.length ? 'ERRORS ' + [...new Set(r.errs)].join(' | ') : ''); }
   else {
     const p = await b.newPage({viewport: {width: 1080, height: 1920}});
