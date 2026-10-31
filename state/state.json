@@ -341,6 +341,12 @@
       "permalink": "https://www.instagram.com/reel/DfIfGupmtCD/",
       "type": "reel",
       "at": "2026-10-30T20:53:34.006Z"
+    },
+    "rl21-costume": {
+      "mediaId": "18119726711466841",
+      "permalink": "https://www.instagram.com/reel/DfKB3qQD9Qs/",
+      "type": "reel",
+      "at": "2026-10-31T11:16:35.788Z"
     }
   },
   "failed": {},
@@ -368,7 +374,8 @@
     "2026-10-27": 3,
     "2026-10-28": 3,
     "2026-10-29": 3,
-    "2026-10-30": 3
+    "2026-10-30": 3,
+    "2026-10-31": 1
   },
   "notified": {
     "low": "2026-10-15T18:21:25.578Z",
