@@ -129,6 +129,11 @@
       "date": "2026-10-31",
       "followers": 5,
       "posts": 54
+    },
+    {
+      "date": "2026-11-01",
+      "followers": 6,
+      "posts": 57
     }
   ],
   "posts": {
@@ -571,12 +576,12 @@
       "permalink": "https://www.instagram.com/reel/De45APiCZ16/",
       "likes": 18,
       "comments": 0,
-      "reach": 1105,
+      "reach": 1107,
       "saved": 0,
       "shares": 0,
-      "views": 1723,
+      "views": 1724,
       "total_interactions": 19,
-      "ig_reels_avg_watch_time": 12526
+      "ig_reels_avg_watch_time": 12521
     },
     "rl08-onmyway": {
       "id": "rl08-onmyway",
@@ -711,12 +716,12 @@
       "permalink": "https://www.instagram.com/reel/DfB5obTDxZQ/",
       "likes": 71,
       "comments": 0,
-      "reach": 1083,
+      "reach": 1086,
       "saved": 4,
       "shares": 4,
-      "views": 1750,
+      "views": 1754,
       "total_interactions": 90,
-      "ig_reels_avg_watch_time": 12385
+      "ig_reels_avg_watch_time": 12384
     },
     "rl23-reply": {
       "id": "rl23-reply",
@@ -739,12 +744,12 @@
       "permalink": "https://www.instagram.com/reel/DfDPFVcDxtd/",
       "likes": 28,
       "comments": 0,
-      "reach": 1064,
+      "reach": 1065,
       "saved": 0,
       "shares": 0,
-      "views": 1488,
+      "views": 1490,
       "total_interactions": 29,
-      "ig_reels_avg_watch_time": 11000
+      "ig_reels_avg_watch_time": 11011
     },
     "rl34-shower": {
       "id": "rl34-shower",
@@ -756,9 +761,9 @@
       "reach": 1098,
       "saved": 4,
       "shares": 2,
-      "views": 1580,
+      "views": 1581,
       "total_interactions": 90,
-      "ig_reels_avg_watch_time": 10629
+      "ig_reels_avg_watch_time": 10623
     },
     "rl27-weekend": {
       "id": "rl27-weekend",
@@ -770,9 +775,9 @@
       "reach": 849,
       "saved": 0,
       "shares": 0,
-      "views": 1213,
+      "views": 1216,
       "total_interactions": 32,
-      "ig_reels_avg_watch_time": 9214
+      "ig_reels_avg_watch_time": 9218
     },
     "rl28-charger": {
       "id": "rl28-charger",
@@ -786,7 +791,7 @@
       "shares": 1,
       "views": 1671,
       "total_interactions": 34,
-      "ig_reels_avg_watch_time": 12819
+      "ig_reels_avg_watch_time": 12808
     },
     "rl20-candy": {
       "id": "rl20-candy",
@@ -798,9 +803,9 @@
       "reach": 1093,
       "saved": 1,
       "shares": 0,
-      "views": 1628,
+      "views": 1632,
       "total_interactions": 26,
-      "ig_reels_avg_watch_time": 11294
+      "ig_reels_avg_watch_time": 11288
     },
     "rl35-selfie": {
       "id": "rl35-selfie",
@@ -809,12 +814,12 @@
       "permalink": "https://www.instagram.com/reel/DfH9inVgFyg/",
       "likes": 35,
       "comments": 0,
-      "reach": 1056,
+      "reach": 1058,
       "saved": 2,
       "shares": 0,
-      "views": 1481,
+      "views": 1482,
       "total_interactions": 40,
-      "ig_reels_avg_watch_time": 9509
+      "ig_reels_avg_watch_time": 9495
     },
     "rl40-tv": {
       "id": "rl40-tv",
@@ -823,12 +828,12 @@
       "permalink": "https://www.instagram.com/reel/DfIfGupmtCD/",
       "likes": 13,
       "comments": 0,
-      "reach": 1044,
+      "reach": 1046,
       "saved": 1,
       "shares": 2,
       "views": 1530,
       "total_interactions": 16,
-      "ig_reels_avg_watch_time": 12816
+      "ig_reels_avg_watch_time": 12794
     },
     "rl21-costume": {
       "id": "rl21-costume",
@@ -837,18 +842,60 @@
       "permalink": "https://www.instagram.com/reel/DfKB3qQD9Qs/",
       "likes": 1,
       "comments": 0,
-      "reach": 169,
+      "reach": 171,
       "saved": 0,
       "shares": 0,
-      "views": 240,
+      "views": 244,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 6356
+      "ig_reels_avg_watch_time": 6446
     },
     "rl30-cart": {
       "id": "rl30-cart",
       "at": "2026-10-31T16:10:48.782Z",
       "type": "reel",
       "permalink": "https://www.instagram.com/reel/DfKjp90j2bD/",
+      "likes": 12,
+      "comments": 0,
+      "reach": 467,
+      "saved": 0,
+      "shares": 1,
+      "views": 644,
+      "total_interactions": 13,
+      "ig_reels_avg_watch_time": 9556
+    },
+    "rl26-selfcare": {
+      "id": "rl26-selfcare",
+      "at": "2026-10-31T20:04:04.942Z",
+      "type": "reel",
+      "permalink": "https://www.instagram.com/reel/DfK-S6kDR1C/",
+      "likes": 28,
+      "comments": 0,
+      "reach": 747,
+      "saved": 1,
+      "shares": 0,
+      "views": 1058,
+      "total_interactions": 30,
+      "ig_reels_avg_watch_time": 8688
+    },
+    "rl38-tidy": {
+      "id": "rl38-tidy",
+      "at": "2026-11-01T09:47:21.121Z",
+      "type": "reel",
+      "permalink": "https://www.instagram.com/reel/DfMcdAnga6G/",
+      "likes": 2,
+      "comments": 0,
+      "reach": 173,
+      "saved": 0,
+      "shares": 0,
+      "views": 217,
+      "total_interactions": 2,
+      "ig_reels_avg_watch_time": 5530
+    },
+    "rl33-tabs": {
+      "id": "rl33-tabs",
+      "at": "2026-11-01T16:28:16.384Z",
+      "type": "reel",
+      "permalink": "https://www.instagram.com/reel/DfNKVieCDeW/",
       "likes": 0,
       "comments": 0,
       "reach": 0,
@@ -859,5 +906,5 @@
       "ig_reels_avg_watch_time": 0
     }
   },
-  "updatedAt": "2026-10-31T16:10:48.782Z"
+  "updatedAt": "2026-11-01T16:28:16.384Z"
 }
