@@ -371,6 +371,12 @@
       "permalink": "https://www.instagram.com/reel/DfNKVieCDeW/",
       "type": "reel",
       "at": "2026-11-01T16:28:16.384Z"
+    },
+    "rl31-hobby": {
+      "mediaId": "17951835759056206",
+      "permalink": "https://www.instagram.com/reel/DfNoxw9AU7m/",
+      "type": "reel",
+      "at": "2026-11-01T20:54:14.608Z"
     }
   },
   "failed": {},
@@ -400,7 +406,7 @@
     "2026-10-29": 3,
     "2026-10-30": 3,
     "2026-10-31": 3,
-    "2026-11-01": 2
+    "2026-11-01": 3
   },
   "notified": {
     "low": "2026-10-31T20:04:04.942Z",
