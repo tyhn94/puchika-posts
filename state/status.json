@@ -1,9 +1,14 @@
 {
   "ok": true,
-  "at": "2026-10-31T23:31:12.768Z",
+  "at": "2026-11-01T09:47:21.121Z",
   "mode": "auto",
   "problems": [],
   "account": "puchikafriends",
-  "remaining": 6,
+  "posted": {
+    "id": "rl38-tidy",
+    "mediaId": "18188125186413312",
+    "permalink": "https://www.instagram.com/reel/DfMcdAnga6G/"
+  },
+  "remaining": 5,
   "perDay": 3
 }
