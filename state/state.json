@@ -377,6 +377,12 @@
       "permalink": "https://www.instagram.com/reel/DfNoxw9AU7m/",
       "type": "reel",
       "at": "2026-11-01T20:54:14.608Z"
+    },
+    "rl39-gymfit": {
+      "mediaId": "18105424253376706",
+      "permalink": "https://www.instagram.com/reel/DfPtTGsEbie/",
+      "type": "reel",
+      "at": "2026-11-02T16:12:14.720Z"
     }
   },
   "failed": {},
@@ -406,7 +412,8 @@
     "2026-10-29": 3,
     "2026-10-30": 3,
     "2026-10-31": 3,
-    "2026-11-01": 3
+    "2026-11-01": 3,
+    "2026-11-02": 1
   },
   "notified": {
     "low": "2026-10-31T20:04:04.942Z",
@@ -416,6 +423,6 @@
   "refreshTriedAt": "2026-10-30T15:59:32.444Z",
   "refreshedAt": "2026-10-30T15:59:32.444Z",
   "tokenExpiresAt": "2026-12-29T15:59:32.444Z",
-  "insightsAt": "2026-11-01T16:28:16.384Z",
+  "insightsAt": "2026-11-02T16:12:14.720Z",
   "setupFails": 0
 }

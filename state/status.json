@@ -1,9 +1,14 @@
 {
   "ok": true,
-  "at": "2026-11-01T23:58:07.341Z",
+  "at": "2026-11-02T16:12:14.720Z",
   "mode": "auto",
   "problems": [],
   "account": "puchikafriends",
-  "remaining": 3,
+  "posted": {
+    "id": "rl39-gymfit",
+    "mediaId": "18105424253376706",
+    "permalink": "https://www.instagram.com/reel/DfPtTGsEbie/"
+  },
+  "remaining": 2,
   "perDay": 3
 }
