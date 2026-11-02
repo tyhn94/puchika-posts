@@ -383,6 +383,12 @@
       "permalink": "https://www.instagram.com/reel/DfPtTGsEbie/",
       "type": "reel",
       "at": "2026-11-02T16:12:14.720Z"
+    },
+    "rl36-plants": {
+      "mediaId": "18113365007467665",
+      "permalink": "https://www.instagram.com/reel/DfQgIBaEtva/",
+      "type": "reel",
+      "at": "2026-11-02T23:36:24.544Z"
     }
   },
   "failed": {},
@@ -413,7 +419,7 @@
     "2026-10-30": 3,
     "2026-10-31": 3,
     "2026-11-01": 3,
-    "2026-11-02": 1
+    "2026-11-02": 2
   },
   "notified": {
     "low": "2026-10-31T20:04:04.942Z",
