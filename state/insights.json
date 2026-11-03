@@ -139,6 +139,11 @@
       "date": "2026-11-02",
       "followers": 6,
       "posts": 59
+    },
+    {
+      "date": "2026-11-03",
+      "followers": 6,
+      "posts": 62
     }
   ],
   "posts": {
@@ -766,9 +771,9 @@
       "reach": 1100,
       "saved": 4,
       "shares": 2,
-      "views": 1584,
+      "views": 1585,
       "total_interactions": 90,
-      "ig_reels_avg_watch_time": 10628
+      "ig_reels_avg_watch_time": 10622
     },
     "rl27-weekend": {
       "id": "rl27-weekend",
@@ -808,9 +813,9 @@
       "reach": 1093,
       "saved": 1,
       "shares": 0,
-      "views": 1633,
+      "views": 1637,
       "total_interactions": 26,
-      "ig_reels_avg_watch_time": 11271
+      "ig_reels_avg_watch_time": 11281
     },
     "rl35-selfie": {
       "id": "rl35-selfie",
@@ -875,12 +880,12 @@
       "permalink": "https://www.instagram.com/reel/DfK-S6kDR1C/",
       "likes": 32,
       "comments": 0,
-      "reach": 773,
+      "reach": 775,
       "saved": 1,
       "shares": 0,
-      "views": 1101,
+      "views": 1102,
       "total_interactions": 34,
-      "ig_reels_avg_watch_time": 8880
+      "ig_reels_avg_watch_time": 8870
     },
     "rl38-tidy": {
       "id": "rl38-tidy",
@@ -889,7 +894,7 @@
       "permalink": "https://www.instagram.com/reel/DfMcdAnga6G/",
       "likes": 3,
       "comments": 0,
-      "reach": 186,
+      "reach": 187,
       "saved": 0,
       "shares": 0,
       "views": 236,
@@ -903,26 +908,26 @@
       "permalink": "https://www.instagram.com/reel/DfNKVieCDeW/",
       "likes": 7,
       "comments": 0,
-      "reach": 414,
+      "reach": 417,
       "saved": 1,
       "shares": 0,
-      "views": 596,
+      "views": 598,
       "total_interactions": 8,
-      "ig_reels_avg_watch_time": 10030
+      "ig_reels_avg_watch_time": 10001
     },
     "rl31-hobby": {
       "id": "rl31-hobby",
       "at": "2026-11-01T20:54:14.608Z",
       "type": "reel",
       "permalink": "https://www.instagram.com/reel/DfNoxw9AU7m/",
-      "likes": 4,
+      "likes": 5,
       "comments": 0,
-      "reach": 174,
+      "reach": 192,
       "saved": 0,
       "shares": 0,
-      "views": 232,
-      "total_interactions": 5,
-      "ig_reels_avg_watch_time": 7515
+      "views": 256,
+      "total_interactions": 6,
+      "ig_reels_avg_watch_time": 7730
     },
     "rl39-gymfit": {
       "id": "rl39-gymfit",
@@ -931,13 +936,41 @@
       "permalink": "https://www.instagram.com/reel/DfPtTGsEbie/",
       "likes": 0,
       "comments": 0,
-      "reach": 0,
+      "reach": 113,
       "saved": 0,
       "shares": 0,
-      "views": 0,
+      "views": 136,
       "total_interactions": 0,
-      "ig_reels_avg_watch_time": 0
+      "ig_reels_avg_watch_time": 5431
+    },
+    "rl36-plants": {
+      "id": "rl36-plants",
+      "at": "2026-11-02T23:36:24.544Z",
+      "type": "reel",
+      "permalink": "https://www.instagram.com/reel/DfQgIBaEtva/",
+      "likes": 2,
+      "comments": 0,
+      "reach": 139,
+      "saved": 0,
+      "shares": 0,
+      "views": 173,
+      "total_interactions": 2,
+      "ig_reels_avg_watch_time": 6036
+    },
+    "rl41-layers": {
+      "id": "rl41-layers",
+      "at": "2026-11-03T11:59:36.525Z",
+      "type": "reel",
+      "permalink": "https://www.instagram.com/reel/DfR1LZPDd2u/",
+      "likes": 0,
+      "comments": 0,
+      "reach": 105,
+      "saved": 0,
+      "shares": 0,
+      "views": 119,
+      "total_interactions": 0,
+      "ig_reels_avg_watch_time": 4677
     }
   },
-  "updatedAt": "2026-11-02T16:12:14.720Z"
+  "updatedAt": "2026-11-03T19:32:41.200Z"
 }
