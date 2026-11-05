@@ -1,9 +1,14 @@
 {
   "ok": true,
-  "at": "2026-11-03T19:32:41.200Z",
-  "mode": "auto",
+  "at": "2026-11-05T12:56:09.265Z",
+  "mode": "post-now",
   "problems": [],
   "account": "puchikafriends",
-  "remaining": 0,
+  "posted": {
+    "id": "rlx3-youtoo",
+    "mediaId": "18146308600601355",
+    "permalink": "https://www.instagram.com/reel/DfXFPXTgUu5/"
+  },
+  "remaining": 21,
   "perDay": 3
 }
