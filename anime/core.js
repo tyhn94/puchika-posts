@@ -38,6 +38,7 @@ function keys(list, t){
 
 /* ---------- the episode ---------- */
 let EPISODE = null, SHOTS = [], EP_DUR = 0, LINES = [], CUES = [];
+const PRELOAD = [];   // promises the page waits for before it says ready (images such as the abartı loop drawings)
 function episode(ep){
   EPISODE = ep; SHOTS = ep.shots.filter(Boolean); let t = 0;
   // every episode ends on the puchika.app card (ep.noCta: false to skip it)
@@ -262,7 +263,7 @@ function otext(str, x, y, o){
   o = Object.assign({font: 'MPR', w: 800, size: 60, fill: '#fff', stroke: '#3d2c4e', sw: 0, align: 'center', base: 'middle'}, o);
   X.save(); X.setTransform(1, 0, 0, 1, 0, 0); X.translate(x, y); if(o.rot) X.rotate(o.rot); if(o.sc) X.scale(o.sc, o.sc);
   if(o.alpha != null) X.globalAlpha = o.alpha;
-  X.font = `${o.w} ${o.size}px ${o.font === 'Dot' ? 'Dot' : o.font === 'Baloo' ? "'Baloo 2'" : 'MPR'}`;
+  X.font = `${o.w} ${o.size}px ${o.font === 'Dot' ? 'Dot' : (o.font === 'Daruma' || o.font === 'Baloo') ? 'Daruma' : 'Mali, MPR'}`;
   X.textAlign = o.align; X.textBaseline = o.base; if(o.spacing) X.letterSpacing = o.spacing + 'px';
   X.lineJoin = 'round';
   if(o.shadow){ X.fillStyle = o.shadow; X.fillText(str, o.sdx || 0, o.sdy || 10); }
@@ -355,7 +356,7 @@ function bubble(L, T){
   const st = BUB[L.who], age = T - L.show, left = L.hide - T;
   if(age < 0 || left < 0) return;
   const shout = L.style === 'shout', small = L.style === 'muffled';
-  const size = L.size || (shout ? 70 : small ? 46 : 56), font = `800 ${size}px MPR`, jfont = `700 ${Math.round(size * .52)}px MPR`;
+  const size = L.size || (shout ? 70 : small ? 46 : 56), font = `800 ${size}px Mali, MPR`, jfont = `700 ${Math.round(size * .52)}px MPR`;
   const maxW = L.maxW || 760;
   const lines = wrap(L.en, font, maxW), jp = EPISODE.noJp ? '' : L.jp;
   X.font = font; let tw = Math.max(...lines.map(s => X.measureText(s).width));
@@ -421,7 +422,7 @@ function hookAt(T){
 }
 function drawHook(T){
   const cur = hookAt(T); if(!cur) return;
-  const [t0, text] = cur, age = T - t0, size = 64, font = `800 ${size}px 'Baloo 2'`, maxW = 900, lh = size * 1.08;
+  const [t0, text] = cur, age = T - t0, size = 64, font = `800 ${size}px Daruma`, maxW = 900, lh = size * 1.08;
   // words keep their colour: *pink* parts
   const words = []; let pink = false;
   // a piece right after a * with no space ("*dreading*:") sticks to the word before it
@@ -449,10 +450,11 @@ function drawHook(T){
 
 /* ---------- one frame ---------- */
 async function ready(){
-  await Promise.all(['800 56px MPR', '700 30px MPR', '400 30px Dot', "800 60px 'Baloo 2'", '700 60px Pixelify', '400 30px Pixelify'].map(f => document.fonts.load(f, 'Aaあア漢0')));
+  await Promise.all(['800 56px Mali', '600 30px Mali', '800 56px MPR', '700 30px MPR', '400 30px Dot', '800 60px Daruma', '700 60px Pixelify', '400 30px Pixelify'].map(f => document.fonts.load(f, 'Aaあア漢0')));
   await document.fonts.load('800 56px MPR', '秘技全部掃除続く話今時間前');
   await document.fonts.load('400 30px Dot', '秘技全部掃除続く話今時間前');
   const img = document.getElementById('logo'); if(!img.complete) await new Promise(r => { img.onload = r; img.onerror = r; });
+  await Promise.all(PRELOAD);
   document.body.dataset.ready = 1;
 }
 function renderAt(T){

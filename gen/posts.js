@@ -7,6 +7,8 @@ const short = (id, lines, tags, date) => Object.assign({id, type: 'anime', ep: i
 const kshort = (id, lines, tags, date) => Object.assign(short(id, lines, tags, date), {voice: 'kalimba'});
 // from 31 Oct 2026 (the rest of pack 2 on): the soft clicky ASMR voices, Puchi a glass "tink", Chika a bubble "blip"
 const cshort = (id, lines, tags, date) => Object.assign(short(id, lines, tags, date), {voice: 'clicks'});
+// set 4 on: kalimba voices + the FM sound effects (sfx: 'fm')
+const s4 = (id, lines, tags) => Object.assign(kshort(id, lines, tags), {sfx: 'fm'});
 const CAL = [
   // already posted (kept so their ids stay known)
   short('sh08-dinner', 'cooking 101: patience vs. max fire 🔥\nwhich one are you in the kitchen?', '#relatable #cooking #cozygames #pixelart #puchika'),
@@ -52,6 +54,30 @@ const CAL = [
   cshort('rl39-gymfit', 'new gym clothes. new me. same sofa 💪\ndo you own more gym clothes than gym visits?', '#relatable #gymclothes #cozygames #pixelart #puchika'),
   cshort('rl36-plants', '“just one plant.” three months later: a jungle 🌿\nhow many plants do you have?', '#plantmom #relatable #cozygames #pixelart #puchika'),
   cshort('rl41-layers', '15°C outside. me: all my clothes at once 🧣\nare you always cold too?', '#relatable #alwayscold #cozygames #pixelart #puchika'),
+  // set 4 (5 Nov 2026): the absurd, observational viral shorts. Filmed here on GitHub like the others, with the kalimba voices,
+  // the FM sound bank and İdil's abartı loops + sounds (sfx: 'fm'), three a day. Set 3 was skipped.
+  s4("rlx3-youtoo", "send this to the friend who says \"you too\" to the waiter 🍝\nwhat’s your most awkward \"you too\"?", "#awkward #bestie #relatable #pixelart #puchika"),
+  s4("rlx12-bite", "send this to the friend who asks for \"just one bite\" 🍔\nhow big is ONE bite, really?", "#foodie #bestie #relatable #pixelart #puchika"),
+  s4("rlx17-typing", "big news. 6 hours of \"typing...\". then: k 📱\nsend this to the friend who replies like this", "#texting #bestie #relatable #pixelart #puchika"),
+  s4("rlx11-pay", "send this to the friend who fights you for the bill 💸\nwho pays when you two go out?", "#bestfriends #cafe #relatable #pixelart #puchika"),
+  s4("rlx20-detective", "send this to the friend who finds his whole life in 4 seconds 🔎\nhow fast can YOU find someone?", "#bestie #detective #relatable #pixelart #puchika"),
+  s4("rlx8-trim", "\"just a tiny trim, please\" ✂️\nwhat’s your worst haircut story?", "#haircut #salon #relatable #pixelart #puchika"),
+  s4("rlx16-exam", "send this to the friend who \"didn’t study at all\" 📝\nwhat did you get on your last exam?", "#studytok #exam #bestie #pixelart #puchika"),
+  s4("rlx13-chips", "opening snacks at 2 AM. quietly 🤫\nwhat’s the loudest snack you own?", "#midnightsnack #cozynight #relatable #pixelart #puchika"),
+  s4("rlx15-gym", "new year, new me. 4 seconds of workout 💪\nhow many times did YOU go to the gym this year?", "#gym #newyearnewme #relatable #pixelart #puchika"),
+  s4("rlx4-2014", "3 AM, deep in his profile. then: double tap 😱\nhave you ever liked an old photo by accident?", "#crush #3am #relatable #pixelart #puchika"),
+  s4("rlx22-charger", "send this to the friend who still has your charger 🔌\nwhat did a friend never give back?", "#bestie #charger #relatable #pixelart #puchika"),
+  s4("rlx19-alarm", "\"1 more minute.\" 2 days later ⏰\nhow many times do you snooze?", "#sleepy #alarm #relatable #pixelart #puchika"),
+  s4("rlx5-partner", "send this to your forever partner 👯\nwho’s your automatic partner?", "#bestfriends #school #relatable #pixelart #puchika"),
+  s4("rlx18-floss", "\"do you floss?\" \"every day!\" 🦷\nbe honest: when did you last floss?", "#dentist #selfcare #relatable #pixelart #puchika"),
+  s4("rlx10-plan", "send this to the group chat that’s been \"planning\" for years 📅\nhow long has your group been \"meeting up\"?", "#groupchat #bestfriends #relatable #pixelart #puchika"),
+  s4("rlx6-haha", "\"HAHAHA I’M DYING\" (zero facial movement) 😐\nsend this to the friend you actually laugh with", "#texting #bestie #relatable #pixelart #puchika"),
+  s4("rlx14-study", "me, about to study: first the desk. then the planet 🌍\nwhat do you clean instead of studying?", "#studytok #procrastination #relatable #pixelart #puchika"),
+  s4("rlx23-diet", "diet starts monday. every monday 🎂\nwhat ruins your diet every week?", "#diet #mondaymotivation #relatable #pixelart #puchika"),
+  s4("rlx9-unmuted", "online class. 100% sure i’m on mute 🎤\nwhat’s your worst \"you’re unmuted\" moment?", "#onlineclass #unmuted #relatable #pixelart #puchika"),
+  s4("rlx7-shower", "won the argument in the shower. lost it in real life 🚿\nwhat comeback did you think of too late?", "#shower #overthinking #relatable #pixelart #puchika"),
+  s4("rlx21-coffee", "\"just a coffee, please.\" 47 layers later ☕\nwhat’s your coffee order? be honest", "#coffee #coffeeorder #relatable #pixelart #puchika"),
+  s4("rlx2-5min", "send this to the friend who is \"5 min away\" (still in the shower) 🚿\nhow late is your friend, really?", "#alwayslate #bestie #relatable #pixelart #puchika"),
   // Halloween: these go out only on their day
   short('rl20-candy', 'bought candy for the kids. ate it all by oct 30 🍬\nhow much halloween candy is left in your house?', '#halloween #halloweencandy #relatable #pixelart #puchika', '2026-10-30'),
   short('rl21-costume', 'planned my costume for a month. made it in 5 minutes 🐱\nwhat are you dressing up as this year?', '#halloween #halloweencostume #relatable #pixelart #puchika', '2026-10-31')

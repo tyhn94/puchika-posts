@@ -99,7 +99,7 @@ function winPill(text, t, y, n, right){
   if(t < 0) return;
   const k = EASE.back(clamp(t / .25, 0, 1));
   X.save(); X.setTransform(1, 0, 0, 1, 0, 0); X.translate(W / 2 - 60, y); X.scale(k, k);
-  X.font = '800 50px MPR'; const tw = X.measureText(text).width; const w = tw + 320, h = 110;
+  X.font = '800 50px Mali, MPR'; const tw = X.measureText(text).width; const w = tw + 320, h = 110;
   X.shadowColor = 'rgba(60,20,50,.25)'; X.shadowOffsetY = 10; rrect(X, -w / 2, -h / 2, w, h, 55); X.fillStyle = '#fff'; X.fill(); X.shadowColor = 'transparent';
   X.lineWidth = 7; X.strokeStyle = '#ff8fb8'; X.stroke();
   X.beginPath(); X.arc(-w / 2 + 62, 0, 34, 0, 7); X.fillStyle = '#ff6fa3'; X.fill();
@@ -381,7 +381,7 @@ function timeCard(jp, en, o){
     card: t => { X.setTransform(1, 0, 0, 1, 0, 0); X.fillStyle = '#2b2240'; X.fillRect(0, 0, W, H);
       for(let y = 0; y < H; y += 8){ X.fillStyle = 'rgba(255,255,255,' + (hsh(y, Math.floor(t * 30)) * .05) + ')'; X.fillRect(0, y, W, 3); }
       const sl = (1 - EASE.out(clamp(t / .25, 0, 1))) * 300;
-      if(o && o.enOnly){ otext(en, W / 2 - sl, 900, {font: 'Baloo', w: 800, size: 118, fill: '#fff'}); otext(jp, W / 2 + sl, 1010, {font: 'Dot', w: 400, size: 44, fill: '#ff8fb8', spacing: 4}); }   // shorts: the English is the big line
+      if(o && o.enOnly){ otext(en, W / 2 - sl, 900, {font: 'Daruma', w: 800, size: 118, fill: '#fff'}); otext(jp, W / 2 + sl, 1010, {font: 'Dot', w: 400, size: 44, fill: '#ff8fb8', spacing: 4}); }   // shorts: the English is the big line
       else {
       otext(jp, W / 2 - sl, 820, {font: 'Dot', w: 400, size: jp.length > 8 ? 92 : jp.length > 5 ? 120 : 150, fill: '#fff'});
       otext(en, W / 2 + sl, 980, {font: 'Dot', w: 400, size: 64, fill: '#ff8fb8', spacing: 6}); }
@@ -492,3 +492,24 @@ const TOY = {
     X.restore(); },
   word(text, x, y, t, o){ if(t < 0) return; OVER.word(text, x, y, Object.assign({size: 120, fill: '#ffd36b', stroke: '#3d2c4e', rot: -.08}, o))(t); }
 };
+
+/* ---------- abartı (exaggeration) moments, Bible v4 (İdil, 4 Nov 2026) ----------
+   abartiShot('puchi-02-shocked', 1.5): the full-screen MS-Paint loop of İdil's exaggerated face (3 drawings that boil at 6 a second,
+   from abarti/<name>/f0-2.png, 360x640 drawn x3 without smoothing). The PICTURE shakes the whole time (İdil: "görüntü titresin");
+   the hook caption on top never moves. Sound: İdil's own abartı sound (o.snd, default 'gun-shot-meme' = sfx-fm/abarti/gun-shot-meme.wav),
+   cut where the shot ends. Use it at the peak of a reaction, at most 1-2 times a short. o.card draws on top (e.g. the WIN pill). */
+const ABARTI = {};
+function abartiFrames(name){
+  if(ABARTI[name]) return ABARTI[name];
+  return ABARTI[name] = [0, 1, 2].map(k => { const im = new Image(); PRELOAD.push(new Promise(r => { im.onload = r; im.onerror = () => { console.error('no abarti frame ' + name + '/f' + k); r(); }; })); im.src = 'abarti/' + name + '/f' + k + '.png'; return im; });
+}
+function abartiShot(name, dur, o){
+  o = o || {}; const fr = abartiFrames(name), snd = o.snd || 'gun-shot-meme', amp = o.shake != null ? o.shake : 16;
+  return Object.assign({name: o.name || 'abarti-' + name, dur: dur || 1.5, fixed: true, in: 'flash',
+    under: t => { const im = fr[Math.floor(t * 6) % 3], f = Math.floor(t * 30);
+      const kick = 1 + 1.6 * Math.max(0, 1 - t / .25);   // a harder jolt as it lands, then a steady tremble
+      const dx = (hsh(f, 11) - .5) * 2 * amp * kick, dy = (hsh(f, 29) - .5) * 2 * amp * kick, z = 1.06 + .03 * EASE.out(clamp(t / .25, 0, 1));
+      X.save(); X.setTransform(1, 0, 0, 1, 0, 0); X.imageSmoothingEnabled = false;
+      X.drawImage(im, W / 2 - W * z / 2 + dx, H / 2 - H * z / 2 + dy, W * z, H * z); X.restore(); },
+    sfx: [[0, 'abarti', {name: snd, dur: dur || 1.5, gain: o.gain || 1}]]}, o);
+}

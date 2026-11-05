@@ -107,6 +107,7 @@ const SFX = {
   plop: () => Sound.tone({type: 'sine', f: 900, f1: 300, glide: .06, a: .002, d: .08, vol: .18}),
   fizz: () => Sound.noise({ft: 'highpass', f: 5000, a: .05, d: .8, vol: .05, wet: .3}),
   alarm: () => { for(let i = 0; i < 10; i++) Sound.tone({type: 'square', f: 1760, t: i * .12, a: .002, d: .06, vol: .07, lp: 4000}); },
+  romance: () => {}, fart: () => {}, msgin: () => {}, msgout: () => {}, whistle: () => {}, zap: () => {},   // FM only (fm/fmbank.py)
   snore: () => { Sound.noise({ft: 'lowpass', f: 300, f1: 700, q: 1.5, a: .3, d: .5, vol: .14, wet: .3}); Sound.tone({type: 'sawtooth', f: 70, f1: 90, a: .3, d: .5, vol: .05, lp: 400}); Sound.tone({type: 'sine', f: 900, f1: 1400, t: .9, a: .1, d: .25, vol: .04}); },
   // a mug/plate breaking: a sharp crack, then tinkling shards
   shatter: () => { Sound.noise({ft: 'highpass', f: 2600, a: .001, d: .22, vol: .32, wet: .35}); Sound.tone({f: 240, f1: 90, a: .001, d: .07, vol: .2});
@@ -119,6 +120,7 @@ const SFX = {
   chomp: () => Sound.chomp(3),
   zen: () => { [261.63, 392, 523.25].forEach((f, i) => Sound.tone({type: 'sine', f, t: i * .02, a: .02, d: 2.2, vol: .07, wet: .8})); },
   win: () => { Sound.pop(); Sound.done(3); Sound.sparkle(.08, 5); },
+  abarti: () => {}, clip: () => {},   // FM only: film.mjs mixes sfx-fm/abarti/<name>.wav here (Bible v4)
   tsuzuku: () => { [523.25, 659.25, 783.99, 1046.5].forEach((f, i) => Sound.bell(f, i * .09, .13)); Sound.sparkle(.3, 8); }
 };
 
