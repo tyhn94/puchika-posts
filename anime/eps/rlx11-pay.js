@@ -113,9 +113,10 @@ episode({id: 'rlx11-pay', short: true, noJp: true, coverAt: 2.6, mix: {voice: 1,
     p: t => ({x: 18, look: 1, bob: false, eyes: 'half', mouth: 'flat', arms: 'up', fx: ['sweat']}),
     c: t => ({x: 34, look: -1, bob: false, eyes: 'half', mouth: 'flat', arms: 'up', fx: ['sweat']}),
     front: t => { plateIn('p'); plateIn('c'); },
-    card: t => { plates(t); pill('DEBT: $' + (847.5 - Math.floor(t / .5) * .01).toFixed(2), t, 470, 560, {fg: '#fff', bg: '#ff3b5c', size: 56}); },
+    fxTop: t => plates(t),
+    card: t => { pill('DEBT: $' + (847.5 - Math.floor(t / .5) * .01).toFixed(2), t, 470, 560, {fg: '#fff', bg: '#ff3b5c', size: 56}); },
     sfx: [[0, 'swish'], [.5, 'tick'], [1.0, 'tick'], [1.5, 'tick'], [2.0, 'tick']],
-    lines: [LN('p', 'Next time, you pay.', 'tired', {pos: [300, 800]}), LN('c', 'No, YOU pay.', 'tired', {pos: [790, 800]})]}, KITCHEN)),
+    lines: [LN('p', 'Next time, you pay.', 'tired', {pos: [300, 800]}), LN('c', 'No, YOU pay.', 'tired', {pos: [720, 800]})]}, KITCHEN)),
   // ABARTI
   abartiShot('chika-05-blank', 1.8, {snd: 'awkward-moment', card: t => winPillFit('Paid the bill (in dishes)', t - .5, 1430, 1)})
 ]});

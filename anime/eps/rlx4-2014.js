@@ -87,7 +87,7 @@ function notif(t, y){ if(t < 0) return; const e = EASE.back(clamp(t / .25, 0, 1)
   X.font = '800 58px Mali, MPR'; X.fillStyle = '#3d2c4e'; X.fillText('leo_k liked your photo', -w / 2 + 176, -26);
   X.fillText('from ', -w / 2 + 176, 50); const fw = X.measureText('from ').width; X.fillStyle = '#ff3b5c'; X.fillText('2011', -w / 2 + 176 + fw, 50);
   const zw = X.measureText('2011').width; X.fillStyle = '#3d2c4e'; X.fillText('.', -w / 2 + 176 + fw + zw, 50);
-  if(t > .5){ const kk = EASE.back(clamp((t - .5) / .2, 0, 1)); X.save(); X.translate(-w / 2 + 176 + fw + zw / 2, 50); X.scale(kk, kk); X.rotate(-.06); X.lineWidth = 7; X.strokeStyle = '#ff3b5c'; X.beginPath(); X.ellipse(0, 0, zw / 2 + 26, 44, 0, 0, 7); X.stroke(); X.restore(); }
+  if(t > .5){ const kk = EASE.back(clamp((t - .5) / .2, 0, 1)); X.save(); X.translate(-w / 2 + 176 + fw + zw / 2, 50); X.scale(kk, kk); X.rotate(-.06); X.lineWidth = 7; X.strokeStyle = '#ff3b5c'; X.beginPath(); X.ellipse(0, 0, zw / 2 + 16, 44, 0, 0, 7); X.stroke(); X.restore(); }
   X.restore(); }
 // the phone she throws: it spins out through the window and is gone
 function yeet(t, x0, y0, x1, y1){ if(t < 0 || t > .55) return; const e = EASE.out(clamp(t / .55, 0, 1)), s = 1.4 - 1.1 * e;
