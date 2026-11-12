@@ -1,9 +1,14 @@
 {
   "ok": true,
-  "at": "2026-11-12T11:58:41.234Z",
+  "at": "2026-11-12T13:05:20.910Z",
   "mode": "auto",
   "problems": [],
   "account": "puchikafriends",
-  "remaining": 21,
+  "posted": {
+    "id": "rlx7-shower",
+    "mediaId": "18079797008731799",
+    "permalink": "https://www.instagram.com/reel/DfpH2rkEQcq/"
+  },
+  "remaining": 20,
   "perDay": 3
 }
