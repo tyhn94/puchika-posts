@@ -1,0 +1,47 @@
+name: Puchika clock
+
+# GitHub's own timer (cron) skips most runs on busy days (10 Nov 2026: one run in 7 hours, so the 21:00 post never went out).
+# This workflow keeps the time itself: it waits until the next posting hour (07:05, 13:05, 18:05 UTC = 10:05, 16:05, 21:05 in Turkey),
+# starts the Puchika run, then starts itself again. The cron below only restarts it if the chain ever breaks.
+on:
+  schedule:
+    - cron: '41 */4 * * *'
+  workflow_dispatch:
+
+permissions:
+  actions: write
+  contents: read
+
+concurrency:
+  group: puchika-clock
+  cancel-in-progress: true
+
+jobs:
+  tick:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - name: Wait for the next posting hour
+        id: wait
+        run: |
+          now=$(date -u +%s); next=""
+          for d in 0 1; do for h in 7 13 18; do
+            t=$(date -u -d "$(date -u -d "+$d day" +%F) $h:05" +%s)
+            if [ "$t" -gt "$now" ] && [ -z "$next" ]; then next=$t; fi
+          done; done
+          wait=$(( next - now )); max=$(( 330 * 60 ))
+          if [ "$wait" -gt "$max" ]; then
+            echo "the next posting hour is far away: waiting 5.5 hours, then checking again"; sleep "$max"; echo "post=0" >> "$GITHUB_OUTPUT"
+          else
+            echo "waiting $wait s, until $(date -u -d @$next)"; sleep "$wait"; echo "post=1" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Start the Puchika run
+        if: steps.wait.outputs.post == '1'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run puchika.yml -R ${{ github.repository }} -f mode=auto
+      - name: Start the clock again
+        if: ${{ !cancelled() }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run clock.yml -R ${{ github.repository }}

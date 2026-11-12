@@ -1,0 +1,35 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+/* the display font is the app's Darumadrop One (İdil, 4 Nov 2026: no more Baloo in the videos) */
+@font-face{font-family:'Handjet';font-weight:400;src:url('fonts/handjet-latin-400.woff2') format('woff2')}
+@font-face{font-family:'Handjet';font-weight:500;src:url('fonts/handjet-latin-500.woff2') format('woff2')}
+@font-face{font-family:'Handjet';font-weight:600;src:url('fonts/handjet-latin-600.woff2') format('woff2')}
+@font-face{font-family:'Handjet';font-weight:700;src:url('fonts/handjet-latin-700.woff2') format('woff2')}
+@font-face{font-family:'Handjet';font-weight:800;src:url('fonts/handjet-latin-800.woff2') format('woff2')}
+@font-face{font-family:'Daruma';font-weight:100 900;src:url('fonts/darumadrop-one-latin.woff2') format('woff2')}
+/* dialogue bubbles and the WIN pill use the app's Mali (İdil, 4 Nov 2026), M PLUS Rounded stays only for Japanese */
+@font-face{font-family:'Mali';font-weight:100 400;src:url('fonts/mali-latin-400.woff2') format('woff2')}
+@font-face{font-family:'Mali';font-weight:500;src:url('fonts/mali-latin-500.woff2') format('woff2')}
+@font-face{font-family:'Mali';font-weight:600;src:url('fonts/mali-latin-600.woff2') format('woff2')}
+@font-face{font-family:'Mali';font-weight:700 900;src:url('fonts/mali-latin-700.woff2') format('woff2')}
+/* İdil, 6 Nov 2026: only TWO fonts in the reels, Darumadrop One (titles) and Mali (everything else). The old pixel
+   font names (Pixelify, Dot, MPR) now point at Mali, so every label, pill, phone and sign is Mali; the Japanese faces below
+   stay only for kana/kanji (the shorts have none). */
+@font-face{font-family:'Pixelify';font-weight:700;src:url('fonts/mali-latin-700.woff2') format('woff2')}
+@font-face{font-family:'Pixelify';font-weight:400;src:url('fonts/mali-latin-600.woff2') format('woff2')}
+@font-face{font-family:'Dot';font-weight:400;src:url('fonts/mali-latin-700.woff2') format('woff2')}
+@font-face{font-family:'MPR';font-weight:800;src:url('fonts/mali-latin-700.woff2') format('woff2')}
+@font-face{font-family:'MPR';font-weight:700;src:url('fonts/mali-latin-700.woff2') format('woff2')}
+@font-face{font-family:'MPR';font-weight:800;src:url('fonts/m-plus-rounded-1c-japanese-800-normal.woff2') format('woff2');unicode-range:U+3000-30FF,U+3400-4DBF,U+4E00-9FFF,U+FF00-FFEF}
+@font-face{font-family:'MPR';font-weight:700;src:url('fonts/m-plus-rounded-1c-japanese-700-normal.woff2') format('woff2');unicode-range:U+3000-30FF,U+3400-4DBF,U+4E00-9FFF,U+FF00-FFEF}
+@font-face{font-family:'Dot';font-weight:400;src:url('fonts/dotgothic16-japanese-400-normal.woff2') format('woff2');unicode-range:U+3000-30FF,U+3400-4DBF,U+4E00-9FFF,U+FF00-FFEF}
+html,body{margin:0;background:#000}canvas#out{display:block}
+</style></head><body>
+<canvas id="out" width="1080" height="1920"></canvas><canvas id="lcd" width="8" height="8" style="display:none"></canvas>
+<img id="logo" src="logo.webp" style="display:none">
+<script>
+// page.html?ep=<episode id>[&vox=<voices.js>]  — loads the renderer, the episode and (if made) its voices
+const Q = new URLSearchParams(location.search), EPID = Q.get('ep'), VOX = Q.get('vox');
+let XP = 200; const totalXp = () => XP; const stageOf = x => 4;
+['engine.js', 'core.js', 'voice.js', 'kit.js', 'sprites.js'].concat(VOX ? [VOX] : [], ['eps/' + EPID + '.js', 'tracks.js', 'prelude.js', 'sound.js', 'audio.js'])
+  .forEach(s => document.write('<script src="' + s + '"><\/script>'));
+</script></body></html>

@@ -1,0 +1,40 @@
+/* Episode 6: Zen Master Chika — Puchi meditates for ten minutes. Chika "meditates" for two hours. */
+const SOFA = 21, sofaCam = (dy, h) => rel([[0, 24, 55 + (dy || 0), h || 42], [1, 24, 56 + (dy || 0), (h || 42) - 4]]), twoSofa = rel([[0, ...two(38, 94)], [1, ...two(38, 88)]]);
+const zzz = (x, y) => t => { const k = (t * 1.2) % 1; art2('zzz', x + Math.round(k * 4), y - Math.round(k * 8), C.LILAC); };
+const float = t => Math.round(3 + 2 * Math.sin(t * 2.4));
+episode({id: 'a06-zen', shots: [
+  shot({name: 'om', style: 'gold', cam: 'cu:c', in: 'black', c: t => ({lift: float(t), eyes: 'sleep', mouth: 'o', arms: 'up', bob: false}), sfx: [[0, 'zen']],
+    lines: [['c', 'Ommmmm...', 'おーーむ…', 'smug', {say: 'おーーーーむ…', at: .4}]]}),
+  shot({name: 'is she', set: 'living', cam: 'cu:p', p: {eyes: 'dot', mouth: 'o', fx: ['sweat']}, sfx: [[.1, 'snore'], [1.6, 'snore']],
+    lines: [['p', 'Is she... meditating?', 'めいそう… してる？', 'nervous', {say: 'めいそう…してる？'}]]}),
+  titleShot(6, 'めいそう マスター', 'Zen Master Chika'),
+  timeCard('にじかんまえ', 'TWO HOURS EARLIER'),
+  shot({name: 'puchi zen', set: 'living', cam: 'two', music: {track: 'town', vol: .5, lp: 2500}, hud: true, card: t => winPill('Meditate', t, PILL_Y, 0, '10 min'),
+    p: {eyes: 'sleep', mouth: 'smile', cheeks: true}, c: {eyes: 'half', mouth: 'flat'},
+    lines: [['p', 'Ten minutes of calm. Breathe in... breathe out...', 'じゅっぷん めいそう。すって… はいて…', 'normal', {say: 'じゅっぷん、めいそう。すって…はいて…'}],
+            ['c', 'Ten minutes? Rookie. I’ll do TWO HOURS.', 'じゅっぷん？しろうと。わたしは にじかん。', 'smug', {say: 'じゅっぷん？しろうと。わたしは、にじかん。'}]]}),
+  shot({name: 'sits', set: 'living', cam: sofaCam(), c: t => ({x: SOFA, lift: 10, eyes: t < 1.2 ? 'blink' : 'sleep', mouth: t < 1.2 ? 'smile' : 'sleep', bob: false, flap: false}),
+    front: t => { sofaFront(4, 40); if(t > 1.5) zzz(30, 44)(t); },
+    over: t => { if(t > .2 && t < 1.2) otext('3...  2...  1...', W / 2, 1150, {font: 'Dot', w: 400, size: 80, fill: '#fff', stroke: '#2b2240', sw: 12}); },
+    dur: 2.6, sfx: [[1.5, 'snore']]}),
+  shot({name: 'chika?', set: 'living', cam: 'cu:p', p: {eyes: 'side', mouth: 'flat', look: -1}, sfx: [[.1, 'snore']], lines: [['p', '...Chika?', '…チカ？', 'nervous', {at: .7}]]}),
+  shot({name: 'calm', style: 'shoujo', cam: 'cu:p', music: 'town', win: [.3, 'Meditated 10 min'], p: {eyes: 'happy', mouth: 'open', arms: 'up', cheeks: true},
+    lines: [['p', 'I feel so calm and light!', 'こころが かるい！', 'excited', {at: .8, say: 'こころが、かるーい！'}]]}),
+  timeCard('にじかんご', 'TWO HOURS LATER', {ff: true}),
+  shot({name: 'wakes', set: 'living', cam: twoSofa, music: 'stop', win: [1.0, 'Meditated 2 hours'], p: {x: 54, eyes: 'open', mouth: 'neutral', look: -1},
+    c: t => ({x: SOFA, lift: 10, eyes: t < .6 ? 'sleep' : 'happy', mouth: t < .6 ? 'sleep' : 'open', arms: t < .6 ? 'down' : 'up', bob: false}), front: t => sofaFront(4, 40),
+    sfx: [[.1, 'snore'], [.6, 'boing']],
+    lines: [['c', 'Two hours. Deep meditation. VERY deep.', 'にじかん。ふかい めいそう。すごく ふかい。', 'smug', {at: 1.2, say: 'にじかん。ふかい、めいそう。すっごく、ふかい。'}]]}),
+  shot({name: 'snoring', style: 'shock', cam: 'snap:54', shake: [[0, .4, 24]], p: {x: 54, eyes: 'dot', mouth: 'scream', arms: 'up', fx: ['shock'], shake: 1, bob: false},
+    over: OVER.gaan(820, 1180), sfx: [[0, 'thunder'], [.05, 'gasp']],
+    lines: [['p', 'You were SNORING!', 'いびき かいてた！', 'shout', {style: 'shout', pos: [540, 420], tail: false, say: 'いびき、かいてたよ！'}]]}),
+  shot({name: 'inner voice', style: 'evil', cam: 'low:64', music: {track: 'dungeon', vol: .5}, c: {x: 64, eyes: 'evil', mouth: 'grin', arms: 'up', bob: false},
+    over: t => { letterbox(1, 150); const a = clamp((t - .2) / .3, 0, 1); [[170, 520, -.2], [880, 600, .18]].forEach(([x, y, r]) => mangaSfx('ゴ', x, y + Math.sin(t * 3) * 15, {size: 140, fill: '#b48cff', stroke: '#120a1f', alpha: a, rot: r})); },
+    sfx: [[0, 'menace']],
+    lines: [['c', 'That was my... inner voice.', 'それは… こころの こえ。', 'smug', {pos: [540, 420], tail: false, say: 'それは…こころの、こえ。'}]]}),
+  shot({name: 'zzz voice', set: 'living', cam: 'cu:54', music: 'stop', p: {x: 54, eyes: 'tired', mouth: 'flat', fx: ['gloom'], look: -1},
+    lines: [['p', '...Your inner voice says “ZZZ”?', '…こころの こえが 「ぐー」？', 'deadpan', {say: 'こころのこえが…ぐー？'}]]}),
+  shot({name: 'relaxed', style: 'gold', cam: 'cu:64', c: {x: 64, eyes: 'half', mouth: 'cat', arms: 'wave'}, sfx: [[0, 'shine']],
+    lines: [['c', 'It’s a very relaxed inner voice.', 'とても リラックスした こえ。', 'smug', {say: 'とっても、リラックスした、こえ。'}]]}),
+  tsuzukuShot('The Piggy Bank')
+]});

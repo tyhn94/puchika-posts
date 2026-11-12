@@ -1,0 +1,68 @@
+/* Episode 2: The Water Challenge — Puchi drinks eight glasses. Chika drinks eight... ice cubes (in a soda). */
+const water = n => t => winPill('Drink water', t, PILL_Y, 0, n + '/8');
+const slosh = t => ({sway: Math.floor(t * 5) % 2, shake: Math.floor(t * 6) % 2});
+episode({id: 'a02-water', mix: {voice: 1, music: 1, sfx: 1.25}, shots: [
+  // cold open: Puchi is full of water
+  shot({name: 'slosh', set: 'kitchen', cam: 'snap:p', in: 'black', style: t => t > .1 ? 'shock' : null,
+    p: t => Object.assign({eyes: 'spiral', mouth: 'wobble', fx: ['sweat2'], bob: false}, slosh(t)),
+    over: OVER.word('チャプ…', 760, 1180, {fill: '#9fd3ff', stroke: '#1b1d4a', size: 120}),
+    sfx: [[.1, 'slosh'], [1.2, 'slosh']],
+    lines: [['p', 'I drank... EIGHT glasses...', 'はっぱい… のんだ…', 'tired', {say: 'はぁ…はっぱい…のんだ…', pos: [540, 380], tail: false}]]}),
+  shot({name: 'chika straw', set: 'kitchen', cam: 'cu:c', c: {eyes: 'half', mouth: 'sip', flap: false}, props: [['can', 87, 66, C.RED], ['straw', 86, 63, C.GRAY]],
+    sfx: [[.1, 'sip']], lines: [['c', 'Amateur numbers.', 'しろうとの すうじ。', 'deadpan', {at: .7}]]}),
+  titleShot(2, 'おみず チャレンジ', 'The Water Challenge'),
+  timeCard('けさ', 'THIS MORNING'),
+  // the plan
+  shot({name: 'plan', set: 'kitchen', cam: 'two', music: 'town', p: {eyes: 'shine', mouth: 'open', arms: 'up', cheeks: true}, c: {eyes: 'half', mouth: 'flat'},
+    props: [['glass', 56, 66, C.BLUE], ['can', 85, 67, C.RED]], hud: true, card: water(0),
+    lines: [['p', 'Eight glasses of water today! For my health!', 'きょうは おみず はっぱい！けんこうの ために！', 'excited', {say: 'きょうは おみず はっぱい！けんこうのために！'}],
+            ['c', 'Eight. Got it.', 'はっぱい。りょうかい。', 'deadpan']]}),
+  // montage: glass after glass
+  shot({name: 'gulp 1', style: 'speed', cam: rel([[0, PX + 2, 60, 46, .07], [1, PX + 2, 60, 42, .09]]), dur: 1.1, p: t => ({eyes: 'squeeze', mouth: 'o', hop: [0, .35, 2, true]}), props: [['glass', 56, 60, C.BLUE]],
+    hud: true, card: water(3), sfx: [[.1, 'gulp'], [.45, 'gulp'], [.8, 'gulp']]}),
+  shot({name: 'gulp 2', style: 'speed', cam: rel([[0, PX - 2, 60, 44, -.08], [1, PX - 2, 60, 40, -.1]]), dur: 1.1, p: t => ({eyes: 'squeeze', mouth: 'o', fx: ['sweat2'], hop: [0, .35, 2, true]}), props: [['glass', 56, 60, C.BLUE]],
+    hud: true, card: water(6), sfx: [[.1, 'gulp'], [.45, 'gulp'], [.8, 'gulp']]}),
+  shot({name: 'gulp 3', set: 'kitchen', cam: 'cu:p', p: t => Object.assign({eyes: 'tired', mouth: 'wobble', fx: ['sweat2']}, slosh(t)), props: [['glass', 57, 66, C.BLUE]],
+    hud: true, card: water(8), sfx: [[.05, 'gulp'], [.4, 'slosh'], [.6, 'qwin']],
+    lines: [['p', 'Eight... done...!', 'はっぱい… たっせい…！', 'tired', {say: 'はっぱい…たっせい…！'}]]}),
+  // Chika's way
+  shot({name: 'ice', set: 'kitchen', cam: 'ms:c', music: 'stop', c: t => ({eyes: 'half', mouth: 'cat', arms: Math.floor(t * 3) % 2 ? 'wave' : 'down'}),
+    props: [['can', 85, 67, C.RED], t => { const n = Math.min(8, Math.floor((t - .3) / .32) + 1); return n > 0 && t > .3 ? ['ice', 86, 62 - (n % 2), C.BLUE] : null; }],
+    sfx: [[.3, 'plop'], [.62, 'plop'], [.94, 'plop'], [1.26, 'plop'], [1.58, 'plop'], [1.9, 'plop'], [2.22, 'plop'], [2.54, 'plop']],
+    lines: [['c', 'One, two, three... eight.', 'いち、に、さん… はち。', 'smug', {at: .3}]]}),
+  shot({name: 'chika wins', set: 'kitchen', cam: 'two', win: [.2, 'Drink water', 0], c: {eyes: 'happy', mouth: 'cat', arms: 'up'}, p: {eyes: 'open', mouth: 'neutral', look: 1},
+    props: [['can', 85, 67, C.RED], ['glass', 56, 66, C.BLUE]], sfx: [[.2, 'fizz']],
+    lines: [['c', 'Eight ice cubes. Done.', 'こおり はっこ。おわり。', 'smug']]}),
+  // Puchi: that's SODA
+  shot({name: 'soda', style: 'shock', cam: 'snap:p', shake: [[0, .4, 24]], p: {eyes: 'dot', mouth: 'scream', arms: 'up', fx: ['shock'], shake: 1, bob: false},
+    over: OVER.gaan(800, 1180), sfx: [[0, 'thunder'], [.05, 'gasp']],
+    lines: [['p', 'That’s SODA!!', 'それ ソーダ！！', 'shout', {style: 'shout', pos: [540, 420], tail: false, say: 'それ、ソーダじゃん！'}]]}),
+  shot({name: 'science', style: 'gold', cam: 'cu:c', music: {track: 'battle', vol: .6}, c: t => ({eyes: 'half', mouth: 'cat', arms: 'wave'}),
+    front: t => { const F = Math.floor(t * 6); art2(F % 2 ? 'spark5' : 'spark', CX + 12, 52, C.GOLD); },
+    sfx: [[0, 'shine']],
+    lines: [['c', 'Ice is water. Frozen water. Science.', 'こおりは みず。かがく。', 'smug']]}),
+  shot({name: 'science?', set: 'kitchen', cam: 'cu:p', p: {eyes: 'dot', mouth: 'o', fx: ['sweat']},
+    lines: [['p', '...Science?', '…かがく？', 'nervous']]}),
+  shot({name: 'bubbles', style: 'evil', cam: 'low:c', c: {eyes: 'evil', mouth: 'grin', arms: 'up', bob: false},
+    over: t => { letterbox(1, 150); const a = clamp((t - .2) / .3, 0, 1); [[170, 520, -.2], [880, 600, .18], [260, 760, -.15]].forEach(([x, y, r]) => mangaSfx('ゴ', x, y + Math.sin(t * 3) * 15, {size: 140, fill: '#b48cff', stroke: '#120a1f', alpha: a, rot: r})); },
+    sfx: [[0, 'menace'], [.3, 'evil']],
+    lines: [['c', 'And the bubbles... are SPARKLING water.', 'あわは… たんさんすい。', 'smug', {say: 'そして、あわは…たんさんすい。', pos: [540, 330], tail: false}]]}),
+  shot({name: 'defeated', set: 'kitchen', cam: 'cu:p', music: 'stop', p: {eyes: 'tired', mouth: 'flat', fx: ['gloom'], bob: false},
+    sfx: [[.1, 'lose']], lines: [['p', '...I can’t even argue.', '…はんろん できない。', 'tired']]}),
+  // back to now: Puchi can't move, Chika rolls her away
+  timeCard('そして いま', 'AND NOW', {ff: true}),
+  shot({name: 'stuck', set: 'kitchen', cam: 'two', music: {track: 'dungeon', vol: .45},
+    p: t => Object.assign({eyes: 'spiral', mouth: 'wobble', fx: ['sweat2'], bob: false}, slosh(t)), c: t => ({eyes: 'half', mouth: 'flat', walk: [90, 66, 0, 1.2]}),
+    sfx: [[.2, 'slosh'], [1.4, 'slosh']],
+    lines: [['p', 'Chika... I can’t move...', 'チカ… うごけない…', 'tired', {say: 'チカ…うごけない…'}],
+            ['c', 'I can still move. Just saying.', 'わたしは うごける。いちおう。', 'deadpan']]}),
+  shot({name: 'help', set: 'kitchen', cam: 'cu:p', p: t => Object.assign({eyes: 'cry', mouth: 'wobble', bob: false}, slosh(t)),
+    lines: [['p', '...Where’s the bathroom...', '…トイレ どこ…', 'nervous', {say: 'トイレ…どこ…'}]]}),
+  shot({name: 'roll', set: 'kitchen', cam: rel([[0, 64, 56, 84], [1, 40, 56, 84, 'lin']]), music: 'stop',
+    p: t => ({x: Math.round(60 - t * 22), eyes: 'spiral', mouth: 'o', lift: Math.floor(t * 8) % 2, bob: false}), c: t => ({x: Math.round(76 - t * 22), eyes: 'happy', mouth: 'cat', arms: 'up', step: Math.floor(t * 7) % 2 + 1, bob: false}),
+    over: OVER.word('ゴロゴロ', 540, 560, {size: 130, fill: '#ffd36b', stroke: '#3d2c4e', rot: -.06}),
+    win: [1.1, 'Helped a friend', 1],
+    sfx: [[0, 'slosh'], [.4, 'slosh'], [.8, 'slosh']],
+    lines: [['c', 'Helping a friend. Also a win.', 'ともだちを たすけた。これも かち。', 'smug', {at: 1.3}]]}),
+  tsuzukuShot('Chika joins the 5 AM club')
+]});

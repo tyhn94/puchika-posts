@@ -1,0 +1,32 @@
+/* Episode 15: The Gift — Puchi makes a card. Chika gives back the scarf Puchi gave her last year... kept perfect, "for something special". */
+const wrapMess = t => { art2('gift', CX + 7, 64 + (Math.floor(t * 6) % 2), C.PINK); PEN = C.GRAY; [[CX + 6, 63], [CX + 13, 62], [CX + 9, 70], [CX + 14, 67]].forEach(([x, y]) => { P(x, y, 3); P(x + 1, y + 1, 3); }); };
+episode({id: 'a15-gift', shots: [
+  shot({name: 'wrapping', set: 'living', cam: 'cu:c', in: 'black', c: {eyes: 'half', mouth: 'cat', arms: 'wave'}, front: wrapMess, sfx: [[.2, 'rattle', .5], [.9, 'rattle', .5]],
+    lines: [['c', 'Perfect wrapping. As always.', 'かんぺきな ラッピング。いつもどおり。', 'smug', {at: .7, say: 'かんぺきな、ラッピング。いつもどおり。'}]]}),
+  titleShot(15, 'プレゼント', 'The Gift'),
+  shot({name: 'card', style: 'shoujo', cam: 'ms:p', music: 'town', p: {eyes: 'shine', mouth: 'open', cheeks: true, arms: 'up'}, props: [['card', PX + 8, 62, C.PINK]],
+    front: t => { const F = Math.floor(t * 4); art2('heart2', PX + 10 + (F % 3), 54 - (F % 4), C.RED); }, sfx: [[.2, 'sparkle', 6]],
+    lines: [['p', 'A card for Chika! Handmade with love!', 'チカに カード！てづくり！', 'excited', {say: 'チカにカード！てづくりだよ！'}]]}),
+  shot({name: 'expensive', set: 'living', cam: 'cu:c', c: {eyes: 'half', mouth: 'smirk'}, front: wrapMess,
+    lines: [['c', 'I also have a gift. A very expensive one.', 'わたしも プレゼント ある。すごく たかいやつ。', 'smug', {say: 'わたしも、プレゼント、ある。すっごく、たかいやつ。'}]]}),
+  shot({name: 'exchange', set: 'living', cam: 'two', p: {eyes: 'happy', mouth: 'open', arms: 'up'}, c: t => ({eyes: t < 1.2 ? 'open' : 'side', mouth: 'wobble', fx: t > 1.2 ? ['blush'] : []}),
+    props: [['card', 64, 60, C.PINK]],
+    lines: [['p', 'For you!', 'どうぞ！', 'excited'],
+            ['c', '...Hm. It’s... cute.', '…ふーん。…かわいい。', 'nervous', {gap: .5, say: 'ふーん…かわいい。'}]]}),
+  shot({name: 'open', set: 'living', cam: 'ms:p', p: t => ({eyes: t < .8 ? 'shine' : 'dot', mouth: t < .8 ? 'open' : 'o'}),
+    props: [t => t < .8 ? ['gift', PX + 7, 64, C.PINK] : null], front: t => { if(t > .8){ PEN = C.BLUE; pix(['XXXXXXXXX', 'XoXoXoXoX', 'XXXXXXXXX', '......XoX', '......XXX'], PX + 4, 60); } },
+    sfx: [[.4, 'page'], [.8, 'shine']],
+    lines: [['p', 'Wait. This is the scarf I gave YOU last year!', 'これ… きょねん わたしが あげた マフラー！', 'shout', {at: 1.1, say: 'これ…きょねん、わたしがあげた、マフラー！'}]]}),
+  shot({name: 'recycling', style: 'shock', cam: 'snap:c', music: 'stop', c: {eyes: 'side', mouth: 'wobble', fx: ['sweat2'], bob: false},
+    lines: [['c', 'Regifting is recycling. Very eco.', 'まわしプレゼントは リサイクル。エコ。', 'nervous', {say: 'まわしプレゼントは、リサイクル。エコだよ。'}]]}),
+  shot({name: 'perfect', set: 'living', cam: 'cu:p', music: {track: 'title', vol: .55}, p: {eyes: 'open', mouth: 'o', fx: ['sweat']},
+    front: t => { PEN = C.BLUE; pix(['XXXXXXXXX', 'XoXoXoXoX', 'XXXXXXXXX'], PX + 4, 62); const F = Math.floor(t * 5); art2('spark', PX + 12 + (F % 2) * 2, 57, C.GOLD); },
+    lines: [['p', '...It’s perfect. Like new. You never wore it?', '…ぴかぴか。いちども つかってないの？', 'nervous', {say: 'ぴかぴか…いちども、つかってないの？'}]]}),
+  shot({name: 'special', style: 'shoujo', cam: 'cu:c', c: {eyes: 'side', mouth: 'wobble', fx: ['blush'], cheeks: true, look: 1},
+    lines: [['c', 'I was saving it. For something special.', 'とくべつな ときの ために… とっておいた。', 'nervous', {say: 'とくべつなときのために…とっておいたの。'}]]}),
+  shot({name: 'cry', style: 'shoujo', cam: 'two', win: [.6, 'Gave a gift', 2], p: {eyes: 'cry', mouth: 'open', wear: 'scarf', arms: 'up', hop: [0, .5, 2, true]}, c: {eyes: 'happy', mouth: 'cat', fx: ['blush']},
+    sfx: [[.2, 'sparkle', 10]],
+    lines: [['p', 'Chikaaa! This IS special!', 'チカ〜！これ とくべつ！', 'excited', {at: .9, say: 'チカー！これ、とくべつだよ！'}],
+            ['c', 'Don’t cry. It’s just recycling.', 'なかないで。ただの リサイクル。', 'smug', {say: 'なかないで。ただの、リサイクル。'}]]}),
+  tsuzukuShot('The Deadline')
+]});

@@ -1,0 +1,106 @@
+name: Puchika
+
+on:
+  schedule:
+    - cron: '23,53 * * * *'
+  push:
+    paths: ['gen/posts.js']
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'check = sadece kontrol et, post-now = sıradakini hemen paylaş, auto = saati geldiyse paylaş (saat bunu kullanır)'
+        type: choice
+        options: [check, post-now, auto]
+        default: check
+
+permissions:
+  contents: write
+  issues: write
+  pages: write      # the bot publishes media/ to the web itself (10 Nov 2026: the Pages branch build kept timing out)
+  id-token: write
+
+concurrency:
+  group: puchika
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    environment:
+      name: github-pages
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Plan
+        id: plan
+        run: node bot/render.mjs plan
+      - name: Get the drawing tools
+        if: steps.plan.outputs.need == '1'
+        run: |
+          npm install --no-save --no-audit --no-fund playwright@1
+          npx playwright install --with-deps chromium
+          sudo apt-get install -y ffmpeg
+          # the anime voices: Open JTalk (HTS voice "Mei") reshaped with WORLD
+          python3 -m pip install --break-system-packages numpy pyworld pyopenjtalk-plus
+      - name: Draw the next posts
+        if: steps.plan.outputs.need == '1'
+        run: node bot/render.mjs draw ${{ steps.plan.outputs.ids }}
+      - name: Put the drawings online
+        if: always()
+        run: |
+          git config user.name "puchika-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A queue.json media
+          if ! git diff --cached --quiet; then
+            git commit -m "bot: drawings"
+            for i in 1 2 3; do git pull --rebase -X theirs origin main && git push origin main && break; git rebase --abort 2>/dev/null; sleep 5; done
+          fi
+      # the web copy: Instagram gets the videos from the web address, so it must be the newest drawings (only media/ is published)
+      - name: Is the web copy up to date?
+        id: web
+        if: ${{ !cancelled() }}
+        run: node bot/webcheck.mjs
+      - name: Pack the web copy
+        if: ${{ !cancelled() && steps.web.outputs.stale == '1' }}
+        run: rm -rf _site && mkdir _site && cp -r media _site/ && touch _site/.nojekyll
+      - name: Upload the web copy
+        if: ${{ !cancelled() && steps.web.outputs.stale == '1' }}
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+          retention-days: 1
+      - name: Publish the web copy
+        if: ${{ !cancelled() && steps.web.outputs.stale == '1' }}
+        uses: actions/deploy-pages@v4
+      - name: Post
+        if: ${{ !cancelled() && github.event_name != 'push' }}
+        run: node bot/post.mjs
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          MODE: ${{ github.event.inputs.mode || 'auto' }}
+          GH_TOKEN: ${{ github.token }}
+      - name: Save state
+        if: always()
+        run: |
+          git rebase --abort 2>/dev/null || true
+          mkdir -p state && git add state
+          if ! git diff --cached --quiet; then
+            git commit -m "bot: state"
+            for i in 1 2 3; do git pull --rebase -X theirs origin main && git push origin main && break; git rebase --abort 2>/dev/null; sleep 5; done
+          fi
+      - name: Keep the repo small
+        # once a day: if the repo (with its history of old videos) has grown big, start a fresh history with the same files
+        if: always() && github.event_name == 'schedule'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          [ "$(date -u +%H)" = "03" ] || exit 0
+          size=$(gh api repos/${{ github.repository }} --jq .size)
+          echo "repo size: ${size} KB"
+          if [ "$size" -gt 400000 ]; then
+            git pull --rebase -X theirs origin main || true
+            fresh=$(git commit-tree "HEAD^{tree}" -m "fresh start: history trimmed to keep the repo small")
+            git push -f origin "$fresh:refs/heads/main"
+          fi
