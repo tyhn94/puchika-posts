@@ -521,6 +521,12 @@
       "permalink": "https://www.instagram.com/reel/DfpH2rkEQcq/",
       "type": "reel",
       "at": "2026-11-12T13:05:20.910Z"
+    },
+    "rlx21-coffee": {
+      "mediaId": "18016423472760424",
+      "permalink": "https://www.instagram.com/reel/DfpqXaJGeiA/",
+      "type": "reel",
+      "at": "2026-11-12T18:06:54.685Z"
     }
   },
   "failed": {},
@@ -560,7 +566,7 @@
     "2026-11-09": 1,
     "2026-11-10": 3,
     "2026-11-11": 3,
-    "2026-11-12": 2
+    "2026-11-12": 3
   },
   "notified": {
     "low": "2026-10-31T20:04:04.942Z",
@@ -570,6 +576,6 @@
   "refreshTriedAt": "2026-11-11T18:06:53.170Z",
   "refreshedAt": "2026-11-11T18:06:53.170Z",
   "tokenExpiresAt": "2027-01-10T18:06:53.170Z",
-  "insightsAt": "2026-11-11T18:06:53.170Z",
+  "insightsAt": "2026-11-12T18:06:54.685Z",
   "setupFails": 0
 }
