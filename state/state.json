@@ -539,6 +539,12 @@
       "permalink": "https://www.instagram.com/reel/DfrspBkktVE/",
       "type": "reel",
       "at": "2026-11-13T13:05:16.557Z"
+    },
+    "rly10-drone": {
+      "mediaId": "18120515333080623",
+      "permalink": "https://www.instagram.com/reel/DfsO-lFEhO4/",
+      "type": "reel",
+      "at": "2026-11-13T18:05:19.156Z"
     }
   },
   "failed": {},
@@ -579,7 +585,7 @@
     "2026-11-10": 3,
     "2026-11-11": 3,
     "2026-11-12": 3,
-    "2026-11-13": 2
+    "2026-11-13": 3
   },
   "notified": {
     "low": "2026-10-31T20:04:04.942Z",
