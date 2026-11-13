@@ -533,6 +533,12 @@
       "permalink": "https://www.instagram.com/reel/DfrDdCKjMx-/",
       "type": "reel",
       "at": "2026-11-13T07:05:22.430Z"
+    },
+    "rly1-pigeon": {
+      "mediaId": "17999625681048669",
+      "permalink": "https://www.instagram.com/reel/DfrspBkktVE/",
+      "type": "reel",
+      "at": "2026-11-13T13:05:16.557Z"
     }
   },
   "failed": {},
@@ -573,7 +579,7 @@
     "2026-11-10": 3,
     "2026-11-11": 3,
     "2026-11-12": 3,
-    "2026-11-13": 1
+    "2026-11-13": 2
   },
   "notified": {
     "low": "2026-10-31T20:04:04.942Z",
