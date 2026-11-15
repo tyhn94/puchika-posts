@@ -575,6 +575,12 @@
       "permalink": "https://www.instagram.com/reel/Dfw2PG5H_1H/",
       "type": "reel",
       "at": "2026-11-15T13:05:18.841Z"
+    },
+    "rly15-flight": {
+      "mediaId": "17912759955578028",
+      "permalink": "https://www.instagram.com/reel/DfxYpm4gQ5A/",
+      "type": "reel",
+      "at": "2026-11-15T18:05:33.567Z"
     }
   },
   "failed": {},
@@ -617,7 +623,7 @@
     "2026-11-12": 3,
     "2026-11-13": 3,
     "2026-11-14": 3,
-    "2026-11-15": 2
+    "2026-11-15": 3
   },
   "notified": {
     "low": "2026-10-31T20:04:04.942Z",
