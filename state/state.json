@@ -563,6 +563,12 @@
       "permalink": "https://www.instagram.com/reel/Dfuzw9ADqU5/",
       "type": "reel",
       "at": "2026-11-14T18:05:15.750Z"
+    },
+    "rly11-boots": {
+      "mediaId": "18035655848676454",
+      "permalink": "https://www.instagram.com/reel/DfwNB5Skx6-/",
+      "type": "reel",
+      "at": "2026-11-15T07:05:14.390Z"
     }
   },
   "failed": {},
@@ -604,7 +610,8 @@
     "2026-11-11": 3,
     "2026-11-12": 3,
     "2026-11-13": 3,
-    "2026-11-14": 3
+    "2026-11-14": 3,
+    "2026-11-15": 1
   },
   "notified": {
     "low": "2026-10-31T20:04:04.942Z",
