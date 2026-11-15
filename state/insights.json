@@ -194,6 +194,11 @@
       "date": "2026-11-14",
       "followers": 12,
       "posts": 69
+    },
+    {
+      "date": "2026-11-15",
+      "followers": 11,
+      "posts": 72
     }
   ],
   "posts": {
@@ -1032,12 +1037,12 @@
       "permalink": "https://www.instagram.com/reel/Dfb1yNDiekV/",
       "likes": 52,
       "comments": 0,
-      "reach": 1160,
+      "reach": 1161,
       "saved": 3,
       "shares": 4,
-      "views": 1856,
+      "views": 1862,
       "total_interactions": 66,
-      "ig_reels_avg_watch_time": 7732
+      "ig_reels_avg_watch_time": 7748
     },
     "rlx13-chips": {
       "id": "rlx13-chips",
@@ -1209,23 +1214,23 @@
       "reach": 1066,
       "saved": 2,
       "shares": 0,
-      "views": 1797,
+      "views": 1798,
       "total_interactions": 26,
-      "ig_reels_avg_watch_time": 10958
+      "ig_reels_avg_watch_time": 10948
     },
     "rlx7-shower": {
       "id": "rlx7-shower",
       "at": "2026-11-12T13:05:20.910Z",
       "type": "reel",
       "permalink": "https://www.instagram.com/reel/DfpH2rkEQcq/",
-      "likes": 58,
+      "likes": 59,
       "comments": 0,
       "reach": 1033,
       "saved": 5,
       "shares": 0,
-      "views": 1536,
-      "total_interactions": 68,
-      "ig_reels_avg_watch_time": 9989
+      "views": 1538,
+      "total_interactions": 69,
+      "ig_reels_avg_watch_time": 9993
     },
     "rlx21-coffee": {
       "id": "rlx21-coffee",
@@ -1262,26 +1267,26 @@
       "permalink": "https://www.instagram.com/reel/DfrspBkktVE/",
       "likes": 3,
       "comments": 0,
-      "reach": 352,
+      "reach": 355,
       "saved": 0,
       "shares": 0,
-      "views": 469,
+      "views": 474,
       "total_interactions": 3,
-      "ig_reels_avg_watch_time": 6187
+      "ig_reels_avg_watch_time": 6196
     },
     "rly10-drone": {
       "id": "rly10-drone",
       "at": "2026-11-13T18:05:19.156Z",
       "type": "reel",
       "permalink": "https://www.instagram.com/reel/DfsO-lFEhO4/",
-      "likes": 3,
+      "likes": 4,
       "comments": 0,
-      "reach": 119,
+      "reach": 126,
       "saved": 0,
       "shares": 0,
-      "views": 154,
-      "total_interactions": 3,
-      "ig_reels_avg_watch_time": 4826
+      "views": 167,
+      "total_interactions": 4,
+      "ig_reels_avg_watch_time": 5244
     },
     "rly3-bed": {
       "id": "rly3-bed",
@@ -1290,18 +1295,60 @@
       "permalink": "https://www.instagram.com/reel/DftoOvAjClR/",
       "likes": 0,
       "comments": 0,
-      "reach": 117,
+      "reach": 122,
       "saved": 0,
       "shares": 0,
-      "views": 141,
+      "views": 147,
       "total_interactions": 0,
-      "ig_reels_avg_watch_time": 4923
+      "ig_reels_avg_watch_time": 4842
     },
     "rly13-voicenote": {
       "id": "rly13-voicenote",
       "at": "2026-11-14T13:05:19.245Z",
       "type": "reel",
       "permalink": "https://www.instagram.com/reel/DfuRcLwnOtc/",
+      "likes": 1,
+      "comments": 0,
+      "reach": 110,
+      "saved": 0,
+      "shares": 0,
+      "views": 129,
+      "total_interactions": 1,
+      "ig_reels_avg_watch_time": 5584
+    },
+    "rly4-rice": {
+      "id": "rly4-rice",
+      "at": "2026-11-14T18:05:15.750Z",
+      "type": "reel",
+      "permalink": "https://www.instagram.com/reel/Dfuzw9ADqU5/",
+      "likes": 5,
+      "comments": 0,
+      "reach": 466,
+      "saved": 0,
+      "shares": 4,
+      "views": 704,
+      "total_interactions": 9,
+      "ig_reels_avg_watch_time": 6576
+    },
+    "rly11-boots": {
+      "id": "rly11-boots",
+      "at": "2026-11-15T07:05:14.390Z",
+      "type": "reel",
+      "permalink": "https://www.instagram.com/reel/DfwNB5Skx6-/",
+      "likes": 0,
+      "comments": 0,
+      "reach": 130,
+      "saved": 0,
+      "shares": 0,
+      "views": 167,
+      "total_interactions": 0,
+      "ig_reels_avg_watch_time": 3616
+    },
+    "rly5-sos": {
+      "id": "rly5-sos",
+      "at": "2026-11-15T13:05:18.841Z",
+      "type": "reel",
+      "permalink": "https://www.instagram.com/reel/Dfw2PG5H_1H/",
       "likes": 0,
       "comments": 0,
       "reach": 0,
@@ -1312,5 +1359,5 @@
       "ig_reels_avg_watch_time": 0
     }
   },
-  "updatedAt": "2026-11-14T13:05:19.245Z"
+  "updatedAt": "2026-11-15T13:05:18.841Z"
 }
