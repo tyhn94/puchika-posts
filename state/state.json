@@ -581,6 +581,12 @@
       "permalink": "https://www.instagram.com/reel/DfxYpm4gQ5A/",
       "type": "reel",
       "at": "2026-11-15T18:05:33.567Z"
+    },
+    "rly7-speaker": {
+      "mediaId": "18094206758220657",
+      "permalink": "https://www.instagram.com/reel/Dfyx3gtE2aF/",
+      "type": "reel",
+      "at": "2026-11-16T07:05:37.865Z"
     }
   },
   "failed": {},
@@ -623,7 +629,8 @@
     "2026-11-12": 3,
     "2026-11-13": 3,
     "2026-11-14": 3,
-    "2026-11-15": 3
+    "2026-11-15": 3,
+    "2026-11-16": 1
   },
   "notified": {
     "low": "2026-10-31T20:04:04.942Z",
