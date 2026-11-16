@@ -199,6 +199,11 @@
       "date": "2026-11-15",
       "followers": 11,
       "posts": 72
+    },
+    {
+      "date": "2026-11-16",
+      "followers": 12,
+      "posts": 75
     }
   ],
   "posts": {
@@ -784,9 +789,9 @@
       "reach": 1096,
       "saved": 4,
       "shares": 4,
-      "views": 1763,
+      "views": 1766,
       "total_interactions": 90,
-      "ig_reels_avg_watch_time": 12347
+      "ig_reels_avg_watch_time": 12350
     },
     "rl23-reply": {
       "id": "rl23-reply",
@@ -885,12 +890,12 @@
       "permalink": "https://www.instagram.com/reel/DfIfGupmtCD/",
       "likes": 13,
       "comments": 0,
-      "reach": 1048,
+      "reach": 1049,
       "saved": 1,
       "shares": 2,
-      "views": 1533,
+      "views": 1536,
       "total_interactions": 16,
-      "ig_reels_avg_watch_time": 12842
+      "ig_reels_avg_watch_time": 12819
     },
     "rl21-costume": {
       "id": "rl21-costume",
@@ -1225,12 +1230,12 @@
       "permalink": "https://www.instagram.com/reel/DfpH2rkEQcq/",
       "likes": 59,
       "comments": 0,
-      "reach": 1033,
+      "reach": 1034,
       "saved": 5,
       "shares": 0,
       "views": 1538,
       "total_interactions": 69,
-      "ig_reels_avg_watch_time": 9993
+      "ig_reels_avg_watch_time": 9997
     },
     "rlx21-coffee": {
       "id": "rlx21-coffee",
@@ -1244,7 +1249,7 @@
       "shares": 0,
       "views": 446,
       "total_interactions": 5,
-      "ig_reels_avg_watch_time": 8495
+      "ig_reels_avg_watch_time": 8506
     },
     "rlx2-5min": {
       "id": "rlx2-5min",
@@ -1258,7 +1263,7 @@
       "shares": 1,
       "views": 347,
       "total_interactions": 5,
-      "ig_reels_avg_watch_time": 4945
+      "ig_reels_avg_watch_time": 4960
     },
     "rly1-pigeon": {
       "id": "rly1-pigeon",
@@ -1272,7 +1277,7 @@
       "shares": 0,
       "views": 474,
       "total_interactions": 3,
-      "ig_reels_avg_watch_time": 6196
+      "ig_reels_avg_watch_time": 6210
     },
     "rly10-drone": {
       "id": "rly10-drone",
@@ -1286,7 +1291,7 @@
       "shares": 0,
       "views": 167,
       "total_interactions": 4,
-      "ig_reels_avg_watch_time": 5244
+      "ig_reels_avg_watch_time": 5247
     },
     "rly3-bed": {
       "id": "rly3-bed",
@@ -1300,7 +1305,7 @@
       "shares": 0,
       "views": 147,
       "total_interactions": 0,
-      "ig_reels_avg_watch_time": 4842
+      "ig_reels_avg_watch_time": 4889
     },
     "rly13-voicenote": {
       "id": "rly13-voicenote",
@@ -1309,26 +1314,26 @@
       "permalink": "https://www.instagram.com/reel/DfuRcLwnOtc/",
       "likes": 1,
       "comments": 0,
-      "reach": 110,
+      "reach": 111,
       "saved": 0,
       "shares": 0,
-      "views": 129,
+      "views": 130,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 5584
+      "ig_reels_avg_watch_time": 5627
     },
     "rly4-rice": {
       "id": "rly4-rice",
       "at": "2026-11-14T18:05:15.750Z",
       "type": "reel",
       "permalink": "https://www.instagram.com/reel/Dfuzw9ADqU5/",
-      "likes": 5,
+      "likes": 10,
       "comments": 0,
-      "reach": 466,
+      "reach": 588,
       "saved": 0,
-      "shares": 4,
-      "views": 704,
-      "total_interactions": 9,
-      "ig_reels_avg_watch_time": 6576
+      "shares": 5,
+      "views": 865,
+      "total_interactions": 15,
+      "ig_reels_avg_watch_time": 6553
     },
     "rly11-boots": {
       "id": "rly11-boots",
@@ -1337,18 +1342,60 @@
       "permalink": "https://www.instagram.com/reel/DfwNB5Skx6-/",
       "likes": 0,
       "comments": 0,
-      "reach": 130,
+      "reach": 132,
       "saved": 0,
       "shares": 0,
-      "views": 167,
+      "views": 169,
       "total_interactions": 0,
-      "ig_reels_avg_watch_time": 3616
+      "ig_reels_avg_watch_time": 3615
     },
     "rly5-sos": {
       "id": "rly5-sos",
       "at": "2026-11-15T13:05:18.841Z",
       "type": "reel",
       "permalink": "https://www.instagram.com/reel/Dfw2PG5H_1H/",
+      "likes": 10,
+      "comments": 0,
+      "reach": 302,
+      "saved": 0,
+      "shares": 2,
+      "views": 408,
+      "total_interactions": 12,
+      "ig_reels_avg_watch_time": 6973
+    },
+    "rly15-flight": {
+      "id": "rly15-flight",
+      "at": "2026-11-15T18:05:33.567Z",
+      "type": "reel",
+      "permalink": "https://www.instagram.com/reel/DfxYpm4gQ5A/",
+      "likes": 1,
+      "comments": 0,
+      "reach": 141,
+      "saved": 0,
+      "shares": 0,
+      "views": 173,
+      "total_interactions": 1,
+      "ig_reels_avg_watch_time": 5126
+    },
+    "rly7-speaker": {
+      "id": "rly7-speaker",
+      "at": "2026-11-16T07:05:37.865Z",
+      "type": "reel",
+      "permalink": "https://www.instagram.com/reel/Dfyx3gtE2aF/",
+      "likes": 46,
+      "comments": 0,
+      "reach": 1090,
+      "saved": 1,
+      "shares": 0,
+      "views": 1864,
+      "total_interactions": 47,
+      "ig_reels_avg_watch_time": 10787
+    },
+    "rly16-swap": {
+      "id": "rly16-swap",
+      "at": "2026-11-16T13:07:24.947Z",
+      "type": "reel",
+      "permalink": "https://www.instagram.com/reel/DfzbRQfjyP5/",
       "likes": 0,
       "comments": 0,
       "reach": 0,
@@ -1359,5 +1406,5 @@
       "ig_reels_avg_watch_time": 0
     }
   },
-  "updatedAt": "2026-11-15T13:05:18.841Z"
+  "updatedAt": "2026-11-16T13:07:24.947Z"
 }
