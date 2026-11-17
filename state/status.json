@@ -1,9 +1,14 @@
 {
   "ok": true,
-  "at": "2026-11-17T00:33:31.526Z",
+  "at": "2026-11-17T07:05:19.574Z",
   "mode": "auto",
   "problems": [],
   "account": "puchikafriends",
-  "remaining": 7,
+  "posted": {
+    "id": "rly12-dream",
+    "mediaId": "18123108428090038",
+    "permalink": "https://www.instagram.com/reel/Df1Wn_VETVk/"
+  },
+  "remaining": 6,
   "perDay": 3
 }
