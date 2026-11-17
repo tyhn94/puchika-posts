@@ -605,6 +605,12 @@
       "permalink": "https://www.instagram.com/reel/Df1Wn_VETVk/",
       "type": "reel",
       "at": "2026-11-17T07:05:19.574Z"
+    },
+    "rly8-plush": {
+      "mediaId": "18013105151776972",
+      "permalink": "https://www.instagram.com/reel/Df1_0zXjrSF/",
+      "type": "reel",
+      "at": "2026-11-17T13:05:19.663Z"
     }
   },
   "failed": {},
@@ -649,7 +655,7 @@
     "2026-11-14": 3,
     "2026-11-15": 3,
     "2026-11-16": 3,
-    "2026-11-17": 1
+    "2026-11-17": 2
   },
   "notified": {
     "low": "2026-11-17T07:05:19.574Z",
@@ -659,6 +665,6 @@
   "refreshTriedAt": "2026-11-11T18:06:53.170Z",
   "refreshedAt": "2026-11-11T18:06:53.170Z",
   "tokenExpiresAt": "2027-01-10T18:06:53.170Z",
-  "insightsAt": "2026-11-16T13:07:24.947Z",
+  "insightsAt": "2026-11-17T13:05:19.663Z",
   "setupFails": 0
 }
