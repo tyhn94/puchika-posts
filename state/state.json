@@ -613,7 +613,12 @@
       "at": "2026-11-17T13:05:19.663Z"
     }
   },
-  "failed": {},
+  "failed": {
+    "rly17-hoodie": {
+      "n": 1,
+      "last": "Instagram could not process the media: ERROR"
+    }
+  },
   "days": {
     "2026-10-06": 3,
     "2026-10-07": 3,
