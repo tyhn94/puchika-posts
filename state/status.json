@@ -1,9 +1,14 @@
 {
   "ok": true,
-  "at": "2026-11-18T01:00:27.420Z",
+  "at": "2026-11-18T07:05:16.065Z",
   "mode": "auto",
   "problems": [],
   "account": "puchikafriends",
-  "remaining": 5,
+  "posted": {
+    "id": "rly17-hoodie",
+    "mediaId": "18104405831074645",
+    "permalink": "https://www.instagram.com/reel/Df37a7vguID/"
+  },
+  "remaining": 4,
   "perDay": 3
 }

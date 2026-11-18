@@ -611,14 +611,15 @@
       "permalink": "https://www.instagram.com/reel/Df1_0zXjrSF/",
       "type": "reel",
       "at": "2026-11-17T13:05:19.663Z"
-    }
-  },
-  "failed": {
+    },
     "rly17-hoodie": {
-      "n": 1,
-      "last": "Instagram could not process the media: ERROR"
+      "mediaId": "18104405831074645",
+      "permalink": "https://www.instagram.com/reel/Df37a7vguID/",
+      "type": "reel",
+      "at": "2026-11-18T07:05:16.065Z"
     }
   },
+  "failed": {},
   "days": {
     "2026-10-06": 3,
     "2026-10-07": 3,
@@ -660,7 +661,8 @@
     "2026-11-14": 3,
     "2026-11-15": 3,
     "2026-11-16": 3,
-    "2026-11-17": 2
+    "2026-11-17": 2,
+    "2026-11-18": 1
   },
   "notified": {
     "low": "2026-11-17T07:05:19.574Z",
