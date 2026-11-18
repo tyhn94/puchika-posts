@@ -1,10 +1,8 @@
 {
   "ok": true,
-  "at": "2026-11-17T18:05:21.574Z",
+  "at": "2026-11-18T01:00:27.420Z",
   "mode": "auto",
-  "problems": [
-    "rly17-hoodie: Instagram could not process the media: ERROR"
-  ],
+  "problems": [],
   "account": "puchikafriends",
   "remaining": 5,
   "perDay": 3
