@@ -617,6 +617,12 @@
       "permalink": "https://www.instagram.com/reel/Df37a7vguID/",
       "type": "reel",
       "at": "2026-11-18T07:05:16.065Z"
+    },
+    "rly6-lawyer": {
+      "mediaId": "18115641001890068",
+      "permalink": "https://www.instagram.com/reel/Df4ktRgjsBE/",
+      "type": "reel",
+      "at": "2026-11-18T13:05:19.559Z"
     }
   },
   "failed": {},
@@ -662,7 +668,7 @@
     "2026-11-15": 3,
     "2026-11-16": 3,
     "2026-11-17": 2,
-    "2026-11-18": 1
+    "2026-11-18": 2
   },
   "notified": {
     "low": "2026-11-17T07:05:19.574Z",
@@ -672,6 +678,6 @@
   "refreshTriedAt": "2026-11-18T01:00:27.420Z",
   "refreshedAt": "2026-11-18T01:00:27.420Z",
   "tokenExpiresAt": "2027-01-17T01:00:27.420Z",
-  "insightsAt": "2026-11-17T13:05:19.663Z",
+  "insightsAt": "2026-11-18T13:05:19.559Z",
   "setupFails": 0
 }

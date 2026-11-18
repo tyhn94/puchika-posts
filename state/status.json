@@ -1,9 +1,14 @@
 {
   "ok": true,
-  "at": "2026-11-18T08:51:06.981Z",
+  "at": "2026-11-18T13:05:19.559Z",
   "mode": "auto",
   "problems": [],
   "account": "puchikafriends",
-  "remaining": 4,
+  "posted": {
+    "id": "rly6-lawyer",
+    "mediaId": "18115641001890068",
+    "permalink": "https://www.instagram.com/reel/Df4ktRgjsBE/"
+  },
+  "remaining": 3,
   "perDay": 3
 }

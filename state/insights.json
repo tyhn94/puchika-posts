@@ -209,6 +209,11 @@
       "date": "2026-11-17",
       "followers": 12,
       "posts": 78
+    },
+    {
+      "date": "2026-11-18",
+      "followers": 13,
+      "posts": 80
     }
   ],
   "posts": {
@@ -1389,7 +1394,7 @@
       "permalink": "https://www.instagram.com/reel/Dfyx3gtE2aF/",
       "likes": 46,
       "comments": 0,
-      "reach": 1100,
+      "reach": 1102,
       "saved": 1,
       "shares": 0,
       "views": 1876,
@@ -1403,12 +1408,12 @@
       "permalink": "https://www.instagram.com/reel/DfzbRQfjyP5/",
       "likes": 32,
       "comments": 0,
-      "reach": 983,
+      "reach": 987,
       "saved": 1,
       "shares": 2,
-      "views": 1516,
+      "views": 1524,
       "total_interactions": 35,
-      "ig_reels_avg_watch_time": 9227
+      "ig_reels_avg_watch_time": 9238
     },
     "rly2-like": {
       "id": "rly2-like",
@@ -1417,7 +1422,7 @@
       "permalink": "https://www.instagram.com/reel/Dfz9XffGfIc/",
       "likes": 32,
       "comments": 0,
-      "reach": 1068,
+      "reach": 1069,
       "saved": 4,
       "shares": 0,
       "views": 1650,
@@ -1429,20 +1434,48 @@
       "at": "2026-11-17T07:05:19.574Z",
       "type": "reel",
       "permalink": "https://www.instagram.com/reel/Df1Wn_VETVk/",
-      "likes": 7,
+      "likes": 34,
       "comments": 0,
-      "reach": 332,
-      "saved": 0,
-      "shares": 0,
-      "views": 468,
-      "total_interactions": 8,
-      "ig_reels_avg_watch_time": 6858
+      "reach": 747,
+      "saved": 1,
+      "shares": 5,
+      "views": 1051,
+      "total_interactions": 41,
+      "ig_reels_avg_watch_time": 7442
     },
     "rly8-plush": {
       "id": "rly8-plush",
       "at": "2026-11-17T13:05:19.663Z",
       "type": "reel",
       "permalink": "https://www.instagram.com/reel/Df1_0zXjrSF/",
+      "likes": 1,
+      "comments": 0,
+      "reach": 120,
+      "saved": 0,
+      "shares": 0,
+      "views": 160,
+      "total_interactions": 1,
+      "ig_reels_avg_watch_time": 4680
+    },
+    "rly17-hoodie": {
+      "id": "rly17-hoodie",
+      "at": "2026-11-18T07:05:16.065Z",
+      "type": "reel",
+      "permalink": "https://www.instagram.com/reel/Df37a7vguID/",
+      "likes": 9,
+      "comments": 0,
+      "reach": 222,
+      "saved": 0,
+      "shares": 1,
+      "views": 334,
+      "total_interactions": 10,
+      "ig_reels_avg_watch_time": 7485
+    },
+    "rly6-lawyer": {
+      "id": "rly6-lawyer",
+      "at": "2026-11-18T13:05:19.559Z",
+      "type": "reel",
+      "permalink": "https://www.instagram.com/reel/Df4ktRgjsBE/",
       "likes": 0,
       "comments": 0,
       "reach": 0,
@@ -1453,5 +1486,5 @@
       "ig_reels_avg_watch_time": 0
     }
   },
-  "updatedAt": "2026-11-17T13:05:19.663Z"
+  "updatedAt": "2026-11-18T13:05:19.559Z"
 }
