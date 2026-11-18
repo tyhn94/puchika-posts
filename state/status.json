@@ -1,9 +1,14 @@
 {
   "ok": true,
-  "at": "2026-11-18T17:37:58.479Z",
+  "at": "2026-11-18T18:05:19.906Z",
   "mode": "auto",
   "problems": [],
   "account": "puchikafriends",
-  "remaining": 3,
+  "posted": {
+    "id": "rly14-sofa",
+    "mediaId": "18122017433092227",
+    "permalink": "https://www.instagram.com/reel/Df5HDRZjiCf/"
+  },
+  "remaining": 2,
   "perDay": 3
 }
