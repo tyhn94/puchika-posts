@@ -635,6 +635,12 @@
       "permalink": "https://www.instagram.com/reel/Df6gN_FjkRK/",
       "type": "reel",
       "at": "2026-11-19T07:05:20.661Z"
+    },
+    "rly18-coaster": {
+      "mediaId": "18134524519704697",
+      "permalink": "https://www.instagram.com/reel/Df7JbTZjCqu/",
+      "type": "reel",
+      "at": "2026-11-19T13:05:25.096Z"
     }
   },
   "failed": {},
@@ -681,16 +687,16 @@
     "2026-11-16": 3,
     "2026-11-17": 2,
     "2026-11-18": 3,
-    "2026-11-19": 1
+    "2026-11-19": 2
   },
   "notified": {
     "low": "2026-11-17T07:05:19.574Z",
-    "empty": "2026-11-03T11:59:36.525Z"
+    "empty": "2026-11-19T13:05:25.096Z"
   },
   "firstRun": "2026-10-06T09:18:43.623Z",
   "refreshTriedAt": "2026-11-18T01:00:27.420Z",
   "refreshedAt": "2026-11-18T01:00:27.420Z",
   "tokenExpiresAt": "2027-01-17T01:00:27.420Z",
-  "insightsAt": "2026-11-18T13:05:19.559Z",
+  "insightsAt": "2026-11-19T13:05:25.096Z",
   "setupFails": 0
 }
