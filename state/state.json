@@ -629,6 +629,12 @@
       "permalink": "https://www.instagram.com/reel/Df5HDRZjiCf/",
       "type": "reel",
       "at": "2026-11-18T18:05:19.906Z"
+    },
+    "rly9-trash": {
+      "mediaId": "17989364459892292",
+      "permalink": "https://www.instagram.com/reel/Df6gN_FjkRK/",
+      "type": "reel",
+      "at": "2026-11-19T07:05:20.661Z"
     }
   },
   "failed": {},
@@ -674,7 +680,8 @@
     "2026-11-15": 3,
     "2026-11-16": 3,
     "2026-11-17": 2,
-    "2026-11-18": 3
+    "2026-11-18": 3,
+    "2026-11-19": 1
   },
   "notified": {
     "low": "2026-11-17T07:05:19.574Z",
