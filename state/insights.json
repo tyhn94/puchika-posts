@@ -219,6 +219,11 @@
       "date": "2026-11-19",
       "followers": 13,
       "posts": 83
+    },
+    {
+      "date": "2026-11-20",
+      "followers": 13,
+      "posts": 84
     }
   ],
   "posts": {
@@ -871,12 +876,12 @@
       "permalink": "https://www.instagram.com/reel/DfGLcV1jrD5/",
       "likes": 30,
       "comments": 1,
-      "reach": 1085,
+      "reach": 1086,
       "saved": 1,
       "shares": 1,
-      "views": 1679,
+      "views": 1681,
       "total_interactions": 34,
-      "ig_reels_avg_watch_time": 12800
+      "ig_reels_avg_watch_time": 12802
     },
     "rl20-candy": {
       "id": "rl20-candy",
@@ -1441,12 +1446,12 @@
       "permalink": "https://www.instagram.com/reel/Df1Wn_VETVk/",
       "likes": 34,
       "comments": 0,
-      "reach": 748,
+      "reach": 749,
       "saved": 1,
       "shares": 5,
-      "views": 1052,
+      "views": 1053,
       "total_interactions": 41,
-      "ig_reels_avg_watch_time": 7438
+      "ig_reels_avg_watch_time": 7435
     },
     "rly8-plush": {
       "id": "rly8-plush",
@@ -1469,12 +1474,12 @@
       "permalink": "https://www.instagram.com/reel/Df37a7vguID/",
       "likes": 13,
       "comments": 0,
-      "reach": 306,
+      "reach": 307,
       "saved": 0,
       "shares": 1,
-      "views": 475,
+      "views": 476,
       "total_interactions": 14,
-      "ig_reels_avg_watch_time": 8032
+      "ig_reels_avg_watch_time": 8012
     },
     "rly6-lawyer": {
       "id": "rly6-lawyer",
@@ -1497,12 +1502,12 @@
       "permalink": "https://www.instagram.com/reel/Df5HDRZjiCf/",
       "likes": 1,
       "comments": 0,
-      "reach": 107,
+      "reach": 109,
       "saved": 0,
       "shares": 0,
-      "views": 139,
+      "views": 143,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 6061
+      "ig_reels_avg_watch_time": 6313
     },
     "rly9-trash": {
       "id": "rly9-trash",
@@ -1511,27 +1516,27 @@
       "permalink": "https://www.instagram.com/reel/Df6gN_FjkRK/",
       "likes": 0,
       "comments": 0,
-      "reach": 105,
+      "reach": 106,
       "saved": 0,
       "shares": 0,
       "views": 123,
       "total_interactions": 0,
-      "ig_reels_avg_watch_time": 3210
+      "ig_reels_avg_watch_time": 3282
     },
     "rly18-coaster": {
       "id": "rly18-coaster",
       "at": "2026-11-19T13:05:25.096Z",
       "type": "reel",
       "permalink": "https://www.instagram.com/reel/Df7JbTZjCqu/",
-      "likes": 0,
+      "likes": 27,
       "comments": 0,
-      "reach": 0,
-      "saved": 0,
-      "shares": 0,
-      "views": 0,
-      "total_interactions": 0,
-      "ig_reels_avg_watch_time": 0
+      "reach": 1054,
+      "saved": 2,
+      "shares": 3,
+      "views": 1611,
+      "total_interactions": 32,
+      "ig_reels_avg_watch_time": 10739
     }
   },
-  "updatedAt": "2026-11-19T13:05:25.096Z"
+  "updatedAt": "2026-11-20T12:14:37.390Z"
 }
