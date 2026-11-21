@@ -224,6 +224,11 @@
       "date": "2026-11-20",
       "followers": 13,
       "posts": 84
+    },
+    {
+      "date": "2026-11-21",
+      "followers": 13,
+      "posts": 84
     }
   ],
   "posts": {
@@ -1239,9 +1244,9 @@
       "reach": 1066,
       "saved": 2,
       "shares": 0,
-      "views": 1798,
+      "views": 1799,
       "total_interactions": 26,
-      "ig_reels_avg_watch_time": 10949
+      "ig_reels_avg_watch_time": 10940
     },
     "rlx7-shower": {
       "id": "rlx7-shower",
@@ -1435,9 +1440,9 @@
       "reach": 1069,
       "saved": 4,
       "shares": 0,
-      "views": 1650,
+      "views": 1651,
       "total_interactions": 39,
-      "ig_reels_avg_watch_time": 10248
+      "ig_reels_avg_watch_time": 10241
     },
     "rly12-dream": {
       "id": "rly12-dream",
@@ -1488,12 +1493,12 @@
       "permalink": "https://www.instagram.com/reel/Df4ktRgjsBE/",
       "likes": 32,
       "comments": 0,
-      "reach": 1056,
+      "reach": 1057,
       "saved": 1,
       "shares": 0,
-      "views": 1584,
+      "views": 1586,
       "total_interactions": 34,
-      "ig_reels_avg_watch_time": 8494
+      "ig_reels_avg_watch_time": 8484
     },
     "rly14-sofa": {
       "id": "rly14-sofa",
@@ -1507,7 +1512,7 @@
       "shares": 0,
       "views": 143,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 6313
+      "ig_reels_avg_watch_time": 6267
     },
     "rly9-trash": {
       "id": "rly9-trash",
@@ -1521,7 +1526,7 @@
       "shares": 0,
       "views": 123,
       "total_interactions": 0,
-      "ig_reels_avg_watch_time": 3282
+      "ig_reels_avg_watch_time": 3271
     },
     "rly18-coaster": {
       "id": "rly18-coaster",
@@ -1530,13 +1535,13 @@
       "permalink": "https://www.instagram.com/reel/Df7JbTZjCqu/",
       "likes": 27,
       "comments": 0,
-      "reach": 1054,
+      "reach": 1058,
       "saved": 2,
       "shares": 3,
-      "views": 1611,
+      "views": 1616,
       "total_interactions": 32,
-      "ig_reels_avg_watch_time": 10739
+      "ig_reels_avg_watch_time": 10745
     }
   },
-  "updatedAt": "2026-11-20T12:14:37.390Z"
+  "updatedAt": "2026-11-21T08:51:32.970Z"
 }
