@@ -234,6 +234,11 @@
       "date": "2026-11-22",
       "followers": 13,
       "posts": 84
+    },
+    {
+      "date": "2026-11-23",
+      "followers": 13,
+      "posts": 84
     }
   ],
   "posts": {
@@ -1456,7 +1461,7 @@
       "permalink": "https://www.instagram.com/reel/Df1Wn_VETVk/",
       "likes": 34,
       "comments": 0,
-      "reach": 749,
+      "reach": 750,
       "saved": 1,
       "shares": 5,
       "views": 1053,
@@ -1548,5 +1553,5 @@
       "ig_reels_avg_watch_time": 10745
     }
   },
-  "updatedAt": "2026-11-22T07:05:21.917Z"
+  "updatedAt": "2026-11-23T03:16:19.080Z"
 }
