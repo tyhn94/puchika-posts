@@ -239,6 +239,11 @@
       "date": "2026-11-23",
       "followers": 13,
       "posts": 84
+    },
+    {
+      "date": "2026-11-24",
+      "followers": 13,
+      "posts": 84
     }
   ],
   "posts": {
@@ -1254,7 +1259,7 @@
       "reach": 1066,
       "saved": 2,
       "shares": 0,
-      "views": 1799,
+      "views": 1800,
       "total_interactions": 26,
       "ig_reels_avg_watch_time": 10940
     },
@@ -1489,12 +1494,12 @@
       "permalink": "https://www.instagram.com/reel/Df37a7vguID/",
       "likes": 13,
       "comments": 0,
-      "reach": 307,
+      "reach": 308,
       "saved": 0,
       "shares": 1,
-      "views": 476,
+      "views": 477,
       "total_interactions": 14,
-      "ig_reels_avg_watch_time": 8012
+      "ig_reels_avg_watch_time": 7998
     },
     "rly6-lawyer": {
       "id": "rly6-lawyer",
@@ -1503,12 +1508,12 @@
       "permalink": "https://www.instagram.com/reel/Df4ktRgjsBE/",
       "likes": 32,
       "comments": 0,
-      "reach": 1057,
+      "reach": 1059,
       "saved": 1,
       "shares": 0,
-      "views": 1586,
+      "views": 1587,
       "total_interactions": 34,
-      "ig_reels_avg_watch_time": 8484
+      "ig_reels_avg_watch_time": 8477
     },
     "rly14-sofa": {
       "id": "rly14-sofa",
@@ -1520,9 +1525,9 @@
       "reach": 109,
       "saved": 0,
       "shares": 0,
-      "views": 143,
+      "views": 144,
       "total_interactions": 1,
-      "ig_reels_avg_watch_time": 6267
+      "ig_reels_avg_watch_time": 6232
     },
     "rly9-trash": {
       "id": "rly9-trash",
@@ -1534,9 +1539,9 @@
       "reach": 106,
       "saved": 0,
       "shares": 0,
-      "views": 123,
+      "views": 124,
       "total_interactions": 0,
-      "ig_reels_avg_watch_time": 3271
+      "ig_reels_avg_watch_time": 3244
     },
     "rly18-coaster": {
       "id": "rly18-coaster",
@@ -1545,13 +1550,13 @@
       "permalink": "https://www.instagram.com/reel/Df7JbTZjCqu/",
       "likes": 27,
       "comments": 0,
-      "reach": 1058,
+      "reach": 1059,
       "saved": 2,
       "shares": 3,
-      "views": 1616,
+      "views": 1617,
       "total_interactions": 32,
-      "ig_reels_avg_watch_time": 10745
+      "ig_reels_avg_watch_time": 10735
     }
   },
-  "updatedAt": "2026-11-23T03:16:19.080Z"
+  "updatedAt": "2026-11-24T00:59:39.601Z"
 }
