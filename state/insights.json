@@ -1200,12 +1200,12 @@
       "permalink": "https://www.instagram.com/reel/Dfk5aclAPvr/",
       "likes": 52,
       "comments": 0,
-      "reach": 1073,
+      "reach": 1074,
       "saved": 1,
       "shares": 10,
-      "views": 1488,
+      "views": 1489,
       "total_interactions": 65,
-      "ig_reels_avg_watch_time": 8646
+      "ig_reels_avg_watch_time": 8642
     },
     "rlx6-haha": {
       "id": "rlx6-haha",
@@ -1455,9 +1455,9 @@
       "reach": 1069,
       "saved": 4,
       "shares": 0,
-      "views": 1651,
+      "views": 1652,
       "total_interactions": 39,
-      "ig_reels_avg_watch_time": 10241
+      "ig_reels_avg_watch_time": 10232
     },
     "rly12-dream": {
       "id": "rly12-dream",
@@ -1534,29 +1534,29 @@
       "at": "2026-11-19T07:05:20.661Z",
       "type": "reel",
       "permalink": "https://www.instagram.com/reel/Df6gN_FjkRK/",
-      "likes": 0,
+      "likes": 1,
       "comments": 0,
-      "reach": 106,
+      "reach": 107,
       "saved": 0,
       "shares": 0,
-      "views": 124,
-      "total_interactions": 0,
-      "ig_reels_avg_watch_time": 3244
+      "views": 125,
+      "total_interactions": 1,
+      "ig_reels_avg_watch_time": 3324
     },
     "rly18-coaster": {
       "id": "rly18-coaster",
       "at": "2026-11-19T13:05:25.096Z",
       "type": "reel",
       "permalink": "https://www.instagram.com/reel/Df7JbTZjCqu/",
-      "likes": 27,
+      "likes": 28,
       "comments": 0,
       "reach": 1059,
       "saved": 2,
       "shares": 3,
-      "views": 1617,
-      "total_interactions": 32,
-      "ig_reels_avg_watch_time": 10735
+      "views": 1618,
+      "total_interactions": 34,
+      "ig_reels_avg_watch_time": 10742
     }
   },
-  "updatedAt": "2026-11-24T00:59:39.601Z"
+  "updatedAt": "2026-11-24T21:21:20.637Z"
 }
