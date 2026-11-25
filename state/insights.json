@@ -244,6 +244,11 @@
       "date": "2026-11-24",
       "followers": 13,
       "posts": 84
+    },
+    {
+      "date": "2026-11-25",
+      "followers": 13,
+      "posts": 84
     }
   ],
   "posts": {
@@ -1455,9 +1460,9 @@
       "reach": 1069,
       "saved": 4,
       "shares": 0,
-      "views": 1652,
+      "views": 1653,
       "total_interactions": 39,
-      "ig_reels_avg_watch_time": 10232
+      "ig_reels_avg_watch_time": 10230
     },
     "rly12-dream": {
       "id": "rly12-dream",
@@ -1558,5 +1563,5 @@
       "ig_reels_avg_watch_time": 10742
     }
   },
-  "updatedAt": "2026-11-24T21:21:20.637Z"
+  "updatedAt": "2026-11-25T18:05:16.429Z"
 }
