@@ -254,6 +254,11 @@
       "date": "2026-11-26",
       "followers": 13,
       "posts": 84
+    },
+    {
+      "date": "2026-11-27",
+      "followers": 13,
+      "posts": 84
     }
   ],
   "posts": {
@@ -1568,5 +1573,5 @@
       "ig_reels_avg_watch_time": 10749
     }
   },
-  "updatedAt": "2026-11-26T15:25:57.857Z"
+  "updatedAt": "2026-11-27T13:05:25.733Z"
 }
